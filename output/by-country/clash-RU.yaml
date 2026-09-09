@@ -17,7 +17,7 @@ proxies:
   ws-opts:
     path: /websocket
     headers:
-      Host: ru05.abvpn.ru
+      Host: 45.9.15.206
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
   type: vless
   server: ru05.abvpn.ru
@@ -45,15 +45,8 @@ proxies:
   ws-opts:
     path: /websocket
     headers:
-      Host: 45.9.15.206
+      Host: ru05.abvpn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
   type: ss
   server: 130.49.189.158
   port: 43558
@@ -69,7 +62,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
   - 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -79,6 +71,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
   - 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 05 - homeip
 rules:
 - MATCH,PROXIES
