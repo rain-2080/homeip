@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
   type: vless
-  server: ru05.abvpn.ru
+  server: 45.9.15.206
   port: 443
   uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
   udp: true
@@ -20,47 +20,6 @@ proxies:
       Host: ru05.abvpn.ru
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
   type: vless
-  server: 193.233.217.140
-  port: 2200
-  uuid: 19365fd3-d23c-4a9e-a2ef-543d230e65c4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: 193.233.217.140
-- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  type: vless
-  server: 45.9.15.206
-  port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ru05.abvpn.ru
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
-  type: vless
   server: ru05.abvpn.ru
   port: 443
   uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
@@ -73,7 +32,7 @@ proxies:
     path: /websocket
     headers:
       Host: ru05.abvpn.ru
-- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
   type: vless
   server: 45.9.15.206
   port: 443
@@ -87,6 +46,20 @@ proxies:
     path: /websocket
     headers:
       Host: 45.9.15.206
+- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,8 +70,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
   - 🇷🇺 俄罗斯 (Russia) 04 - homeip
   - 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 06 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,7 +80,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
   - 🇷🇺 俄罗斯 (Russia) 04 - homeip
   - 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 06 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 07 - homeip
 rules:
 - MATCH,PROXIES
