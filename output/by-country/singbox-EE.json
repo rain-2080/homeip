@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇪🇪 EE 01 - homeip",
+        "🇪🇪 EE 02 - homeip",
+        "🇪🇪 EE 03 - homeip",
+        "🇪🇪 EE 04 - homeip"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇪🇪 EE 01 - homeip",
+        "🇪🇪 EE 02 - homeip",
+        "🇪🇪 EE 03 - homeip",
+        "🇪🇪 EE 04 - homeip"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇳🇴 NO 01 - homeip",
+        "🇳🇴 NO 02 - homeip",
+        "🇳🇴 NO 03 - homeip",
+        "🇳🇴 NO 04 - homeip",
+        "🇳🇴 NO 05 - homeip"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇳🇴 NO 01 - homeip",
+        "🇳🇴 NO 02 - homeip",
+        "🇳🇴 NO 03 - homeip",
+        "🇳🇴 NO 04 - homeip",
+        "🇳🇴 NO 05 - homeip"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

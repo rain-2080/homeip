@@ -1,0 +1,74 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇫🇮 FI 01 - homeip
+  type: vless
+  server: italic.dearhossein-taktaz.ir
+  port: 2083
+  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: italic.dearhossein-taktaz.ir
+- name: 🇫🇮 FI 02 - homeip
+  type: vless
+  server: 31.76.21.44.fwqfw783rg2dad.website
+  port: 443
+  uuid: 1d8ca2dd-55f4-5345-9e88-abd7b4ddafa8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 31.76.21.44.fwqfw783rg2dad.website
+  network: ws
+  ws-opts:
+    path: /websocket?ed=2560
+    headers:
+      Host: 31.76.21.44.fwqfw783rg2dad.website
+- name: 🇫🇮 FI 03 - homeip
+  type: vless
+  server: italic.dearhossein-taktaz.ir
+  port: 8080
+  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: italic.dearhossein-taktaz.ir
+- name: 🇫🇮 FI 04 - homeip
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇫🇮 FI 01 - homeip
+  - 🇫🇮 FI 02 - homeip
+  - 🇫🇮 FI 03 - homeip
+  - 🇫🇮 FI 04 - homeip
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇮 FI 01 - homeip
+  - 🇫🇮 FI 02 - homeip
+  - 🇫🇮 FI 03 - homeip
+  - 🇫🇮 FI 04 - homeip
+rules:
+- MATCH,PROXIES
