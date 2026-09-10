@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 89.36.161.222
+      Host: laoye.in-gect.fun
 - name: 🇱🇻 LV 02 - homeip
   type: vless
   server: 89.36.161.222
@@ -42,7 +42,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: laoye.in-gect.fun
+      Host: 89.36.161.222
 - name: 🇱🇻 LV 04 - homeip
   type: vless
   server: 89.36.161.222
@@ -55,7 +55,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 89.36.161.222
+      Host: laoye.in-gect.fun
 - name: 🇱🇻 LV 05 - homeip
   type: vless
   server: 89.36.161.222
@@ -68,7 +68,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: laoye.in-gect.fun
+      Host: 89.36.161.222
 - name: 🇱🇻 LV 06 - homeip
   type: vless
   server: 89.36.161.222
@@ -81,10 +81,36 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: laoye.in-gect.fun
+      Host: 89.36.161.222
 - name: 🇱🇻 LV 07 - homeip
   type: vless
   server: laoye.in-gect.fun
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: laoye.in-gect.fun
+- name: 🇱🇻 LV 08 - homeip
+  type: vless
+  server: 89.36.161.222
+  port: 2096
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: laoye.in-gect.fun
+- name: 🇱🇻 LV 09 - homeip
+  type: vless
+  server: 89.36.161.222
   port: 2096
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
@@ -107,6 +133,8 @@ proxy-groups:
   - 🇱🇻 LV 05 - homeip
   - 🇱🇻 LV 06 - homeip
   - 🇱🇻 LV 07 - homeip
+  - 🇱🇻 LV 08 - homeip
+  - 🇱🇻 LV 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -119,5 +147,7 @@ proxy-groups:
   - 🇱🇻 LV 05 - homeip
   - 🇱🇻 LV 06 - homeip
   - 🇱🇻 LV 07 - homeip
+  - 🇱🇻 LV 08 - homeip
+  - 🇱🇻 LV 09 - homeip
 rules:
 - MATCH,PROXIES

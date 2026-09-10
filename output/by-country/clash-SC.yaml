@@ -7,42 +7,36 @@ proxies:
 - name: 🇸🇨 SC 01 - homeip
   type: vless
   server: 188.114.97.6
-  port: 8080
-  uuid: 6e857db2-ea80-48e1-903f-d5cf557c21ff
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: silent-snow-1a0d.241-b0a.workers.dev
-- name: 🇸🇨 SC 02 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /game
-    headers:
-      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
-- name: 🇸🇨 SC 03 - homeip
-  type: vless
-  server: 172.67.190.141
   port: 8880
-  uuid: 25322a43-4ef3-45cc-9e96-db44bcccd7be
+  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: purple-disk-f68d.14-360.workers.dev
+      Host: dark-leaf-93a1.440-02e.workers.dev
+- name: 🇸🇨 SC 02 - homeip
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇨 SC 03 - homeip
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇨 SC 04 - homeip
   type: vmess
   server: 156.226.183.181
@@ -53,131 +47,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇨 SC 05 - homeip
-  type: vless
-  server: 104.17.144.29
-  port: 8880
-  uuid: 4ae1f5c4-6595-4a20-85c0-0deec1e6ecb9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: misty-dew-009a.484.workers.dev
-- name: 🇸🇨 SC 06 - homeip
-  type: vless
-  server: 104.21.55.229
-  port: 8880
-  uuid: f769b7ea-9cd1-4d61-b578-7644b7c8eb3d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: quiet-waterfall-e914.180-ac4.workers.dev
-- name: 🇸🇨 SC 07 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xstack.mahanfixe.workers.dev
-  network: ws
-  ws-opts:
-    path: /xiron
-    headers:
-      Host: xstack.mahanfixe.workers.dev
-- name: 🇸🇨 SC 08 - homeip
-  type: vless
-  server: 172.67.152.71
-  port: 8880
-  uuid: ed189537-41de-4abe-9f8b-bb75d457722d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: lucky-cake-4f58.318-5ee.workers.dev
-- name: 🇸🇨 SC 09 - homeip
-  type: vless
-  server: 104.21.19.76
-  port: 2096
-  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-82c7e7.aBoBaBA.WorkeRS.dEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ez-82c7e7.abobaba.workers.dev
-- name: 🇸🇨 SC 10 - homeip
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 11 - homeip
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 12 - homeip
-  type: vmess
-  server: 156.226.183.181
-  port: 54321
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇨 SC 13 - homeip
-  type: vless
-  server: 45.130.125.96
-  port: 443
-  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dfsuporte.garena.com.ex33r.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-pusat
-    headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
-- name: 🇸🇨 SC 14 - homeip
-  type: vless
-  server: 104.16.174.164
-  port: 443
-  uuid: 73796e63-0000-4000-8000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wireguard.ahmad-kh5716.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: wireguard.ahmad-kh5716.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -187,16 +56,6 @@ proxy-groups:
   - 🇸🇨 SC 02 - homeip
   - 🇸🇨 SC 03 - homeip
   - 🇸🇨 SC 04 - homeip
-  - 🇸🇨 SC 05 - homeip
-  - 🇸🇨 SC 06 - homeip
-  - 🇸🇨 SC 07 - homeip
-  - 🇸🇨 SC 08 - homeip
-  - 🇸🇨 SC 09 - homeip
-  - 🇸🇨 SC 10 - homeip
-  - 🇸🇨 SC 11 - homeip
-  - 🇸🇨 SC 12 - homeip
-  - 🇸🇨 SC 13 - homeip
-  - 🇸🇨 SC 14 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -206,15 +65,5 @@ proxy-groups:
   - 🇸🇨 SC 02 - homeip
   - 🇸🇨 SC 03 - homeip
   - 🇸🇨 SC 04 - homeip
-  - 🇸🇨 SC 05 - homeip
-  - 🇸🇨 SC 06 - homeip
-  - 🇸🇨 SC 07 - homeip
-  - 🇸🇨 SC 08 - homeip
-  - 🇸🇨 SC 09 - homeip
-  - 🇸🇨 SC 10 - homeip
-  - 🇸🇨 SC 11 - homeip
-  - 🇸🇨 SC 12 - homeip
-  - 🇸🇨 SC 13 - homeip
-  - 🇸🇨 SC 14 - homeip
 rules:
 - MATCH,PROXIES

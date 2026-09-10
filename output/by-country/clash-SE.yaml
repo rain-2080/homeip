@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - homeip
   type: vless
-  server: 104.21.70.21
-  port: 8080
-  uuid: 50414e45-4c5f-5a45-5553-b45978f6d773
+  server: freev2.cloudflare.182682.xyz
+  port: 443
+  uuid: 3ef19710-5053-4a6a-9c5d-dd7f501327a4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: se-sto.xhs152.shop
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/b45978f6d773/loc-1
+    path: /announcement?ed=2048
     headers:
-      Host: ljz5fuexub6s.nova-705deb.workers.dev
+      Host: se-sto.xhs152.shop
 - name: 🇸🇪 SE 02 - homeip
   type: vless
   server: 202.155.11.249
@@ -45,27 +46,6 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf2.rumedia-cdn.com
-- name: 🇸🇪 SE 04 - homeip
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 05 - homeip
-  type: vless
-  server: 202.155.11.249
-  port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf2.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf2.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,8 +54,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
-  - 🇸🇪 SE 04 - homeip
-  - 🇸🇪 SE 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,7 +62,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
-  - 🇸🇪 SE 04 - homeip
-  - 🇸🇪 SE 05 - homeip
 rules:
 - MATCH,PROXIES
