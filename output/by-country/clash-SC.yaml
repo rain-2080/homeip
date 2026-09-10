@@ -5,18 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 8880
-  uuid: f09f4baa-7688-4514-8062-c3ea8e319624
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: dark-leaf-93a1.440-02e.workers.dev
 - name: 🇸🇨 SC 02 - homeip
   type: vmess
   server: 156.226.183.181
@@ -47,6 +44,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇨 SC 05 - homeip
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,6 +63,7 @@ proxy-groups:
   - 🇸🇨 SC 02 - homeip
   - 🇸🇨 SC 03 - homeip
   - 🇸🇨 SC 04 - homeip
+  - 🇸🇨 SC 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -65,5 +73,6 @@ proxy-groups:
   - 🇸🇨 SC 02 - homeip
   - 🇸🇨 SC 03 - homeip
   - 🇸🇨 SC 04 - homeip
+  - 🇸🇨 SC 05 - homeip
 rules:
 - MATCH,PROXIES

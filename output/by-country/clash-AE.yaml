@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - homeip
   type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 02 - homeip
-  type: vless
   server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -31,24 +17,11 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 03 - homeip
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - homeip
+- name: 🇦🇪 阿联酋 (UAE) 02 - homeip
   type: vless
   server: 31.58.181.88
   port: 8443
-  uuid: 863ce48d-6b5e-4682-b5d7-0c9b43895841
+  uuid: 41a463f0-8c2d-4090-8456-e3278cab8fa2
   udp: true
   tls: true
   skip-cert-verify: true
@@ -56,20 +29,6 @@ proxies:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 05 - homeip
-  type: vless
-  server: 83.147.216.223
-  port: 4433
-  uuid: 660174a2-d32d-4521-840d-d1853bfc80b8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,9 +36,6 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - homeip
   - 🇦🇪 阿联酋 (UAE) 02 - homeip
-  - 🇦🇪 阿联酋 (UAE) 03 - homeip
-  - 🇦🇪 阿联酋 (UAE) 04 - homeip
-  - 🇦🇪 阿联酋 (UAE) 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,8 +43,5 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - homeip
   - 🇦🇪 阿联酋 (UAE) 02 - homeip
-  - 🇦🇪 阿联酋 (UAE) 03 - homeip
-  - 🇦🇪 阿联酋 (UAE) 04 - homeip
-  - 🇦🇪 阿联酋 (UAE) 05 - homeip
 rules:
 - MATCH,PROXIES
