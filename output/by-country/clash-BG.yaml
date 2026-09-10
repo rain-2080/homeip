@@ -6,16 +6,13 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - homeip
   type: vless
-  server: 94.156.155.27
-  port: 443
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  server: neth9.lunariai.ru
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: bY0-zlTOPCaEWDMw_BTzuzJW513tl6Hc61n4Z-q1cHE
-  servername: www.telekom.de
-  client-fingerprint: firefox
+  servername: neth9.lunariai.ru
 - name: 🇧🇬 BG 02 - homeip
   type: vless
   server: 192.145.31.5
@@ -34,6 +31,116 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 04 - homeip
+  type: vless
+  server: 192.145.31.5
+  port: 443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.145.31.5
+- name: 🇧🇬 BG 05 - homeip
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 192.145.31.5
+- name: 🇧🇬 BG 06 - homeip
+  type: vless
+  server: 192.145.31.5
+  port: 443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.145.31.5
+- name: 🇧🇬 BG 07 - homeip
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 192.145.31.5
+- name: 🇧🇬 BG 08 - homeip
+  type: vless
+  server: 192.145.31.5
+  port: 443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.145.31.5
+- name: 🇧🇬 BG 09 - homeip
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 10 - homeip
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 11 - homeip
+  type: vless
+  server: neth9.lunariai.ru
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 12 - homeip
+  type: vless
+  server: 192.145.31.5
+  port: 443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: neth9.lunariai.ru
+- name: 🇧🇬 BG 13 - homeip
+  type: vless
+  server: neth9.lunariai.ru
+  port: 443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: neth9.lunariai.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +149,16 @@ proxy-groups:
   - 🇧🇬 BG 01 - homeip
   - 🇧🇬 BG 02 - homeip
   - 🇧🇬 BG 03 - homeip
+  - 🇧🇬 BG 04 - homeip
+  - 🇧🇬 BG 05 - homeip
+  - 🇧🇬 BG 06 - homeip
+  - 🇧🇬 BG 07 - homeip
+  - 🇧🇬 BG 08 - homeip
+  - 🇧🇬 BG 09 - homeip
+  - 🇧🇬 BG 10 - homeip
+  - 🇧🇬 BG 11 - homeip
+  - 🇧🇬 BG 12 - homeip
+  - 🇧🇬 BG 13 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +167,15 @@ proxy-groups:
   - 🇧🇬 BG 01 - homeip
   - 🇧🇬 BG 02 - homeip
   - 🇧🇬 BG 03 - homeip
+  - 🇧🇬 BG 04 - homeip
+  - 🇧🇬 BG 05 - homeip
+  - 🇧🇬 BG 06 - homeip
+  - 🇧🇬 BG 07 - homeip
+  - 🇧🇬 BG 08 - homeip
+  - 🇧🇬 BG 09 - homeip
+  - 🇧🇬 BG 10 - homeip
+  - 🇧🇬 BG 11 - homeip
+  - 🇧🇬 BG 12 - homeip
+  - 🇧🇬 BG 13 - homeip
 rules:
 - MATCH,PROXIES

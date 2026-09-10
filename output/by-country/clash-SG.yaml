@@ -5,25 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - homeip
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.66.200.130
+  port: 8880
+  uuid: 4c37df21-0a34-41bf-8bc7-78efd823c03b
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: shiny-salad-e491.479.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 02 - homeip
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 176.97.64.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: TFElG2FVqyqG
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 03 - homeip
   type: vmess
   server: 149.88.23.202
@@ -36,61 +36,18 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 04 - homeip
   type: vless
-  server: 8.sahanwickramasinghe.me
-  port: 443
-  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
+  server: 104.17.123.204
+  port: 8880
+  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: www.tiktok.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: long-firefly-a226.216-ce0.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 05 - homeip
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 06 - homeip
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 07 - homeip
-  type: vless
-  server: 142.91.102.35
-  port: 443
-  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 8.sahanwickramasinghe.me
-- name: 🇸🇬 新加坡 (Singapore) 08 - homeip
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 09 - homeip
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 10 - homeip
   type: vless
   server: 104.17.73.206
   port: 8443
@@ -104,14 +61,7 @@ proxies:
     path: /
     headers:
       Host: 8.sahanwickramasinghe.me
-- name: 🇸🇬 新加坡 (Singapore) 11 - homeip
-  type: ss
-  server: 176.97.64.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: TFElG2FVqyqG
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 12 - homeip
+- name: 🇸🇬 新加坡 (Singapore) 06 - homeip
   type: vless
   server: 134.122.154.210
   port: 443
@@ -119,16 +69,55 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 13 - homeip
-  type: vless
-  server: 8.sahanwickramasinghe.me
-  port: 443
-  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
+- name: 🇸🇬 新加坡 (Singapore) 07 - homeip
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: aka.ms
-- name: 🇸🇬 新加坡 (Singapore) 14 - homeip
+- name: 🇸🇬 新加坡 (Singapore) 08 - homeip
+  type: vmess
+  server: select-sg.ddnskunlun.com
+  port: 9039
+  uuid: 4fa65799-694e-316b-b2d3-30c793777cbf
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 09 - homeip
+  type: vless
+  server: 104.21.88.129
+  port: 8880
+  uuid: 18a7834f-bf89-4c87-ad57-49927a56deed
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=proxyip.sg.cmliussss.net
+    headers:
+      Host: holy-violet-858e.471.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 10 - homeip
+  type: ss
+  server: 167.150.100.115
+  port: 27755
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 11 - homeip
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 12 - homeip
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -138,7 +127,279 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 13 - homeip
+  type: vless
+  server: 104.27.82.154
+  port: 8880
+  uuid: fb5058f5-a9ed-424e-9ed7-33d455438286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: old-violet-a5ce.29-440.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 14 - homeip
+  type: vless
+  server: www.ipget.net
+  port: 8880
+  uuid: 2756d45c-2d91-4783-8114-ad1e128799ba
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: blue-breeze-e33c.261.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 15 - homeip
+  type: vless
+  server: www.zsu.gov.ua
+  port: 8880
+  uuid: 2756d45c-2d91-4783-8114-ad1e128799ba
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: blue-breeze-e33c.261.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 16 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 2fb22d40-598f-4890-85a6-d69928b1fd55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: odd-cloud-f2a1.73-12e.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 17 - homeip
+  type: vless
+  server: 104.17.28.83
+  port: 2087
+  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: whitecreeper.pages.dev
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+    headers:
+      Host: whitecreeper.pages.dev
+- name: 🇸🇬 新加坡 (Singapore) 18 - homeip
+  type: vless
+  server: 172.65.90.52
+  port: 8880
+  uuid: 30a2a9a6-6a03-4353-a7fb-63831d64f718
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: orange-lab-896e.365-80b.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 19 - homeip
+  type: vless
+  server: 8.sahanwickramasinghe.me
+  port: 443
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8.sahanwickramasinghe.me
+- name: 🇸🇬 新加坡 (Singapore) 20 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4c37df21-0a34-41bf-8bc7-78efd823c03b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shiny-salad-e491.479.workers.dev
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: shiny-salad-e491.479.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 21 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 392ed37c-c0cd-472e-8765-a94677005b0b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: frosty-bread-788f.398.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 22 - homeip
+  type: vless
+  server: 104.16.100.66
+  port: 8880
+  uuid: 4e81922a-1c2e-41ee-bb4c-9095a0a363fe
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: gentle-cell-501a.273-d6b.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 23 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: soft-band-8da6.426.workers.dev
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: soft-band-8da6.426.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 24 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 25 - homeip
+  type: vless
+  server: www.visa.com.sg
+  port: 8880
+  uuid: 380de97f-1d87-4394-acb8-f9ad7a422ac1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: proud-recipe-239d.305-0da.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 26 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: a8c23fe7-d2bb-46ba-a14e-8847f1944642
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: billowing-fire-a10b.301-d6c.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 27 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 28 - homeip
+  type: vless
+  server: 162.159.156.214
+  port: 8880
+  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: soft-band-8da6.426.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 29 - homeip
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 30 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: long-firefly-a226.216-ce0.workers.dev
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: long-firefly-a226.216-ce0.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 31 - homeip
+  type: vless
+  server: 104.21.12.116
+  port: 8880
+  uuid: d702b5e4-412d-4859-a528-3fc0b91f6fc0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: wild-math-3ef2.439.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 32 - homeip
+  type: vless
+  server: 104.17.73.206
+  port: 8443
+  uuid: 542fd687-5160-4f80-9223-56678567dd29
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8.sahanwickramasinghe.me
+- name: 🇸🇬 新加坡 (Singapore) 33 - homeip
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 34 - homeip
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 35 - homeip
   type: vless
   server: 172.64.150.28
   port: 2082
@@ -151,24 +412,29 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 16 - homeip
-  type: ss
-  server: 167.150.100.115
-  port: 27755
-  cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+- name: 🇸🇬 新加坡 (Singapore) 36 - homeip
+  type: vless
+  server: 142.91.102.35
+  port: 443
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
   udp: true
-- name: 🇸🇬 新加坡 (Singapore) 17 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: 8.sahanwickramasinghe.me
+- name: 🇸🇬 新加坡 (Singapore) 37 - homeip
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 18 - homeip
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 38 - homeip
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -178,75 +444,192 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 19 - homeip
+- name: 🇸🇬 新加坡 (Singapore) 39 - homeip
   type: vless
-  server: 104.17.74.206
-  port: 8443
-  uuid: 542fd687-5160-4f80-9223-56678567dd29
+  server: 8.sahanwickramasinghe.me
+  port: 443
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 8.sahanwickramasinghe.me
+  servername: www.tiktok.com
+- name: 🇸🇬 新加坡 (Singapore) 40 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 41 - homeip
+  type: vless
+  server: 104.18.13.229
+  port: 8880
+  uuid: 380de97f-1d87-4394-acb8-f9ad7a422ac1
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: 8.sahanwickramasinghe.me
-- name: 🇸🇬 新加坡 (Singapore) 20 - homeip
+      Host: proud-recipe-239d.305-0da.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 42 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 73ae7d45-1046-4cc5-9741-199375b620f1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: round-resonance-a84c.13-531.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 43 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 44 - homeip
+  type: vless
+  server: 172.67.179.98
+  port: 8880
+  uuid: 18a7834f-bf89-4c87-ad57-49927a56deed
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: holy-violet-858e.471.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 45 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 18a7834f-bf89-4c87-ad57-49927a56deed
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: holy-violet-858e.471.workers.dev
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: holy-violet-858e.471.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 46 - homeip
+  type: vless
+  server: 104.16.97.215
+  port: 8880
+  uuid: a8c23fe7-d2bb-46ba-a14e-8847f1944642
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: billowing-fire-a10b.301-d6c.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 47 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 48 - homeip
+  type: vless
+  server: 188.164.248.81
+  port: 2087
+  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: whitecreeper.pages.dev
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.SG.CMLiussss.Net
+    headers:
+      Host: whitecreeper.pages.dev
+- name: 🇸🇬 新加坡 (Singapore) 49 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 50 - homeip
+  type: vless
+  server: 104.17.3.81
+  port: 443
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nautica-cff.kloningstrife002.workers.dev
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 51 - homeip
+  type: vless
+  server: themeforest.net
+  port: 8880
+  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: silent-cake-fb8d.69-a76.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 52 - homeip
   type: ss
   server: 176.97.64.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: TFElG2FVqyqG
   udp: true
-- name: 🇸🇬 新加坡 (Singapore) 21 - homeip
-  type: ss
-  server: 168.107.91.1
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Ep1fuyrFAxEF87qg9q17V4YEGtS92m0xdJbwu6lwTF4=
+- name: 🇸🇬 新加坡 (Singapore) 53 - homeip
+  type: vless
+  server: 142.91.102.35
+  port: 443
+  uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
   udp: true
-- name: 🇸🇬 新加坡 (Singapore) 22 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: 8.sahanwickramasinghe.me
+- name: 🇸🇬 新加坡 (Singapore) 54 - homeip
+  type: vless
+  server: 162.159.156.214
+  port: 8880
+  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 23 - homeip
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 24 - homeip
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 25 - homeip
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 26 - homeip
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: soft-band-8da6.426.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 55 - homeip
   type: vless
   server: 188.114.97.6
   port: 8080
@@ -259,6 +642,72 @@ proxies:
     path: /
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 56 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 8880
+  uuid: b19b768d-bc57-4d03-9bea-61129ed5fef9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: new.106-79e.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 57 - homeip
+  type: vless
+  server: 104.21.88.129
+  port: 8880
+  uuid: 18a7834f-bf89-4c87-ad57-49927a56deed
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: holy-violet-858e.471.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 58 - homeip
+  type: vless
+  server: www.baipiao.eu.org
+  port: 8880
+  uuid: 82a3c394-55b7-4780-93a0-5f45c0e89625
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-brook-e650.353-3ac.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 59 - homeip
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nautica-cff.kloningstrife002.workers.dev
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 60 - homeip
+  type: vless
+  server: 172.66.140.62
+  port: 8880
+  uuid: 160ca353-676d-4b7f-a041-0289e388b865
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proud-cloud-7bdd.208-a52.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -290,6 +739,40 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 24 - homeip
   - 🇸🇬 新加坡 (Singapore) 25 - homeip
   - 🇸🇬 新加坡 (Singapore) 26 - homeip
+  - 🇸🇬 新加坡 (Singapore) 27 - homeip
+  - 🇸🇬 新加坡 (Singapore) 28 - homeip
+  - 🇸🇬 新加坡 (Singapore) 29 - homeip
+  - 🇸🇬 新加坡 (Singapore) 30 - homeip
+  - 🇸🇬 新加坡 (Singapore) 31 - homeip
+  - 🇸🇬 新加坡 (Singapore) 32 - homeip
+  - 🇸🇬 新加坡 (Singapore) 33 - homeip
+  - 🇸🇬 新加坡 (Singapore) 34 - homeip
+  - 🇸🇬 新加坡 (Singapore) 35 - homeip
+  - 🇸🇬 新加坡 (Singapore) 36 - homeip
+  - 🇸🇬 新加坡 (Singapore) 37 - homeip
+  - 🇸🇬 新加坡 (Singapore) 38 - homeip
+  - 🇸🇬 新加坡 (Singapore) 39 - homeip
+  - 🇸🇬 新加坡 (Singapore) 40 - homeip
+  - 🇸🇬 新加坡 (Singapore) 41 - homeip
+  - 🇸🇬 新加坡 (Singapore) 42 - homeip
+  - 🇸🇬 新加坡 (Singapore) 43 - homeip
+  - 🇸🇬 新加坡 (Singapore) 44 - homeip
+  - 🇸🇬 新加坡 (Singapore) 45 - homeip
+  - 🇸🇬 新加坡 (Singapore) 46 - homeip
+  - 🇸🇬 新加坡 (Singapore) 47 - homeip
+  - 🇸🇬 新加坡 (Singapore) 48 - homeip
+  - 🇸🇬 新加坡 (Singapore) 49 - homeip
+  - 🇸🇬 新加坡 (Singapore) 50 - homeip
+  - 🇸🇬 新加坡 (Singapore) 51 - homeip
+  - 🇸🇬 新加坡 (Singapore) 52 - homeip
+  - 🇸🇬 新加坡 (Singapore) 53 - homeip
+  - 🇸🇬 新加坡 (Singapore) 54 - homeip
+  - 🇸🇬 新加坡 (Singapore) 55 - homeip
+  - 🇸🇬 新加坡 (Singapore) 56 - homeip
+  - 🇸🇬 新加坡 (Singapore) 57 - homeip
+  - 🇸🇬 新加坡 (Singapore) 58 - homeip
+  - 🇸🇬 新加坡 (Singapore) 59 - homeip
+  - 🇸🇬 新加坡 (Singapore) 60 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -321,5 +804,39 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 24 - homeip
   - 🇸🇬 新加坡 (Singapore) 25 - homeip
   - 🇸🇬 新加坡 (Singapore) 26 - homeip
+  - 🇸🇬 新加坡 (Singapore) 27 - homeip
+  - 🇸🇬 新加坡 (Singapore) 28 - homeip
+  - 🇸🇬 新加坡 (Singapore) 29 - homeip
+  - 🇸🇬 新加坡 (Singapore) 30 - homeip
+  - 🇸🇬 新加坡 (Singapore) 31 - homeip
+  - 🇸🇬 新加坡 (Singapore) 32 - homeip
+  - 🇸🇬 新加坡 (Singapore) 33 - homeip
+  - 🇸🇬 新加坡 (Singapore) 34 - homeip
+  - 🇸🇬 新加坡 (Singapore) 35 - homeip
+  - 🇸🇬 新加坡 (Singapore) 36 - homeip
+  - 🇸🇬 新加坡 (Singapore) 37 - homeip
+  - 🇸🇬 新加坡 (Singapore) 38 - homeip
+  - 🇸🇬 新加坡 (Singapore) 39 - homeip
+  - 🇸🇬 新加坡 (Singapore) 40 - homeip
+  - 🇸🇬 新加坡 (Singapore) 41 - homeip
+  - 🇸🇬 新加坡 (Singapore) 42 - homeip
+  - 🇸🇬 新加坡 (Singapore) 43 - homeip
+  - 🇸🇬 新加坡 (Singapore) 44 - homeip
+  - 🇸🇬 新加坡 (Singapore) 45 - homeip
+  - 🇸🇬 新加坡 (Singapore) 46 - homeip
+  - 🇸🇬 新加坡 (Singapore) 47 - homeip
+  - 🇸🇬 新加坡 (Singapore) 48 - homeip
+  - 🇸🇬 新加坡 (Singapore) 49 - homeip
+  - 🇸🇬 新加坡 (Singapore) 50 - homeip
+  - 🇸🇬 新加坡 (Singapore) 51 - homeip
+  - 🇸🇬 新加坡 (Singapore) 52 - homeip
+  - 🇸🇬 新加坡 (Singapore) 53 - homeip
+  - 🇸🇬 新加坡 (Singapore) 54 - homeip
+  - 🇸🇬 新加坡 (Singapore) 55 - homeip
+  - 🇸🇬 新加坡 (Singapore) 56 - homeip
+  - 🇸🇬 新加坡 (Singapore) 57 - homeip
+  - 🇸🇬 新加坡 (Singapore) 58 - homeip
+  - 🇸🇬 新加坡 (Singapore) 59 - homeip
+  - 🇸🇬 新加坡 (Singapore) 60 - homeip
 rules:
 - MATCH,PROXIES
