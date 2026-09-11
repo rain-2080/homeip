@@ -25,6 +25,42 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇨 SC 03 - homeip
+  type: vless
+  server: 162.159.43.187
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 04 - homeip
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇨 SC 05 - homeip
+  type: vless
+  server: 172.64.42.85
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 06 - homeip
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -42,6 +78,9 @@ proxy-groups:
   - 🇸🇨 SC 01 - homeip
   - 🇸🇨 SC 02 - homeip
   - 🇸🇨 SC 03 - homeip
+  - 🇸🇨 SC 04 - homeip
+  - 🇸🇨 SC 05 - homeip
+  - 🇸🇨 SC 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +89,8 @@ proxy-groups:
   - 🇸🇨 SC 01 - homeip
   - 🇸🇨 SC 02 - homeip
   - 🇸🇨 SC 03 - homeip
+  - 🇸🇨 SC 04 - homeip
+  - 🇸🇨 SC 05 - homeip
+  - 🇸🇨 SC 06 - homeip
 rules:
 - MATCH,PROXIES
