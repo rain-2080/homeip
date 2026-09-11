@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 (家宽) - homeip
+- name: 🇺🇸 美国 (United States) 01 (家宽) - homeip
   type: vless
-  server: best-internet-iran.app.runonflux.io
+  server: nahan-core.fatitelegram.workers.dev
   port: 443
-  uuid: 31d5256b-b7e8-40cd-a541-441f63e60984
+  uuid: 73796e63-0000-4000-8000-000000000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: best-internet-iran.app.runonflux.io
+  servername: nahan-core.fatitelegram.workers.dev
   network: ws
   ws-opts:
-    path: /xvpnws/
+    path: /sync
     headers:
-      Host: ''
+      Host: nahan-core.fatitelegram.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 (家宽) - homeip
+  - 🇺🇸 美国 (United States) 01 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 (家宽) - homeip
+  - 🇺🇸 美国 (United States) 01 (家宽) - homeip
 rules:
 - MATCH,PROXIES

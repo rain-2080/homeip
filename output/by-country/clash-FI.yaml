@@ -6,20 +6,21 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
-  server: 65.109.185.234
-  port: 8080
-  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  server: land.zavqeron.ir
+  port: 2053
+  uuid: f2900749-7cff-42b7-9566-dfb03840d374
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: zavqeron.ir
   network: ws
   ws-opts:
-    path: /
+    path: /fi-cdn
     headers:
-      Host: italic.dearhossein-taktaz.ir
+      Host: land.zavqeron.ir
 - name: 🇫🇮 FI 02 - homeip
   type: vless
-  server: 172.64.52.68
+  server: 172.64.53.60
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -33,139 +34,168 @@ proxies:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇫🇮 FI 03 - homeip
   type: vless
-  server: 104.18.40.152
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 151.101.56.6
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: c12.com
 - name: 🇫🇮 FI 04 - homeip
   type: vless
-  server: 172.64.145.166
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 151.101.56.6
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: c12.com
 - name: 🇫🇮 FI 05 - homeip
   type: vless
-  server: 172.64.53.240
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 151.101.56.6
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /?TELEGRAM---madshopx---madshopx---madshopx---madshopx---madshopx---madshopx---madshopx
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: c12.com
 - name: 🇫🇮 FI 06 - homeip
   type: vless
-  server: 172.64.52.182
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: c12.com
 - name: 🇫🇮 FI 07 - homeip
   type: vless
-  server: 172.64.53.194
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 151.101.56.6
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /?TELEGRAM--KANAL--@Configvibes@Configvibes@Configvibes@Configvibes@Configvibes@Configvibes@Configvibes@Configvibes@Configvibes@Configvibes@Configvibes@Configvibes
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: c12.com
 - name: 🇫🇮 FI 08 - homeip
   type: vless
-  server: italic.dearhossein-taktaz.ir
-  port: 2083
-  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  server: 104.21.44.5
+  port: 2053
+  uuid: f2900749-7cff-42b7-9566-dfb03840d374
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: italic.dearhossein-taktaz.ir
+  servername: zavqeron.ir
+  network: ws
+  ws-opts:
+    path: /fi-cdn
+    headers:
+      Host: land.zavqeron.ir
 - name: 🇫🇮 FI 09 - homeip
   type: vless
-  server: 172.67.217.240
-  port: 443
+  server: 172.64.53.42
+  port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: ?ed=2560
     headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇫🇮 FI 10 - homeip
   type: vless
-  server: 172.64.149.209
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 104.16.72.101
+  port: 80
+  uuid: d5598622-46b8-b017-3af3-232500000001
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /sync
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: nahan-core.netizo09.workers.dev
 - name: 🇫🇮 FI 11 - homeip
   type: vless
-  server: italic.dearhossein-taktaz.ir
-  port: 8080
-  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  server: 172.67.192.140
+  port: 2053
+  uuid: f2900749-7cff-42b7-9566-dfb03840d374
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: zavqeron.ir
+  network: ws
+  ws-opts:
+    path: /fi-cdn
+    headers:
+      Host: land.zavqeron.ir
+- name: 🇫🇮 FI 12 - homeip
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: italic.dearhossein-taktaz.ir
-- name: 🇫🇮 FI 12 - homeip
+      Host: c12.com
+- name: 🇫🇮 FI 13 - homeip
   type: vless
-  server: d23e29c2f13ce71d.mbcloudynias.ir
-  port: 8735
-  uuid: 14ffccc6-81e0-4108-ab35-b3df398534af
+  server: snnsjsowowiwueieyeye.sobu.ir
+  port: 14779
+  uuid: 1ab5ef70-14af-428b-bf4b-03889e0a3131
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 14 - homeip
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs
-  servername: play-apps-features.googleusercontent.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 13 - homeip
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 15 - homeip
   type: vless
-  server: 172.64.52.60
+  server: 104.16.151.21
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -177,59 +207,149 @@ proxies:
     path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇫🇮 FI 14 - homeip
-  type: vless
-  server: italic.dearhossein-taktaz.ir
-  port: 8080
-  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: italic.dearhossein-taktaz.ir
-- name: 🇫🇮 FI 15 - homeip
-  type: vless
-  server: italic.dearhossein-taktaz.ir
-  port: 8080
-  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: italic.dearhossein-taktaz.ir
 - name: 🇫🇮 FI 16 - homeip
   type: vless
-  server: italic.dearhossein-taktaz.ir
-  port: 8080
-  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  server: 151.101.56.6
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /
+    path: /?TELEGRAM--BYA--CHANEL---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr--@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr
     headers:
-      Host: italic.dearhossein-taktaz.ir
+      Host: c12.com
 - name: 🇫🇮 FI 17 - homeip
-  type: vless
-  server: italic.dearhossein-taktaz.ir
-  port: 8080
-  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  type: vmess
+  server: 185.232.204.222
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇫🇮 FI 18 - homeip
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 19 - homeip
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: italic.dearhossein-taktaz.ir
-- name: 🇫🇮 FI 18 - homeip
+      Host: c12.com
+- name: 🇫🇮 FI 20 - homeip
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 21 - homeip
+  type: vless
+  server: 172.64.145.202
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇫🇮 FI 22 - homeip
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 23 - homeip
+  type: vless
+  server: 104.18.42.54
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇫🇮 FI 24 - homeip
+  type: vless
+  server: 104.18.38.47
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇫🇮 FI 25 - homeip
+  type: vless
+  server: 172.64.52.175
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇫🇮 FI 26 - homeip
   type: vless
   server: 185.79.138.71
   port: 448
@@ -264,6 +384,14 @@ proxy-groups:
   - 🇫🇮 FI 16 - homeip
   - 🇫🇮 FI 17 - homeip
   - 🇫🇮 FI 18 - homeip
+  - 🇫🇮 FI 19 - homeip
+  - 🇫🇮 FI 20 - homeip
+  - 🇫🇮 FI 21 - homeip
+  - 🇫🇮 FI 22 - homeip
+  - 🇫🇮 FI 23 - homeip
+  - 🇫🇮 FI 24 - homeip
+  - 🇫🇮 FI 25 - homeip
+  - 🇫🇮 FI 26 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -287,5 +415,13 @@ proxy-groups:
   - 🇫🇮 FI 16 - homeip
   - 🇫🇮 FI 17 - homeip
   - 🇫🇮 FI 18 - homeip
+  - 🇫🇮 FI 19 - homeip
+  - 🇫🇮 FI 20 - homeip
+  - 🇫🇮 FI 21 - homeip
+  - 🇫🇮 FI 22 - homeip
+  - 🇫🇮 FI 23 - homeip
+  - 🇫🇮 FI 24 - homeip
+  - 🇫🇮 FI 25 - homeip
+  - 🇫🇮 FI 26 - homeip
 rules:
 - MATCH,PROXIES

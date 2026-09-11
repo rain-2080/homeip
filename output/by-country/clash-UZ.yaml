@@ -19,6 +19,62 @@ proxies:
       Host: 189.74.97.47
 - name: 🇺🇿 UZ 02 - homeip
   type: vless
+  server: 172.64.95.237
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-565221666bd1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mczrh5e3u5ps.shoameny.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/565221666bd1/loc-5
+    headers:
+      Host: mczrh5e3u5ps.shoameny.workers.dev
+- name: 🇺🇿 UZ 03 - homeip
+  type: vless
+  server: 104.18.80.149
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
+    headers:
+      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+- name: 🇺🇿 UZ 04 - homeip
+  type: vless
+  server: 104.18.80.149
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
+    headers:
+      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+- name: 🇺🇿 UZ 05 - homeip
+  type: vless
+  server: 104.21.33.59
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
+    headers:
+      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
+- name: 🇺🇿 UZ 06 - homeip
+  type: vless
   server: 189.74.97.47
   port: 2087
   uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
@@ -30,7 +86,20 @@ proxies:
     path: /755276b33b6f
     headers:
       Host: 189.74.97.47
-- name: 🇺🇿 UZ 03 - homeip
+- name: 🇺🇿 UZ 07 - homeip
+  type: vless
+  server: 189.74.97.47
+  port: 2087
+  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /755276b33b6f
+    headers:
+      Host: 189.74.97.47
+- name: 🇺🇿 UZ 08 - homeip
   type: vless
   server: 189.74.97.47
   port: 2087
@@ -51,6 +120,11 @@ proxy-groups:
   - 🇺🇿 UZ 01 - homeip
   - 🇺🇿 UZ 02 - homeip
   - 🇺🇿 UZ 03 - homeip
+  - 🇺🇿 UZ 04 - homeip
+  - 🇺🇿 UZ 05 - homeip
+  - 🇺🇿 UZ 06 - homeip
+  - 🇺🇿 UZ 07 - homeip
+  - 🇺🇿 UZ 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +133,10 @@ proxy-groups:
   - 🇺🇿 UZ 01 - homeip
   - 🇺🇿 UZ 02 - homeip
   - 🇺🇿 UZ 03 - homeip
+  - 🇺🇿 UZ 04 - homeip
+  - 🇺🇿 UZ 05 - homeip
+  - 🇺🇿 UZ 06 - homeip
+  - 🇺🇿 UZ 07 - homeip
+  - 🇺🇿 UZ 08 - homeip
 rules:
 - MATCH,PROXIES

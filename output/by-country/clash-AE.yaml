@@ -6,29 +6,19 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - homeip
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
+  server: 172.67.67.178
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
 - name: 🇦🇪 阿联酋 (UAE) 02 - homeip
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: ba90d4f6-de5c-466e-9b05-975f49ef528c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 03 - homeip
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -41,18 +31,124 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - homeip
+- name: 🇦🇪 阿联酋 (UAE) 03 - homeip
   type: vless
-  server: 31.58.181.88
+  server: 185.112.249.201
   port: 8443
-  uuid: 7dc78e93-9c9f-4a38-823b-13df709a1d16
+  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  servername: web-socket.tgdaosheng.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
+    headers:
+      Host: web-socket.tgdaosheng.ggff.net
+- name: 🇦🇪 阿联酋 (UAE) 04 - homeip
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16284
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 05 - homeip
+  type: vless
+  server: 185.112.249.201
+  port: 8443
+  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web-socket.tgdaosheng.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
+    headers:
+      Host: web-socket.tgdaosheng.ggff.net
+- name: 🇦🇪 阿联酋 (UAE) 06 - homeip
+  type: vless
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 07 - homeip
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000005
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: relay.lunetcloud.ir
+  network: ws
+  ws-opts:
+    path: /lunetnetwork
+    headers:
+      Host: relay.lunetcloud.ir
+- name: 🇦🇪 阿联酋 (UAE) 08 - homeip
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - homeip
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - homeip
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 11 - homeip
+  type: vless
+  server: 104.21.108.4
+  port: 443
+  uuid: fa45096d-bed0-ad80-c773-23c300000018
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,6 +158,13 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - homeip
   - 🇦🇪 阿联酋 (UAE) 03 - homeip
   - 🇦🇪 阿联酋 (UAE) 04 - homeip
+  - 🇦🇪 阿联酋 (UAE) 05 - homeip
+  - 🇦🇪 阿联酋 (UAE) 06 - homeip
+  - 🇦🇪 阿联酋 (UAE) 07 - homeip
+  - 🇦🇪 阿联酋 (UAE) 08 - homeip
+  - 🇦🇪 阿联酋 (UAE) 09 - homeip
+  - 🇦🇪 阿联酋 (UAE) 10 - homeip
+  - 🇦🇪 阿联酋 (UAE) 11 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,5 +174,12 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - homeip
   - 🇦🇪 阿联酋 (UAE) 03 - homeip
   - 🇦🇪 阿联酋 (UAE) 04 - homeip
+  - 🇦🇪 阿联酋 (UAE) 05 - homeip
+  - 🇦🇪 阿联酋 (UAE) 06 - homeip
+  - 🇦🇪 阿联酋 (UAE) 07 - homeip
+  - 🇦🇪 阿联酋 (UAE) 08 - homeip
+  - 🇦🇪 阿联酋 (UAE) 09 - homeip
+  - 🇦🇪 阿联酋 (UAE) 10 - homeip
+  - 🇦🇪 阿联酋 (UAE) 11 - homeip
 rules:
 - MATCH,PROXIES

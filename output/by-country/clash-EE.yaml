@@ -5,22 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - homeip
-  type: vmess
-  server: 64.188.82.159
+  type: vless
+  server: 45.80.108.236
   port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
+  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
+  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
   network: ws
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /proxyip
     headers:
-      Host: renderer-stream-2-62.mirra.now
+      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
 - name: 🇪🇪 EE 02 - homeip
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 03 - homeip
   type: vless
   server: 94.183.170.135
   port: 443
@@ -33,15 +40,6 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 03 - homeip
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 04 - homeip
   type: vless
   server: 94.183.170.135
@@ -58,25 +56,26 @@ proxies:
 - name: 🇪🇪 EE 05 - homeip
   type: vless
   server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 06 - homeip
-  type: vless
-  server: 94.183.170.135
   port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 06 - homeip
+  type: vless
+  server: 45.80.108.236
+  port: 443
+  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
+  network: ws
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
 - name: 🇪🇪 EE 07 - homeip
   type: vless
   server: 94.183.170.135
@@ -97,13 +96,18 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 09 - homeip
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 45.80.108.236
+  port: 443
+  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
+  network: ws
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

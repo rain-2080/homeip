@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - homeip
   type: vless
-  server: 5874bd5d2146d97b.pelepelebia.ir
-  port: 8735
-  uuid: 14ffccc6-81e0-4108-ab35-b3df398534af
+  server: 202.155.11.249
+  port: 443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs
-  servername: play-apps-features.googleusercontent.com
-  client-fingerprint: chrome
+  servername: cf2.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf2.rumedia-cdn.com
 - name: 🇸🇪 SE 02 - homeip
   type: vless
   server: 202.155.11.249
