@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - homeip
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -21,7 +21,7 @@ proxies:
   type: vless
   server: 31.58.181.88
   port: 8443
-  uuid: 41a463f0-8c2d-4090-8456-e3278cab8fa2
+  uuid: 32088840-4c1e-44af-958f-b7b552aeb919
   udp: true
   tls: true
   skip-cert-verify: true
@@ -44,6 +44,31 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - homeip
   type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: fa34a94b-f304-4290-bd94-a83cc2ce21be
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: edge
+- name: 🇦🇪 阿联酋 (UAE) 05 - homeip
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - homeip
+  type: vless
   server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -55,6 +80,44 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - homeip
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - homeip
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - homeip
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 1e3b5752-e720-4347-b8e9-384697d0ce38
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +127,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - homeip
   - 🇦🇪 阿联酋 (UAE) 03 - homeip
   - 🇦🇪 阿联酋 (UAE) 04 - homeip
+  - 🇦🇪 阿联酋 (UAE) 05 - homeip
+  - 🇦🇪 阿联酋 (UAE) 06 - homeip
+  - 🇦🇪 阿联酋 (UAE) 07 - homeip
+  - 🇦🇪 阿联酋 (UAE) 08 - homeip
+  - 🇦🇪 阿联酋 (UAE) 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,5 +141,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - homeip
   - 🇦🇪 阿联酋 (UAE) 03 - homeip
   - 🇦🇪 阿联酋 (UAE) 04 - homeip
+  - 🇦🇪 阿联酋 (UAE) 05 - homeip
+  - 🇦🇪 阿联酋 (UAE) 06 - homeip
+  - 🇦🇪 阿联酋 (UAE) 07 - homeip
+  - 🇦🇪 阿联酋 (UAE) 08 - homeip
+  - 🇦🇪 阿联酋 (UAE) 09 - homeip
 rules:
 - MATCH,PROXIES

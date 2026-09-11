@@ -6,31 +6,31 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - homeip
   type: ss
-  server: 20.234.82.250
+  server: 94.245.92.93
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: R2QvJ9exeq61wfSV
+  password: TkOafmJnvtUBiwb4
   udp: true
 - name: 🇮🇪 IE 02 - homeip
   type: ss
   server: 20.234.82.250
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: kYhF4RWqohTpbVau
+  password: R2QvJ9exeq61wfSV
   udp: true
 - name: 🇮🇪 IE 03 - homeip
   type: ss
   server: 20.234.82.250
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: R2QvJ9exeq61wfSV
+  password: kYhF4RWqohTpbVau
   udp: true
 - name: 🇮🇪 IE 04 - homeip
   type: ss
   server: 20.234.82.250
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: kYhF4RWqohTpbVau
+  password: D1VXfiP9b9VeX9ZD
   udp: true
 - name: 🇮🇪 IE 05 - homeip
   type: ss
@@ -40,6 +40,13 @@ proxies:
   password: D1VXfiP9b9VeX9ZD
   udp: true
 - name: 🇮🇪 IE 06 - homeip
+  type: ss
+  server: 20.234.82.250
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: kYhF4RWqohTpbVau
+  udp: true
+- name: 🇮🇪 IE 07 - homeip
   type: ss
   server: 20.234.82.250
   port: 443
@@ -57,6 +64,7 @@ proxy-groups:
   - 🇮🇪 IE 04 - homeip
   - 🇮🇪 IE 05 - homeip
   - 🇮🇪 IE 06 - homeip
+  - 🇮🇪 IE 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +76,6 @@ proxy-groups:
   - 🇮🇪 IE 04 - homeip
   - 🇮🇪 IE 05 - homeip
   - 🇮🇪 IE 06 - homeip
+  - 🇮🇪 IE 07 - homeip
 rules:
 - MATCH,PROXIES
