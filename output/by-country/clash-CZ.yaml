@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - homeip
+- name: 🇨🇿 CZ 01 - homeip
   type: vless
-  server: nahan-core.fatitelegram.workers.dev
+  server: 103.119.18.30
   port: 443
-  uuid: 73796e63-0000-4000-8000-000000000000
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nahan-core.fatitelegram.workers.dev
+  servername: mianfei-73q.pages.dev
   network: ws
   ws-opts:
-    path: /sync
+    path: /proxyip=154.3.33.43
     headers:
-      Host: nahan-core.fatitelegram.workers.dev
+      Host: mianfei-73q.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - homeip
+  - 🇨🇿 CZ 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - homeip
+  - 🇨🇿 CZ 01 - homeip
 rules:
 - MATCH,PROXIES

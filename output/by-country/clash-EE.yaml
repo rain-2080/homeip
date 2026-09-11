@@ -6,18 +6,13 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - homeip
   type: vless
-  server: 45.80.108.236
-  port: 443
-  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
-  network: ws
-  ws-opts:
-    path: /proxyip
-    headers:
-      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - homeip
   type: vless
   server: 94.183.170.135
@@ -40,74 +35,6 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 04 - homeip
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 05 - homeip
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 06 - homeip
-  type: vless
-  server: 45.80.108.236
-  port: 443
-  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
-  network: ws
-  ws-opts:
-    path: /proxyip
-    headers:
-      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
-- name: 🇪🇪 EE 07 - homeip
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 08 - homeip
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 09 - homeip
-  type: vless
-  server: 45.80.108.236
-  port: 443
-  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
-  network: ws
-  ws-opts:
-    path: /proxyip
-    headers:
-      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,12 +43,6 @@ proxy-groups:
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
   - 🇪🇪 EE 03 - homeip
-  - 🇪🇪 EE 04 - homeip
-  - 🇪🇪 EE 05 - homeip
-  - 🇪🇪 EE 06 - homeip
-  - 🇪🇪 EE 07 - homeip
-  - 🇪🇪 EE 08 - homeip
-  - 🇪🇪 EE 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -130,11 +51,5 @@ proxy-groups:
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
   - 🇪🇪 EE 03 - homeip
-  - 🇪🇪 EE 04 - homeip
-  - 🇪🇪 EE 05 - homeip
-  - 🇪🇪 EE 06 - homeip
-  - 🇪🇪 EE 07 - homeip
-  - 🇪🇪 EE 08 - homeip
-  - 🇪🇪 EE 09 - homeip
 rules:
 - MATCH,PROXIES

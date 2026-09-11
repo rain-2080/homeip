@@ -11,17 +11,26 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: kYhF4RWqohTpbVau
   udp: true
+- name: 🇮🇪 IE 02 - homeip
+  type: ss
+  server: 20.234.82.250
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 9EZNr9H6rhpY69cU
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - homeip
+  - 🇮🇪 IE 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - homeip
+  - 🇮🇪 IE 02 - homeip
 rules:
 - MATCH,PROXIES
