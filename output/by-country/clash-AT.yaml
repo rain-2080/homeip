@@ -35,6 +35,13 @@ proxies:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
   client-fingerprint: chrome
+- name: 🇦🇹 AT 04 - homeip
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +50,7 @@ proxy-groups:
   - 🇦🇹 AT 01 - homeip
   - 🇦🇹 AT 02 - homeip
   - 🇦🇹 AT 03 - homeip
+  - 🇦🇹 AT 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,5 +59,6 @@ proxy-groups:
   - 🇦🇹 AT 01 - homeip
   - 🇦🇹 AT 02 - homeip
   - 🇦🇹 AT 03 - homeip
+  - 🇦🇹 AT 04 - homeip
 rules:
 - MATCH,PROXIES

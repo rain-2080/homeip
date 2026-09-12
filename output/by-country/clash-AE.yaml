@@ -8,7 +8,7 @@ proxies:
   type: vless
   server: 31.58.181.88
   port: 8443
-  uuid: 4e32f662-01da-4dad-bf33-ee17f578d118
+  uuid: 7dc78e93-9c9f-4a38-823b-13df709a1d16
   udp: true
   tls: true
   skip-cert-verify: true
@@ -20,45 +20,7 @@ proxies:
   type: vless
   server: 31.58.181.88
   port: 8443
-  uuid: 5b0aa819-e4e8-4caa-9b5f-779205c82849
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 03 - homeip
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - homeip
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - homeip
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 32088840-4c1e-44af-958f-b7b552aeb919
+  uuid: 7dc78e93-9c9f-4a38-823b-13df709a1d16
   udp: true
   tls: true
   skip-cert-verify: true
@@ -73,9 +35,6 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - homeip
   - 🇦🇪 阿联酋 (UAE) 02 - homeip
-  - 🇦🇪 阿联酋 (UAE) 03 - homeip
-  - 🇦🇪 阿联酋 (UAE) 04 - homeip
-  - 🇦🇪 阿联酋 (UAE) 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,8 +42,5 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - homeip
   - 🇦🇪 阿联酋 (UAE) 02 - homeip
-  - 🇦🇪 阿联酋 (UAE) 03 - homeip
-  - 🇦🇪 阿联酋 (UAE) 04 - homeip
-  - 🇦🇪 阿联酋 (UAE) 05 - homeip
 rules:
 - MATCH,PROXIES

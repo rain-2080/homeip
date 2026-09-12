@@ -20,6 +20,59 @@ proxies:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇹🇭 TH 02 - homeip
   type: vless
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 TH 03 - homeip
+  type: vless
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 04 - homeip
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 05 - homeip
+  type: vless
+  server: V2rAy.SiMsPeEdUp.CoM
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 TH 06 - homeip
+  type: vless
   server: 43.133.110.81
   port: 443
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
@@ -32,7 +85,7 @@ proxies:
     path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇹🇭 TH 03 - homeip
+- name: 🇹🇭 TH 07 - homeip
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -47,7 +100,7 @@ proxies:
     path: /d46bf492
     headers:
       Host: ''
-- name: 🇹🇭 TH 04 - homeip
+- name: 🇹🇭 TH 08 - homeip
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -71,6 +124,10 @@ proxy-groups:
   - 🇹🇭 TH 02 - homeip
   - 🇹🇭 TH 03 - homeip
   - 🇹🇭 TH 04 - homeip
+  - 🇹🇭 TH 05 - homeip
+  - 🇹🇭 TH 06 - homeip
+  - 🇹🇭 TH 07 - homeip
+  - 🇹🇭 TH 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -80,5 +137,9 @@ proxy-groups:
   - 🇹🇭 TH 02 - homeip
   - 🇹🇭 TH 03 - homeip
   - 🇹🇭 TH 04 - homeip
+  - 🇹🇭 TH 05 - homeip
+  - 🇹🇭 TH 06 - homeip
+  - 🇹🇭 TH 07 - homeip
+  - 🇹🇭 TH 08 - homeip
 rules:
 - MATCH,PROXIES
