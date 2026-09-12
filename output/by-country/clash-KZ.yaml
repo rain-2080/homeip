@@ -6,48 +6,6 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - homeip
   type: vless
-  server: 178.236.16.98
-  port: 35728
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 KZ 02 - homeip
-  type: vmess
-  server: 3h-kazakhstan1.09vpn.com
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: ''
-- name: 🇰🇿 KZ 03 - homeip
-  type: vmess
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇰🇿 KZ 04 - homeip
-  type: vless
   server: 111.88.143.139
   port: 51940
   uuid: 03464802-b517-404b-b15c-7750ffc5e78f
@@ -58,7 +16,7 @@ proxies:
     public-key: uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 KZ 05 - homeip
+- name: 🇰🇿 KZ 02 - homeip
   type: vless
   server: 109.248.170.119
   port: 13447
@@ -70,63 +28,6 @@ proxies:
     public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 KZ 06 - homeip
-  type: vless
-  server: 111.88.143.139
-  port: 51940
-  uuid: 03464802-b517-404b-b15c-7750ffc5e78f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 KZ 07 - homeip
-  type: vmess
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
-- name: 🇰🇿 KZ 08 - homeip
-  type: vmess
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇰🇿 KZ 09 - homeip
-  type: vmess
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 38.107.234.57
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,13 +35,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 KZ 01 - homeip
   - 🇰🇿 KZ 02 - homeip
-  - 🇰🇿 KZ 03 - homeip
-  - 🇰🇿 KZ 04 - homeip
-  - 🇰🇿 KZ 05 - homeip
-  - 🇰🇿 KZ 06 - homeip
-  - 🇰🇿 KZ 07 - homeip
-  - 🇰🇿 KZ 08 - homeip
-  - 🇰🇿 KZ 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -148,12 +42,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 KZ 01 - homeip
   - 🇰🇿 KZ 02 - homeip
-  - 🇰🇿 KZ 03 - homeip
-  - 🇰🇿 KZ 04 - homeip
-  - 🇰🇿 KZ 05 - homeip
-  - 🇰🇿 KZ 06 - homeip
-  - 🇰🇿 KZ 07 - homeip
-  - 🇰🇿 KZ 08 - homeip
-  - 🇰🇿 KZ 09 - homeip
 rules:
 - MATCH,PROXIES
