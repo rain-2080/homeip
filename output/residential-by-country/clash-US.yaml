@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - homeip
   type: vless
-  server: 162.159.39.218
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: www.gov.ua
+  port: 8880
+  uuid: 8bcfe782-60c4-4c09-b46c-330f1aa3741c
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: snowy-lab-6cab.237-2da.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
