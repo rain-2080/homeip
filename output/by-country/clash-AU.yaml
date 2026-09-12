@@ -6,6 +6,15 @@ log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - homeip
   type: vless
+  server: 172.105.169.70
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 172.105.169.70
+- name: 🇦🇺 澳大利亚 (Australia) 02 - homeip
+  type: vless
   server: 103.75.119.126
   port: 2087
   uuid: 731f177e-00aa-480c-b935-661456139a32
@@ -17,20 +26,6 @@ proxies:
     path: /7586c69d3dc9
     headers:
       Host: 103.75.119.126
-- name: 🇦🇺 澳大利亚 (Australia) 02 - homeip
-  type: vless
-  server: 104.18.155.229
-  port: 443
-  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.genflix.co.id.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /au-do
-    headers:
-      Host: www.genflix.co.id.r3xxe.eu.cc
 - name: 🇦🇺 澳大利亚 (Australia) 03 - homeip
   type: vless
   server: 103.75.119.126
@@ -44,15 +39,6 @@ proxies:
     path: /7586c69d3dc9
     headers:
       Host: 103.75.119.126
-- name: 🇦🇺 澳大利亚 (Australia) 04 - homeip
-  type: vless
-  server: 172.105.169.70
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 172.105.169.70
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,7 +47,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - homeip
   - 🇦🇺 澳大利亚 (Australia) 02 - homeip
   - 🇦🇺 澳大利亚 (Australia) 03 - homeip
-  - 🇦🇺 澳大利亚 (Australia) 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,6 +55,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - homeip
   - 🇦🇺 澳大利亚 (Australia) 02 - homeip
   - 🇦🇺 澳大利亚 (Australia) 03 - homeip
-  - 🇦🇺 澳大利亚 (Australia) 04 - homeip
 rules:
 - MATCH,PROXIES

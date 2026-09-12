@@ -5,108 +5,106 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
+  type: vless
+  server: 172.64.229.170
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
+  type: vless
+  server: 46.8.200.91
+  port: 443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf3.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /casc
+    headers:
+      Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
-  type: vless
-  server: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
-  port: 443
-  uuid: 07821f66-cdb7-4c70-9de6-e230cffac470
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/li1khihh3dnitjyzraemspbqvu
-    headers:
-      Host: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  type: vmess
-  server: renderer-stream-2-62.mirra.now
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: ''
 - name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  type: vmess
-  server: renderer-stream-2-62.mirra.now
+  type: vless
+  server: 104.21.88.201
   port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
   network: ws
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /cmh
     headers:
-      Host: ''
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  type: ss
-  server: 138.124.68.88
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: Y2ZlN
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
   type: vless
-  server: 104.21.51.145
-  port: 8443
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
-  type: vmess
-  server: 2.27.54.132
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
-  type: vless
-  server: 104.17.148.22
-  port: 80
-  uuid: 7201b2cd-0675-4c1a-9c76-07ca14ffcf08
+  server: 162.159.43.187
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiTlZxbGYyajQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    path: /?ed=2560security=tls
     headers:
-      Host: 6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
+  type: vless
+  server: 172.64.52.6
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
+  type: vless
+  server: 46.8.200.91
+  port: 443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf3.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /casc
+    headers:
+      Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  type: vless
+  server: 162.159.43.187
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select

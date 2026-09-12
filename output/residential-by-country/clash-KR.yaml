@@ -19,32 +19,26 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - homeip
+  type: ss
+  server: 115.161.136.145
+  port: 10099
+  cipher: chacha20-ietf-poly1305
+  password: '12242'
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - homeip
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e974d4c7-2376-4b65-aa40-0680961ff5e4
+  server: 104.16.150.108
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: icy-unit-58dc.157-59c.workers.dev
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /pyip
+    path: /?ed=2560
     headers:
-      Host: icy-unit-58dc.157-59c.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - homeip
-  type: vless
-  server: 172.67.179.98
-  port: 8880
-  uuid: 75e19908-ecd0-4c71-99d2-4f343a52a4d9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: delicate-hall-3f93.239-23c.workers.dev
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇰🇷 韩国 (South Korea) 04 (家宽) - homeip
   type: vless
   server: 104.16.150.108
@@ -59,6 +53,34 @@ proxies:
     path: /?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - homeip
+  type: vless
+  server: 172.64.145.93
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - homeip
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +90,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - homeip
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - homeip
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,5 +101,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - homeip
   - 🇰🇷 韩国 (South Korea) 03 (家宽) - homeip
   - 🇰🇷 韩国 (South Korea) 04 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - homeip
 rules:
 - MATCH,PROXIES

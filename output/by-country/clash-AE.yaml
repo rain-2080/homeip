@@ -5,95 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - homeip
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 7dc78e93-9c9f-4a38-823b-13df709a1d16
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 02 - homeip
   type: ss
   server: 188.208.110.58
   port: 8444
   cipher: chacha20-ietf-poly1305
   password: tunnel-astrovpn_official
   udp: true
-- name: 🇦🇪 阿联酋 (UAE) 02 - homeip
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - homeip
   type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  server: 31.58.181.88
+  port: 8443
+  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 04 - homeip
-  type: vless
-  server: 128.241.25.3
-  port: 30021
-  uuid: 1de9611b-1861-4ebb-b281-cb2a383cdf19
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - homeip
-  type: vless
-  server: 116.204.164.60
-  port: 7443
-  uuid: fc85cf23-75e6-4b91-b468-8adc9407047b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 06 - homeip
-  type: vless
-  server: 104.24.31.89
-  port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇦🇪 阿联酋 (UAE) 07 - homeip
-  type: vless
-  server: 104.17.147.22
-  port: 443
-  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000005
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: relay.lunetcloud.ir
-  network: ws
-  ws-opts:
-    path: /lunetnetwork
-    headers:
-      Host: relay.lunetcloud.ir
-- name: 🇦🇪 阿联酋 (UAE) 08 - homeip
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -106,7 +48,19 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - homeip
+- name: 🇦🇪 阿联酋 (UAE) 05 - homeip
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: e62ba729-d474-43f7-be34-ff763f839133
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 06 - homeip
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -119,48 +73,83 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - homeip
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - homeip
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 1e3b5752-e720-4347-b8e9-384697d0ce38
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 09 - homeip
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 7dc78e93-9c9f-4a38-823b-13df709a1d16
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 10 - homeip
   type: vless
-  server: 116.204.164.5
-  port: 7443
-  uuid: d25fa7ff-f71e-4cc2-88e6-a340b86fdebf
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 11 - homeip
   type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: a2336cca-3fd0-45cb-8ac5-1de6d17692b2
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 12 - homeip
   type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: 59b6ac03-2f22-490e-9f97-a6b942b49f60
+  server: 154.17.9.119
+  port: 16378
+  uuid: 8835645b-309b-43f2-9534-136e00f0b067
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
