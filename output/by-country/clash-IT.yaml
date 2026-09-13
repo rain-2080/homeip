@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - homeip
   type: ss
-  server: 57.131.48.45
-  port: 8388
+  server: 185.164.175.81
+  port: 19999
   cipher: aes-256-gcm
-  password: itzvpn@321
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 (Italy) 02 - homeip
   type: ss
@@ -39,20 +39,6 @@ proxies:
   udp: true
 - name: 🇮🇹 意大利 (Italy) 05 - homeip
   type: vless
-  server: www.visa.com.hk
-  port: 443
-  uuid: 7bbf1712-7504-4bb7-aa8d-df5760066240
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: it-mil.xhs152.shop
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: it-mil.xhs152.shop
-- name: 🇮🇹 意大利 (Italy) 06 - homeip
-  type: vless
   server: 57.131.38.163
   port: 2053
   uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
@@ -63,28 +49,26 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 07 - homeip
-  type: vless
-  server: 158.180.231.216
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇮🇹 意大利 (Italy) 08 - homeip
+- name: 🇮🇹 意大利 (Italy) 06 - homeip
   type: ss
-  server: 66.245.207.70
+  server: 57.131.48.45
   port: 8388
   cipher: aes-256-gcm
-  password: qMvJmCbMduKUoeHq
+  password: itzvpn@321
   udp: true
-- name: 🇮🇹 意大利 (Italy) 09 - homeip
+- name: 🇮🇹 意大利 (Italy) 07 - homeip
+  type: vless
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇹 意大利 (Italy) 08 - homeip
   type: vless
   server: 57.131.38.163
   port: 2053
@@ -96,13 +80,6 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 10 - homeip
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,8 +93,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 06 - homeip
   - 🇮🇹 意大利 (Italy) 07 - homeip
   - 🇮🇹 意大利 (Italy) 08 - homeip
-  - 🇮🇹 意大利 (Italy) 09 - homeip
-  - 🇮🇹 意大利 (Italy) 10 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -131,7 +106,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 06 - homeip
   - 🇮🇹 意大利 (Italy) 07 - homeip
   - 🇮🇹 意大利 (Italy) 08 - homeip
-  - 🇮🇹 意大利 (Italy) 09 - homeip
-  - 🇮🇹 意大利 (Italy) 10 - homeip
 rules:
 - MATCH,PROXIES
