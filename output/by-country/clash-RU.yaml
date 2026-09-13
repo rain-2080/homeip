@@ -6,21 +6,21 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
   type: vless
-  server: 172.64.53.55
-  port: 2086
+  server: 108.162.198.178
+  port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
   type: vless
   server: 104.18.47.113
-  port: 2086
+  port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -31,126 +31,54 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  type: vless
-  server: 172.64.229.170
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: ss
+  server: 46.17.40.234
+  port: 50111
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  type: vless
-  server: 172.64.52.6
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  type: vless
-  server: 104.18.47.113
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: ss
+  server: 46.17.40.234
+  port: 50111
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
-  type: vmess
-  server: renderer-stream-2-62.mirra.now
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: pr-media.pepro.site
+  port: 14443
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: pr-media.pepro.site
   network: ws
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /ws
     headers:
-      Host: ''
+      Host: pr-media.pepro.site
 - name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
-  type: ss
-  server: 46.17.40.234
-  port: 50111
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
   type: vless
-  server: 172.64.229.2
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 46.8.200.91
+  port: 443
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /casc
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
-  type: vless
-  server: 172.64.229.2
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 10 - homeip
-  type: vless
-  server: 172.64.158.146
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 11 - homeip
-  type: vless
-  server: 162.159.43.187
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 12 - homeip
-  type: ss
-  server: 46.17.40.234
-  port: 50111
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-  udp: true
+      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -163,11 +91,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - homeip
   - 🇷🇺 俄罗斯 (Russia) 06 - homeip
   - 🇷🇺 俄罗斯 (Russia) 07 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 08 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 09 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 10 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 12 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -180,10 +103,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - homeip
   - 🇷🇺 俄罗斯 (Russia) 06 - homeip
   - 🇷🇺 俄罗斯 (Russia) 07 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 08 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 09 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 10 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 12 - homeip
 rules:
 - MATCH,PROXIES

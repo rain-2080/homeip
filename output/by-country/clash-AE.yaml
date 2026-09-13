@@ -19,17 +19,16 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - homeip
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 31.58.181.88
+  port: 8443
+  uuid: 75efda17-fdc2-43d8-a2c6-fbdba0289244
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 03 - homeip
   type: vless
   server: uae.unixzone.us
@@ -45,7 +44,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - homeip
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -58,7 +57,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - homeip
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -71,29 +70,28 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - homeip
   type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  server: 31.58.181.88
+  port: 8443
+  uuid: 67018597-36a2-40f2-aa72-a253d0ad438b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: chrome
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 07 - homeip
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 31.58.181.88
+  port: 8443
+  uuid: db381c11-9dc4-4689-b654-a8159598e16d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 08 - homeip
   type: vless
   server: 84.235.244.108
@@ -107,6 +105,56 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - homeip
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - homeip
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 11 - homeip
+  type: vless
+  server: 31.58.181.88
+  port: 8443
+  uuid: 863ce48d-6b5e-4682-b5d7-0c9b43895841
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 12 - homeip
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -120,6 +168,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - homeip
   - 🇦🇪 阿联酋 (UAE) 07 - homeip
   - 🇦🇪 阿联酋 (UAE) 08 - homeip
+  - 🇦🇪 阿联酋 (UAE) 09 - homeip
+  - 🇦🇪 阿联酋 (UAE) 10 - homeip
+  - 🇦🇪 阿联酋 (UAE) 11 - homeip
+  - 🇦🇪 阿联酋 (UAE) 12 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -133,5 +185,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - homeip
   - 🇦🇪 阿联酋 (UAE) 07 - homeip
   - 🇦🇪 阿联酋 (UAE) 08 - homeip
+  - 🇦🇪 阿联酋 (UAE) 09 - homeip
+  - 🇦🇪 阿联酋 (UAE) 10 - homeip
+  - 🇦🇪 阿联酋 (UAE) 11 - homeip
+  - 🇦🇪 阿联酋 (UAE) 12 - homeip
 rules:
 - MATCH,PROXIES
