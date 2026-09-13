@@ -5,33 +5,62 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
-  type: vless
-  server: 172.64.42.85
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: ss
+  server: 195.133.23.200
+  port: 50111
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
   type: vless
-  server: api.heoleti.pro
-  port: 14443
-  uuid: 0755a698-fc93-4cb7-ac1e-422953bcca33
+  server: 78.159.247.246
+  port: 443
+  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: api.heoleti.pro
+  servername: sb2.hat.onl
   network: ws
   ws-opts:
-    path: /tzws
+    path: /ws
     headers:
-      Host: api.heoleti.pro
+      Host: 78.159.247.246
 - name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  type: ss
+  server: 195.133.5.102
+  port: 50111
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  type: vless
+  server: 78.159.247.246
+  port: 443
+  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sb2.hat.onl
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: sb2.hat.onl
+- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
+  type: ss
+  server: 46.17.40.234
+  port: 50111
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
   type: vmess
   server: 5.188.26.85
   port: 443
@@ -47,28 +76,21 @@ proxies:
     path: /api/v1/gpu-stream/socket
     headers:
       Host: renderer-stream-2-62.mirra.now
-- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
   type: vless
-  server: 46.8.200.91
+  server: 188.114.97.6
   port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
+  servername: fornewiran.ade-1000.workers.dev
   network: ws
   ws-opts:
-    path: /casc
+    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
     headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  type: ss
-  server: 195.133.23.200
-  port: 50111
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
+      Host: fornewiran.ade-1000.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
   type: vmess
   server: renderer-stream-2-62.mirra.now
   port: 443
@@ -84,46 +106,13 @@ proxies:
     path: /api/v1/gpu-stream/socket
     headers:
       Host: ''
-- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 10 - homeip
   type: ss
-  server: 195.133.5.102
+  server: 195.58.48.137
   port: 50111
   cipher: aes-256-gcm
-  password: 895b4b796a357570
+  password: 8ad9d72a5571df86
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
-  type: vless
-  server: 108.162.198.178
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 10 - homeip
-  type: vless
-  server: 162.159.0.169
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select

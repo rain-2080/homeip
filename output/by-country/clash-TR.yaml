@@ -1,0 +1,268 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇷 土耳其 (Turkey) 01 - homeip
+  type: vless
+  server: 188.132.237.20
+  port: 2095
+  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
+  type: vless
+  server: 188.132.237.20
+  port: 2095
+  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  type: vless
+  server: 104.21.238.93
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-44890b90d17e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: afzoybehu2ws.vtzv4xe1un6s.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/44890b90d17e/loc-0
+    headers:
+      Host: afzoybehu2ws.vtzv4xe1un6s.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
+  type: vless
+  server: 172.67.151.109
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
+  type: vless
+  server: 162.159.91.222
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-723a643df685
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/723a643df685/loc-0
+    headers:
+      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
+  type: vless
+  server: 172.67.134.170
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 07 - homeip
+  type: vless
+  server: 162.159.91.222
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-723a643df685
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/723a643df685/loc-0
+    headers:
+      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 08 - homeip
+  type: vless
+  server: shop.neexbyte.ir
+  port: 8443
+  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shop.neexbyte.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shop.neexbyte.ir
+- name: 🇹🇷 土耳其 (Turkey) 09 - homeip
+  type: vless
+  server: 188.132.237.20
+  port: 2095
+  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 10 - homeip
+  type: vless
+  server: 158.94.216.50
+  port: 32306
+  uuid: f1505323-ecb6-4152-9a5b-d37b3ae1cacf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 5iqitmx5fd71pubTxlrX0sd-ei7palcgVL7vtKToJGA
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 11 - homeip
+  type: vless
+  server: shop.neexbyte.ir
+  port: 8443
+  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shop.neexbyte.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shop.neexbyte.ir
+- name: 🇹🇷 土耳其 (Turkey) 12 - homeip
+  type: vless
+  server: 104.21.238.93
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-44890b90d17e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: afzoybehu2ws.vtzv4xe1un6s.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/44890b90d17e/loc-0
+    headers:
+      Host: afzoybehu2ws.vtzv4xe1un6s.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 13 - homeip
+  type: vless
+  server: shop.neexbyte.ir
+  port: 8443
+  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shop.neexbyte.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shop.neexbyte.ir
+- name: 🇹🇷 土耳其 (Turkey) 14 - homeip
+  type: vless
+  server: shop.neexbyte.ir
+  port: 8443
+  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇷 土耳其 (Turkey) 15 - homeip
+  type: vless
+  server: 144.225.65.166
+  port: 26109
+  uuid: 8d0a82ca-41cf-4661-a9d7-ea2e192c5f64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0EgMUSL26mD_WAqkFmwMXXWSoWRthDKePFxCvfyu3CU
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 16 - homeip
+  type: vless
+  server: 172.67.151.109
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 17 - homeip
+  type: vless
+  server: 172.67.134.170
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇷 土耳其 (Turkey) 01 - homeip
+  - 🇹🇷 土耳其 (Turkey) 02 - homeip
+  - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
+  - 🇹🇷 土耳其 (Turkey) 06 - homeip
+  - 🇹🇷 土耳其 (Turkey) 07 - homeip
+  - 🇹🇷 土耳其 (Turkey) 08 - homeip
+  - 🇹🇷 土耳其 (Turkey) 09 - homeip
+  - 🇹🇷 土耳其 (Turkey) 10 - homeip
+  - 🇹🇷 土耳其 (Turkey) 11 - homeip
+  - 🇹🇷 土耳其 (Turkey) 12 - homeip
+  - 🇹🇷 土耳其 (Turkey) 13 - homeip
+  - 🇹🇷 土耳其 (Turkey) 14 - homeip
+  - 🇹🇷 土耳其 (Turkey) 15 - homeip
+  - 🇹🇷 土耳其 (Turkey) 16 - homeip
+  - 🇹🇷 土耳其 (Turkey) 17 - homeip
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 土耳其 (Turkey) 01 - homeip
+  - 🇹🇷 土耳其 (Turkey) 02 - homeip
+  - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
+  - 🇹🇷 土耳其 (Turkey) 06 - homeip
+  - 🇹🇷 土耳其 (Turkey) 07 - homeip
+  - 🇹🇷 土耳其 (Turkey) 08 - homeip
+  - 🇹🇷 土耳其 (Turkey) 09 - homeip
+  - 🇹🇷 土耳其 (Turkey) 10 - homeip
+  - 🇹🇷 土耳其 (Turkey) 11 - homeip
+  - 🇹🇷 土耳其 (Turkey) 12 - homeip
+  - 🇹🇷 土耳其 (Turkey) 13 - homeip
+  - 🇹🇷 土耳其 (Turkey) 14 - homeip
+  - 🇹🇷 土耳其 (Turkey) 15 - homeip
+  - 🇹🇷 土耳其 (Turkey) 16 - homeip
+  - 🇹🇷 土耳其 (Turkey) 17 - homeip
+rules:
+- MATCH,PROXIES

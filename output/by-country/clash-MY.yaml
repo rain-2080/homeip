@@ -17,17 +17,63 @@ proxies:
     path: /db55c40bbc75
     headers:
       Host: 38.60.168.98
+- name: 🇲🇾 MY 02 - homeip
+  type: vless
+  server: 38.60.168.98
+  port: 2087
+  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /db55c40bbc75
+    headers:
+      Host: 38.60.168.98
+- name: 🇲🇾 MY 03 - homeip
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fancy-haze-ab00.236-68b.workers.dev
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: fancy-haze-ab00.236-68b.workers.dev
+- name: 🇲🇾 MY 04 - homeip
+  type: vless
+  server: 104.16.97.215
+  port: 8880
+  uuid: a8c23fe7-d2bb-46ba-a14e-8847f1944642
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: billowing-fire-a10b.301-d6c.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇲🇾 MY 01 - homeip
+  - 🇲🇾 MY 02 - homeip
+  - 🇲🇾 MY 03 - homeip
+  - 🇲🇾 MY 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 MY 01 - homeip
+  - 🇲🇾 MY 02 - homeip
+  - 🇲🇾 MY 03 - homeip
+  - 🇲🇾 MY 04 - homeip
 rules:
 - MATCH,PROXIES
