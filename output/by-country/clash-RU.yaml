@@ -5,41 +5,94 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
+  type: vless
+  server: 162.159.24.131
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
   type: ss
   server: 195.133.23.200
   port: 50111
   cipher: aes-256-gcm
   password: 81a20429165df87e
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
-  type: vless
-  server: 78.159.247.246
-  port: 443
-  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
+- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  type: ss
+  server: 195.133.23.200
+  port: 50111
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sb2.hat.onl
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 78.159.247.246
-- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
+  type: vless
+  server: pr-media.pepro.site
+  port: 14443
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pr-media.pepro.site
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: pr-media.pepro.site
+- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
   type: ss
-  server: 195.133.5.102
+  server: 46.17.40.234
   port: 50111
   cipher: aes-256-gcm
-  password: 895b4b796a357570
+  password: bdb313adf74c2ede
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  type: vless
+  server: 172.64.42.85
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 10 - homeip
   type: vless
   server: 78.159.247.246
   port: 443
@@ -53,65 +106,65 @@ proxies:
     path: /ws
     headers:
       Host: sb2.hat.onl
-- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 11 - homeip
+  type: vless
+  server: 162.159.39.218
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 12 - homeip
+  type: vless
+  server: 172.64.158.146
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 13 - homeip
+  type: vless
+  server: 162.159.0.169
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 14 - homeip
+  type: vless
+  server: pr-media.pepro.site
+  port: 14443
+  uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pr-media.pepro.site
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: pr-media.pepro.site
+- name: 🇷🇺 俄罗斯 (Russia) 15 - homeip
   type: ss
   server: 46.17.40.234
   port: 50111
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
-  type: vmess
-  server: 5.188.26.85
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fornewiran.ade-1000.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
-    headers:
-      Host: fornewiran.ade-1000.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
-  type: vmess
-  server: renderer-stream-2-62.mirra.now
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: ''
-- name: 🇷🇺 俄罗斯 (Russia) 10 - homeip
-  type: ss
-  server: 195.58.48.137
-  port: 50111
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -128,6 +181,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - homeip
   - 🇷🇺 俄罗斯 (Russia) 09 - homeip
   - 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 12 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 13 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 14 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 15 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -143,5 +201,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - homeip
   - 🇷🇺 俄罗斯 (Russia) 09 - homeip
   - 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 12 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 13 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 14 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 15 - homeip
 rules:
 - MATCH,PROXIES
