@@ -6,6 +6,25 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
+  server: 212.193.18.183
+  port: 8443
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
+  servername: maps.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 02 - homeip
+  type: ss
+  server: 65.109.215.118
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+  udp: true
+- name: 🇫🇮 FI 03 - homeip
+  type: vless
   server: fi1.zuoai.cf
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
@@ -18,27 +37,6 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 02 - homeip
-  type: ss
-  server: 65.109.215.118
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
-  udp: true
-- name: 🇫🇮 FI 03 - homeip
-  type: vless
-  server: 216.24.57.1
-  port: 443
-  uuid: efc8337e-27ce-4ab4-9ef9-c7f9e5eef575
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: f.tmkkarss.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f.tmkkarss.online
 - name: 🇫🇮 FI 04 - homeip
   type: vless
   server: 185.79.138.71
