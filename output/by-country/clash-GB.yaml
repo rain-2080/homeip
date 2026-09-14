@@ -5,27 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - homeip
-  type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+  type: vless
+  server: 129.151.64.169
+  port: 31867
+  uuid: af9bbaac-efc1-48d3-ac0e-0b75f4de36ca
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 02 - homeip
   type: vmess
-  server: 57.129.132.223
-  port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
 - name: 🇬🇧 英国 (United Kingdom) 03 - homeip
   type: ss
   server: 129.151.95.27
@@ -34,47 +36,55 @@ proxies:
   password: etWHWAsjCiGbHaessIM5QuQfSZ8qjOUGlo0fyhpFkDw=
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 04 - homeip
-  type: vless
-  server: 57.129.132.223
-  port: 80
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  type: ss
+  server: 158.173.221.214
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: google.com
 - name: 🇬🇧 英国 (United Kingdom) 05 - homeip
-  type: vless
-  server: 91.193.59.255
-  port: 2096
-  uuid: 42c62a5a-cd31-4551-80ef-908732370287
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fq.jp188.dpdns.org
-  network: ws
-  ws-opts:
-    path: /proxyip=154.17.22.207,69.63.210.157,134.195.211.13,172.236.245.153,209.146.115.209,64.186.224.194,149.28.94.52,107.151.188.57
-    headers:
-      Host: fq.jp188.dpdns.org
 - name: 🇬🇧 英国 (United Kingdom) 06 - homeip
+  type: ss
+  server: 82.38.31.219
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 07 - homeip
+  type: ss
+  server: 149.102.132.184
+  port: 80
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 08 - homeip
   type: ss
   server: 149.102.132.184
   port: 443
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 07 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 09 - homeip
   type: ss
-  server: 129.151.87.146
+  server: 134.65.57.2
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
-  password: Qye4JK+lHU/8aJtTB5om+IMoxG4r3luE4ogzVo1+Oxk=
+  password: lBKlAgyEYxdK5DDBEOu4ETTzm7vEPhaz74VvOn9V4HY=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 08 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 10 - homeip
+  type: ss
+  server: 158.173.221.214
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 11 - homeip
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -86,59 +96,33 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 09 - homeip
-  type: ss
-  server: 149.102.149.207
-  port: 443
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 10 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 12 - homeip
   type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 172.67.130.187
+  port: 2053
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 11 - homeip
-  type: ss
-  server: 149.102.149.207
-  port: 80
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 12 - homeip
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 13 - homeip
-  type: ss
-  server: 94.156.250.148
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 14 - homeip
-  type: vmess
-  server: 57.129.132.223
-  port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: FaNs.livErpoOl.qZZ.io
   network: ws
   ws-opts:
-    path: /vmess/
+    path: /eyJqdW5rIjoiZXlpMnFWRURmWkp5ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 15 - homeip
+      Host: fans.liverpool.qzz.io
+- name: 🇬🇧 英国 (United Kingdom) 13 - homeip
+  type: vless
+  server: 46.250.240.80
+  port: 2053
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 14 - homeip
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -148,18 +132,23 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 16 - homeip
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+- name: 🇬🇧 英国 (United Kingdom) 15 - homeip
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
+- name: 🇬🇧 英国 (United Kingdom) 16 - homeip
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 17 - homeip
   type: ss
   server: 51.38.71.51
@@ -168,20 +157,6 @@ proxies:
   password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 18 - homeip
-  type: ss
-  server: 158.173.221.214
-  port: 11001
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 19 - homeip
-  type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 20 - homeip
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -191,7 +166,47 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 19 - homeip
+  type: ss
+  server: 149.102.149.207
+  port: 443
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 20 - homeip
+  type: vless
+  server: 51.38.70.192
+  port: 443
+  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
+  servername: play.google.com
+  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 21 - homeip
+  type: vless
+  server: 94.159.97.247
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp58.cc.cd
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @VPNine1
+    headers:
+      Host: vp58.cc.cd
+- name: 🇬🇧 英国 (United Kingdom) 22 - homeip
+  type: ss
+  server: 129.151.87.146
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Qye4JK+lHU/8aJtTB5om+IMoxG4r3luE4ogzVo1+Oxk=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 23 - homeip
   type: vless
   server: 129.121.95.159
   port: 443
@@ -205,58 +220,104 @@ proxies:
     path: /connect
     headers:
       Host: 129.121.95.159
-- name: 🇬🇧 英国 (United Kingdom) 22 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 24 - homeip
   type: ss
-  server: 158.173.221.214
-  port: 11001
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
+  server: 149.102.132.184
+  port: 80
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 23 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 25 - homeip
   type: vless
-  server: 51.38.70.192
-  port: 443
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-  servername: play.google.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 24 - homeip
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 26 - homeip
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 25 - homeip
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 27 - homeip
+  type: ss
+  server: 149.102.149.207
+  port: 80
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 28 - homeip
+  type: vless
+  server: 94.159.97.247
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp58.cc.cd
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @VPNine1
+    headers:
+      Host: vp58.cc.cd
+- name: 🇬🇧 英国 (United Kingdom) 29 - homeip
   type: ss
   server: 149.102.132.184
   port: 443
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 26 - homeip
-  type: ss
-  server: 129.151.80.3
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: K0TpYu/15IWNGjVIozBua1uU5B9QB+LZRvFkP6fSAfY=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 27 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 30 - homeip
   type: vless
-  server: 46.250.240.80
-  port: 2053
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  server: 188.114.97.6
+  port: 443
+  uuid: 0432902e-6604-40cd-bbd0-57ab4e5d909f
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  servername: bpb-4dc4958b.hxjkcghchv.workers.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiOENNZnB6WTgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    headers:
+      Host: bpb-4dc4958b.hxjkcghchv.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 31 - homeip
+  type: ss
+  server: 149.102.149.207
+  port: 80
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 32 - homeip
+  type: ss
+  server: 149.102.149.207
+  port: 443
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 33 - homeip
+  type: vless
+  server: 104.17.147.22
+  port: 80
+  uuid: 63f1ef69-92fd-427a-b3e4-98ffddf81ac6
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /nPKoVRUdyuRZ6jpY/YnBiLnlvdXNlZi5pc2VnYXJvLmNvbSxwcm94eWlwLmNtbGl1c3Nzcy5uZXQsbmltYS5uc2NsLmlyLHR1cmsucmFkaWNhbGl6YXRpb24uaXI=
+    headers:
+      Host: young-rice-749e.heliy78750.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -289,6 +350,12 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 25 - homeip
   - 🇬🇧 英国 (United Kingdom) 26 - homeip
   - 🇬🇧 英国 (United Kingdom) 27 - homeip
+  - 🇬🇧 英国 (United Kingdom) 28 - homeip
+  - 🇬🇧 英国 (United Kingdom) 29 - homeip
+  - 🇬🇧 英国 (United Kingdom) 30 - homeip
+  - 🇬🇧 英国 (United Kingdom) 31 - homeip
+  - 🇬🇧 英国 (United Kingdom) 32 - homeip
+  - 🇬🇧 英国 (United Kingdom) 33 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -321,5 +388,11 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 25 - homeip
   - 🇬🇧 英国 (United Kingdom) 26 - homeip
   - 🇬🇧 英国 (United Kingdom) 27 - homeip
+  - 🇬🇧 英国 (United Kingdom) 28 - homeip
+  - 🇬🇧 英国 (United Kingdom) 29 - homeip
+  - 🇬🇧 英国 (United Kingdom) 30 - homeip
+  - 🇬🇧 英国 (United Kingdom) 31 - homeip
+  - 🇬🇧 英国 (United Kingdom) 32 - homeip
+  - 🇬🇧 英国 (United Kingdom) 33 - homeip
 rules:
 - MATCH,PROXIES

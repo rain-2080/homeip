@@ -1,0 +1,67 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 CZ 01 - homeip
+  type: vless
+  server: 104.21.89.181
+  port: 8880
+  uuid: 5a4d9f40-56db-402a-9fbc-31c9229bdcf6
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=proxyip.us.cmliussss.net
+    headers:
+      Host: floral-resonance-4baf.468.workers.dev
+- name: 🇨🇿 CZ 02 - homeip
+  type: vless
+  server: 104.21.90.36
+  port: 443
+  uuid: 4908acbe-485f-4e1c-bb11-5dd04b9f7e88
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: restless-base-fe24.alirezahabibi20009.workers.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiRjhycEV5WUpJTGZpQSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: restless-base-fe24.alirezahabibi20009.workers.dev
+- name: 🇨🇿 CZ 03 - homeip
+  type: vmess
+  server: 95.85.233.138
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 CZ 01 - homeip
+  - 🇨🇿 CZ 02 - homeip
+  - 🇨🇿 CZ 03 - homeip
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 CZ 01 - homeip
+  - 🇨🇿 CZ 02 - homeip
+  - 🇨🇿 CZ 03 - homeip
+rules:
+- MATCH,PROXIES
