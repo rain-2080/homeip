@@ -6,74 +6,18 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 0d4fd99b-06ae-4ee2-fee2-fda93a9434f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 02 - homeip
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 0d4fd99b-06ae-4ee2-fee2-fda93a9434f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 03 - homeip
-  type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: 0d4fd99b-06ae-4ee2-fee2-fda93a9434f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 04 - homeip
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 0d4fd99b-06ae-4ee2-fee2-fda93a9434f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?---TELEGRAM---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 05 - homeip
-  type: vless
-  server: 146.75.119.82
+  server: fi.snobvpn.online
   port: 80
-  uuid: c1c76e6b-9cb9-4d73-8e49-8f44e98005de
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
+    path: /snob-ws
     headers:
-      Host: rb24.ir
-- name: 🇫🇮 FI 06 - homeip
+      Host: fi.snobvpn.online
+- name: 🇫🇮 FI 02 - homeip
   type: vless
   server: 216.24.57.1
   port: 443
@@ -87,27 +31,21 @@ proxies:
     path: /
     headers:
       Host: f.tmkkarss.online
-- name: 🇫🇮 FI 07 - homeip
+- name: 🇫🇮 FI 03 - homeip
   type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: c1c76e6b-9cb9-4d73-8e49-8f44e98005de
+  server: 84.22.150.39
+  port: 7443
+  uuid: 5cc814de-2bbb-4409-ad8c-ee841ca7bad1
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
   network: ws
   ws-opts:
-    path: /ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
+    path: /@Marisa_kristi
     headers:
-      Host: rb24.ir
-- name: 🇫🇮 FI 08 - homeip
-  type: ss
-  server: 65.109.215.118
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
-  udp: true
-- name: 🇫🇮 FI 09 - homeip
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇫🇮 FI 04 - homeip
   type: vless
   server: 188.132.237.20
   port: 2095
@@ -115,46 +53,30 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 10 - homeip
+- name: 🇫🇮 FI 05 - homeip
   type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: 0d4fd99b-06ae-4ee2-fee2-fda93a9434f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 11 - homeip
-  type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: c1c76e6b-9cb9-4d73-8e49-8f44e98005de
+  server: 188.132.237.20
+  port: 2095
+  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
-    headers:
-      Host: rb24.ir
-- name: 🇫🇮 FI 12 - homeip
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+- name: 🇫🇮 FI 06 - homeip
+  type: ss
+  server: 65.109.215.118
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
   udp: true
-  tls: true
+- name: 🇫🇮 FI 07 - homeip
+  type: vless
+  server: 188.132.237.20
+  port: 2095
+  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
+  udp: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 13 - homeip
+- name: 🇫🇮 FI 08 - homeip
   type: vless
   server: 185.79.138.71
   port: 448
@@ -179,11 +101,6 @@ proxy-groups:
   - 🇫🇮 FI 06 - homeip
   - 🇫🇮 FI 07 - homeip
   - 🇫🇮 FI 08 - homeip
-  - 🇫🇮 FI 09 - homeip
-  - 🇫🇮 FI 10 - homeip
-  - 🇫🇮 FI 11 - homeip
-  - 🇫🇮 FI 12 - homeip
-  - 🇫🇮 FI 13 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -197,10 +114,5 @@ proxy-groups:
   - 🇫🇮 FI 06 - homeip
   - 🇫🇮 FI 07 - homeip
   - 🇫🇮 FI 08 - homeip
-  - 🇫🇮 FI 09 - homeip
-  - 🇫🇮 FI 10 - homeip
-  - 🇫🇮 FI 11 - homeip
-  - 🇫🇮 FI 12 - homeip
-  - 🇫🇮 FI 13 - homeip
 rules:
 - MATCH,PROXIES
