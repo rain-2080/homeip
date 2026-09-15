@@ -13,36 +13,46 @@ proxies:
   udp: true
 - name: 🇵🇱 PL 02 - homeip
   type: vless
-  server: 64.176.64.194
-  port: 25585
-  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
+  server: 94.183.157.174
+  port: 8090
+  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: askuhgfdsg.space.coupons
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: askuhgfdsg.space.coupons
 - name: 🇵🇱 PL 03 - homeip
   type: vless
-  server: 64.176.64.194
-  port: 25585
-  uuid: e4668a2b-66d6-4500-bcef-5ed52414e40a
+  server: 94.183.157.223
+  port: 8090
+  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: askuhgfdsg.space.coupons
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: askuhgfdsg.space.coupons
 - name: 🇵🇱 PL 04 - homeip
   type: vless
-  server: 64.176.64.194
-  port: 25585
-  uuid: 6eebb521-1844-4c3c-bf54-fb0e19870f80
+  server: 94.183.157.243
+  port: 8090
+  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇵🇱 PL 05 - homeip
-  type: vless
-  server: 64.176.64.194
-  port: 25585
-  uuid: 8b84bbec-9a55-47c2-ac2e-03c41065e572
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: askuhgfdsg.space.coupons
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: askuhgfdsg.space.coupons
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +62,6 @@ proxy-groups:
   - 🇵🇱 PL 02 - homeip
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
-  - 🇵🇱 PL 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,6 +71,5 @@ proxy-groups:
   - 🇵🇱 PL 02 - homeip
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
-  - 🇵🇱 PL 05 - homeip
 rules:
 - MATCH,PROXIES

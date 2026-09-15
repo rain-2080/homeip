@@ -5,44 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  type: ss
+  server: 65.109.215.118
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
 - name: 🇫🇮 FI 02 - homeip
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 03 - homeip
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 04 - homeip
   type: vless
   server: fi.snobvpn.online
   port: 80
@@ -55,40 +24,31 @@ proxies:
     path: /snob-ws
     headers:
       Host: fi.snobvpn.online
-- name: 🇫🇮 FI 05 - homeip
-  type: ss
-  server: 65.109.215.118
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
-  udp: true
-- name: 🇫🇮 FI 06 - homeip
+- name: 🇫🇮 FI 03 - homeip
   type: vless
-  server: 62.238.115.33
-  port: 4006
-  uuid: dc6d7b88-a771-434f-a43a-ac1b50cf0102
+  server: 212.193.18.183
+  port: 8443
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: iNVZBiAH9hzLyqGnD6cc6waNryJ1KDaYk80ufskPQD0
-  servername: www.numpy.org
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 07 - homeip
+    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
+  servername: maps.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 04 - homeip
   type: vless
-  server: 172.64.147.104
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇫🇮 FI 08 - homeip
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 05 - homeip
   type: vless
   server: 185.79.138.71
   port: 448
@@ -110,9 +70,6 @@ proxy-groups:
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
   - 🇫🇮 FI 05 - homeip
-  - 🇫🇮 FI 06 - homeip
-  - 🇫🇮 FI 07 - homeip
-  - 🇫🇮 FI 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -123,8 +80,5 @@ proxy-groups:
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
   - 🇫🇮 FI 05 - homeip
-  - 🇫🇮 FI 06 - homeip
-  - 🇫🇮 FI 07 - homeip
-  - 🇫🇮 FI 08 - homeip
 rules:
 - MATCH,PROXIES
