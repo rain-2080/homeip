@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - homeip
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
-  udp: true
-- name: 🇵🇱 PL 02 - homeip
   type: vless
   server: 94.183.157.174
   port: 8090
@@ -25,6 +18,13 @@ proxies:
     path: /ws
     headers:
       Host: askuhgfdsg.space.coupons
+- name: 🇵🇱 PL 02 - homeip
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
+  udp: true
 - name: 🇵🇱 PL 03 - homeip
   type: vless
   server: 94.183.157.223
@@ -41,6 +41,33 @@ proxies:
       Host: askuhgfdsg.space.coupons
 - name: 🇵🇱 PL 04 - homeip
   type: vless
+  server: 104.25.22.24
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 05 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 06 - homeip
+  type: vless
   server: 94.183.157.243
   port: 8090
   uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
@@ -53,6 +80,34 @@ proxies:
     path: /ws
     headers:
       Host: askuhgfdsg.space.coupons
+- name: 🇵🇱 PL 07 - homeip
+  type: vless
+  server: 104.25.146.77
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 08 - homeip
+  type: vless
+  server: 104.17.247.68
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,6 +117,10 @@ proxy-groups:
   - 🇵🇱 PL 02 - homeip
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
+  - 🇵🇱 PL 05 - homeip
+  - 🇵🇱 PL 06 - homeip
+  - 🇵🇱 PL 07 - homeip
+  - 🇵🇱 PL 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,5 +130,9 @@ proxy-groups:
   - 🇵🇱 PL 02 - homeip
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
+  - 🇵🇱 PL 05 - homeip
+  - 🇵🇱 PL 06 - homeip
+  - 🇵🇱 PL 07 - homeip
+  - 🇵🇱 PL 08 - homeip
 rules:
 - MATCH,PROXIES
