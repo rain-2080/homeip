@@ -5,19 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
+  type: ss
+  server: 195.58.48.137
+  port: 9019
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
   type: vless
-  server: ru2.oshost.network
-  port: 80
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
+  server: 104.18.46.234
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /api/v2/stream
+    path: /
     headers:
-      Host: ru2.oshost.network
-- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  type: vless
+  server: 108.162.198.178
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  type: vless
+  server: 172.64.229.170
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
   type: vmess
   server: renderer-stream-2-62.mirra.now
   port: 443
@@ -27,40 +67,64 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
+  servername: ''
   network: ws
   ws-opts:
     path: /api/v1/gpu-stream/socket
     headers:
-      Host: renderer-stream-2-62.mirra.now
-- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  type: ss
-  server: 195.133.23.200
-  port: 7018
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  type: ss
-  server: 195.133.23.200
-  port: 7018
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  type: vless
-  server: 46.8.200.91
+      Host: ''
+- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
+  type: vmess
+  server: renderer-stream-2-62.mirra.now
   port: 443
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
+  servername: ''
   network: ws
   ws-opts:
-    path: /casc
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: cf3.rumedia-cdn.com
+      Host: ''
+- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  type: vmess
+  server: renderer-stream-2-62.mirra.now
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: ''
+- name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  type: vless
+  server: 172.64.229.2
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  type: ss
+  server: 194.87.196.13
+  port: 9011
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +135,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
   - 🇷🇺 俄罗斯 (Russia) 04 - homeip
   - 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 06 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 07 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 10 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,5 +150,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
   - 🇷🇺 俄罗斯 (Russia) 04 - homeip
   - 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 06 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 07 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 10 - homeip
 rules:
 - MATCH,PROXIES
