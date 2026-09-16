@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 01 - homeip
   type: vmess
-  server: 36.133.78.37
-  port: 50017
-  uuid: 9195e0f1-f466-4e69-838f-a95519b5d45e
+  server: 91.228.227.211
+  port: 23957
+  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
   alterId: 0
   cipher: auto
   udp: true
@@ -19,12 +19,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - homeip
+  - 🇹🇷 土耳其 (Turkey) 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - homeip
+  - 🇹🇷 土耳其 (Turkey) 01 - homeip
 rules:
 - MATCH,PROXIES
