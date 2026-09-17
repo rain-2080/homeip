@@ -6,15 +6,27 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
   type: vmess
-  server: 91.228.227.211
-  port: 23957
-  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
+  server: 139.28.240.68
+  port: 2086
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 02 - homeip
+  type: vless
+  server: content3.movieham.ir
+  port: 5494
+  uuid: 7e0faccc-1d74-4ddf-bbdf-7258e155115d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SzDv43wbpLLk6ADfHa8P6lsHTEa1d3zf6BSzVtdsHSc
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -26,20 +38,19 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
   type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  server: helixgaming.ir
+  port: 80
+  uuid: c0e453eb-33ac-4206-8423-3e1286c2ba7a
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
-      Host: ''
+      Host: play.google.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +59,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,5 +68,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
 rules:
 - MATCH,PROXIES
