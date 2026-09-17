@@ -4,30 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 IL 01 - homeip
-  type: vless
-  server: 45.40.146.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - homeip
+  type: vmess
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16112
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime36.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 IL 01 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 IL 01 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - homeip
 rules:
 - MATCH,PROXIES

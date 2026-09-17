@@ -12,19 +12,26 @@ proxies:
   password: 4pGFK0x/lqudD4LJU8isjFCNxlw04AnKc72lFxetSZU=
   udp: true
 - name: 🇸🇪 SE 02 - homeip
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 03 - homeip
   type: vless
-  server: 89.22.224.146
-  port: 43788
-  uuid: 49a6eeaf-7dbf-4aa5-ba21-b36cd47e724e
+  server: www.visa.com.hk
+  port: 443
+  uuid: afc4e46d-9720-4355-93aa-ba7f892c857e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  servername: se-sto.xhs152.shop
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /announcement?ed=2048
     headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+      Host: se-sto.xhs152.shop
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +39,7 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
+  - 🇸🇪 SE 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +47,6 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
+  - 🇸🇪 SE 03 - homeip
 rules:
 - MATCH,PROXIES

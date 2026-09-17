@@ -5,21 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - homeip
-  type: vmess
-  server: 85.159.228.232
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: atomic-prase23893.my-vm.work
+  port: 8088
+  uuid: tmp_user
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
   network: ws
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /api
     headers:
-      Host: renderer-stream-2-62.mirra.now
+      Host: queuev4.vk.com
 proxy-groups:
 - name: PROXIES
   type: select
