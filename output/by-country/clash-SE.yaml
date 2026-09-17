@@ -1,0 +1,43 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇸🇪 SE 01 - homeip
+  type: ss
+  server: 51.170.179.166
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 4pGFK0x/lqudD4LJU8isjFCNxlw04AnKc72lFxetSZU=
+  udp: true
+- name: 🇸🇪 SE 02 - homeip
+  type: vless
+  server: 89.22.224.146
+  port: 43788
+  uuid: 49a6eeaf-7dbf-4aa5-ba21-b36cd47e724e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇸🇪 SE 01 - homeip
+  - 🇸🇪 SE 02 - homeip
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇪 SE 01 - homeip
+  - 🇸🇪 SE 02 - homeip
+rules:
+- MATCH,PROXIES

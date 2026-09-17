@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - homeip
   type: vless
-  server: cdn.snobvpn.online
-  port: 80
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /snob-ws
+    path: /
     headers:
-      Host: cdn.snobvpn.online
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - homeip
   type: vless
   server: uae.unixzone.us
@@ -32,20 +32,20 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - homeip
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /snob-ws
     headers:
-      Host: uae.unixzone.us
+      Host: cdn.snobvpn.online
 - name: 🇦🇪 阿联酋 (UAE) 04 - homeip
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -58,7 +58,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - homeip
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -70,6 +70,43 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - homeip
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16284
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 07 - homeip
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - homeip
+  type: vless
+  server: novantunnel.tech
+  port: 443
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: novantunnel.tech
+  network: ws
+  ws-opts:
+    path: /Novan-AE9
+    headers:
+      Host: novantunnel.tech
+- name: 🇦🇪 阿联酋 (UAE) 09 - homeip
   type: vless
   server: 89.125.147.199
   port: 443
@@ -81,6 +118,260 @@ proxies:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
   client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 10 - homeip
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 11 - homeip
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 12 - homeip
+  type: vless
+  server: 172.67.221.230
+  port: 443
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: novantunnel.tech
+  network: ws
+  ws-opts:
+    path: /Novan-AE9
+    headers:
+      Host: novantunnel.tech
+- name: 🇦🇪 阿联酋 (UAE) 13 - homeip
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 14 - homeip
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 15 - homeip
+  type: vless
+  server: 172.64.145.93
+  port: 8880
+  uuid: ce977d82-824b-4209-87f1-0719f78d6a2e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: royal-mode-cf74.210-62d.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 16 - homeip
+  type: vless
+  server: 210.152.85.154
+  port: 19364
+  uuid: 2a731bb4-6c55-40ef-8c8d-80969db19e08
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 17 - homeip
+  type: vless
+  server: 129.153.71.28
+  port: 28863
+  uuid: d0130b90-7d09-4484-9809-426bfb6ebd6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 18 - homeip
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 19 - homeip
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000005
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: relay.lunetcloud.ir
+  network: ws
+  ws-opts:
+    path: /lunetnetwork
+    headers:
+      Host: relay.lunetcloud.ir
+- name: 🇦🇪 阿联酋 (UAE) 20 - homeip
+  type: vless
+  server: 57.129.130.57
+  port: 52014
+  uuid: 47ba5dc6-8961-48a0-8b54-f57ec524627a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 21 - homeip
+  type: vless
+  server: 45.77.241.190
+  port: 8441
+  uuid: 35325935-2cd2-4c62-aee1-4797dde0fae3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 22 - homeip
+  type: vless
+  server: 210.152.85.154
+  port: 19364
+  uuid: 78c438e1-417d-49a9-a883-f89e06737887
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 23 - homeip
+  type: vless
+  server: 147.45.42.73
+  port: 20443
+  uuid: fcbb9617-7b3c-4b21-8a91-a57350a75222
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 24 - homeip
+  type: vless
+  server: 210.152.85.154
+  port: 19364
+  uuid: ec168467-38e2-49f9-8720-de2a64544f86
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 25 - homeip
+  type: vless
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 26 - homeip
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 27 - homeip
+  type: vless
+  server: 104.17.21.137
+  port: 8880
+  uuid: 580af126-448f-407b-a4c2-785e702cd8ea
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: misty-wood-62b4.263-93e.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 28 - homeip
+  type: vless
+  server: 57.129.130.200
+  port: 52014
+  uuid: b1ecd06b-a931-47a2-8f48-d1d133d2b4f3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +383,28 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - homeip
   - 🇦🇪 阿联酋 (UAE) 05 - homeip
   - 🇦🇪 阿联酋 (UAE) 06 - homeip
+  - 🇦🇪 阿联酋 (UAE) 07 - homeip
+  - 🇦🇪 阿联酋 (UAE) 08 - homeip
+  - 🇦🇪 阿联酋 (UAE) 09 - homeip
+  - 🇦🇪 阿联酋 (UAE) 10 - homeip
+  - 🇦🇪 阿联酋 (UAE) 11 - homeip
+  - 🇦🇪 阿联酋 (UAE) 12 - homeip
+  - 🇦🇪 阿联酋 (UAE) 13 - homeip
+  - 🇦🇪 阿联酋 (UAE) 14 - homeip
+  - 🇦🇪 阿联酋 (UAE) 15 - homeip
+  - 🇦🇪 阿联酋 (UAE) 16 - homeip
+  - 🇦🇪 阿联酋 (UAE) 17 - homeip
+  - 🇦🇪 阿联酋 (UAE) 18 - homeip
+  - 🇦🇪 阿联酋 (UAE) 19 - homeip
+  - 🇦🇪 阿联酋 (UAE) 20 - homeip
+  - 🇦🇪 阿联酋 (UAE) 21 - homeip
+  - 🇦🇪 阿联酋 (UAE) 22 - homeip
+  - 🇦🇪 阿联酋 (UAE) 23 - homeip
+  - 🇦🇪 阿联酋 (UAE) 24 - homeip
+  - 🇦🇪 阿联酋 (UAE) 25 - homeip
+  - 🇦🇪 阿联酋 (UAE) 26 - homeip
+  - 🇦🇪 阿联酋 (UAE) 27 - homeip
+  - 🇦🇪 阿联酋 (UAE) 28 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -103,5 +416,27 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - homeip
   - 🇦🇪 阿联酋 (UAE) 05 - homeip
   - 🇦🇪 阿联酋 (UAE) 06 - homeip
+  - 🇦🇪 阿联酋 (UAE) 07 - homeip
+  - 🇦🇪 阿联酋 (UAE) 08 - homeip
+  - 🇦🇪 阿联酋 (UAE) 09 - homeip
+  - 🇦🇪 阿联酋 (UAE) 10 - homeip
+  - 🇦🇪 阿联酋 (UAE) 11 - homeip
+  - 🇦🇪 阿联酋 (UAE) 12 - homeip
+  - 🇦🇪 阿联酋 (UAE) 13 - homeip
+  - 🇦🇪 阿联酋 (UAE) 14 - homeip
+  - 🇦🇪 阿联酋 (UAE) 15 - homeip
+  - 🇦🇪 阿联酋 (UAE) 16 - homeip
+  - 🇦🇪 阿联酋 (UAE) 17 - homeip
+  - 🇦🇪 阿联酋 (UAE) 18 - homeip
+  - 🇦🇪 阿联酋 (UAE) 19 - homeip
+  - 🇦🇪 阿联酋 (UAE) 20 - homeip
+  - 🇦🇪 阿联酋 (UAE) 21 - homeip
+  - 🇦🇪 阿联酋 (UAE) 22 - homeip
+  - 🇦🇪 阿联酋 (UAE) 23 - homeip
+  - 🇦🇪 阿联酋 (UAE) 24 - homeip
+  - 🇦🇪 阿联酋 (UAE) 25 - homeip
+  - 🇦🇪 阿联酋 (UAE) 26 - homeip
+  - 🇦🇪 阿联酋 (UAE) 27 - homeip
+  - 🇦🇪 阿联酋 (UAE) 28 - homeip
 rules:
 - MATCH,PROXIES
