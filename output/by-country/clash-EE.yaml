@@ -18,6 +18,38 @@ proxies:
     headers:
       Host: 94.183.170.135
 - name: 🇪🇪 EE 02 - homeip
+  type: vmess
+  server: 64.188.82.159
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇪🇪 EE 03 - homeip
+  type: vmess
+  server: 5.101.122.59
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇪🇪 EE 04 - homeip
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -33,6 +65,8 @@ proxy-groups:
   - AUTO
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
+  - 🇪🇪 EE 03 - homeip
+  - 🇪🇪 EE 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,5 +74,7 @@ proxy-groups:
   proxies:
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
+  - 🇪🇪 EE 03 - homeip
+  - 🇪🇪 EE 04 - homeip
 rules:
 - MATCH,PROXIES
