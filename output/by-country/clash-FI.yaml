@@ -5,109 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 02 - homeip
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 03 - homeip
   type: ss
   server: 82.47.186.18
   port: 19290
   cipher: aes-128-gcm
   password: o2rw2hICwu1blrr_gZAl2Q
   udp: true
-- name: 🇫🇮 FI 04 - homeip
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 05 - homeip
-  type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 06 - homeip
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--KANAL--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray--@mainv2ray
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 07 - homeip
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 08 - homeip
-  type: vless
-  server: freeman.cvbesty.ir
-  port: 10210
-  uuid: d65a82af-a403-405e-8b7b-27a68b830511
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: twRm8a1BBdz2Q5jTuNbXxA7ZdtDPAyQNEycDYkW9DFc
-  servername: play-apps-features.googleusercontent.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 09 - homeip
+- name: 🇫🇮 FI 02 - homeip
   type: vless
   server: 185.79.138.71
   port: 448
@@ -119,20 +23,6 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 10 - homeip
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: cc3ec459-8d76-4066-ab4b-2614608f1afb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
-    headers:
-      Host: c12.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -140,14 +30,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - homeip
   - 🇫🇮 FI 02 - homeip
-  - 🇫🇮 FI 03 - homeip
-  - 🇫🇮 FI 04 - homeip
-  - 🇫🇮 FI 05 - homeip
-  - 🇫🇮 FI 06 - homeip
-  - 🇫🇮 FI 07 - homeip
-  - 🇫🇮 FI 08 - homeip
-  - 🇫🇮 FI 09 - homeip
-  - 🇫🇮 FI 10 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -155,13 +37,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - homeip
   - 🇫🇮 FI 02 - homeip
-  - 🇫🇮 FI 03 - homeip
-  - 🇫🇮 FI 04 - homeip
-  - 🇫🇮 FI 05 - homeip
-  - 🇫🇮 FI 06 - homeip
-  - 🇫🇮 FI 07 - homeip
-  - 🇫🇮 FI 08 - homeip
-  - 🇫🇮 FI 09 - homeip
-  - 🇫🇮 FI 10 - homeip
 rules:
 - MATCH,PROXIES

@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇦 SA 01 - homeip
+- name: 🇬🇷 GR 01 - homeip
   type: vless
-  server: 165.232.39.158
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: newswedengrrrr.azadfug.ir
+  port: 7005
+  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /m?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
+  reality-opts:
+    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
+  servername: play.googleapis.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇦 SA 01 - homeip
+  - 🇬🇷 GR 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇦 SA 01 - homeip
+  - 🇬🇷 GR 01 - homeip
 rules:
 - MATCH,PROXIES
