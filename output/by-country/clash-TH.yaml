@@ -6,32 +6,19 @@ log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - homeip
   type: vless
-  server: 104.18.189.234
-  port: 8880
-  uuid: 52fb52b1-82de-4c6f-b7d3-599ce5d57f1c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: damp-disk-1ae9.138-c4c.workers.dev
-- name: 🇹🇭 TH 02 - homeip
-  type: vless
-  server: 8.222.70.238
+  server: 104.16.10.2
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
-    path: /mall/china/doc?ed=2560fp=chrome
+    path: /ws
     headers:
-      Host: cdn8848.776676.xyz
-- name: 🇹🇭 TH 03 - homeip
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 02 - homeip
   type: vless
   server: v2ray.simspeedup.com
   port: 80
@@ -39,6 +26,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 03 - homeip
+  type: vless
+  server: 104.18.26.90
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
   network: ws
   ws-opts:
     path: /ws
