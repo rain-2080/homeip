@@ -1,0 +1,376 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇧🇪 BE 01 - homeip
+  type: vless
+  server: 172.67.134.136
+  port: 443
+  uuid: fa45096d-bed0-ad80-c773-23c300000003
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: 🇧🇪 BE 02 - homeip
+  type: vless
+  server: 172.67.155.136
+  port: 2086
+  uuid: 73796e63-0000-4000-8000-000000000007
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 03 - homeip
+  type: vless
+  server: 35.195.122.169
+  port: 443
+  uuid: e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇧🇪 BE 04 - homeip
+  type: vless
+  server: 35.195.122.169
+  port: 443
+  uuid: e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇧🇪 BE 05 - homeip
+  type: vless
+  server: 104.21.64.198
+  port: 2086
+  uuid: 73796e63-0000-4000-8000-000000000007
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 06 - homeip
+  type: vless
+  server: 207.175.190.56
+  port: 443
+  uuid: 51e493d4-b275-45e0-a714-e014f40b3c32
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇧🇪 BE 07 - homeip
+  type: vless
+  server: 172.67.155.136
+  port: 2086
+  uuid: 73796e63-0000-4000-8000-000000000007
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 08 - homeip
+  type: vless
+  server: 207.175.190.56
+  port: 443
+  uuid: 51e493d4-b275-45e0-a714-e014f40b3c32
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇧🇪 BE 09 - homeip
+  type: vless
+  server: 172.67.209.13
+  port: 443
+  uuid: fa45096d-bed0-ad80-c773-23c30000001b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: 🇧🇪 BE 10 - homeip
+  type: vless
+  server: 34.38.82.200
+  port: 443
+  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇧🇪 BE 11 - homeip
+  type: vless
+  server: 172.67.155.136
+  port: 2095
+  uuid: 73796e63-0000-4000-8000-000000000008
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 12 - homeip
+  type: vless
+  server: 35.195.122.169
+  port: 443
+  uuid: e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇧🇪 BE 13 - homeip
+  type: vless
+  server: 172.67.134.136
+  port: 443
+  uuid: fa45096d-bed0-ad80-c773-23c300000003
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: 🇧🇪 BE 14 - homeip
+  type: vless
+  server: 35.195.122.169
+  port: 443
+  uuid: e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇧🇪 BE 15 - homeip
+  type: vless
+  server: 172.67.209.13
+  port: 443
+  uuid: fa45096d-bed0-ad80-c773-23c30000001b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: 🇧🇪 BE 16 - homeip
+  type: vless
+  server: 172.67.155.136
+  port: 2095
+  uuid: 73796e63-0000-4000-8000-000000000008
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 17 - homeip
+  type: vless
+  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  port: 2086
+  uuid: 73796e63-0000-4000-8000-000000000007
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 18 - homeip
+  type: vless
+  server: 104.21.64.198
+  port: 2095
+  uuid: 73796e63-0000-4000-8000-000000000008
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 19 - homeip
+  type: vmess
+  server: 35.241.172.224
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇧🇪 BE 20 - homeip
+  type: vless
+  server: 104.21.64.198
+  port: 2086
+  uuid: 73796e63-0000-4000-8000-000000000007
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 21 - homeip
+  type: vless
+  server: 104.21.64.198
+  port: 2095
+  uuid: 73796e63-0000-4000-8000-000000000008
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 22 - homeip
+  type: vless
+  server: 207.175.190.56
+  port: 443
+  uuid: 51e493d4-b275-45e0-a714-e014f40b3c32
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇧🇪 BE 23 - homeip
+  type: vless
+  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+  port: 2095
+  uuid: 73796e63-0000-4000-8000-000000000008
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 BE 24 - homeip
+  type: vless
+  server: 34.38.82.200
+  port: 443
+  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇧🇪 BE 01 - homeip
+  - 🇧🇪 BE 02 - homeip
+  - 🇧🇪 BE 03 - homeip
+  - 🇧🇪 BE 04 - homeip
+  - 🇧🇪 BE 05 - homeip
+  - 🇧🇪 BE 06 - homeip
+  - 🇧🇪 BE 07 - homeip
+  - 🇧🇪 BE 08 - homeip
+  - 🇧🇪 BE 09 - homeip
+  - 🇧🇪 BE 10 - homeip
+  - 🇧🇪 BE 11 - homeip
+  - 🇧🇪 BE 12 - homeip
+  - 🇧🇪 BE 13 - homeip
+  - 🇧🇪 BE 14 - homeip
+  - 🇧🇪 BE 15 - homeip
+  - 🇧🇪 BE 16 - homeip
+  - 🇧🇪 BE 17 - homeip
+  - 🇧🇪 BE 18 - homeip
+  - 🇧🇪 BE 19 - homeip
+  - 🇧🇪 BE 20 - homeip
+  - 🇧🇪 BE 21 - homeip
+  - 🇧🇪 BE 22 - homeip
+  - 🇧🇪 BE 23 - homeip
+  - 🇧🇪 BE 24 - homeip
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇪 BE 01 - homeip
+  - 🇧🇪 BE 02 - homeip
+  - 🇧🇪 BE 03 - homeip
+  - 🇧🇪 BE 04 - homeip
+  - 🇧🇪 BE 05 - homeip
+  - 🇧🇪 BE 06 - homeip
+  - 🇧🇪 BE 07 - homeip
+  - 🇧🇪 BE 08 - homeip
+  - 🇧🇪 BE 09 - homeip
+  - 🇧🇪 BE 10 - homeip
+  - 🇧🇪 BE 11 - homeip
+  - 🇧🇪 BE 12 - homeip
+  - 🇧🇪 BE 13 - homeip
+  - 🇧🇪 BE 14 - homeip
+  - 🇧🇪 BE 15 - homeip
+  - 🇧🇪 BE 16 - homeip
+  - 🇧🇪 BE 17 - homeip
+  - 🇧🇪 BE 18 - homeip
+  - 🇧🇪 BE 19 - homeip
+  - 🇧🇪 BE 20 - homeip
+  - 🇧🇪 BE 21 - homeip
+  - 🇧🇪 BE 22 - homeip
+  - 🇧🇪 BE 23 - homeip
+  - 🇧🇪 BE 24 - homeip
+rules:
+- MATCH,PROXIES

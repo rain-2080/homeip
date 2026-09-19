@@ -6,31 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - homeip
   type: vless
-  server: cdn.snobvpn.online
-  port: 80
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: cdn.snobvpn.online
-- name: 🇦🇪 阿联酋 (UAE) 02 - homeip
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 03 - homeip
-  type: vless
   server: 89.125.147.199
   port: 443
   uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
@@ -41,7 +16,7 @@ proxies:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - homeip
+- name: 🇦🇪 阿联酋 (UAE) 02 - homeip
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -54,11 +29,11 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - homeip
+- name: 🇦🇪 阿联酋 (UAE) 03 - homeip
   type: vless
   server: 31.58.181.88
   port: 8443
-  uuid: 67018597-36a2-40f2-aa72-a253d0ad438b
+  uuid: 04dc7739-5b33-49c9-bf16-3c6919a6498f
   udp: true
   tls: true
   skip-cert-verify: true
@@ -66,20 +41,7 @@ proxies:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 06 - homeip
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - homeip
+- name: 🇦🇪 阿联酋 (UAE) 04 - homeip
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -92,9 +54,50 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - homeip
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 06 - homeip
+  type: vmess
+  server: 132.243.22.80
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: renderer-stream-2-62.mirra.now
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: 🇦🇪 阿联酋 (UAE) 07 - homeip
+  type: vless
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
 - name: 🇦🇪 阿联酋 (UAE) 08 - homeip
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -107,6 +110,33 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 09 - homeip
   type: vless
+  server: medium.com
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+- name: 🇦🇪 阿联酋 (UAE) 10 - homeip
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 11 - homeip
+  type: vless
   server: 89.125.147.199
   port: 443
   uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
@@ -117,11 +147,38 @@ proxies:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 10 - homeip
+- name: 🇦🇪 阿联酋 (UAE) 12 - homeip
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000005
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: relay.lunetcloud.ir
+  network: ws
+  ws-opts:
+    path: /lunetnetwork
+    headers:
+      Host: relay.lunetcloud.ir
+- name: 🇦🇪 阿联酋 (UAE) 13 - homeip
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 14 - homeip
   type: vless
   server: 31.58.181.88
   port: 8443
-  uuid: 98983e4e-31df-4061-bc86-1d6ade4b551b
+  uuid: 51eb44a1-235d-4fcc-9fb1-b4a644746a9e
   udp: true
   tls: true
   skip-cert-verify: true
@@ -129,6 +186,31 @@ proxies:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 15 - homeip
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 16 - homeip
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -144,6 +226,12 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 08 - homeip
   - 🇦🇪 阿联酋 (UAE) 09 - homeip
   - 🇦🇪 阿联酋 (UAE) 10 - homeip
+  - 🇦🇪 阿联酋 (UAE) 11 - homeip
+  - 🇦🇪 阿联酋 (UAE) 12 - homeip
+  - 🇦🇪 阿联酋 (UAE) 13 - homeip
+  - 🇦🇪 阿联酋 (UAE) 14 - homeip
+  - 🇦🇪 阿联酋 (UAE) 15 - homeip
+  - 🇦🇪 阿联酋 (UAE) 16 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -159,5 +247,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 08 - homeip
   - 🇦🇪 阿联酋 (UAE) 09 - homeip
   - 🇦🇪 阿联酋 (UAE) 10 - homeip
+  - 🇦🇪 阿联酋 (UAE) 11 - homeip
+  - 🇦🇪 阿联酋 (UAE) 12 - homeip
+  - 🇦🇪 阿联酋 (UAE) 13 - homeip
+  - 🇦🇪 阿联酋 (UAE) 14 - homeip
+  - 🇦🇪 阿联酋 (UAE) 15 - homeip
+  - 🇦🇪 阿联酋 (UAE) 16 - homeip
 rules:
 - MATCH,PROXIES

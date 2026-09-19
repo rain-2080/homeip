@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
+  type: ss
+  server: 139.28.240.68
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
   type: vmess
   server: 139.28.240.68
   port: 2086
@@ -14,7 +21,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -26,7 +33,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
   type: vless
   server: helixgaming.ir
   port: 80
@@ -39,6 +46,83 @@ proxies:
     path: /
     headers:
       Host: play.google.com
+- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
+  type: vless
+  server: 172.67.151.109
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 07 - homeip
+  type: vless
+  server: helixgaming.ir
+  port: 80
+  uuid: c0e453eb-33ac-4206-8423-3e1286c2ba7a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
+- name: 🇹🇷 土耳其 (Turkey) 08 - homeip
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000003
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: relay.lunetcloud.ir
+  network: ws
+  ws-opts:
+    path: /lunetnetwork
+    headers:
+      Host: relay.lunetcloud.ir
+- name: 🇹🇷 土耳其 (Turkey) 09 - homeip
+  type: vless
+  server: 172.67.134.170
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 10 - homeip
+  type: vmess
+  server: 139.28.240.68
+  port: 2086
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +131,13 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
+  - 🇹🇷 土耳其 (Turkey) 06 - homeip
+  - 🇹🇷 土耳其 (Turkey) 07 - homeip
+  - 🇹🇷 土耳其 (Turkey) 08 - homeip
+  - 🇹🇷 土耳其 (Turkey) 09 - homeip
+  - 🇹🇷 土耳其 (Turkey) 10 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,5 +146,12 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
+  - 🇹🇷 土耳其 (Turkey) 06 - homeip
+  - 🇹🇷 土耳其 (Turkey) 07 - homeip
+  - 🇹🇷 土耳其 (Turkey) 08 - homeip
+  - 🇹🇷 土耳其 (Turkey) 09 - homeip
+  - 🇹🇷 土耳其 (Turkey) 10 - homeip
 rules:
 - MATCH,PROXIES
