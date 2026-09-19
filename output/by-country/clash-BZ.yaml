@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇷 BR 01 - homeip
+- name: 🇧🇿 BZ 01 - homeip
   type: vless
-  server: www.visa.com.hk
-  port: 443
-  uuid: ff7cb8d1-b912-46e8-9686-a209c613c614
+  server: 202.181.177.8
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: br-gru.xhs152.shop
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /announcement?ed=2048
+    path: /channels/act
     headers:
-      Host: br-gru.xhs152.shop
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇷 BR 01 - homeip
+  - 🇧🇿 BZ 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 BR 01 - homeip
+  - 🇧🇿 BZ 01 - homeip
 rules:
 - MATCH,PROXIES

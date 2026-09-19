@@ -8,7 +8,7 @@ proxies:
   type: vless
   server: atomic-prase23893.my-vm.work
   port: 8088
-  uuid: tmp_user
+  uuid: f7c74a35-1da0-5097-9fa7-a20735610ac1
   udp: true
   tls: false
   skip-cert-verify: true
@@ -21,20 +21,7 @@ proxies:
   type: vless
   server: atomic-prase23893.my-vm.work
   port: 8088
-  uuid: f7c74a35-1da0-5097-9fa7-a20735610ac1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /api
-    headers:
-      Host: queuev4.vk.com
-- name: 🇱🇻 LV 03 - homeip
-  type: vless
-  server: 188.220.205.16
-  port: 8088
-  uuid: f7c74a35-1da0-5097-9fa7-a20735610ac1
+  uuid: tmp_user
   udp: true
   tls: false
   skip-cert-verify: true
@@ -50,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇱🇻 LV 01 - homeip
   - 🇱🇻 LV 02 - homeip
-  - 🇱🇻 LV 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇱🇻 LV 01 - homeip
   - 🇱🇻 LV 02 - homeip
-  - 🇱🇻 LV 03 - homeip
 rules:
 - MATCH,PROXIES

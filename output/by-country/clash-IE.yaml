@@ -6,6 +6,13 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - homeip
   type: ss
+  server: 52.138.147.200
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: MLM05eZ7DJH8jSnx
+  udp: true
+- name: 🇮🇪 IE 02 - homeip
+  type: ss
   server: 20.238.35.153
   port: 443
   cipher: chacha20-ietf-poly1305
@@ -17,11 +24,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - homeip
+  - 🇮🇪 IE 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - homeip
+  - 🇮🇪 IE 02 - homeip
 rules:
 - MATCH,PROXIES
