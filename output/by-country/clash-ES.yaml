@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - homeip
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: random
 - name: 🇪🇸 西班牙 (Spain) 02 - homeip
   type: vless
   server: 34.175.44.113
@@ -29,12 +24,17 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 03 - homeip
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  type: vless
+  server: 34.175.90.91
+  port: 443
+  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 04 - homeip
   type: vless
   server: 34.175.90.91
@@ -48,38 +48,31 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 05 - homeip
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  type: vless
+  server: 34.175.44.113
+  port: 443
+  uuid: 0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 06 - homeip
   type: vless
-  server: 34.175.90.91
-  port: 443
-  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
+  server: 212.227.235.66
+  port: 2053
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
-  servername: www.cloudflare.com
-  client-fingerprint: qq
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 07 - homeip
   type: vless
-  server: 34.175.44.113
-  port: 443
-  uuid: 0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇪🇸 西班牙 (Spain) 08 - homeip
-  type: vless
   server: 34.175.90.91
   port: 443
   uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
@@ -89,83 +82,7 @@ proxies:
   reality-opts:
     public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
   servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇪🇸 西班牙 (Spain) 09 - homeip
-  type: vless
-  server: 34.175.44.113
-  port: 443
-  uuid: 0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0
-  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 10 - homeip
-  type: vless
-  server: 104.18.32.252
-  port: 443
-  uuid: 6dd13cd4-e378-4742-bef1-d8ac54083626
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: eb9a7750.69lover.site
-  network: ws
-  ws-opts:
-    path: /api/v2/4ecb1e0e26887759/stream
-    headers:
-      Host: eb9a7750.69lover.site
-- name: 🇪🇸 西班牙 (Spain) 11 - homeip
-  type: vless
-  server: 34.175.44.113
-  port: 443
-  uuid: 0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇪🇸 西班牙 (Spain) 12 - homeip
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 13 - homeip
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 14 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 6dd13cd4-e378-4742-bef1-d8ac54083626
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: eb9a7750.69lover.site
-  network: ws
-  ws-opts:
-    path: /api/v2/4ecb1e0e26887759/stream
-    headers:
-      Host: eb9a7750.69lover.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -178,13 +95,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 05 - homeip
   - 🇪🇸 西班牙 (Spain) 06 - homeip
   - 🇪🇸 西班牙 (Spain) 07 - homeip
-  - 🇪🇸 西班牙 (Spain) 08 - homeip
-  - 🇪🇸 西班牙 (Spain) 09 - homeip
-  - 🇪🇸 西班牙 (Spain) 10 - homeip
-  - 🇪🇸 西班牙 (Spain) 11 - homeip
-  - 🇪🇸 西班牙 (Spain) 12 - homeip
-  - 🇪🇸 西班牙 (Spain) 13 - homeip
-  - 🇪🇸 西班牙 (Spain) 14 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -197,12 +107,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 05 - homeip
   - 🇪🇸 西班牙 (Spain) 06 - homeip
   - 🇪🇸 西班牙 (Spain) 07 - homeip
-  - 🇪🇸 西班牙 (Spain) 08 - homeip
-  - 🇪🇸 西班牙 (Spain) 09 - homeip
-  - 🇪🇸 西班牙 (Spain) 10 - homeip
-  - 🇪🇸 西班牙 (Spain) 11 - homeip
-  - 🇪🇸 西班牙 (Spain) 12 - homeip
-  - 🇪🇸 西班牙 (Spain) 13 - homeip
-  - 🇪🇸 西班牙 (Spain) 14 - homeip
 rules:
 - MATCH,PROXIES

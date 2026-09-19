@@ -6,6 +6,65 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - homeip
   type: vless
+  server: 34.51.172.152
+  port: 443
+  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 02 - homeip
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 03 - homeip
+  type: vless
+  server: freev2.cloudflare.182682.xyz
+  port: 443
+  uuid: ff7cb8d1-b912-46e8-9686-a209c613c614
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se-sto.xhs152.shop
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: se-sto.xhs152.shop
+- name: 🇸🇪 SE 04 - homeip
+  type: vless
+  server: 34.51.231.250
+  port: 443
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 05 - homeip
+  type: vless
+  server: freev2.cloudflare.182682.xyz
+  port: 443
+  uuid: ff7cb8d1-b912-46e8-9686-a209c613c614
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se-sto.xhs152.shop
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: se-sto.xhs152.shop
+- name: 🇸🇪 SE 06 - homeip
+  type: vless
   server: 143.246.194.60
   port: 8081
   uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
@@ -17,7 +76,7 @@ proxies:
     path: /vless-test
     headers:
       Host: 143.246.194.60
-- name: 🇸🇪 SE 02 - homeip
+- name: 🇸🇪 SE 07 - homeip
   type: vless
   server: 34.51.231.250
   port: 443
@@ -36,6 +95,11 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
+  - 🇸🇪 SE 03 - homeip
+  - 🇸🇪 SE 04 - homeip
+  - 🇸🇪 SE 05 - homeip
+  - 🇸🇪 SE 06 - homeip
+  - 🇸🇪 SE 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -43,5 +107,10 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
+  - 🇸🇪 SE 03 - homeip
+  - 🇸🇪 SE 04 - homeip
+  - 🇸🇪 SE 05 - homeip
+  - 🇸🇪 SE 06 - homeip
+  - 🇸🇪 SE 07 - homeip
 rules:
 - MATCH,PROXIES

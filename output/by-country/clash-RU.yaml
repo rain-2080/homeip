@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
   type: vless
-  server: 172.64.229.2
+  server: 172.64.52.6
   port: 2052
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -14,7 +14,7 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls+
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
@@ -25,37 +25,35 @@ proxies:
   password: 895b4b796a357570
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  type: vmess
-  server: renderer-stream-2-62.mirra.now
-  port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: ''
-- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
   type: vless
-  server: 108.162.198.178
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 188.114.97.6
+  port: 8080
+  uuid: 81b3fa7e-12b0-4c2b-9866-324edd26ef7f
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: falling-lake-0b5a.192-3e2.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
   type: vless
-  server: 172.64.32.108
+  server: 108.162.198.178
   port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
@@ -66,30 +64,10 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
-  type: vless
-  server: 162.159.43.187
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
-  type: ss
-  server: 134.0.112.71
-  port: 17517
-  cipher: aes-256-gcm
-  password: 64Kms+G+nD6FlGJjZJfeUNJIGbX/EKrk2o/MH04zApw=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
   type: vless
-  server: 162.159.24.131
-  port: 2052
+  server: 172.64.154.8
+  port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -99,41 +77,47 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
   type: vless
-  server: 172.67.148.26
-  port: 443
-  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
+  server: 202.181.177.8
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: restless-boat-ebf2.moha102030.workers.dev
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /sync
+    path: /channels/act
     headers:
-      Host: restless-boat-ebf2.moha102030.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 10 - homeip
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 11 - homeip
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
   type: vless
   server: 46.8.200.91
   port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
   udp: true
   tls: true
   skip-cert-verify: true
   servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  type: vless
+  server: 108.162.198.178
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls+
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -149,7 +133,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - homeip
   - 🇷🇺 俄罗斯 (Russia) 09 - homeip
   - 🇷🇺 俄罗斯 (Russia) 10 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -165,6 +148,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - homeip
   - 🇷🇺 俄罗斯 (Russia) 09 - homeip
   - 🇷🇺 俄罗斯 (Russia) 10 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
 rules:
 - MATCH,PROXIES

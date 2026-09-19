@@ -17,55 +17,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - homeip
-  type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - homeip
-  type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - homeip
-  type: vless
-  server: 59.125.69.19
-  port: 443
-  uuid: f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 59.125.69.19
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - homeip
-  type: vless
-  server: 60.248.219.52
-  port: 443
-  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.52
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - homeip
-  type: ss
-  server: R3MRCG00129437X.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - homeip
   type: vless
   server: 35.201.181.122
   port: 443
@@ -77,44 +28,59 @@ proxies:
     public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 08 - homeip
-  type: vmess
-  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - homeip
+  type: vless
+  server: 35.201.181.122
   port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
+  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 09 - homeip
-  type: ss
-  server: 36.224.185.173
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 10 - homeip
+  reality-opts:
+    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - homeip
   type: ss
   server: r3mrcg00129437x.cybervena.com
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
   udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 11 - homeip
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - homeip
+  type: vless
+  server: 35.201.181.122
+  port: 443
+  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - homeip
   type: ss
   server: R3MRCG00129437X.cybervena.com
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
   udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 12 - homeip
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - homeip
+  type: ss
+  server: r3mrcg00129437x.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 08 - homeip
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 09 - homeip
   type: vmess
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
@@ -124,13 +90,20 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 13 - homeip
+      Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 10 - homeip
+  type: ss
+  server: R3MRCG00129437X.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 11 - homeip
   type: vless
   server: 130.211.240.128
   port: 443
@@ -142,13 +115,41 @@ proxies:
     public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 14 - homeip
+- name: 🇹🇼 中国台湾 (Taiwan) 12 - homeip
   type: ss
   server: r3mrcg00129437x.cybervena.com
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 13 - homeip
+  type: vless
+  server: 35.201.181.122
+  port: 443
+  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 14 - homeip
+  type: vmess
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
 - name: 🇹🇼 中国台湾 (Taiwan) 15 - homeip
   type: ss
   server: 36.224.185.173
@@ -157,39 +158,44 @@ proxies:
   password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
   udp: true
 - name: 🇹🇼 中国台湾 (Taiwan) 16 - homeip
-  type: vless
-  server: 35.201.181.122
-  port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 17 - homeip
   type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 17 - homeip
+  type: ss
+  server: r3mrcg00129437x.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+  udp: true
 - name: 🇹🇼 中国台湾 (Taiwan) 18 - homeip
-  type: vless
-  server: 35.201.181.122
+  type: vmess
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
-  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 19 - homeip
   type: vless
   server: 130.211.240.128
@@ -203,6 +209,66 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 20 - homeip
+  type: vless
+  server: 35.201.181.122
+  port: 443
+  uuid: 22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 21 - homeip
+  type: vmess
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 22 - homeip
+  type: vmess
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 23 - homeip
+  type: vmess
+  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 24 - homeip
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -212,7 +278,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 21 - homeip
+- name: 🇹🇼 中国台湾 (Taiwan) 25 - homeip
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 26 - homeip
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -248,6 +324,11 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 19 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 20 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 21 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 22 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 23 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 24 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 25 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 26 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -274,5 +355,10 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 19 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 20 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 21 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 22 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 23 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 24 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 25 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 26 - homeip
 rules:
 - MATCH,PROXIES

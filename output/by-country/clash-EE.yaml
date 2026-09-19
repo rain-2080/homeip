@@ -5,21 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - homeip
-  type: vmess
-  server: 5.101.122.59
+  type: vless
+  server: 94.183.170.135
   port: 443
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  alterId: 0
-  cipher: auto
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: renderer-stream-2-62.mirra.now
   network: ws
   ws-opts:
-    path: /api/v1/gpu-stream/socket
+    path: /
     headers:
-      Host: renderer-stream-2-62.mirra.now
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 02 - homeip
   type: vless
   server: 94.183.170.135
@@ -42,6 +39,19 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 04 - homeip
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +60,7 @@ proxy-groups:
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
   - 🇪🇪 EE 03 - homeip
+  - 🇪🇪 EE 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +69,6 @@ proxy-groups:
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
   - 🇪🇪 EE 03 - homeip
+  - 🇪🇪 EE 04 - homeip
 rules:
 - MATCH,PROXIES
