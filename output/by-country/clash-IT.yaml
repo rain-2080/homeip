@@ -6,43 +6,17 @@ log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - homeip
   type: vless
-  server: 34.154.92.210
-  port: 443
-  uuid: fffe33b6-5735-4a71-adb1-1c154def9024
+  server: 57.131.38.163
+  port: 2053
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: -Tb9KKp870JxcZ3Ka7Rx5ez3QBYryX4e8_jdyNZu2wE
-  servername: www.cloudflare.com
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+  servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 02 - homeip
-  type: vless
-  server: freev2.cloudflare.182682.xyz
-  port: 443
-  uuid: ff7cb8d1-b912-46e8-9686-a209c613c614
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: it-mil.xhs152.shop
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: it-mil.xhs152.shop
-- name: 🇮🇹 意大利 (Italy) 03 - homeip
-  type: vless
-  server: 34.154.47.33
-  port: 443
-  uuid: 4d4bfd21-88fc-4de7-87bd-c2ddaedc4078
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jGfJxbIyf2aLRFQyT9NsJBu1CzJmrAa2sF19GNw46z8
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 04 - homeip
   type: vless
   server: 158.180.231.216
   port: 443
@@ -56,6 +30,27 @@ proxies:
     path: /vws/
     headers:
       Host: 158.180.231.216
+- name: 🇮🇹 意大利 (Italy) 03 - homeip
+  type: vless
+  server: freev2.cloudflare.182682.xyz
+  port: 443
+  uuid: ff7cb8d1-b912-46e8-9686-a209c613c614
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: it-mil.xhs152.shop
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: it-mil.xhs152.shop
+- name: 🇮🇹 意大利 (Italy) 04 - homeip
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
 - name: 🇮🇹 意大利 (Italy) 05 - homeip
   type: ss
   server: 57.131.48.45
@@ -70,39 +65,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 (Italy) 07 - homeip
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 08 - homeip
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 09 - homeip
-  type: vless
-  server: freev2.cloudflare.182682.xyz
-  port: 443
-  uuid: ff7cb8d1-b912-46e8-9686-a209c613c614
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: it-mil.xhs152.shop
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: it-mil.xhs152.shop
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,9 +76,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - homeip
   - 🇮🇹 意大利 (Italy) 05 - homeip
   - 🇮🇹 意大利 (Italy) 06 - homeip
-  - 🇮🇹 意大利 (Italy) 07 - homeip
-  - 🇮🇹 意大利 (Italy) 08 - homeip
-  - 🇮🇹 意大利 (Italy) 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -128,8 +87,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 04 - homeip
   - 🇮🇹 意大利 (Italy) 05 - homeip
   - 🇮🇹 意大利 (Italy) 06 - homeip
-  - 🇮🇹 意大利 (Italy) 07 - homeip
-  - 🇮🇹 意大利 (Italy) 08 - homeip
-  - 🇮🇹 意大利 (Italy) 09 - homeip
 rules:
 - MATCH,PROXIES
