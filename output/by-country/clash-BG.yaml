@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - homeip
   type: vless
-  server: 131.123.41.177
+  server: 131.123.41.31
   port: 8081
   uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
@@ -16,54 +16,23 @@ proxies:
   ws-opts:
     path: /vless-test
     headers:
-      Host: 131.123.41.177
+      Host: 131.123.41.31
 - name: 🇧🇬 BG 02 - homeip
   type: vless
-  server: neth9.lunariai.ru
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  server: 131.123.39.29
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: neth9.lunariai.ru
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 131.123.39.29
 - name: 🇧🇬 BG 03 - homeip
   type: vless
-  server: 192.145.31.5
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
-- name: 🇧🇬 BG 04 - homeip
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 05 - homeip
-  type: vless
   server: neth9.lunariai.ru
-  port: 443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: neth9.lunariai.ru
-- name: 🇧🇬 BG 06 - homeip
-  type: vless
-  server: 192.145.31.5
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -78,9 +47,6 @@ proxy-groups:
   - 🇧🇬 BG 01 - homeip
   - 🇧🇬 BG 02 - homeip
   - 🇧🇬 BG 03 - homeip
-  - 🇧🇬 BG 04 - homeip
-  - 🇧🇬 BG 05 - homeip
-  - 🇧🇬 BG 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,8 +55,5 @@ proxy-groups:
   - 🇧🇬 BG 01 - homeip
   - 🇧🇬 BG 02 - homeip
   - 🇧🇬 BG 03 - homeip
-  - 🇧🇬 BG 04 - homeip
-  - 🇧🇬 BG 05 - homeip
-  - 🇧🇬 BG 06 - homeip
 rules:
 - MATCH,PROXIES
