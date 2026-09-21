@@ -16,17 +16,97 @@ proxies:
     public-key: t_ql5pn5MG1bkVQoteCXoKkSTzUzOs_yXMllmsyiqXY
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇵🇱 PL 02 - homeip
+  type: vless
+  server: 103.167.234.26
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇵🇱 PL 03 - homeip
+  type: vless
+  server: 185.179.82.201
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇵🇱 PL 04 - homeip
+  type: vless
+  server: 103.31.77.108
+  port: 2053
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇵🇱 PL 05 - homeip
+  type: vless
+  server: 46.8.194.76
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇵🇱 PL 06 - homeip
+  type: vless
+  server: 46.8.194.76
+  port: 2053
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - homeip
+  - 🇵🇱 PL 02 - homeip
+  - 🇵🇱 PL 03 - homeip
+  - 🇵🇱 PL 04 - homeip
+  - 🇵🇱 PL 05 - homeip
+  - 🇵🇱 PL 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - homeip
+  - 🇵🇱 PL 02 - homeip
+  - 🇵🇱 PL 03 - homeip
+  - 🇵🇱 PL 04 - homeip
+  - 🇵🇱 PL 05 - homeip
+  - 🇵🇱 PL 06 - homeip
 rules:
 - MATCH,PROXIES

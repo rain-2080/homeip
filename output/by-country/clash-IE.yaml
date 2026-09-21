@@ -18,17 +18,65 @@ proxies:
     path: /
     headers:
       Host: cfvvv-ev1.pages.dev
+- name: 🇮🇪 IE 02 - homeip
+  type: vless
+  server: 107.150.20.112
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇮🇪 IE 03 - homeip
+  type: vless
+  server: 198.55.102.68
+  port: 2083
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇮🇪 IE 04 - homeip
+  type: vless
+  server: 167.160.177.68
+  port: 2096
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - homeip
+  - 🇮🇪 IE 02 - homeip
+  - 🇮🇪 IE 03 - homeip
+  - 🇮🇪 IE 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - homeip
+  - 🇮🇪 IE 02 - homeip
+  - 🇮🇪 IE 03 - homeip
+  - 🇮🇪 IE 04 - homeip
 rules:
 - MATCH,PROXIES

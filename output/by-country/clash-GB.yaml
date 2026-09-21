@@ -5,6 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - homeip
+  type: ss
+  server: 149.102.132.184
+  port: 80
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 02 - homeip
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 03 - homeip
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 04 - homeip
+  type: vless
+  server: 57.129.130.200
+  port: 52014
+  uuid: b1ecd06b-a931-47a2-8f48-d1d133d2b4f3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 05 - homeip
   type: vless
   server: 78.129.208.44
   port: 421
@@ -16,48 +57,28 @@ proxies:
     public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
   servername: chistomat.dry.care
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 02 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 06 - homeip
   type: vless
-  server: 57.129.132.223
-  port: 80
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  server: 104.128.190.209
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 03 - homeip
-  type: ss
-  server: 149.102.132.184
-  port: 443
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 04 - homeip
+      Host: shuma.ccwu.cc
+- name: 🇬🇧 英国 (United Kingdom) 07 - homeip
   type: ss
   server: 141.98.101.181
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 05 - homeip
-  type: ss
-  server: 51.38.71.51
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 06 - homeip
-  type: ss
-  server: 82.38.31.155
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 07 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 08 - homeip
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -67,13 +88,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 08 - homeip
-  type: ss
-  server: 158.173.221.214
-  port: 11001
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 09 - homeip
   type: vmess
   server: 57.129.132.223
@@ -91,31 +105,12 @@ proxies:
       Host: google.com
 - name: 🇬🇧 英国 (United Kingdom) 10 - homeip
   type: ss
-  server: 51.77.225.200
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
+  server: 51.38.71.51
+  port: 2083
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 11 - homeip
-  type: vless
-  server: 46.250.240.80
-  port: 2053
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 12 - homeip
-  type: ss
-  server: 149.102.149.207
-  port: 80
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 13 - homeip
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -127,14 +122,26 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 14 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 12 - homeip
+  type: vless
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 13 - homeip
   type: ss
-  server: 149.102.149.207
+  server: 149.102.132.184
   port: 443
   cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
+  password: g5h5jleTRSyO3Rk4
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 15 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 14 - homeip
   type: vmess
   server: 66.163.117.58
   port: 22324
@@ -144,7 +151,24 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 15 - homeip
+  type: ss
+  server: 51.77.225.200
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
+  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 16 - homeip
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 17 - homeip
   type: vmess
   server: 57.129.132.223
   port: 80
@@ -159,18 +183,6 @@ proxies:
     path: /vmess/
     headers:
       Host: viber.com
-- name: 🇬🇧 英国 (United Kingdom) 17 - homeip
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 18 - homeip
   type: vmess
   server: 66.163.117.58
@@ -183,23 +195,159 @@ proxies:
   skip-cert-verify: true
 - name: 🇬🇧 英国 (United Kingdom) 19 - homeip
   type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+  server: 158.173.221.214
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 20 - homeip
   type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  server: courses.mftplus.qzz.io
+  port: 443
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: courses.mftplus.qzz.io
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
+    headers:
+      Host: courses.mftplus.qzz.io
+- name: 🇬🇧 英国 (United Kingdom) 21 - homeip
+  type: vless
+  server: 78.129.208.44
+  port: 421
+  uuid: a9900333-444b-4a36-a2f0-0567946c47cd
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-  servername: www.apple.com
-  client-fingerprint: random
+    public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
+  servername: chistomat.dry.care
+  client-fingerprint: ios
+- name: 🇬🇧 英国 (United Kingdom) 22 - homeip
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 23 - homeip
+  type: vless
+  server: 46.250.240.80
+  port: 2053
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 24 - homeip
+  type: vless
+  server: 78.129.208.44
+  port: 421
+  uuid: a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
+  servername: chistomat.dry.care
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 25 - homeip
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 26 - homeip
+  type: vless
+  server: 57.128.177.198
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp58.cc.cd
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+fp=chrome
+    headers:
+      Host: vp58.cc.cd
+- name: 🇬🇧 英国 (United Kingdom) 27 - homeip
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 28 - homeip
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 29 - homeip
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 30 - homeip
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 31 - homeip
+  type: vless
+  server: 104.194.140.26
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇬🇧 英国 (United Kingdom) 32 - homeip
+  type: vless
+  server: 57.129.132.223
+  port: 80
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: google.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -225,6 +373,18 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 18 - homeip
   - 🇬🇧 英国 (United Kingdom) 19 - homeip
   - 🇬🇧 英国 (United Kingdom) 20 - homeip
+  - 🇬🇧 英国 (United Kingdom) 21 - homeip
+  - 🇬🇧 英国 (United Kingdom) 22 - homeip
+  - 🇬🇧 英国 (United Kingdom) 23 - homeip
+  - 🇬🇧 英国 (United Kingdom) 24 - homeip
+  - 🇬🇧 英国 (United Kingdom) 25 - homeip
+  - 🇬🇧 英国 (United Kingdom) 26 - homeip
+  - 🇬🇧 英国 (United Kingdom) 27 - homeip
+  - 🇬🇧 英国 (United Kingdom) 28 - homeip
+  - 🇬🇧 英国 (United Kingdom) 29 - homeip
+  - 🇬🇧 英国 (United Kingdom) 30 - homeip
+  - 🇬🇧 英国 (United Kingdom) 31 - homeip
+  - 🇬🇧 英国 (United Kingdom) 32 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -250,5 +410,17 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 18 - homeip
   - 🇬🇧 英国 (United Kingdom) 19 - homeip
   - 🇬🇧 英国 (United Kingdom) 20 - homeip
+  - 🇬🇧 英国 (United Kingdom) 21 - homeip
+  - 🇬🇧 英国 (United Kingdom) 22 - homeip
+  - 🇬🇧 英国 (United Kingdom) 23 - homeip
+  - 🇬🇧 英国 (United Kingdom) 24 - homeip
+  - 🇬🇧 英国 (United Kingdom) 25 - homeip
+  - 🇬🇧 英国 (United Kingdom) 26 - homeip
+  - 🇬🇧 英国 (United Kingdom) 27 - homeip
+  - 🇬🇧 英国 (United Kingdom) 28 - homeip
+  - 🇬🇧 英国 (United Kingdom) 29 - homeip
+  - 🇬🇧 英国 (United Kingdom) 30 - homeip
+  - 🇬🇧 英国 (United Kingdom) 31 - homeip
+  - 🇬🇧 英国 (United Kingdom) 32 - homeip
 rules:
 - MATCH,PROXIES

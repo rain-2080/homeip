@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - homeip
   type: vless
-  server: 131.123.41.31
+  server: 131.123.37.199
   port: 8081
   uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
@@ -16,20 +16,21 @@ proxies:
   ws-opts:
     path: /vless-test
     headers:
-      Host: 131.123.41.31
+      Host: 131.123.37.199
 - name: 🇧🇬 BG 02 - homeip
   type: vless
-  server: 131.123.39.29
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  server: 104.143.204.237
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /vless-test
+    path: /
     headers:
-      Host: 131.123.39.29
+      Host: shuma.ccwu.cc
 - name: 🇧🇬 BG 03 - homeip
   type: vless
   server: neth9.lunariai.ru
@@ -39,6 +40,50 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 04 - homeip
+  type: vless
+  server: neth9.lunariai.ru
+  port: 443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: neth9.lunariai.ru
+- name: 🇧🇬 BG 05 - homeip
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 06 - homeip
+  type: vless
+  server: neth9.lunariai.ru
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 07 - homeip
+  type: vless
+  server: 192.145.31.5
+  port: 443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.145.31.5
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +92,10 @@ proxy-groups:
   - 🇧🇬 BG 01 - homeip
   - 🇧🇬 BG 02 - homeip
   - 🇧🇬 BG 03 - homeip
+  - 🇧🇬 BG 04 - homeip
+  - 🇧🇬 BG 05 - homeip
+  - 🇧🇬 BG 06 - homeip
+  - 🇧🇬 BG 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,5 +104,9 @@ proxy-groups:
   - 🇧🇬 BG 01 - homeip
   - 🇧🇬 BG 02 - homeip
   - 🇧🇬 BG 03 - homeip
+  - 🇧🇬 BG 04 - homeip
+  - 🇧🇬 BG 05 - homeip
+  - 🇧🇬 BG 06 - homeip
+  - 🇧🇬 BG 07 - homeip
 rules:
 - MATCH,PROXIES

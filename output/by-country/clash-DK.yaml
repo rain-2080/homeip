@@ -5,6 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇰 DK 01 - homeip
+  type: vless
+  server: 193.180.208.169
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇩🇰 DK 02 - homeip
+  type: vless
+  server: 193.180.209.136
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇩🇰 DK 03 - homeip
   type: ss
   server: 38.180.214.110
   port: 5600
@@ -17,11 +45,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇩🇰 DK 01 - homeip
+  - 🇩🇰 DK 02 - homeip
+  - 🇩🇰 DK 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇩🇰 DK 01 - homeip
+  - 🇩🇰 DK 02 - homeip
+  - 🇩🇰 DK 03 - homeip
 rules:
 - MATCH,PROXIES

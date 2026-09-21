@@ -1,0 +1,84 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇸🇪 SE 01 - homeip
+  type: vless
+  server: 144.31.217.95
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇸🇪 SE 02 - homeip
+  type: vless
+  server: 89.22.224.146
+  port: 43788
+  uuid: acc10ba5-a222-44b3-8a1a-4f247ffc6466
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇸🇪 SE 03 - homeip
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 04 - homeip
+  type: ss
+  server: 51.170.185.165
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: u1NAK7Sc9gI0zhd9RVIsisY4VVe58lx0Jvn2QV8QMeo=
+  udp: true
+- name: 🇸🇪 SE 05 - homeip
+  type: vless
+  server: 103.71.22.133
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇸🇪 SE 01 - homeip
+  - 🇸🇪 SE 02 - homeip
+  - 🇸🇪 SE 03 - homeip
+  - 🇸🇪 SE 04 - homeip
+  - 🇸🇪 SE 05 - homeip
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇪 SE 01 - homeip
+  - 🇸🇪 SE 02 - homeip
+  - 🇸🇪 SE 03 - homeip
+  - 🇸🇪 SE 04 - homeip
+  - 🇸🇪 SE 05 - homeip
+rules:
+- MATCH,PROXIES

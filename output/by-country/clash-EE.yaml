@@ -6,13 +6,18 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - homeip
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 109.206.241.16
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 - name: 🇪🇪 EE 02 - homeip
   type: vless
   server: 94.183.170.135
@@ -26,6 +31,15 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
+- name: 🇪🇪 EE 03 - homeip
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
+  - 🇪🇪 EE 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
+  - 🇪🇪 EE 03 - homeip
 rules:
 - MATCH,PROXIES
