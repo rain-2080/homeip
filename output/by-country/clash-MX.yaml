@@ -18,17 +18,34 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
+- name: 🇲🇽 MX 02 - homeip
+  type: vmess
+  server: 131.196.252.59
+  port: 20521
+  uuid: 5809911a-a16e-43d3-90b0-2c94cfc2035e
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 131.196.252.59
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇲🇽 MX 01 - homeip
+  - 🇲🇽 MX 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇲🇽 MX 01 - homeip
+  - 🇲🇽 MX 02 - homeip
 rules:
 - MATCH,PROXIES

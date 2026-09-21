@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - homeip
+- name: 🇸🇦 SA 01 - homeip
   type: vless
-  server: 195.85.23.47
+  server: 91.209.253.68
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -18,9 +18,9 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 02 - homeip
+- name: 🇸🇦 SA 02 - homeip
   type: vless
-  server: cz1.zuoai.cf
+  server: 91.209.253.25
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -32,9 +32,9 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 03 - homeip
+- name: 🇸🇦 SA 03 - homeip
   type: vless
-  server: 195.85.23.217
+  server: 91.209.253.244
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -51,16 +51,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - homeip
-  - 🇨🇿 CZ 02 - homeip
-  - 🇨🇿 CZ 03 - homeip
+  - 🇸🇦 SA 01 - homeip
+  - 🇸🇦 SA 02 - homeip
+  - 🇸🇦 SA 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - homeip
-  - 🇨🇿 CZ 02 - homeip
-  - 🇨🇿 CZ 03 - homeip
+  - 🇸🇦 SA 01 - homeip
+  - 🇸🇦 SA 02 - homeip
+  - 🇸🇦 SA 03 - homeip
 rules:
 - MATCH,PROXIES

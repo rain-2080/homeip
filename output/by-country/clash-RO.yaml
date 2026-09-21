@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - homeip
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  server: 103.126.50.196
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 - name: 🇷🇴 RO 02 - homeip
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 03 - homeip
   type: vless
   server: 154.46.31.118
   port: 443
@@ -32,10 +32,38 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇷🇴 RO 04 - homeip
+- name: 🇷🇴 RO 03 - homeip
   type: vless
   server: 103.126.50.196
   port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇷🇴 RO 04 - homeip
+  type: vless
+  server: 185.153.198.86
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇷🇴 RO 05 - homeip
+  type: vless
+  server: 154.46.31.118
+  port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -55,6 +83,7 @@ proxy-groups:
   - 🇷🇴 RO 02 - homeip
   - 🇷🇴 RO 03 - homeip
   - 🇷🇴 RO 04 - homeip
+  - 🇷🇴 RO 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,5 +93,6 @@ proxy-groups:
   - 🇷🇴 RO 02 - homeip
   - 🇷🇴 RO 03 - homeip
   - 🇷🇴 RO 04 - homeip
+  - 🇷🇴 RO 05 - homeip
 rules:
 - MATCH,PROXIES
