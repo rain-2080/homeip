@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇪 BE 01 - homeip
   type: vless
-  server: 141.227.186.38
+  server: 141.227.137.177
   port: 2053
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -46,6 +46,20 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
+- name: 🇧🇪 BE 04 - homeip
+  type: vless
+  server: 141.227.137.177
+  port: 2053
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +68,7 @@ proxy-groups:
   - 🇧🇪 BE 01 - homeip
   - 🇧🇪 BE 02 - homeip
   - 🇧🇪 BE 03 - homeip
+  - 🇧🇪 BE 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +77,6 @@ proxy-groups:
   - 🇧🇪 BE 01 - homeip
   - 🇧🇪 BE 02 - homeip
   - 🇧🇪 BE 03 - homeip
+  - 🇧🇪 BE 04 - homeip
 rules:
 - MATCH,PROXIES

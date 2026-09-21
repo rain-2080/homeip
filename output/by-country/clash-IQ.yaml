@@ -18,27 +18,17 @@ proxies:
     path: /de03-ws-8e47a
     headers:
       Host: hub-de-03.hanvpn.cc
-- name: 🇮🇶 IQ 02 - homeip
-  type: vless
-  server: 81.90.25.152
-  port: 34302
-  uuid: e9a7f2c2-51bd-4a81-de35-26b369e2585b
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - homeip
-  - 🇮🇶 IQ 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - homeip
-  - 🇮🇶 IQ 02 - homeip
 rules:
 - MATCH,PROXIES

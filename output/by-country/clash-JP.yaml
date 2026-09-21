@@ -5,387 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - homeip
-  type: vless
-  server: 92.113.124.253
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /redirect.html/list/episode?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 02 - homeip
-  type: vless
-  server: 92.113.124.228
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 03 - homeip
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 04 - homeip
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 05 - homeip
-  type: vmess
-  server: 168.110.60.104
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 06 - homeip
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 07 - homeip
-  type: vless
-  server: 104.156.238.23
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /bt/image/categories?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 08 - homeip
-  type: vmess
-  server: 168.110.60.104
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 09 - homeip
   type: ss
   server: 84.247.155.196
-  port: 443
+  port: 80
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 10 - homeip
-  type: vless
-  server: orange-math-9c83.371.workers.dev
-  port: 8880
-  uuid: 0b17eb47-587b-4e46-86a7-e1681cbbe76c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: orange-math-9c83.371.workers.dev
-- name: 🇯🇵 日本 (Japan) 11 - homeip
-  type: vless
-  server: 103.115.18.54
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /episode/files?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 12 - homeip
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 13 - homeip
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 14 - homeip
-  type: vless
-  server: 151.241.129.79
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /docs/gif?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 15 - homeip
-  type: vless
-  server: shy-mud-e936.15-bb9.workers.dev
-  port: 8880
-  uuid: ae83f4a6-7fd3-4168-9f42-1260fc601155
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shy-mud-e936.15-bb9.workers.dev
-- name: 🇯🇵 日本 (Japan) 16 - homeip
-  type: vless
-  server: 45.202.254.133
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 17 - homeip
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 18 - homeip
-  type: vless
-  server: 104.156.238.23
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /bt/image/categories
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 19 - homeip
-  type: vless
-  server: 103.115.18.54
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /mall/china/doc?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 20 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /p/docs/soft?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 21 - homeip
-  type: vless
-  server: 216.23.84.115
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 22 - homeip
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 23 - homeip
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 24 - homeip
-  type: vless
-  server: 103.115.18.54
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 25 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 26 - homeip
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 27 - homeip
-  type: vless
-  server: 46.250.250.48
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 28 - homeip
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 29 - homeip
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 30 - homeip
-  type: vless
-  server: 46.250.250.48
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 31 - homeip
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 32 - homeip
-  type: vless
-  server: 35.72.179.15
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 33 - homeip
+- name: 🇯🇵 日本 (Japan) 02 - homeip
   type: vless
   server: 161.33.29.51
   port: 443
@@ -396,139 +22,12 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 34 - homeip
-  type: vless
-  server: 101.142.129.72
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 35 - homeip
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 36 - homeip
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 37 - homeip
-  type: vless
-  server: 64.176.60.226
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /documents
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 38 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 39 - homeip
-  type: vless
-  server: 64.83.39.176
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /seller?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 40 - homeip
-  type: vless
-  server: 89.116.88.158
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /drama/zh?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 41 - homeip
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 42 - homeip
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 43 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /p/docs/soft?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 44 - homeip
+- name: 🇯🇵 日本 (Japan) 03 - homeip
   type: vmess
-  server: oc.imfun.fun
+  server: 168.110.60.104
   port: 18112
   uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
   alterId: 0
@@ -536,45 +35,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 45 - homeip
-  type: vless
-  server: 104.238.149.30
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /redirect.php/comic?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 46 - homeip
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 47 - homeip
-  type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /collect/user/products?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 48 - homeip
+- name: 🇯🇵 日本 (Japan) 04 - homeip
   type: vless
   server: 172.67.156.147
   port: 443
@@ -588,22 +49,57 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 49 - homeip
+- name: 🇯🇵 日本 (Japan) 05 - homeip
   type: vless
-  server: small-wave-9851.441-57f.workers.dev
-  port: 8880
-  uuid: a429499b-6237-44b2-ae4d-0d53d14cf46a
+  server: 92.113.124.40
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /star/manhua/p?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 06 - homeip
+  type: vless
+  server: 103.115.18.54
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 07 - homeip
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: small-wave-9851.441-57f.workers.dev
-- name: 🇯🇵 日本 (Japan) 50 - homeip
+- name: 🇯🇵 日本 (Japan) 08 - homeip
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - homeip
   type: vless
-  server: 140.235.39.19
+  server: 216.23.84.115
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -612,66 +108,10 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 51 - homeip
-  type: vless
-  server: 104.156.238.23
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /bt/image/categories?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 52 - homeip
-  type: vless
-  server: 161.33.29.51
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 53 - homeip
-  type: vless
-  server: 151.241.129.79
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /docs/gif?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 54 - homeip
-  type: vless
-  server: 138.2.59.96
-  port: 10129
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 55 - homeip
+- name: 🇯🇵 日本 (Japan) 10 - homeip
   type: vless
   server: 92.113.124.228
   port: 443
@@ -682,35 +122,27 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 56 - homeip
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 57 - homeip
+- name: 🇯🇵 日本 (Japan) 11 - homeip
   type: vless
   server: 188.114.97.6
   port: 443
-  uuid: 20f21d96-3700-46d9-9f63-5933403c0c18
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: restless-math-7bde.299-75c.workers.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /tyxyws
     headers:
-      Host: restless-math-7bde.299-75c.workers.dev
-- name: 🇯🇵 日本 (Japan) 58 - homeip
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 12 - homeip
   type: vless
-  server: 167.179.114.75
-  port: 2053
+  server: 103.115.18.54
+  port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -718,54 +150,10 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /anime/payment?ed=2560fp=chrome
+    path: /mall/china/doc?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 59 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /p/docs/soft
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 60 - homeip
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 61 - homeip
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 62 - homeip
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 63 - homeip
+- name: 🇯🇵 日本 (Japan) 13 - homeip
   type: vless
   server: 108.160.136.71
   port: 443
@@ -779,16 +167,23 @@ proxies:
     path: /doc/products/view?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 64 - homeip
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 65 - homeip
+- name: 🇯🇵 日本 (Japan) 14 - homeip
   type: vless
-  server: 162.159.254.3
+  server: 64.176.60.226
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 15 - homeip
+  type: vless
+  server: 172.67.156.147
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -800,24 +195,10 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 66 - homeip
+- name: 🇯🇵 日本 (Japan) 16 - homeip
   type: vless
-  server: 104.238.148.149
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /about?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 67 - homeip
-  type: vless
-  server: 101.142.129.72
-  port: 443
+  server: 46.250.250.48
+  port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -828,7 +209,64 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 68 - homeip
+- name: 🇯🇵 日本 (Japan) 17 - homeip
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: none
+- name: 🇯🇵 日本 (Japan) 18 - homeip
+  type: vless
+  server: 151.241.129.79
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /docs/gif
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 19 - homeip
+  type: vless
+  server: 92.113.124.253
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /redirect.html/list/episode?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 20 - homeip
+  type: vless
+  server: 103.115.18.54
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /mall/china/doc?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 21 - homeip
   type: vless
   server: 188.114.97.6
   port: 443
@@ -842,7 +280,283 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 69 - homeip
+- name: 🇯🇵 日本 (Japan) 22 - homeip
+  type: vless
+  server: 216.23.84.115
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 23 - homeip
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 24 - homeip
+  type: vless
+  server: 108.160.136.71
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /doc/products/view?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 25 - homeip
+  type: vless
+  server: 203.137.165.164
+  port: 57554
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 26 - homeip
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 27 - homeip
+  type: vless
+  server: 206.251.53.91
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /settings?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 28 - homeip
+  type: vless
+  server: 45.202.254.133
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 29 - homeip
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 30 - homeip
+  type: vless
+  server: 104.156.238.23
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /bt/image/categories?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 31 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 32 - homeip
+  type: vless
+  server: 104.156.238.23
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /bt/image/categories
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 33 - homeip
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 34 - homeip
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 35 - homeip
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 36 - homeip
+  type: vless
+  server: 45.202.254.133
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 37 - homeip
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 38 - homeip
+  type: vless
+  server: 64.83.39.176
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /seller?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 39 - homeip
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 40 - homeip
+  type: vless
+  server: 138.2.59.96
+  port: 10129
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /movie/help/events?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 41 - homeip
+  type: vless
+  server: 46.250.250.48
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 42 - homeip
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 43 - homeip
   type: vmess
   server: 168.110.60.104
   port: 18112
@@ -852,22 +566,40 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 70 - homeip
-  type: vless
-  server: 104.17.181.19
-  port: 8880
-  uuid: fe3b26ec-4bc0-464d-a7b9-2db72a89846e
+- name: 🇯🇵 日本 (Japan) 44 - homeip
+  type: vmess
+  server: zfd-jpv2.kunlun01dns.com
+  port: 16120
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 45 - homeip
+  type: vless
+  server: 45.202.254.133
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /
     headers:
-      Host: orange-base-2e09.87-c52.workers.dev
-- name: 🇯🇵 日本 (Japan) 71 - homeip
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 46 - homeip
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 47 - homeip
   type: vless
-  server: 207.148.94.254
+  server: 89.116.88.158
   port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
@@ -876,13 +608,300 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /library?ed=2560
+    path: /drama/zh?ed=2560
     headers:
       Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 48 - homeip
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 49 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 50 - homeip
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 51 - homeip
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 52 - homeip
+  type: vless
+  server: 92.113.124.228
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 53 - homeip
+  type: vless
+  server: 138.2.59.96
+  port: 10129
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 54 - homeip
+  type: vless
+  server: 92.113.124.228
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 55 - homeip
+  type: vless
+  server: 35.72.179.15
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 56 - homeip
+  type: vless
+  server: 206.251.53.91
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /settings?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 57 - homeip
+  type: vless
+  server: 103.115.18.54
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /mall/china/doc?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 58 - homeip
+  type: vless
+  server: 210.152.85.154
+  port: 19364
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /collect/user/products?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 59 - homeip
+  type: vless
+  server: 203.137.165.164
+  port: 57554
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /p/docs/soft?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 60 - homeip
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 61 - homeip
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 62 - homeip
+  type: vmess
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 168.138.43.75
+- name: 🇯🇵 日本 (Japan) 63 - homeip
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 64 - homeip
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 65 - homeip
+  type: vless
+  server: 92.113.124.228
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 66 - homeip
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 67 - homeip
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 68 - homeip
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 69 - homeip
+  type: vless
+  server: 138.2.59.96
+  port: 10129
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 70 - homeip
+  type: vless
+  server: 92.113.124.253
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /redirect.html/list/episode
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 71 - homeip
+  type: vless
+  server: 161.33.29.51
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 - name: 🇯🇵 日本 (Japan) 72 - homeip
   type: vless
-  server: 45.202.254.133
-  port: 443
+  server: 46.250.250.48
+  port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -905,351 +924,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 74 - homeip
   type: vless
-  server: 104.18.32.47
-  port: 8880
-  uuid: 8ddedcc7-6c4e-4df3-a190-ac40926f6694
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: late-boat-fbd7.152-de6.workers.dev
-- name: 🇯🇵 日本 (Japan) 75 - homeip
-  type: vless
-  server: 207.148.99.230
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /test/company/library?ed=2560+
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 76 - homeip
-  type: vless
-  server: 216.23.84.115
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 77 - homeip
-  type: vless
-  server: 92.113.124.40
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /star/manhua/p?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 78 - homeip
-  type: vless
-  server: 101.142.129.72
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 79 - homeip
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 80 - homeip
-  type: vless
-  server: 64.176.60.226
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 81 - homeip
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 82 - homeip
-  type: vless
-  server: 207.148.99.230
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /test/company/library?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 83 - homeip
-  type: vless
-  server: 104.18.32.47
-  port: 8880
-  uuid: 8ddedcc7-6c4e-4df3-a190-ac40926f6694
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: late-boat-fbd7.152-de6.workers.dev
-- name: 🇯🇵 日本 (Japan) 84 - homeip
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 85 - homeip
-  type: vless
-  server: 103.115.18.54
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /mall/china/doc?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 86 - homeip
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 87 - homeip
-  type: vless
-  server: 64.176.60.226
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 88 - homeip
-  type: vless
-  server: 89.116.88.158
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /drama/zh?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 89 - homeip
-  type: vless
-  server: 167.179.114.75
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /anime/payment?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 90 - homeip
-  type: vless
-  server: 89.116.88.158
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /drama/zh?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 91 - homeip
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 92 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 93 - homeip
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 94 - homeip
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 95 - homeip
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 96 - homeip
-  type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: ae83f4a6-7fd3-4168-9f42-1260fc601155
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: shy-mud-e936.15-bb9.workers.dev
-- name: 🇯🇵 日本 (Japan) 97 - homeip
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 98 - homeip
-  type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 99 - homeip
-  type: vless
-  server: 92.113.124.228
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 100 - homeip
-  type: vless
-  server: 167.179.114.75
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /anime/payment?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 101 - homeip
-  type: vless
   server: 45.76.206.46
   port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -1262,97 +936,21 @@ proxies:
     path: /tags/go/groups?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 102 - homeip
+- name: 🇯🇵 日本 (Japan) 75 - homeip
   type: vless
-  server: 172.67.217.240
+  server: 154.19.187.190
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /
     headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 103 - homeip
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 104 - homeip
-  type: vless
-  server: 64.176.60.226
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /documents?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 105 - homeip
-  type: vless
-  server: 92.113.124.253
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /redirect.html/list/episode?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 106 - homeip
-  type: vless
-  server: 108.160.136.71
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /doc/products/view?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 107 - homeip
-  type: vmess
-  server: oc.imfun.fun
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 108 - homeip
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 109 - homeip
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 76 - homeip
   type: vless
   server: 103.115.18.54
   port: 443
@@ -1366,7 +964,15 @@ proxies:
     path: /episode/files?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 110 - homeip
+- name: 🇯🇵 日本 (Japan) 77 - homeip
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 78 - homeip
   type: vmess
   server: oc.imfun.fun
   port: 18112
@@ -1376,21 +982,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 111 - homeip
-  type: vless
-  server: 104.238.148.149
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /about?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 112 - homeip
+- name: 🇯🇵 日本 (Japan) 79 - homeip
   type: vless
   server: 45.76.206.46
   port: 443
@@ -1404,7 +996,397 @@ proxies:
     path: /tags/go/groups?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 113 - homeip
+- name: 🇯🇵 日本 (Japan) 80 - homeip
+  type: vless
+  server: 161.33.29.51
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 81 - homeip
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 82 - homeip
+  type: vless
+  server: 92.113.124.228
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 83 - homeip
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 84 - homeip
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 85 - homeip
+  type: vless
+  server: 92.113.124.228
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 86 - homeip
+  type: vless
+  server: 151.241.129.79
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /docs/gif?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 87 - homeip
+  type: vless
+  server: 104.21.33.59
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 88 - homeip
+  type: vless
+  server: 104.238.149.30
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /redirect.php/comic?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 89 - homeip
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 90 - homeip
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: None
+- name: 🇯🇵 日本 (Japan) 91 - homeip
+  type: vless
+  server: 172.111.146.64
+  port: 80
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 92 - homeip
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 93 - homeip
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 94 - homeip
+  type: vless
+  server: 45.202.254.133
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 95 - homeip
+  type: vless
+  server: 108.160.136.71
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 96 - homeip
+  type: vless
+  server: 45.202.254.133
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 97 - homeip
+  type: vless
+  server: 161.33.29.51
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 98 - homeip
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 99 - homeip
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 100 - homeip
+  type: vless
+  server: 206.251.53.91
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /settings?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 101 - homeip
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 102 - homeip
+  type: vless
+  server: 206.251.53.91
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /settings?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 103 - homeip
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 104 - homeip
+  type: vless
+  server: 161.33.29.51
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 105 - homeip
+  type: vless
+  server: 35.72.179.15
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 106 - homeip
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 107 - homeip
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 108 - homeip
+  type: vless
+  server: 45.202.254.133
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇯🇵 日本 (Japan) 109 - homeip
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 110 - homeip
   type: vless
   server: 92.113.124.253
   port: 443
@@ -1418,24 +1400,10 @@ proxies:
     path: /redirect.html/list/episode?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 114 - homeip
+- name: 🇯🇵 日本 (Japan) 111 - homeip
   type: vless
-  server: 35.72.179.15
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇯🇵 日本 (Japan) 115 - homeip
-  type: vless
-  server: 151.242.189.162
-  port: 443
+  server: 167.179.114.75
+  port: 2053
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -1443,30 +1411,9 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /chat?ed=2560
+    path: /anime/payment?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 116 - homeip
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: ae83f4a6-7fd3-4168-9f42-1260fc601155
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shy-mud-e936.15-bb9.workers.dev
-- name: 🇯🇵 日本 (Japan) 117 - homeip
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1583,12 +1530,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 109 - homeip
   - 🇯🇵 日本 (Japan) 110 - homeip
   - 🇯🇵 日本 (Japan) 111 - homeip
-  - 🇯🇵 日本 (Japan) 112 - homeip
-  - 🇯🇵 日本 (Japan) 113 - homeip
-  - 🇯🇵 日本 (Japan) 114 - homeip
-  - 🇯🇵 日本 (Japan) 115 - homeip
-  - 🇯🇵 日本 (Japan) 116 - homeip
-  - 🇯🇵 日本 (Japan) 117 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1705,11 +1646,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 109 - homeip
   - 🇯🇵 日本 (Japan) 110 - homeip
   - 🇯🇵 日本 (Japan) 111 - homeip
-  - 🇯🇵 日本 (Japan) 112 - homeip
-  - 🇯🇵 日本 (Japan) 113 - homeip
-  - 🇯🇵 日本 (Japan) 114 - homeip
-  - 🇯🇵 日本 (Japan) 115 - homeip
-  - 🇯🇵 日本 (Japan) 116 - homeip
-  - 🇯🇵 日本 (Japan) 117 - homeip
 rules:
 - MATCH,PROXIES

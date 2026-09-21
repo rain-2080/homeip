@@ -5,45 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - homeip
-  type: vmess
-  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
+  type: vless
+  server: 140.235.39.162
   port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ''
+      Host: shuma.ccwu.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - homeip
-  type: vmess
-  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - homeip
-  type: ss
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - homeip
   type: vmess
   server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   port: 443
@@ -56,34 +31,71 @@ proxies:
   servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
       Host: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - homeip
+  type: vmess
+  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - homeip
+  type: vless
+  server: 140.235.39.19
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 05 - homeip
   type: vless
-  server: 118.167.246.43
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  server: 140.235.39.19
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 06 - homeip
-  type: vless
-  server: 118.167.246.43
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 07 - homeip
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 08 - homeip
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -105,6 +117,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 05 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 06 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 07 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -117,5 +130,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 05 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 06 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 07 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 08 - homeip
 rules:
 - MATCH,PROXIES

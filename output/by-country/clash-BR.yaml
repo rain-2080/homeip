@@ -20,18 +20,30 @@ proxies:
       Host: shuma.ccwu.cc
 - name: 🇧🇷 BR 02 - homeip
   type: vless
-  server: 5.104.107.80
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 34.39.174.220
+  port: 443
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  reality-opts:
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇧🇷 BR 03 - homeip
+  type: vless
+  server: 157.151.4.93
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /act/clip/directory?ed=2560fp=chrome
+    path: /fp=chrome
     headers:
-      Host: cdn8848.776676.xyz
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +51,7 @@ proxy-groups:
   - AUTO
   - 🇧🇷 BR 01 - homeip
   - 🇧🇷 BR 02 - homeip
+  - 🇧🇷 BR 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +59,6 @@ proxy-groups:
   proxies:
   - 🇧🇷 BR 01 - homeip
   - 🇧🇷 BR 02 - homeip
+  - 🇧🇷 BR 03 - homeip
 rules:
 - MATCH,PROXIES

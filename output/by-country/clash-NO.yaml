@@ -20,6 +20,18 @@ proxies:
       Host: shuma.ccwu.cc
 - name: 🇳🇴 NO 02 - homeip
   type: vless
+  server: 46.29.238.88
+  port: 40443
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇳🇴 NO 03 - homeip
+  type: vless
   server: 194.32.107.150
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
@@ -32,18 +44,6 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇳🇴 NO 03 - homeip
-  type: vless
-  server: 46.29.238.88
-  port: 40443
-  uuid: db320947-adfb-400d-b60b-383b8324bffe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
-  servername: deepl.com
-  client-fingerprint: chrome
 - name: 🇳🇴 NO 04 - homeip
   type: vless
   server: 185.125.171.128
@@ -60,8 +60,8 @@ proxies:
       Host: shuma.ccwu.cc
 - name: 🇳🇴 NO 05 - homeip
   type: vless
-  server: 185.125.171.128
-  port: 8443
+  server: 194.32.107.150
+  port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
