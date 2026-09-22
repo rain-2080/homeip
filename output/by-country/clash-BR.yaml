@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - homeip
   type: vless
+  server: 35.199.90.53
+  port: 443
+  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇧🇷 BR 02 - homeip
+  type: vless
   server: 157.151.4.93
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
@@ -18,7 +30,21 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇧🇷 BR 02 - homeip
+- name: 🇧🇷 BR 03 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: db9571d2-42ed-4cdf-b49f-3195b42c045a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web.whatsapp.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /br-orcl
+    headers:
+      Host: web.whatsapp.com.r3xxe.eu.cc
+- name: 🇧🇷 BR 04 - homeip
   type: vless
   server: 34.39.174.220
   port: 443
@@ -30,7 +56,19 @@ proxies:
     public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇧🇷 BR 03 - homeip
+- name: 🇧🇷 BR 05 - homeip
+  type: vless
+  server: 34.39.174.220
+  port: 443
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇧🇷 BR 06 - homeip
   type: vless
   server: 157.151.4.93
   port: 443
@@ -41,7 +79,7 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: shuma.ccwu.cc
 proxy-groups:
@@ -52,6 +90,9 @@ proxy-groups:
   - 🇧🇷 BR 01 - homeip
   - 🇧🇷 BR 02 - homeip
   - 🇧🇷 BR 03 - homeip
+  - 🇧🇷 BR 04 - homeip
+  - 🇧🇷 BR 05 - homeip
+  - 🇧🇷 BR 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +101,8 @@ proxy-groups:
   - 🇧🇷 BR 01 - homeip
   - 🇧🇷 BR 02 - homeip
   - 🇧🇷 BR 03 - homeip
+  - 🇧🇷 BR 04 - homeip
+  - 🇧🇷 BR 05 - homeip
+  - 🇧🇷 BR 06 - homeip
 rules:
 - MATCH,PROXIES

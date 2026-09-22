@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - homeip
-  type: vless
-  server: 107.189.2.206
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shuma.ccwu.cc
 - name: 🇨🇭 CH 02 - homeip
   type: vless
   server: 107.189.2.206
@@ -33,19 +26,135 @@ proxies:
     headers:
       Host: shuma.ccwu.cc
 - name: 🇨🇭 CH 03 - homeip
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: vless
+  server: 104.21.200.243
+  port: 2053
+  uuid: 7074b9d7-2183-8919-fc11-ca5e00000000
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: netlivpn2584.vjvdgbc.workers.dev
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn2584.vjvdgbc.workers.dev
 - name: 🇨🇭 CH 04 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: bd9ff08b-d042-3650-48e4-c4b400000000
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn2950.bbxff.workers.dev
+- name: 🇨🇭 CH 05 - homeip
+  type: vless
+  server: 131.123.34.145
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless-test
+    headers:
+      Host: 131.123.34.145
+- name: 🇨🇭 CH 06 - homeip
+  type: vless
+  server: 104.21.117.9
+  port: 443
+  uuid: bd9ff08b-d042-3650-48e4-c4b400000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: netlivpn2950.bbxff.workers.dev
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn2950.bbxff.workers.dev
+- name: 🇨🇭 CH 07 - homeip
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
+- name: 🇨🇭 CH 08 - homeip
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
+- name: 🇨🇭 CH 09 - homeip
+  type: vless
+  server: netlivpn5505.ffffdsaaa.workers.dev
+  port: 443
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
+- name: 🇨🇭 CH 10 - homeip
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
+- name: 🇨🇭 CH 11 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 7074b9d7-2183-8919-fc11-ca5e00000000
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn2584.vjvdgbc.workers.dev
+- name: 🇨🇭 CH 12 - homeip
+  type: vless
+  server: netlivpn5505.ffffdsaaa.workers.dev
+  port: 443
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +164,14 @@ proxy-groups:
   - 🇨🇭 CH 02 - homeip
   - 🇨🇭 CH 03 - homeip
   - 🇨🇭 CH 04 - homeip
+  - 🇨🇭 CH 05 - homeip
+  - 🇨🇭 CH 06 - homeip
+  - 🇨🇭 CH 07 - homeip
+  - 🇨🇭 CH 08 - homeip
+  - 🇨🇭 CH 09 - homeip
+  - 🇨🇭 CH 10 - homeip
+  - 🇨🇭 CH 11 - homeip
+  - 🇨🇭 CH 12 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,5 +181,13 @@ proxy-groups:
   - 🇨🇭 CH 02 - homeip
   - 🇨🇭 CH 03 - homeip
   - 🇨🇭 CH 04 - homeip
+  - 🇨🇭 CH 05 - homeip
+  - 🇨🇭 CH 06 - homeip
+  - 🇨🇭 CH 07 - homeip
+  - 🇨🇭 CH 08 - homeip
+  - 🇨🇭 CH 09 - homeip
+  - 🇨🇭 CH 10 - homeip
+  - 🇨🇭 CH 11 - homeip
+  - 🇨🇭 CH 12 - homeip
 rules:
 - MATCH,PROXIES

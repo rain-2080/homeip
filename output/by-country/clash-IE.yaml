@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - homeip
   type: vless
-  server: 198.55.102.68
-  port: 2083
+  server: 167.160.177.68
+  port: 2096
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -20,22 +20,8 @@ proxies:
       Host: shuma.ccwu.cc
 - name: 🇮🇪 IE 02 - homeip
   type: vless
-  server: 162.159.160.139
+  server: 198.55.102.68
   port: 2083
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cfvvv-ev1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-- name: 🇮🇪 IE 03 - homeip
-  type: vless
-  server: 107.150.20.112
-  port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -46,10 +32,10 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇮🇪 IE 04 - homeip
+- name: 🇮🇪 IE 03 - homeip
   type: vless
-  server: 167.160.177.68
-  port: 2096
+  server: 107.150.20.112
+  port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -68,7 +54,6 @@ proxy-groups:
   - 🇮🇪 IE 01 - homeip
   - 🇮🇪 IE 02 - homeip
   - 🇮🇪 IE 03 - homeip
-  - 🇮🇪 IE 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +62,5 @@ proxy-groups:
   - 🇮🇪 IE 01 - homeip
   - 🇮🇪 IE 02 - homeip
   - 🇮🇪 IE 03 - homeip
-  - 🇮🇪 IE 04 - homeip
 rules:
 - MATCH,PROXIES
