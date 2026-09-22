@@ -15,7 +15,7 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: shuma.ccwu.cc
 - name: 🇭🇺 HU 02 - homeip
@@ -29,24 +29,10 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
 - name: 🇭🇺 HU 03 - homeip
-  type: vless
-  server: 38.180.109.174
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇭🇺 HU 04 - homeip
   type: vless
   server: 180.149.37.38
   port: 8443
@@ -68,7 +54,6 @@ proxy-groups:
   - 🇭🇺 HU 01 - homeip
   - 🇭🇺 HU 02 - homeip
   - 🇭🇺 HU 03 - homeip
-  - 🇭🇺 HU 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +62,5 @@ proxy-groups:
   - 🇭🇺 HU 01 - homeip
   - 🇭🇺 HU 02 - homeip
   - 🇭🇺 HU 03 - homeip
-  - 🇭🇺 HU 04 - homeip
 rules:
 - MATCH,PROXIES

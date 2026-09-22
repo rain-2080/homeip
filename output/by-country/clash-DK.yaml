@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇰 DK 01 - homeip
-  type: ss
-  server: 38.180.214.110
-  port: 5600
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇰 DK 02 - homeip
   type: vless
   server: 193.180.208.169
   port: 8443
@@ -25,10 +18,59 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
+- name: 🇩🇰 DK 02 - homeip
+  type: ss
+  server: 38.180.214.110
+  port: 5600
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
 - name: 🇩🇰 DK 03 - homeip
   type: vless
   server: 193.180.208.169
   port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇩🇰 DK 04 - homeip
+  type: vless
+  server: 193.180.208.169
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇩🇰 DK 05 - homeip
+  type: vless
+  server: 193.180.208.169
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇩🇰 DK 06 - homeip
+  type: vless
+  server: 92.113.149.59
+  port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -47,6 +89,9 @@ proxy-groups:
   - 🇩🇰 DK 01 - homeip
   - 🇩🇰 DK 02 - homeip
   - 🇩🇰 DK 03 - homeip
+  - 🇩🇰 DK 04 - homeip
+  - 🇩🇰 DK 05 - homeip
+  - 🇩🇰 DK 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,5 +100,8 @@ proxy-groups:
   - 🇩🇰 DK 01 - homeip
   - 🇩🇰 DK 02 - homeip
   - 🇩🇰 DK 03 - homeip
+  - 🇩🇰 DK 04 - homeip
+  - 🇩🇰 DK 05 - homeip
+  - 🇩🇰 DK 06 - homeip
 rules:
 - MATCH,PROXIES

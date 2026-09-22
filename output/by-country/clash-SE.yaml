@@ -31,34 +31,6 @@ proxies:
     path: /vless-test
     headers:
       Host: 143.246.194.60
-- name: 🇸🇪 SE 04 - homeip
-  type: vless
-  server: 109.120.155.155
-  port: 444
-  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇸🇪 SE 05 - homeip
-  type: vless
-  server: 144.31.217.95
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,8 +39,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
-  - 🇸🇪 SE 04 - homeip
-  - 🇸🇪 SE 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,7 +47,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
-  - 🇸🇪 SE 04 - homeip
-  - 🇸🇪 SE 05 - homeip
 rules:
 - MATCH,PROXIES

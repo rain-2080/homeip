@@ -6,6 +6,34 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - homeip
   type: vless
+  server: 185.153.198.86
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇷🇴 RO 02 - homeip
+  type: vless
+  server: 185.153.198.86
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇷🇴 RO 03 - homeip
+  type: vless
   server: 103.126.50.196
   port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
@@ -18,7 +46,7 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇷🇴 RO 02 - homeip
+- name: 🇷🇴 RO 04 - homeip
   type: vless
   server: 154.46.31.118
   port: 443
@@ -32,20 +60,6 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇷🇴 RO 03 - homeip
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
-- name: 🇷🇴 RO 04 - homeip
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select

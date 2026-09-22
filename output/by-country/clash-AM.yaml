@@ -6,6 +6,32 @@ log-level: info
 proxies:
 - name: 🇦🇲 AM 01 - homeip
   type: vless
+  server: 2.56.207.67
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇦🇲 AM 02 - homeip
+  type: vless
+  server: 77.91.68.70
+  port: 55983
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇦🇲 AM 03 - homeip
+  type: vless
   server: 2.56.204.183
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
@@ -18,7 +44,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
-- name: 🇦🇲 AM 02 - homeip
+- name: 🇦🇲 AM 04 - homeip
   type: vless
   server: 2.56.204.183
   port: 443
@@ -32,19 +58,7 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇦🇲 AM 03 - homeip
-  type: vless
-  server: 77.91.68.70
-  port: 55983
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇦🇲 AM 04 - homeip
+- name: 🇦🇲 AM 05 - homeip
   type: vless
   server: 77.91.68.70
   port: 55983
@@ -65,6 +79,7 @@ proxy-groups:
   - 🇦🇲 AM 02 - homeip
   - 🇦🇲 AM 03 - homeip
   - 🇦🇲 AM 04 - homeip
+  - 🇦🇲 AM 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +89,6 @@ proxy-groups:
   - 🇦🇲 AM 02 - homeip
   - 🇦🇲 AM 03 - homeip
   - 🇦🇲 AM 04 - homeip
+  - 🇦🇲 AM 05 - homeip
 rules:
 - MATCH,PROXIES
