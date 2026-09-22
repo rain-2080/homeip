@@ -6,48 +6,24 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - homeip
   type: vmess
-  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16115
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - homeip
-  type: vless
-  server: 45.192.247.199
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: vmess
+  server: dog-hk.kunlun01dns.com
+  port: 21021
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - homeip
-  type: vless
-  server: 45.149.186.133
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - homeip
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - homeip
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - homeip
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - homeip
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - homeip
 rules:
 - MATCH,PROXIES

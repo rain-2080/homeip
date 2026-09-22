@@ -6,48 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
-  server: a2.arshia-nova.ir
-  port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 02 - homeip
-  type: vless
-  server: 31.76.226.100
-  port: 443
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hub-fi-03.hanvpn.cc
-  network: ws
-  ws-opts:
-    path: /fi03-ws-8e47a
-    headers:
-      Host: hub-fi-03.hanvpn.cc
-- name: 🇫🇮 FI 03 - homeip
-  type: vless
-  server: 202.166.187.132
-  port: 443
-  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: f.yoptybla.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f.yoptybla.ru
-- name: 🇫🇮 FI 04 - homeip
-  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -58,47 +16,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 FI 05 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: f.yoptybla.ru
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f.yoptybla.ru
-- name: 🇫🇮 FI 06 - homeip
-  type: vless
-  server: 31.76.80.230
-  port: 8443
-  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fin.luxes.network
-  network: ws
-  ws-opts:
-    path: /assets
-    headers:
-      Host: 31.76.80.230
-- name: 🇫🇮 FI 07 - homeip
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: random
-- name: 🇫🇮 FI 08 - homeip
+- name: 🇫🇮 FI 02 - homeip
   type: vless
   server: 95.217.129.198
   port: 443
@@ -112,6 +30,86 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
+- name: 🇫🇮 FI 03 - homeip
+  type: vless
+  server: 31.76.226.100
+  port: 443
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hub-fi-03.hanvpn.cc
+  network: ws
+  ws-opts:
+    path: /fi03-ws-8e47a
+    headers:
+      Host: hub-fi-03.hanvpn.cc
+- name: 🇫🇮 FI 04 - homeip
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: random
+- name: 🇫🇮 FI 05 - homeip
+  type: vless
+  server: 202.166.187.132
+  port: 443
+  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: f.yoptybla.ru
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f.yoptybla.ru
+- name: 🇫🇮 FI 06 - homeip
+  type: vless
+  server: 185.255.179.11
+  port: 9443
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hub-se-02.hanvpn.cc
+  network: ws
+  ws-opts:
+    path: /se02-ws-8e47a
+    headers:
+      Host: hub-se-02.hanvpn.cc
+- name: 🇫🇮 FI 07 - homeip
+  type: vless
+  server: 31.76.80.230
+  port: 8443
+  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fin.luxes.network
+  network: ws
+  ws-opts:
+    path: /assets
+    headers:
+      Host: 31.76.80.230
+- name: 🇫🇮 FI 08 - homeip
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 09 - homeip
   type: vless
   server: 185.79.138.71
@@ -125,6 +123,18 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: chrome
 - name: 🇫🇮 FI 10 - homeip
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 11 - homeip
   type: vless
   server: 185.79.138.71
   port: 448
@@ -151,6 +161,7 @@ proxy-groups:
   - 🇫🇮 FI 08 - homeip
   - 🇫🇮 FI 09 - homeip
   - 🇫🇮 FI 10 - homeip
+  - 🇫🇮 FI 11 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -166,5 +177,6 @@ proxy-groups:
   - 🇫🇮 FI 08 - homeip
   - 🇫🇮 FI 09 - homeip
   - 🇫🇮 FI 10 - homeip
+  - 🇫🇮 FI 11 - homeip
 rules:
 - MATCH,PROXIES

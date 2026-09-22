@@ -25,6 +25,30 @@ proxies:
   client-fingerprint: qq
 - name: 🇦🇹 AT 03 - homeip
   type: vless
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: chrome
+- name: 🇦🇹 AT 04 - homeip
+  type: vless
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: chrome
+- name: 🇦🇹 AT 05 - homeip
+  type: vless
   server: 103.200.28.113
   port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
@@ -37,7 +61,19 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇦🇹 AT 04 - homeip
+- name: 🇦🇹 AT 06 - homeip
+  type: vless
+  server: 152.53.1.40
+  port: 443
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+  servername: at.quattro-tech.ru
+  client-fingerprint: qq
+- name: 🇦🇹 AT 07 - homeip
   type: vless
   server: 213.111.148.137
   port: 443
@@ -51,18 +87,20 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇦🇹 AT 05 - homeip
+- name: 🇦🇹 AT 08 - homeip
   type: vless
-  server: 152.53.1.40
+  server: 213.111.148.137
   port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-  servername: at.quattro-tech.ru
-  client-fingerprint: chrome
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,6 +111,9 @@ proxy-groups:
   - 🇦🇹 AT 03 - homeip
   - 🇦🇹 AT 04 - homeip
   - 🇦🇹 AT 05 - homeip
+  - 🇦🇹 AT 06 - homeip
+  - 🇦🇹 AT 07 - homeip
+  - 🇦🇹 AT 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,5 +124,8 @@ proxy-groups:
   - 🇦🇹 AT 03 - homeip
   - 🇦🇹 AT 04 - homeip
   - 🇦🇹 AT 05 - homeip
+  - 🇦🇹 AT 06 - homeip
+  - 🇦🇹 AT 07 - homeip
+  - 🇦🇹 AT 08 - homeip
 rules:
 - MATCH,PROXIES

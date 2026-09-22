@@ -5,45 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - homeip
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.64.146.228
+  port: 443
+  uuid: f5851a6e-72da-4e4e-99b2-c79629149503
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: d24e02c6.69lover.site
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /api/v2/e916944b060a3543/stream
     headers:
-      Host: kr02.a0a.xyz
+      Host: d24e02c6.69lover.site
 - name: 🇰🇷 韩国 (South Korea) 02 - homeip
+  type: ss
+  server: 141.164.45.187
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 03 - homeip
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: 34.64.149.137
+  port: 443
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 03 - homeip
-  type: vless
-  server: solitary-mountain-996f.223-38e.workers.dev
-  port: 8880
-  uuid: 58c1b245-2ea0-40b9-b512-bd2bbe3cbe3f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: solitary-mountain-996f.223-38e.workers.dev
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 04 - homeip
   type: vless
   server: 34.64.149.137
@@ -58,31 +51,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 05 - homeip
   type: vless
-  server: 123.111.169.70
-  port: 2083
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 06 - homeip
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  server: 34.64.149.137
+  port: 443
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 07 - homeip
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 06 - homeip
   type: vless
   server: 34.64.149.137
   port: 443
@@ -94,7 +73,26 @@ proxies:
     public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 07 - homeip
+  type: ss
+  server: 141.164.45.187
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
 - name: 🇰🇷 韩国 (South Korea) 08 - homeip
+  type: vless
+  server: 34.64.149.137
+  port: 443
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 09 - homeip
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -106,78 +104,7 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 09 - homeip
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
 - name: 🇰🇷 韩国 (South Korea) 10 - homeip
-  type: vless
-  server: 34.64.149.137
-  port: 443
-  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 11 - homeip
-  type: ss
-  server: 141.164.45.187
-  port: 9101
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 12 - homeip
-  type: vless
-  server: 34.64.149.137
-  port: 443
-  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 13 - homeip
-  type: vless
-  server: 185.162.229.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime61.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 14 - homeip
-  type: vless
-  server: 34.64.149.137
-  port: 443
-  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 15 - homeip
   type: vless
   server: 123.111.169.70
   port: 2083
@@ -191,19 +118,18 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 16 - homeip
+- name: 🇰🇷 韩国 (South Korea) 11 - homeip
   type: vless
-  server: log.bpminecraft.com
-  port: 8880
-  uuid: 9b14cdbe-bcfe-4178-a674-3ad88a7c6f6a
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: summer-snow-c151.320-3ef.workers.dev
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -220,11 +146,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 09 - homeip
   - 🇰🇷 韩国 (South Korea) 10 - homeip
   - 🇰🇷 韩国 (South Korea) 11 - homeip
-  - 🇰🇷 韩国 (South Korea) 12 - homeip
-  - 🇰🇷 韩国 (South Korea) 13 - homeip
-  - 🇰🇷 韩国 (South Korea) 14 - homeip
-  - 🇰🇷 韩国 (South Korea) 15 - homeip
-  - 🇰🇷 韩国 (South Korea) 16 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -241,10 +162,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 09 - homeip
   - 🇰🇷 韩国 (South Korea) 10 - homeip
   - 🇰🇷 韩国 (South Korea) 11 - homeip
-  - 🇰🇷 韩国 (South Korea) 12 - homeip
-  - 🇰🇷 韩国 (South Korea) 13 - homeip
-  - 🇰🇷 韩国 (South Korea) 14 - homeip
-  - 🇰🇷 韩国 (South Korea) 15 - homeip
-  - 🇰🇷 韩国 (South Korea) 16 - homeip
 rules:
 - MATCH,PROXIES

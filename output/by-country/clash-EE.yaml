@@ -25,8 +25,17 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: 94.183.170.135
 - name: 🇪🇪 EE 03 - homeip
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 04 - homeip
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -43,6 +52,7 @@ proxy-groups:
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
   - 🇪🇪 EE 03 - homeip
+  - 🇪🇪 EE 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,5 +61,6 @@ proxy-groups:
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
   - 🇪🇪 EE 03 - homeip
+  - 🇪🇪 EE 04 - homeip
 rules:
 - MATCH,PROXIES
