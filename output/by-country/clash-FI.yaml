@@ -6,31 +6,17 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 212.193.18.183
+  port: 8443
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
+    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
+  servername: maps.apple.com
   client-fingerprint: firefox
 - name: 🇫🇮 FI 02 - homeip
-  type: vless
-  server: 95.217.129.198
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇫🇮 FI 03 - homeip
   type: vless
   server: 31.76.226.100
   port: 443
@@ -44,7 +30,7 @@ proxies:
     path: /fi03-ws-8e47a
     headers:
       Host: hub-fi-03.hanvpn.cc
-- name: 🇫🇮 FI 04 - homeip
+- name: 🇫🇮 FI 03 - homeip
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -55,35 +41,48 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 04 - homeip
+  type: vless
+  server: fi.snobvpn.online
+  port: 80
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: fi.snobvpn.online
 - name: 🇫🇮 FI 05 - homeip
   type: vless
-  server: 202.166.187.132
+  server: 95.217.129.198
   port: 443
-  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: f.yoptybla.ru
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: f.yoptybla.ru
+      Host: shuma.ccwu.cc
 - name: 🇫🇮 FI 06 - homeip
   type: vless
-  server: 185.255.179.11
-  port: 9443
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  server: 31.76.80.230
+  port: 8443
+  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hub-se-02.hanvpn.cc
+  servername: fin.luxes.network
   network: ws
   ws-opts:
-    path: /se02-ws-8e47a
+    path: /assets
     headers:
-      Host: hub-se-02.hanvpn.cc
+      Host: 31.76.80.230
 - name: 🇫🇮 FI 07 - homeip
   type: vless
   server: 31.76.80.230
@@ -110,42 +109,6 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 09 - homeip
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 10 - homeip
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 11 - homeip
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -159,9 +122,6 @@ proxy-groups:
   - 🇫🇮 FI 06 - homeip
   - 🇫🇮 FI 07 - homeip
   - 🇫🇮 FI 08 - homeip
-  - 🇫🇮 FI 09 - homeip
-  - 🇫🇮 FI 10 - homeip
-  - 🇫🇮 FI 11 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -175,8 +135,5 @@ proxy-groups:
   - 🇫🇮 FI 06 - homeip
   - 🇫🇮 FI 07 - homeip
   - 🇫🇮 FI 08 - homeip
-  - 🇫🇮 FI 09 - homeip
-  - 🇫🇮 FI 10 - homeip
-  - 🇫🇮 FI 11 - homeip
 rules:
 - MATCH,PROXIES

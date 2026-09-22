@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - homeip
-  type: vless
-  server: 143.246.195.138
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless-test
-    headers:
-      Host: 143.246.195.138
 - name: 🇸🇪 SE 02 - homeip
   type: vless
   server: 143.246.194.60
@@ -39,24 +33,18 @@ proxies:
   udp: true
 - name: 🇸🇪 SE 04 - homeip
   type: vless
-  server: 143.246.195.98
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  server: 144.31.217.95
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /vless-test
+    path: /
     headers:
-      Host: 143.246.195.98
-- name: 🇸🇪 SE 05 - homeip
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,7 +54,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
   - 🇸🇪 SE 04 - homeip
-  - 🇸🇪 SE 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,6 +63,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
   - 🇸🇪 SE 04 - homeip
-  - 🇸🇪 SE 05 - homeip
 rules:
 - MATCH,PROXIES

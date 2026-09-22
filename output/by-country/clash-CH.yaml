@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - homeip
   type: vless
-  server: 107.189.2.206
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇨🇭 CH 02 - homeip
-  type: vless
   server: 83.228.217.38
   port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
@@ -32,6 +18,13 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
+- name: 🇨🇭 CH 02 - homeip
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select

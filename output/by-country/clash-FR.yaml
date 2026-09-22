@@ -6,60 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - homeip
   type: vless
-  server: 51.44.119.98
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 02 - homeip
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 03 - homeip
-  type: vless
-  server: 195.201.150.4
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇫🇷 法国 (France) 04 - homeip
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 05 - homeip
-  type: vless
-  server: 91.107.252.248
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇫🇷 法国 (France) 06 - homeip
-  type: vless
   server: 45.155.169.170
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
@@ -72,96 +18,9 @@ proxies:
     path: /fp=chrome
     headers:
       Host: shuma.ccwu.cc
-- name: 🇫🇷 法国 (France) 07 - homeip
+- name: 🇫🇷 法国 (France) 02 - homeip
   type: vless
-  server: 95.182.82.191
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇫🇷 法国 (France) 08 - homeip
-  type: vless
-  server: 45.155.169.170
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇫🇷 法国 (France) 09 - homeip
-  type: vless
-  server: 104.194.84.188
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇫🇷 法国 (France) 10 - homeip
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 11 - homeip
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 12 - homeip
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 13 - homeip
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 14 - homeip
-  type: vless
-  server: ov-france1.09vpn.com
+  server: 152.228.162.19
   port: 80
   uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
@@ -171,22 +30,8 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 15 - homeip
-  type: vless
-  server: 141.227.188.153
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇫🇷 法国 (France) 16 - homeip
+      Host: 152.228.162.19
+- name: 🇫🇷 法国 (France) 03 - homeip
   type: vless
   server: 147.90.26.57
   port: 443
@@ -200,25 +45,178 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇫🇷 法国 (France) 17 - homeip
+- name: 🇫🇷 法国 (France) 04 - homeip
   type: vless
-  server: 51.44.119.98
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  server: 95.182.82.191
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 05 - homeip
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 06 - homeip
+  type: vless
+  server: OV-France1.09vpn.com
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 18 - homeip
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-France1.09vpn.com
+- name: 🇫🇷 法国 (France) 07 - homeip
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 08 - homeip
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 09 - homeip
+  type: vless
+  server: 45.38.228.237
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 10 - homeip
+  type: vless
+  server: 141.227.188.153
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 11 - homeip
+  type: vless
+  server: 34.155.10.226
+  port: 443
+  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 12 - homeip
+  type: ss
+  server: 54.36.174.140
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+  udp: true
+- name: 🇫🇷 法国 (France) 13 - homeip
+  type: vless
+  server: 104.194.84.188
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 14 - homeip
   type: vmess
-  server: 45.80.215.8
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 188.114.96.19
+  port: 80
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 19 - homeip
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 15 - homeip
+  type: vless
+  server: OV-France1.09vpn.com
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-France1.09vpn.com
+- name: 🇫🇷 法国 (France) 16 - homeip
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 17 - homeip
+  type: vless
+  server: 108.61.123.140
+  port: 8735
+  uuid: b5172efe-cf5e-4484-971d-2860bdb95ab1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: NpgXDQ6jl_HGPdHAHFeiBl5Ym7bywxmw_EYovmFjVQs
+  servername: delivery.mp.microsoft.com
+  client-fingerprint: edge
+- name: 🇫🇷 法国 (France) 18 - homeip
   type: vless
   server: 217.60.252.115
   port: 443
@@ -232,32 +230,46 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 19 - homeip
+  type: vless
+  server: 147.90.26.57
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
 - name: 🇫🇷 法国 (France) 20 - homeip
   type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  server: 217.60.37.28
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: 152.228.162.19
+      Host: shuma.ccwu.cc
 - name: 🇫🇷 法国 (France) 21 - homeip
   type: vless
-  server: OV-France1.09vpn.com
-  port: 80
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-France1.09vpn.com
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 22 - homeip
   type: vless
   server: 178.105.143.123
@@ -274,7 +286,7 @@ proxies:
       Host: shuma.ccwu.cc
 - name: 🇫🇷 法国 (France) 23 - homeip
   type: vless
-  server: OV-France1.09vpn.com
+  server: ov-france1.09vpn.com
   port: 80
   uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
@@ -284,11 +296,18 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: OV-France1.09vpn.com
+      Host: ov-france1.09vpn.com
 - name: 🇫🇷 法国 (France) 24 - homeip
-  type: vless
-  server: 147.90.26.57
+  type: ss
+  server: 54.36.174.134
   port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+  udp: true
+- name: 🇫🇷 法国 (France) 25 - homeip
+  type: vless
+  server: 104.194.84.188
+  port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -299,22 +318,10 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇫🇷 法国 (France) 25 - homeip
-  type: vless
-  server: 34.155.10.226
-  port: 443
-  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 26 - homeip
   type: vless
-  server: 217.60.37.28
-  port: 8443
+  server: 195.201.150.4
+  port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -326,8 +333,33 @@ proxies:
     headers:
       Host: shuma.ccwu.cc
 - name: 🇫🇷 法国 (France) 27 - homeip
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: af4be52a-aab3-4db1-a6bb-c23700dcb9c2
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
+    headers:
+      Host: https.http.www.net.com.ramseyv2.ir.
+- name: 🇫🇷 法国 (France) 28 - homeip
+  type: vmess
+  server: 45.80.215.8
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 29 - homeip
   type: vless
-  server: 45.38.228.237
+  server: 91.107.252.248
   port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -339,7 +371,7 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇫🇷 法国 (France) 28 - homeip
+- name: 🇫🇷 法国 (France) 30 - homeip
   type: vless
   server: 34.155.10.226
   port: 443
@@ -351,6 +383,96 @@ proxies:
     public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 31 - homeip
+  type: vless
+  server: 141.227.188.153
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 32 - homeip
+  type: vless
+  server: 34.155.10.226
+  port: 443
+  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 33 - homeip
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: af4be52a-aab3-4db1-a6bb-c23700dcb9c2
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==
+    headers:
+      Host: https.http.www.net.com.ramseyv2.ir.
+- name: 🇫🇷 法国 (France) 34 - homeip
+  type: vless
+  server: 91.107.252.248
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 35 - homeip
+  type: ss
+  server: 54.36.174.134
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+  udp: true
+- name: 🇫🇷 法国 (France) 36 - homeip
+  type: vless
+  server: 45.155.169.170
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 37 - homeip
+  type: vless
+  server: 45.155.169.170
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -384,6 +506,15 @@ proxy-groups:
   - 🇫🇷 法国 (France) 26 - homeip
   - 🇫🇷 法国 (France) 27 - homeip
   - 🇫🇷 法国 (France) 28 - homeip
+  - 🇫🇷 法国 (France) 29 - homeip
+  - 🇫🇷 法国 (France) 30 - homeip
+  - 🇫🇷 法国 (France) 31 - homeip
+  - 🇫🇷 法国 (France) 32 - homeip
+  - 🇫🇷 法国 (France) 33 - homeip
+  - 🇫🇷 法国 (France) 34 - homeip
+  - 🇫🇷 法国 (France) 35 - homeip
+  - 🇫🇷 法国 (France) 36 - homeip
+  - 🇫🇷 法国 (France) 37 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -417,5 +548,14 @@ proxy-groups:
   - 🇫🇷 法国 (France) 26 - homeip
   - 🇫🇷 法国 (France) 27 - homeip
   - 🇫🇷 法国 (France) 28 - homeip
+  - 🇫🇷 法国 (France) 29 - homeip
+  - 🇫🇷 法国 (France) 30 - homeip
+  - 🇫🇷 法国 (France) 31 - homeip
+  - 🇫🇷 法国 (France) 32 - homeip
+  - 🇫🇷 法国 (France) 33 - homeip
+  - 🇫🇷 法国 (France) 34 - homeip
+  - 🇫🇷 法国 (France) 35 - homeip
+  - 🇫🇷 法国 (France) 36 - homeip
+  - 🇫🇷 法国 (France) 37 - homeip
 rules:
 - MATCH,PROXIES
