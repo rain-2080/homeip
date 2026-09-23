@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇴 NO 01 - homeip
-  type: vless
-  server: 65.108.201.223
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select

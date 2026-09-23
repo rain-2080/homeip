@@ -5,46 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - homeip
-  type: vless
-  server: 194.238.57.23
-  port: 443
-  uuid: 303c2140-19ff-4eea-b1b1-865d4160d261
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: uE1WBdW9se1rQnx8Vh-a1jjaehzK-iUmCVrPui5KU3g
-  servername: ai.android
-  client-fingerprint: chrome
-- name: 🇸🇪 SE 02 - homeip
-  type: ss
-  server: 172.238.244.13
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-  udp: true
-- name: 🇸🇪 SE 03 - homeip
   type: ss
   server: 70.34.212.124
   port: 8388
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
   udp: true
-- name: 🇸🇪 SE 04 - homeip
+- name: 🇸🇪 SE 02 - homeip
   type: vless
-  server: 129.151.198.3
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  server: 143.246.194.60
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /vless-test
     headers:
-      Host: shuma.ccwu.cc
-- name: 🇸🇪 SE 05 - homeip
+      Host: 143.246.194.60
+- name: 🇸🇪 SE 03 - homeip
   type: ss
   server: 70.34.212.124
   port: 8388
@@ -59,8 +39,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
-  - 🇸🇪 SE 04 - homeip
-  - 🇸🇪 SE 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +47,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
-  - 🇸🇪 SE 04 - homeip
-  - 🇸🇪 SE 05 - homeip
 rules:
 - MATCH,PROXIES
