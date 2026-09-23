@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - homeip
-  type: vless
-  server: 34.39.174.220
-  port: 443
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇧🇷 BR 02 - homeip
   type: vmess
   server: 172.233.14.17
   port: 22324
@@ -26,7 +14,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇧🇷 BR 03 - homeip
+- name: 🇧🇷 BR 02 - homeip
   type: vmess
   server: 172.233.14.17
   port: 22324
@@ -43,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇧🇷 BR 01 - homeip
   - 🇧🇷 BR 02 - homeip
-  - 🇧🇷 BR 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇧🇷 BR 01 - homeip
   - 🇧🇷 BR 02 - homeip
-  - 🇧🇷 BR 03 - homeip
 rules:
 - MATCH,PROXIES
