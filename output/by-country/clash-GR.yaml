@@ -4,23 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 LV 01 - homeip
+- name: 🇬🇷 GR 01 - homeip
   type: vless
-  server: 31.58.77.174
-  port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇱🇻 LV 02 - homeip
-  type: vless
-  server: 31.58.137.14
+  server: 91.186.220.6
   port: 443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
@@ -37,14 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 LV 01 - homeip
-  - 🇱🇻 LV 02 - homeip
+  - 🇬🇷 GR 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 LV 01 - homeip
-  - 🇱🇻 LV 02 - homeip
+  - 🇬🇷 GR 01 - homeip
 rules:
 - MATCH,PROXIES
