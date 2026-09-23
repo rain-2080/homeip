@@ -6,30 +6,32 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - homeip
   type: vless
-  server: 94.183.170.135
+  server: www.speedtest.net
   port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: netlivpn5002.whwbbb.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
-      Host: 94.183.170.135
+      Host: netlivpn5002.whwbbb.workers.dev
 - name: 🇪🇪 EE 02 - homeip
   type: vless
-  server: 94.183.170.135
+  server: 104.17.148.22
   port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: netlivpn5002.whwbbb.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
-      Host: 94.183.170.135
+      Host: netlivpn5002.whwbbb.workers.dev
 - name: 🇪🇪 EE 03 - homeip
   type: vless
   server: 94.183.170.135
@@ -42,15 +44,6 @@ proxies:
 - name: 🇪🇪 EE 04 - homeip
   type: vless
   server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 05 - homeip
-  type: vless
-  server: 94.183.170.135
   port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
@@ -61,20 +54,34 @@ proxies:
     path: /
     headers:
       Host: 94.183.170.135
-- name: 🇪🇪 EE 06 - homeip
+- name: 🇪🇪 EE 05 - homeip
   type: vless
-  server: 93.123.39.203
-  port: 8443
-  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
+  server: netlivpn5002.whwbbb.workers.dev
+  port: 443
+  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: est.luxes.network
+  servername: netlivpn5002.whwbbb.workers.dev
   network: ws
   ws-opts:
-    path: /assets
+    path: /
     headers:
-      Host: 93.123.39.203
+      Host: netlivpn5002.whwbbb.workers.dev
+- name: 🇪🇪 EE 06 - homeip
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: netlivpn5002.whwbbb.workers.dev
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn5002.whwbbb.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

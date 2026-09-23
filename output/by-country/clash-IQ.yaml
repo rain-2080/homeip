@@ -6,29 +6,43 @@ log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - homeip
   type: vless
-  server: 185.255.179.11
-  port: 9443
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  server: 188.114.98.112
+  port: 80
+  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: hub-de-03.hanvpn.cc
   network: ws
   ws-opts:
-    path: /de03-ws-8e47a
+    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY
     headers:
-      Host: hub-de-03.hanvpn.cc
+      Host: elenaaaaaaaaaa.cloudns.pro.
+- name: 🇮🇶 IQ 02 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: d9224de0-fcff-4534-bfcb-1d7bdb1453e8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiaEZzc0lFSmlmbHdNUWYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+    headers:
+      Host: blacknet0.blacknet89.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - homeip
+  - 🇮🇶 IQ 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - homeip
+  - 🇮🇶 IQ 02 - homeip
 rules:
 - MATCH,PROXIES
