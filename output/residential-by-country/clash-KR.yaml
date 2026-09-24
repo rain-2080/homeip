@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 612f78a0-65ca-45af-a3ff-7d0f8e9f8655
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: broken-star-c5ae.446.workers.dev
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: broken-star-c5ae.446.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - homeip
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - homeip
+rules:
+- MATCH,PROXIES

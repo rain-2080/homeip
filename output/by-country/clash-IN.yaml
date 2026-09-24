@@ -6,6 +6,98 @@ log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - homeip
   type: vless
+  server: odd-violet-5440.asdgrweeee13.workers.dev
+  port: 443
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
+- name: 🇮🇳 印度 (India) 02 - homeip
+  type: vless
+  server: 34.47.245.203
+  port: 443
+  uuid: 3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 03 - homeip
+  type: vless
+  server: 104.21.69.118
+  port: 443
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
+- name: 🇮🇳 印度 (India) 04 - homeip
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 05 - homeip
+  type: vless
+  server: 34.47.245.203
+  port: 443
+  uuid: 3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 06 - homeip
+  type: vless
+  server: 172.67.208.1
+  port: 443
+  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: odd-violet-5440.asdgrweeee13.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: odd-violet-5440.asdgrweeee13.workers.dev
+- name: 🇮🇳 印度 (India) 07 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: f6ec3ac9-fb0f-4bce-86bb-26cdb9933a60
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zaintest.vuclip.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /in-do
+    headers:
+      Host: zaintest.vuclip.com.r3xxe.eu.cc
+- name: 🇮🇳 印度 (India) 08 - homeip
+  type: vless
   server: 34.93.188.70
   port: 443
   uuid: 5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed
@@ -16,67 +108,7 @@ proxies:
     public-key: 97C6O3repofpoaJzvu1d4o7amhJGA8hF_yJls7SNIgU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 02 - homeip
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - homeip
-  type: vless
-  server: 34.47.245.203
-  port: 443
-  uuid: 3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 04 - homeip
-  type: vless
-  server: 34.47.245.203
-  port: 443
-  uuid: 3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 05 - homeip
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 06 - homeip
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 07 - homeip
+- name: 🇮🇳 印度 (India) 09 - homeip
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -88,7 +120,7 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 08 - homeip
+- name: 🇮🇳 印度 (India) 10 - homeip
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -99,7 +131,19 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 11 - homeip
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,6 +157,9 @@ proxy-groups:
   - 🇮🇳 印度 (India) 06 - homeip
   - 🇮🇳 印度 (India) 07 - homeip
   - 🇮🇳 印度 (India) 08 - homeip
+  - 🇮🇳 印度 (India) 09 - homeip
+  - 🇮🇳 印度 (India) 10 - homeip
+  - 🇮🇳 印度 (India) 11 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -126,5 +173,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 06 - homeip
   - 🇮🇳 印度 (India) 07 - homeip
   - 🇮🇳 印度 (India) 08 - homeip
+  - 🇮🇳 印度 (India) 09 - homeip
+  - 🇮🇳 印度 (India) 10 - homeip
+  - 🇮🇳 印度 (India) 11 - homeip
 rules:
 - MATCH,PROXIES
