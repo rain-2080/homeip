@@ -6,17 +6,23 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - homeip
   type: vmess
-  server: 89.223.95.77
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - homeip
   type: vmess
-  server: ex1ogt73nzpqkac2.v.3dns.vip
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -40,13 +46,29 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: ''
+      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - homeip
+  type: vmess
+  server: 47.76.44.32
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0pffuabk.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - homeip
   type: vmess
   server: 47.243.65.243
   port: 443
@@ -56,31 +78,15 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - homeip
-  type: vmess
-  server: 8.218.184.4
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - homeip
   type: vmess
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  server: 93ucrn4i0pffuabk.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -96,7 +102,7 @@ proxies:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - homeip
   type: vmess
-  server: 47.243.65.243
+  server: 47.83.207.148
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -104,27 +110,33 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - homeip
   type: vmess
-  server: 89.223.95.77
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 47.76.44.32
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 93ucrn4i0PffUAbk.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0PffUAbk.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - homeip
   type: vmess
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  server: vah4urdzl3jdx5r2.v.3dns.vip
   port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
@@ -137,50 +149,85 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - homeip
-  type: vmess
-  server: 47.242.79.198
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ejOMsxPtP19APyGL.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ejOMsxPtP19APyGL.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - homeip
-  type: vmess
-  server: i2psm3knof5qjjix.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - homeip
-  type: vmess
-  server: 89.223.95.77
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: champion.xn--kivt58h.lol
+  port: 80
+  uuid: b5af4a3d-f525-43aa-9cc3-de1ba437e4ed
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - homeip
+  type: vmess
+  server: 8.218.184.4
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - homeip
+  type: vmess
+  server: 8.218.184.4
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 13 - homeip
   type: vmess
-  server: 6jdvarazgu3qqr6q.v.3dns.vip
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - homeip
+  type: vmess
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nycqg19zkwacpm1b.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: nycqg19zkwacpm1b.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - homeip
+  type: vmess
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -194,21 +241,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - homeip
-  type: vless
-  server: 104.21.8.201
-  port: 2096
-  uuid: ecb9ab47-31aa-4dd9-92eb-191047b353bd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn-hk.skyvora.app
-  network: ws
-  ws-opts:
-    path: /f7i3lo6xbs
-    headers:
-      Host: cdn-hk.skyvora.app
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - homeip
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - homeip
   type: vmess
   server: 156.245.232.239
   port: 35043
@@ -223,7 +256,118 @@ proxies:
     path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - homeip
+- name: 🇭🇰 中国香港 (Hong Kong) 17 - homeip
+  type: vmess
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nycqg19zkwacpm1b.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: nycqg19zkwacpm1b.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - homeip
+  type: vmess
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 19 - homeip
+  type: vmess
+  server: 8.218.184.4
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 20 - homeip
+  type: vmess
+  server: 47.76.44.32
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 93ucrn4i0PffUAbk.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0PffUAbk.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 21 - homeip
+  type: vmess
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 22 - homeip
+  type: vmess
+  server: 6jdvarazgu3qqr6q.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 23 - homeip
+  type: vmess
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 93ucrn4i0PffUAbk.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0PffUAbk.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 24 - homeip
   type: vmess
   server: lcv8v9l7oyamxxfz.v.3dns.vip
   port: 443
@@ -239,32 +383,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: lcv8v9l7OyamxxfZ.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - homeip
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: www.pubgmobile.com
-- name: 🇭🇰 中国香港 (Hong Kong) 18 - homeip
-  type: vmess
-  server: 89.223.95.77
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 19 - homeip
+- name: 🇭🇰 中国香港 (Hong Kong) 25 - homeip
   type: vmess
   server: vah4urdzl3jdx5r2.v.3dns.vip
   port: 443
@@ -280,23 +399,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 20 - homeip
-  type: vmess
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 21 - homeip
+- name: 🇭🇰 中国香港 (Hong Kong) 26 - homeip
   type: vmess
   server: vah4urdzl3jdx5r2.v.3dns.vip
   port: 443
@@ -312,7 +415,23 @@ proxies:
     path: /ws-vmess
     headers:
       Host: VAH4URdZL3jDX5r2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 22 - homeip
+- name: 🇭🇰 中国香港 (Hong Kong) 27 - homeip
+  type: vmess
+  server: 47.243.65.243
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 28 - homeip
   type: vmess
   server: 89.223.95.77
   port: 22324
@@ -322,9 +441,25 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 23 - homeip
+- name: 🇭🇰 中国香港 (Hong Kong) 29 - homeip
   type: vmess
-  server: ejomsxptp19apygl.v.3dns.vip
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 30 - homeip
+  type: vmess
+  server: 93ucrn4i0pffuabk.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -332,12 +467,121 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ejOMsxPtP19APyGL.v.3dns.vip
+  servername: 93ucrn4i0PffUAbk.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: ejOMsxPtP19APyGL.v.3dns.vip
+      Host: 93ucrn4i0PffUAbk.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 31 - homeip
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 32 - homeip
+  type: vmess
+  server: 47.76.44.32
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 93ucrn4i0PffUAbk.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0PffUAbk.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 33 - homeip
+  type: vmess
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 34 - homeip
+  type: vmess
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 35 - homeip
+  type: ss
+  server: ehwn62tnx5g8.cdn000.com
+  port: 30003
+  cipher: 2022-blake3-aes-128-gcm
+  password: Y2FkNzhhZWQ0MzA1NzlhZA==:NGMxZWEyZDMtZjBiMS00Yw==
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 36 - homeip
+  type: vmess
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 37 - homeip
+  type: vmess
+  server: 47.83.207.148
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: VAH4URdZL3jDX5r2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: VAH4URdZL3jDX5r2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 38 - homeip
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -366,6 +610,21 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 21 - homeip
   - 🇭🇰 中国香港 (Hong Kong) 22 - homeip
   - 🇭🇰 中国香港 (Hong Kong) 23 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 24 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 25 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 26 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 27 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 28 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 29 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 30 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 31 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 32 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 33 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 34 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 35 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 36 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 37 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 38 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -394,5 +653,20 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 21 - homeip
   - 🇭🇰 中国香港 (Hong Kong) 22 - homeip
   - 🇭🇰 中国香港 (Hong Kong) 23 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 24 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 25 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 26 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 27 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 28 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 29 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 30 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 31 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 32 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 33 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 34 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 35 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 36 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 37 - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 38 - homeip
 rules:
 - MATCH,PROXIES
