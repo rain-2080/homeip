@@ -19,12 +19,15 @@ proxies:
     headers:
       Host: dissolvedvpn.eu.cc
 - name: 🇫🇮 FI 02 - homeip
-  type: ss
-  server: p1tun1.greewebservices.ir
-  port: 2050
-  cipher: chacha20-ietf-poly1305
-  password: ao5znrhEwVqoJy-l7AVvgw
+  type: vmess
+  server: me6.movieseryalirani.ir
+  port: 57361
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇫🇮 FI 03 - homeip
   type: vless
   server: fi.snobvpn.online
