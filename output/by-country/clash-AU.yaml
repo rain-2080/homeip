@@ -4,31 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 ID 01 (家宽) - homeip
+- name: 🇦🇺 澳大利亚 (Australia) 01 - homeip
   type: vless
-  server: 188.114.97.6
+  server: 172.105.169.70
   port: 443
-  uuid: 1246e51a-97cd-4d5c-9842-76dd3420bbe2
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: investor.fb.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: investor.fb.com.r3xxe.eu.cc
+  servername: 172.105.169.70
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 ID 01 (家宽) - homeip
+  - 🇦🇺 澳大利亚 (Australia) 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 ID 01 (家宽) - homeip
+  - 🇦🇺 澳大利亚 (Australia) 01 - homeip
 rules:
 - MATCH,PROXIES

@@ -6,40 +6,19 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - homeip
   type: ss
-  server: 172.238.244.13
-  port: 17000
+  server: 70.34.212.124
+  port: 8388
   cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  password: AxIYWtskJWIIaefW
   udp: true
 - name: 🇸🇪 SE 02 - homeip
   type: ss
-  server: se1.auronvpn.site
-  port: 1443
-  cipher: chacha20-ietf-poly1305
-  password: N2YzM
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
   udp: true
 - name: 🇸🇪 SE 03 - homeip
-  type: ss
-  server: 45.138.103.4
-  port: 1443
-  cipher: chacha20-ietf-poly1305
-  password: N2YzM
-  udp: true
-- name: 🇸🇪 SE 04 - homeip
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 05 - homeip
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 06 - homeip
   type: vless
   server: 143.246.194.60
   port: 8081
@@ -52,6 +31,27 @@ proxies:
     path: /vless-test
     headers:
       Host: 143.246.194.60
+- name: 🇸🇪 SE 04 - homeip
+  type: ss
+  server: se1.auronvpn.site
+  port: 1443
+  cipher: chacha20-ietf-poly1305
+  password: N2YzM
+  udp: true
+- name: 🇸🇪 SE 05 - homeip
+  type: ss
+  server: 172.238.244.13
+  port: 17000
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  udp: true
+- name: 🇸🇪 SE 06 - homeip
+  type: ss
+  server: 45.138.103.4
+  port: 1443
+  cipher: chacha20-ietf-poly1305
+  password: N2YzM
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
