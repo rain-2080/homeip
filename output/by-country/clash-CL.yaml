@@ -6,6 +6,19 @@ log-level: info
 proxies:
 - name: 🇨🇱 CL 01 - homeip
   type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇨🇱 CL 02 - homeip
+  type: vless
   server: platform108.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -17,7 +30,20 @@ proxies:
     path: /platform108
     headers:
       Host: platform108.halalkhor.info
-- name: 🇨🇱 CL 02 - homeip
+- name: 🇨🇱 CL 03 - homeip
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇨🇱 CL 04 - homeip
   type: vless
   server: platform109.golnamakcert.top
   port: 80
@@ -37,6 +63,8 @@ proxy-groups:
   - AUTO
   - 🇨🇱 CL 01 - homeip
   - 🇨🇱 CL 02 - homeip
+  - 🇨🇱 CL 03 - homeip
+  - 🇨🇱 CL 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +72,7 @@ proxy-groups:
   proxies:
   - 🇨🇱 CL 01 - homeip
   - 🇨🇱 CL 02 - homeip
+  - 🇨🇱 CL 03 - homeip
+  - 🇨🇱 CL 04 - homeip
 rules:
 - MATCH,PROXIES

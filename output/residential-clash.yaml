@@ -6,6 +6,68 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - homeip
   type: vless
+  server: 118.167.230.191
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - homeip
+  type: vmess
+  server: 24864168545164.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 24864168545164.oylfmxz.cn
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 24864168545164.oylfmxz.cn
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - homeip
+  type: vless
+  server: icook.tw
+  port: 8880
+  uuid: 80cead8e-0d28-4b0a-bacd-8005471a5c39
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: flat-fire-40ed.96-042.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - homeip
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇯🇵 日本 (Japan) 05 (家宽) - homeip
+  type: vless
+  server: 129.153.71.28
+  port: 28863
+  uuid: ba617d96-0837-4159-ab7f-99205bae020b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - homeip
+  type: vless
   server: 59.125.69.24
   port: 443
   uuid: 06e177f7-240d-4687-bd85-235505801a5e
@@ -18,18 +80,20 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 59.125.69.24
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - homeip
+- name: 🇮🇩 ID 07 (家宽) - homeip
   type: vless
-  server: hinet1.2yly.com
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  server: 188.114.97.6
+  port: 443
+  uuid: 1246e51a-97cd-4d5c-9842-76dd3420bbe2
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+  servername: investor.fb.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: investor.fb.com.r3xxe.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +101,11 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - homeip
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - homeip
+  - 🇯🇵 日本 (Japan) 05 (家宽) - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - homeip
+  - 🇮🇩 ID 07 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +113,10 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - homeip
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - homeip
+  - 🇯🇵 日本 (Japan) 05 (家宽) - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - homeip
+  - 🇮🇩 ID 07 (家宽) - homeip
 rules:
 - MATCH,PROXIES

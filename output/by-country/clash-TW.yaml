@@ -5,40 +5,55 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - homeip
-  type: vless
-  server: 60.248.219.54
+  type: ss
+  server: 36.224.141.124
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - homeip
+  type: vmess
+  server: 24864168545164.oylfmxz.cn
   port: 443
-  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
+  servername: ''
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /
     headers:
-      Host: 60.248.219.54
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - homeip
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - homeip
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 36.224.141.124
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - homeip
+  type: vless
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - homeip
+  type: ss
+  server: r3mrcg001286ek2.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - homeip
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -48,7 +63,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - homeip
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - homeip
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -68,6 +83,8 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 04 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 05 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 06 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +95,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 04 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 05 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 06 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 07 - homeip
 rules:
 - MATCH,PROXIES

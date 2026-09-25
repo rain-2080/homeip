@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - homeip
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 CH 02 - homeip
   type: vless
   server: 131.123.34.145
   port: 8081
@@ -24,6 +17,20 @@ proxies:
     path: /vless-test
     headers:
       Host: 131.123.34.145
+- name: 🇨🇭 CH 02 - homeip
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 03 - homeip
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +38,7 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - homeip
   - 🇨🇭 CH 02 - homeip
+  - 🇨🇭 CH 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +46,6 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - homeip
   - 🇨🇭 CH 02 - homeip
+  - 🇨🇭 CH 03 - homeip
 rules:
 - MATCH,PROXIES
