@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 CH 01 - homeip
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+- name: 🇲🇽 MX 01 - homeip
+  type: vless
+  server: 45.164.20.114
+  port: 10226
+  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
   udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 CH 01 - homeip
+  - 🇲🇽 MX 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 CH 01 - homeip
+  - 🇲🇽 MX 01 - homeip
 rules:
 - MATCH,PROXIES

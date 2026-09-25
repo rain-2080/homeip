@@ -11,17 +11,58 @@ proxies:
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
   udp: true
+- name: 🇸🇪 SE 02 - homeip
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 03 - homeip
+  type: ss
+  server: 45.138.103.4
+  port: 1443
+  cipher: chacha20-ietf-poly1305
+  password: N2YzM
+  udp: true
+- name: 🇸🇪 SE 04 - homeip
+  type: ss
+  server: 51.170.190.140
+  port: 45819
+  cipher: 2022-blake3-chacha20-poly1305
+  password: yVKPB5WeYxyaTioROYKKNwo3BlzJLFfUpUbI7ue6zVk=
+  udp: true
+- name: 🇸🇪 SE 05 - homeip
+  type: vless
+  server: 191.44.114.66
+  port: 443
+  uuid: 718b9643-20e3-4f9e-9f8d-87ce6801d55e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: uE1WBdW9se1rQnx8Vh-a1jjaehzK-iUmCVrPui5KU3g
+  servername: ai.android
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - homeip
+  - 🇸🇪 SE 02 - homeip
+  - 🇸🇪 SE 03 - homeip
+  - 🇸🇪 SE 04 - homeip
+  - 🇸🇪 SE 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - homeip
+  - 🇸🇪 SE 02 - homeip
+  - 🇸🇪 SE 03 - homeip
+  - 🇸🇪 SE 04 - homeip
+  - 🇸🇪 SE 05 - homeip
 rules:
 - MATCH,PROXIES
