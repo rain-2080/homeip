@@ -5,26 +5,312 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - homeip
-  type: ss
-  server: 20.164.220.82
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: Qy7KyMo4epSCiluJ
+  type: vless
+  server: platform108.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
 - name: 🇿🇦 ZA 02 - homeip
+  type: vless
+  server: platform108.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
+- name: 🇿🇦 ZA 03 - homeip
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇿🇦 ZA 04 - homeip
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇿🇦 ZA 05 - homeip
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇿🇦 ZA 06 - homeip
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
+- name: 🇿🇦 ZA 07 - homeip
+  type: vless
+  server: platform113.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform113
+    headers:
+      Host: platform113.halalkhor.info
+- name: 🇿🇦 ZA 08 - homeip
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇿🇦 ZA 09 - homeip
+  type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇿🇦 ZA 10 - homeip
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇿🇦 ZA 11 - homeip
   type: ss
   server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
-- name: 🇿🇦 ZA 03 - homeip
+- name: 🇿🇦 ZA 12 - homeip
+  type: vless
+  server: platform115.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
+- name: 🇿🇦 ZA 13 - homeip
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.golnamakcert.top
+- name: 🇿🇦 ZA 14 - homeip
+  type: vless
+  server: platform113.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform113
+    headers:
+      Host: platform113.halalkhor.info
+- name: 🇿🇦 ZA 15 - homeip
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇿🇦 ZA 16 - homeip
   type: ss
   server: 139.84.247.164
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
   udp: true
+- name: 🇿🇦 ZA 17 - homeip
+  type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇿🇦 ZA 18 - homeip
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.golnamakcert.top
+- name: 🇿🇦 ZA 19 - homeip
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇿🇦 ZA 20 - homeip
+  type: ss
+  server: 20.164.220.82
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: Qy7KyMo4epSCiluJ
+  udp: true
+- name: 🇿🇦 ZA 21 - homeip
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇿🇦 ZA 22 - homeip
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.golnamakcert.top
+- name: 🇿🇦 ZA 23 - homeip
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇿🇦 ZA 24 - homeip
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇿🇦 ZA 25 - homeip
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +319,28 @@ proxy-groups:
   - 🇿🇦 ZA 01 - homeip
   - 🇿🇦 ZA 02 - homeip
   - 🇿🇦 ZA 03 - homeip
+  - 🇿🇦 ZA 04 - homeip
+  - 🇿🇦 ZA 05 - homeip
+  - 🇿🇦 ZA 06 - homeip
+  - 🇿🇦 ZA 07 - homeip
+  - 🇿🇦 ZA 08 - homeip
+  - 🇿🇦 ZA 09 - homeip
+  - 🇿🇦 ZA 10 - homeip
+  - 🇿🇦 ZA 11 - homeip
+  - 🇿🇦 ZA 12 - homeip
+  - 🇿🇦 ZA 13 - homeip
+  - 🇿🇦 ZA 14 - homeip
+  - 🇿🇦 ZA 15 - homeip
+  - 🇿🇦 ZA 16 - homeip
+  - 🇿🇦 ZA 17 - homeip
+  - 🇿🇦 ZA 18 - homeip
+  - 🇿🇦 ZA 19 - homeip
+  - 🇿🇦 ZA 20 - homeip
+  - 🇿🇦 ZA 21 - homeip
+  - 🇿🇦 ZA 22 - homeip
+  - 🇿🇦 ZA 23 - homeip
+  - 🇿🇦 ZA 24 - homeip
+  - 🇿🇦 ZA 25 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +349,27 @@ proxy-groups:
   - 🇿🇦 ZA 01 - homeip
   - 🇿🇦 ZA 02 - homeip
   - 🇿🇦 ZA 03 - homeip
+  - 🇿🇦 ZA 04 - homeip
+  - 🇿🇦 ZA 05 - homeip
+  - 🇿🇦 ZA 06 - homeip
+  - 🇿🇦 ZA 07 - homeip
+  - 🇿🇦 ZA 08 - homeip
+  - 🇿🇦 ZA 09 - homeip
+  - 🇿🇦 ZA 10 - homeip
+  - 🇿🇦 ZA 11 - homeip
+  - 🇿🇦 ZA 12 - homeip
+  - 🇿🇦 ZA 13 - homeip
+  - 🇿🇦 ZA 14 - homeip
+  - 🇿🇦 ZA 15 - homeip
+  - 🇿🇦 ZA 16 - homeip
+  - 🇿🇦 ZA 17 - homeip
+  - 🇿🇦 ZA 18 - homeip
+  - 🇿🇦 ZA 19 - homeip
+  - 🇿🇦 ZA 20 - homeip
+  - 🇿🇦 ZA 21 - homeip
+  - 🇿🇦 ZA 22 - homeip
+  - 🇿🇦 ZA 23 - homeip
+  - 🇿🇦 ZA 24 - homeip
+  - 🇿🇦 ZA 25 - homeip
 rules:
 - MATCH,PROXIES
