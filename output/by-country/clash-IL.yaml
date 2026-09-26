@@ -6,30 +6,32 @@ log-level: info
 proxies:
 - name: 🇮🇱 IL 01 - homeip
   type: vless
-  server: platform101.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  server: 188.114.97.6
+  port: 443
+  uuid: 83b4af70-376e-427c-8c11-a025bec6b085
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fserver-worker-001.mapleridgeway.top
   network: ws
   ws-opts:
-    path: /platform101
+    path: /cdn/99294c014f2c7791?ed=2056
     headers:
-      Host: platform101.halalkhor.info
+      Host: fserver-worker-001.mapleridgeway.top
 - name: 🇮🇱 IL 02 - homeip
   type: vless
-  server: platform113.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  server: fserver-worker-001.mapleridgeway.top
+  port: 443
+  uuid: 83b4af70-376e-427c-8c11-a025bec6b085
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fserver-worker-001.mapleridgeway.top
   network: ws
   ws-opts:
-    path: /platform113
+    path: /cdn/99294c014f2c7791?ed=2056
     headers:
-      Host: platform113.halalkhor.info
+      Host: fserver-worker-001.mapleridgeway.top
 - name: 🇮🇱 IL 03 - homeip
   type: vless
   server: fserver-worker-001.mapleridgeway.top
@@ -44,176 +46,6 @@ proxies:
     path: /cdn/99294c014f2c7791?ed=2056
     headers:
       Host: fserver-worker-001.mapleridgeway.top
-- name: 🇮🇱 IL 04 - homeip
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇮🇱 IL 05 - homeip
-  type: vless
-  server: fserver-worker-001.mapleridgeway.top
-  port: 443
-  uuid: 83b4af70-376e-427c-8c11-a025bec6b085
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fserver-worker-001.mapleridgeway.top
-  network: ws
-  ws-opts:
-    path: /cdn/99294c014f2c7791?ed=2056
-    headers:
-      Host: fserver-worker-001.mapleridgeway.top
-- name: 🇮🇱 IL 06 - homeip
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇮🇱 IL 07 - homeip
-  type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇮🇱 IL 08 - homeip
-  type: vless
-  server: platform113.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform113
-    headers:
-      Host: platform113.halalkhor.info
-- name: 🇮🇱 IL 09 - homeip
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇮🇱 IL 10 - homeip
-  type: vless
-  server: platform113.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform113
-    headers:
-      Host: platform113.halalkhor.info
-- name: 🇮🇱 IL 11 - homeip
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇮🇱 IL 12 - homeip
-  type: vless
-  server: platform101.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇮🇱 IL 13 - homeip
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇮🇱 IL 14 - homeip
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇮🇱 IL 15 - homeip
-  type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇮🇱 IL 16 - homeip
-  type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -222,19 +54,6 @@ proxy-groups:
   - 🇮🇱 IL 01 - homeip
   - 🇮🇱 IL 02 - homeip
   - 🇮🇱 IL 03 - homeip
-  - 🇮🇱 IL 04 - homeip
-  - 🇮🇱 IL 05 - homeip
-  - 🇮🇱 IL 06 - homeip
-  - 🇮🇱 IL 07 - homeip
-  - 🇮🇱 IL 08 - homeip
-  - 🇮🇱 IL 09 - homeip
-  - 🇮🇱 IL 10 - homeip
-  - 🇮🇱 IL 11 - homeip
-  - 🇮🇱 IL 12 - homeip
-  - 🇮🇱 IL 13 - homeip
-  - 🇮🇱 IL 14 - homeip
-  - 🇮🇱 IL 15 - homeip
-  - 🇮🇱 IL 16 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -243,18 +62,5 @@ proxy-groups:
   - 🇮🇱 IL 01 - homeip
   - 🇮🇱 IL 02 - homeip
   - 🇮🇱 IL 03 - homeip
-  - 🇮🇱 IL 04 - homeip
-  - 🇮🇱 IL 05 - homeip
-  - 🇮🇱 IL 06 - homeip
-  - 🇮🇱 IL 07 - homeip
-  - 🇮🇱 IL 08 - homeip
-  - 🇮🇱 IL 09 - homeip
-  - 🇮🇱 IL 10 - homeip
-  - 🇮🇱 IL 11 - homeip
-  - 🇮🇱 IL 12 - homeip
-  - 🇮🇱 IL 13 - homeip
-  - 🇮🇱 IL 14 - homeip
-  - 🇮🇱 IL 15 - homeip
-  - 🇮🇱 IL 16 - homeip
 rules:
 - MATCH,PROXIES

@@ -17,17 +17,33 @@ proxies:
     path: /vless-test
     headers:
       Host: 131.123.37.199
+- name: 🇧🇬 BG 02 - homeip
+  type: vless
+  server: 108.165.233.223
+  port: 443
+  uuid: 2388e166-3890-33ae-f77e-efac00000001
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: netlivpn4813.ddhshhshs.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: netlivpn4813.ddhshhshs.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇬 BG 01 - homeip
+  - 🇧🇬 BG 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 BG 01 - homeip
+  - 🇧🇬 BG 02 - homeip
 rules:
 - MATCH,PROXIES
