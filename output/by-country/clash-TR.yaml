@@ -6,69 +6,17 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
   type: vless
-  server: test.keoplentuio.xyz
+  server: 151.241.226.201
   port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
-  type: vmess
-  server: 206.1.98.72
-  port: 21811
-  uuid: Nitro_Skybot@
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 206.1.98.72
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
-  type: vless
-  server: 82.47.63.156
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
-  type: vless
-  server: 37.221.79.226
-  port: 18443
-  uuid: 6933bb34-cb01-4605-88c3-f335e4307d23
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 9hnmqap98ULg2y1fk4aqAtQEtPLQPIypZNmnrb42VWs
-  servername: www.sony.com
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
-  type: vmess
-  server: 103.215.218.158
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
-  type: vmess
-  server: 93.114.98.221
-  port: 2083
-  uuid: 552ca1e2-d1d4-4d9d-b0ea-9fabd287ad14
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-- name: 🇹🇷 土耳其 (Turkey) 07 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -80,15 +28,6 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 08 - homeip
-  type: vless
-  server: 93.114.98.221
-  port: 443
-  uuid: 552ca1e2-d1d4-4d9d-b0ea-9fabd287ad14
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 00iwuafi1019.dopgangster.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,12 +35,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
-  - 🇹🇷 土耳其 (Turkey) 03 - homeip
-  - 🇹🇷 土耳其 (Turkey) 04 - homeip
-  - 🇹🇷 土耳其 (Turkey) 05 - homeip
-  - 🇹🇷 土耳其 (Turkey) 06 - homeip
-  - 🇹🇷 土耳其 (Turkey) 07 - homeip
-  - 🇹🇷 土耳其 (Turkey) 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,11 +42,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
-  - 🇹🇷 土耳其 (Turkey) 03 - homeip
-  - 🇹🇷 土耳其 (Turkey) 04 - homeip
-  - 🇹🇷 土耳其 (Turkey) 05 - homeip
-  - 🇹🇷 土耳其 (Turkey) 06 - homeip
-  - 🇹🇷 土耳其 (Turkey) 07 - homeip
-  - 🇹🇷 土耳其 (Turkey) 08 - homeip
 rules:
 - MATCH,PROXIES

@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 GR 01 - homeip
+- name: 🇨🇿 CZ 01 - homeip
   type: vless
-  server: 83.147.216.223
-  port: 4433
-  uuid: 55889b09-e315-4640-9404-e10834e7728e
+  server: 151.101.1.194
+  port: 80
+  uuid: 5fb42b35-29e1-43c1-9c48-13b1b5e67e94
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+      Host: simorghfr.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 GR 01 - homeip
+  - 🇨🇿 CZ 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 GR 01 - homeip
+  - 🇨🇿 CZ 01 - homeip
 rules:
 - MATCH,PROXIES
