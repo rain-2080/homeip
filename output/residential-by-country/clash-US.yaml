@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - homeip
+- name: 🇺🇸 美国 (United States) 01 (家宽) - homeip
   type: vless
-  server: 151.101.1.194
-  port: 80
-  uuid: 5fb42b35-29e1-43c1-9c48-13b1b5e67e94
+  server: 162.159.48.32
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
@@ -16,18 +16,18 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: simorghfr.global.ssl.fastly.net
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - homeip
+  - 🇺🇸 美国 (United States) 01 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - homeip
+  - 🇺🇸 美国 (United States) 01 (家宽) - homeip
 rules:
 - MATCH,PROXIES

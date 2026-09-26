@@ -4,29 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇴 NO 01 - homeip
+- name: 🇮🇷 IR 01 - homeip
   type: vless
-  server: 46.29.238.88
-  port: 40443
-  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  server: freeman.curtvip.ir
+  port: 20410
+  uuid: 442581ff-646e-4e99-af3e-a9d9a636a44b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
-  servername: deepl.com
+    public-key: BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI
+  servername: secureconnect-pa.mtls.clients6.google.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇴 NO 01 - homeip
+  - 🇮🇷 IR 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇴 NO 01 - homeip
+  - 🇮🇷 IR 01 - homeip
 rules:
 - MATCH,PROXIES

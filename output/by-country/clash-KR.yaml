@@ -6,107 +6,27 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - homeip
   type: vless
-  server: tiny-lake-c7f3.16-1af.workers.dev
-  port: 8880
-  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tiny-lake-c7f3.16-1af.workers.dev
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 02 - homeip
-  type: vless
-  server: nameless-poetry-cc33.268-910.workers.dev
-  port: 8880
-  uuid: b1b99d33-8df1-4c74-b140-28941b43a4d2
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: nameless-poetry-cc33.268-910.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 03 - homeip
-  type: vless
-  server: broken-star-c5ae.446.workers.dev
-  port: 8880
-  uuid: 612f78a0-65ca-45af-a3ff-7d0f8e9f8655
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: broken-star-c5ae.446.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 04 - homeip
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 05 - homeip
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 06 - homeip
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 25844c02-a1fe-43ec-a6b9-44e3bf375b83
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dark-breeze-a59a.494.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 07 - homeip
-  type: vless
-  server: 172.67.187.219
-  port: 8880
-  uuid: 4a40e7a6-9179-42c1-9bd7-eefec23a62f8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: soft-meadow-980a.458.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 08 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 3c04e891-dc32-40a3-bcd0-d5e8283a6a03
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: polished-firefly-3e2d.20-645.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 09 - homeip
   type: vmess
   server: 146.56.112.110
   port: 8888
@@ -116,58 +36,75 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 10 - homeip
-  type: vless
-  server: 172.67.187.219
-  port: 8880
-  uuid: 4a40e7a6-9179-42c1-9bd7-eefec23a62f8
+- name: 🇰🇷 韩国 (South Korea) 04 - homeip
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /cctv13.m3u8
     headers:
-      Host: soft-meadow-980a.458.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 11 - homeip
-  type: vless
-  server: crimson-smoke-7818.397.workers.dev
-  port: 8880
-  uuid: d6bdda67-168d-4501-a2c1-ef01070cb327
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 05 - homeip
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /cctv13.m3u8
     headers:
-      Host: crimson-smoke-7818.397.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 12 - homeip
+      Host: 132.145.80.230
+- name: 🇰🇷 韩国 (South Korea) 06 - homeip
   type: vless
-  server: 172.67.152.71
-  port: 8880
-  uuid: c6c5ad2f-b4d5-450f-862f-341cebb7f9b5
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 07 - homeip
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /cctv13.m3u8
     headers:
-      Host: empty-rain-1df4.332-633.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 13 - homeip
+      Host: ''
+- name: 🇰🇷 韩国 (South Korea) 08 - homeip
   type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: 92a4cb10-228f-4239-8c63-c566b20a9167
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip
-    headers:
-      Host: square-waterfall-c1de.199-82d.workers.dev
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -181,11 +118,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - homeip
   - 🇰🇷 韩国 (South Korea) 07 - homeip
   - 🇰🇷 韩国 (South Korea) 08 - homeip
-  - 🇰🇷 韩国 (South Korea) 09 - homeip
-  - 🇰🇷 韩国 (South Korea) 10 - homeip
-  - 🇰🇷 韩国 (South Korea) 11 - homeip
-  - 🇰🇷 韩国 (South Korea) 12 - homeip
-  - 🇰🇷 韩国 (South Korea) 13 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -199,10 +131,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - homeip
   - 🇰🇷 韩国 (South Korea) 07 - homeip
   - 🇰🇷 韩国 (South Korea) 08 - homeip
-  - 🇰🇷 韩国 (South Korea) 09 - homeip
-  - 🇰🇷 韩国 (South Korea) 10 - homeip
-  - 🇰🇷 韩国 (South Korea) 11 - homeip
-  - 🇰🇷 韩国 (South Korea) 12 - homeip
-  - 🇰🇷 韩国 (South Korea) 13 - homeip
 rules:
 - MATCH,PROXIES
