@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 IL 01 - homeip
+- name: 🇨🇳 CN 01 - homeip
   type: ss
-  server: 139.100.236.74
-  port: 3
-  cipher: chacha20-ietf-poly1305
-  password: WxYpOK1iPSJySbVNMMJDtw
+  server: 124.151.25.50
+  port: 8024
+  cipher: aes-128-gcm
+  password: 2wsxcde4
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 IL 01 - homeip
+  - 🇨🇳 CN 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 IL 01 - homeip
+  - 🇨🇳 CN 01 - homeip
 rules:
 - MATCH,PROXIES
