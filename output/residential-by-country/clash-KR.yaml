@@ -6,21 +6,20 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - homeip
   type: vless
-  server: 103.177.249.40
-  port: 2083
-  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  server: square-mountain-1d69.356-977.workers.dev
+  port: 8880
+  uuid: 48b1d8af-1720-4462-a0ec-de493331ceb3
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: yf.962456.xyz
   network: ws
   ws-opts:
-    path: /proxyip=kr.william.us.ci
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: yf.962456.xyz
+      Host: square-mountain-1d69.356-977.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - homeip
   type: ss
-  server: ce1fc2d8.krkt.hkssip.com
+  server: 211.174.113.172
   port: 49642
   cipher: aes-256-gcm
   password: ac9c0a7b

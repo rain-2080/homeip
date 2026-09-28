@@ -7,12 +7,16 @@ proxies:
 - name: 🇪🇪 EE 01 - homeip
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - homeip
   type: vless
   server: 94.183.170.135
@@ -23,24 +27,6 @@ proxies:
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 03 - homeip
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 04 - homeip
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 05 - homeip
   type: vless
   server: 94.183.170.65
   port: 8081
@@ -53,6 +39,22 @@ proxies:
     path: /ws/generate
     headers:
       Host: hys2.arkonsoft.top
+- name: 🇪🇪 EE 04 - homeip
+  type: ss
+  server: 80.97.27.106
+  port: 114
+  cipher: chacha20-ietf-poly1305
+  password: 9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj
+  udp: true
+- name: 🇪🇪 EE 05 - homeip
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 06 - homeip
   type: vless
   server: 94.183.170.135
@@ -68,17 +70,17 @@ proxies:
       Host: 94.183.170.135
 - name: 🇪🇪 EE 07 - homeip
   type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  server: 188.114.97.6
+  port: 8080
+  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
-      Host: 94.183.170.135
+      Host: netlivpn5002.whwbbb.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
