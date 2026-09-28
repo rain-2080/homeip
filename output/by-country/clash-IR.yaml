@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - homeip
   type: vless
+  server: g4.haxat.bestvbest.ir
+  port: 56126
+  uuid: c5cfb08f-e42d-4a08-94e1-4f591a2f7a6f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: oNv1vk-DHPrbFy__k2B7Am2lTtKfW4dXM7shzi7VFyk
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇮🇷 IR 02 - homeip
+  type: vless
   server: afra4.nimbaha9.ir
   port: 2052
   uuid: e0ff8a9b-dad3-4671-baf4-c8d466d1eb48
@@ -23,11 +35,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇷 IR 01 - homeip
+  - 🇮🇷 IR 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇷 IR 01 - homeip
+  - 🇮🇷 IR 02 - homeip
 rules:
 - MATCH,PROXIES
