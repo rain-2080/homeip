@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - homeip
+- name: 🇳🇴 NO 01 - homeip
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  server: 91.190.155.173
+  port: 2083
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
+  servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: /8eaZJhRwB5zzDy81
+    path: /
     headers:
-      Host: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
+      Host: shephe.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - homeip
+  - 🇳🇴 NO 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - homeip
+  - 🇳🇴 NO 01 - homeip
 rules:
 - MATCH,PROXIES

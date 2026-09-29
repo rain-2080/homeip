@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇧🇷 BR 01 - homeip
   type: vless
-  server: 146.235.59.153
-  port: 2053
-  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shin-ra.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shin-ra.ccwu.cc
-- name: 🇧🇷 BR 02 - homeip
-  type: vless
   server: 43.174.192.1
   port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇷 BR 01 - homeip
-  - 🇧🇷 BR 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 BR 01 - homeip
-  - 🇧🇷 BR 02 - homeip
 rules:
 - MATCH,PROXIES

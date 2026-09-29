@@ -6,21 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
   type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: media-se.compressor.work
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 95.163.232.171
-- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
-  type: vless
-  server: 217.19.122.200
+  server: fbsv6.guardora.pro
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
@@ -32,19 +18,27 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
   type: vless
-  server: 154.197.75.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: fbsv6.guardora.pro
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: vms.lifetime37.workers.dev
+      Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
   type: vless
   server: fbsv6.guardora.pro
@@ -75,18 +69,18 @@ proxies:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
   type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  server: 95.163.232.171
+  port: 14443
+  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
+  servername: media-se.compressor.work
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: fbsv6.guardora.pro
+      Host: media-se.compressor.work
 - name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
   type: vless
   server: fbsv6.guardora.pro
@@ -103,21 +97,21 @@ proxies:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
   type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  server: fbsv6.guardora.pro
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: media-se.compressor.work
+  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: media-se.compressor.work
+      Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
   type: vless
-  server: fbsv6.guardora.pro
+  server: 217.19.122.200
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
@@ -144,19 +138,12 @@ proxies:
     headers:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 11 - homeip
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
+  type: ss
+  server: 185.22.154.239
+  port: 40101
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: media-se.compressor.work
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 95.163.232.171
 - name: 🇷🇺 俄罗斯 (Russia) 12 - homeip
   type: ss
   server: 130.49.189.158
@@ -194,42 +181,7 @@ proxies:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 15 - homeip
   type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 16 - homeip
-  type: ss
-  server: 195.58.48.137
-  port: 40401
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 17 - homeip
-  type: ss
-  server: 195.133.23.200
-  port: 40440
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 18 - homeip
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 19 - homeip
-  type: vless
-  server: 95.163.232.171
+  server: media-se.compressor.work
   port: 14443
   uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
   udp: true
@@ -240,49 +192,7 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: 95.163.232.171
-- name: 🇷🇺 俄罗斯 (Russia) 20 - homeip
-  type: vless
-  server: 217.19.122.200
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 21 - homeip
-  type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 22 - homeip
-  type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
+      Host: media-se.compressor.work
 proxy-groups:
 - name: PROXIES
   type: select
@@ -303,13 +213,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 13 - homeip
   - 🇷🇺 俄罗斯 (Russia) 14 - homeip
   - 🇷🇺 俄罗斯 (Russia) 15 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 16 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 17 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 18 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 19 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 20 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 21 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 22 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -330,12 +233,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 13 - homeip
   - 🇷🇺 俄罗斯 (Russia) 14 - homeip
   - 🇷🇺 俄罗斯 (Russia) 15 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 16 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 17 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 18 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 19 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 20 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 21 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 22 - homeip
 rules:
 - MATCH,PROXIES
