@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - homeip
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: super-sunset-010c.24-43d.workers.dev
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: super-sunset-010c.24-43d.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
