@@ -5,39 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - homeip
-  type: vless
-  server: 34.51.29.171
-  port: 443
-  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
+  type: ss
+  server: 64.177.90.30
+  port: 8388
+  cipher: aes-256-gcm
+  password: BWyPPTusFKhGgzKh
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
-  servername: www.cloudflare.com
-  client-fingerprint: edge
 - name: 🇲🇽 MX 02 - homeip
   type: vless
-  server: 34.51.29.171
+  server: 34.51.119.243
   port: 443
-  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
+  uuid: 79bc7b01-6e4e-4365-a120-fefac8182bd9
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇲🇽 MX 03 - homeip
-  type: vless
-  server: 34.51.29.171
-  port: 443
-  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
+    public-key: vFcM44RcbcO5jcrSWHLd_0exXAnnJLhpCNnMrWCwlzI
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -47,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇲🇽 MX 01 - homeip
   - 🇲🇽 MX 02 - homeip
-  - 🇲🇽 MX 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇲🇽 MX 01 - homeip
   - 🇲🇽 MX 02 - homeip
-  - 🇲🇽 MX 03 - homeip
 rules:
 - MATCH,PROXIES

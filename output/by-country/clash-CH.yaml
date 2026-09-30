@@ -23,16 +23,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 03 - homeip
-  type: vmess
-  server: 37.143.131.229
-  port: 8080
-  uuid: f8aac2be-4d3c-4fa3-9afb-89b6c7e14596
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - homeip
   - 🇨🇭 CH 02 - homeip
-  - 🇨🇭 CH 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - homeip
   - 🇨🇭 CH 02 - homeip
-  - 🇨🇭 CH 03 - homeip
 rules:
 - MATCH,PROXIES
