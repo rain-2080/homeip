@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - homeip
   type: vless
+  server: pl.srv.vbuste-bot.com
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 02 - homeip
+  type: vless
   server: pl-irancell7.xelfona.ir
   port: 2095
   uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
@@ -18,11 +30,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - homeip
+  - 🇵🇱 PL 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - homeip
+  - 🇵🇱 PL 02 - homeip
 rules:
 - MATCH,PROXIES

@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
   type: vless
+  server: 104.21.41.247
+  port: 2053
+  uuid: 0da0a073-a5b0-4229-bf11-24592f6290b9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tcdnu.azad0namah.ir
+  network: ws
+  ws-opts:
+    path: /tucdn/
+    headers:
+      Host: tcdnu.azad0namah.ir
+- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
+  type: vless
   server: 151.241.226.201
   port: 2053
   uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
@@ -16,7 +30,15 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  type: vless
+  server: 145.239.30.17
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
   type: vless
   server: test.keoplentuio.xyz
   port: 2053
@@ -24,32 +46,44 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
   type: vless
-  server: 92b6d0ff54070b56.IROnlY4l.Ir
-  port: 443
-  uuid: 0b47cd2c-cd11-4398-a323-ef4a08475e77
+  server: 178.83.46.216
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
+  type: vless
+  server: tcdnu.azad0namah.ir
+  port: 8443
+  uuid: 0da0a073-a5b0-4229-bf11-24592f6290b9
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
-  type: vless
-  server: 130.94.0.228
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
+  servername: tcdnu.azad0namah.ir
   network: ws
   ws-opts:
-    path: /
+    path: /tuws/
     headers:
-      Host: edgetunnel-4uw.pages.dev
+      Host: tcdnu.azad0namah.ir
+- name: 🇹🇷 土耳其 (Turkey) 07 - homeip
+  type: vless
+  server: 169.40.32.73
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 08 - homeip
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,6 +93,10 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
+  - 🇹🇷 土耳其 (Turkey) 06 - homeip
+  - 🇹🇷 土耳其 (Turkey) 07 - homeip
+  - 🇹🇷 土耳其 (Turkey) 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +106,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
+  - 🇹🇷 土耳其 (Turkey) 06 - homeip
+  - 🇹🇷 土耳其 (Turkey) 07 - homeip
+  - 🇹🇷 土耳其 (Turkey) 08 - homeip
 rules:
 - MATCH,PROXIES
