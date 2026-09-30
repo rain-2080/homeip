@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - homeip
   type: vless
+  server: 89.218.15.90
+  port: 10002
+  uuid: 392fcc7e-b995-11f1-a6b7-1b2272a86bd5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kz1.vpnjantit.com
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: kz1.vpnjantit.com
+- name: 🇰🇿 KZ 02 - homeip
+  type: vless
   server: 109.248.170.119
   port: 13447
   uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
@@ -16,17 +30,35 @@ proxies:
     public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇰🇿 KZ 03 - homeip
+  type: vless
+  server: 89.218.15.90
+  port: 10002
+  uuid: 392fcc7e-b995-11f1-a6b7-1b2272a86bd5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kz1.vpnjantit.com
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: kz1.vpnjantit.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 KZ 01 - homeip
+  - 🇰🇿 KZ 02 - homeip
+  - 🇰🇿 KZ 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 KZ 01 - homeip
+  - 🇰🇿 KZ 02 - homeip
+  - 🇰🇿 KZ 03 - homeip
 rules:
 - MATCH,PROXIES

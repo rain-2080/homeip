@@ -5,33 +5,48 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - homeip
-  type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: af4be52a-aab3-4db1-a6bb-c23700dcb9c2
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
-    headers:
-      Host: https.http.www.net.com.ramseyv2.ir.
-- name: 🇫🇷 法国 (France) 02 - homeip
   type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  server: www.large-files.info
+  port: 8443
+  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: www.large-files.info
+  network: ws
+  ws-opts:
+    path: /var/www/html/video/preview/download/i8o0la
+    headers:
+      Host: www.large-files.info
+- name: 🇫🇷 法国 (France) 02 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 39abda72-f5a5-4ede-9862-bbb8109aba73
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bkkkl.maxsparkbox-bekhabdg.site
+  network: ws
+  ws-opts:
+    path: /baran
+    headers:
+      Host: bkkkl.maxsparkbox-bekhabdg.site
 - name: 🇫🇷 法国 (France) 03 - homeip
+  type: vless
+  server: ewylr.smartorbitbox-bekhabdg.site
+  port: 443
+  uuid: bcf89786-1b01-47dc-9a36-a7db03626e53
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ewylr.smartorbitbox-bekhabdg.site
+  network: ws
+  ws-opts:
+    path: /tigerjoon
+    headers:
+      Host: ewylr.smartorbitbox-bekhabdg.site
+- name: 🇫🇷 法国 (France) 04 - homeip
   type: vmess
   server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
   port: 80
@@ -46,49 +61,34 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 04 - homeip
-  type: vless
-  server: megariverport-nayab.org
-  port: 443
-  uuid: 39abda72-f5a5-4ede-9862-bbb8109aba73
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bkkkl.maxsparkbox-bekhabdg.site
-  network: ws
-  ws-opts:
-    path: /baran
-    headers:
-      Host: bkkkl.maxsparkbox-bekhabdg.site
 - name: 🇫🇷 法国 (France) 05 - homeip
   type: vless
-  server: 188.114.97.6
+  server: 217.60.63.5
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 06 - homeip
-  type: vmess
-  server: 188.114.96.19
-  port: 80
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: shephe.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+      Host: shephe.dpdns.org
+- name: 🇫🇷 法国 (France) 06 - homeip
+  type: vless
+  server: 94.130.178.194
+  port: 443
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
 - name: 🇫🇷 法国 (France) 07 - homeip
   type: vless
   server: 188.114.97.6
@@ -105,46 +105,44 @@ proxies:
       Host: ewylr.smartorbitbox-bekhabdg.site
 - name: 🇫🇷 法国 (France) 08 - homeip
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 39abda72-f5a5-4ede-9862-bbb8109aba73
+  server: 152.228.162.19
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bkkkl.maxsparkbox-bekhabdg.site
   network: ws
   ws-opts:
-    path: /baran
+    path: /vless/
     headers:
-      Host: bkkkl.maxsparkbox-bekhabdg.site
+      Host: 152.228.162.19
 - name: 🇫🇷 法国 (France) 09 - homeip
   type: vless
-  server: ewylr.smartorbitbox-bekhabdg.site
-  port: 443
-  uuid: bcf89786-1b01-47dc-9a36-a7db03626e53
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ewylr.smartorbitbox-bekhabdg.site
-  network: ws
-  ws-opts:
-    path: /tigerjoon
-    headers:
-      Host: ewylr.smartorbitbox-bekhabdg.site
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 10 - homeip
-  type: vless
-  server: www.large-files.info
-  port: 8443
-  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  type: vmess
+  server: 188.114.96.19
+  port: 80
+  uuid: af4be52a-aab3-4db1-a6bb-c23700dcb9c2
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: www.large-files.info
   network: ws
   ws-opts:
-    path: /var/www/html/video/preview/download/i8o0la
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
     headers:
-      Host: www.large-files.info
+      Host: https.http.www.net.com.ramseyv2.ir.
 - name: 🇫🇷 法国 (France) 11 - homeip
   type: vmess
   server: 141.95.65.9
@@ -158,7 +156,7 @@ proxies:
   servername: ''
 - name: 🇫🇷 法国 (France) 12 - homeip
   type: vless
-  server: ov-france1.09vpn.com
+  server: OV-France1.09vpn.com
   port: 80
   uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   udp: true
@@ -168,112 +166,8 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-france1.09vpn.com
+      Host: OV-France1.09vpn.com
 - name: 🇫🇷 法国 (France) 13 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 50414e45-4c5f-5a45-5553-4d64f1370eeb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/4d64f1370eeb/loc-0
-    headers:
-      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
-- name: 🇫🇷 法国 (France) 14 - homeip
-  type: vless
-  server: user.akbarihelia.ir
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 15 - homeip
-  type: ss
-  server: 195.154.81.205
-  port: 15980
-  cipher: aes-128-gcm
-  password: ad5e2de88283f5b915c25982e06bb45b
-  udp: true
-- name: 🇫🇷 法国 (France) 16 - homeip
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 17 - homeip
-  type: vless
-  server: 217.60.63.5
-  port: 443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇫🇷 法国 (France) 18 - homeip
-  type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 19 - homeip
-  type: vmess
-  server: 45.80.215.8
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 20 - homeip
-  type: vless
-  server: 172.67.193.182
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trex-panel-nubj0s.samifakor.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/TrexBridge/ef859652a80e
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-- name: 🇫🇷 法国 (France) 21 - homeip
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 22 - homeip
   type: vless
   server: www.large-files.info
   port: 8443
@@ -287,42 +181,21 @@ proxies:
     path: /var/www/html/video/preview/download/i8o0la
     headers:
       Host: www.large-files.info
-- name: 🇫🇷 法国 (France) 23 - homeip
+- name: 🇫🇷 法国 (France) 14 - homeip
   type: vless
-  server: 104.17.154.178
+  server: megariverport-nayab.org
   port: 443
-  uuid: 50414e45-4c5f-5a45-5553-9568000eed47
+  uuid: 39abda72-f5a5-4ede-9862-bbb8109aba73
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: urzpn8e9ub5s.shoameni2.workers.dev
+  servername: bkkkl.maxsparkbox-bekhabdg.site
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/9568000eed47/loc-1
+    path: /baran
     headers:
-      Host: urzpn8e9ub5s.shoameni2.workers.dev
-- name: 🇫🇷 法国 (France) 24 - homeip
-  type: ss
-  server: nl-irancell3.xelfona.ir
-  port: 49548
-  cipher: 2022-blake3-aes-256-gcm
-  password: zZ+k8UwdTQ9ZTnxEodTN2YI6KrFKEAcBWgCbLZIVUTE=:LbWEdFyjKcvZcv9agyGttSn0HNap+ecf50/UrlGMBCQ=
-  udp: true
-- name: 🇫🇷 法国 (France) 25 - homeip
-  type: vless
-  server: ewylr.smartorbitbox-bekhabdg.site
-  port: 443
-  uuid: bcf89786-1b01-47dc-9a36-a7db03626e53
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ewylr.smartorbitbox-bekhabdg.site
-  network: ws
-  ws-opts:
-    path: /tigerjoon
-    headers:
-      Host: ewylr.smartorbitbox-bekhabdg.site
-- name: 🇫🇷 法国 (France) 26 - homeip
+      Host: bkkkl.maxsparkbox-bekhabdg.site
+- name: 🇫🇷 法国 (France) 15 - homeip
   type: vmess
   server: 188.114.96.19
   port: 80
@@ -337,27 +210,88 @@ proxies:
     path: /d3d3LmlyYW5ob3N0LmNvbQ==
     headers:
       Host: https.http.www.net.com.ramseyv2.ir.
-- name: 🇫🇷 法国 (France) 27 - homeip
+- name: 🇫🇷 法国 (France) 16 - homeip
   type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: XpnTeam-51
+  server: OV-France1.09vpn.com
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /
+    path: /vless/
     headers:
-      Host: Appxdn.global.ssl.fastly.net
-- name: 🇫🇷 法国 (France) 28 - homeip
+      Host: OV-France1.09vpn.com
+- name: 🇫🇷 法国 (France) 17 - homeip
   type: ss
   server: nl-irancell3.xelfona.ir
   port: 49548
   cipher: 2022-blake3-aes-256-gcm
   password: zZ+k8UwdTQ9ZTnxEodTN2YI6KrFKEAcBWgCbLZIVUTE=:LbWEdFyjKcvZcv9agyGttSn0HNap+ecf50/UrlGMBCQ=
   udp: true
+- name: 🇫🇷 法国 (France) 18 - homeip
+  type: vless
+  server: ewylr.smartorbitbox-bekhabdg.site
+  port: 443
+  uuid: bcf89786-1b01-47dc-9a36-a7db03626e53
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ewylr.smartorbitbox-bekhabdg.site
+  network: ws
+  ws-opts:
+    path: /tigerjoon
+    headers:
+      Host: ewylr.smartorbitbox-bekhabdg.site
+- name: 🇫🇷 法国 (France) 19 - homeip
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 20 - homeip
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 21 - homeip
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 22 - homeip
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 23 - homeip
+  type: vmess
+  server: 45.80.215.8
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -386,11 +320,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 21 - homeip
   - 🇫🇷 法国 (France) 22 - homeip
   - 🇫🇷 法国 (France) 23 - homeip
-  - 🇫🇷 法国 (France) 24 - homeip
-  - 🇫🇷 法国 (France) 25 - homeip
-  - 🇫🇷 法国 (France) 26 - homeip
-  - 🇫🇷 法国 (France) 27 - homeip
-  - 🇫🇷 法国 (France) 28 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -419,10 +348,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 21 - homeip
   - 🇫🇷 法国 (France) 22 - homeip
   - 🇫🇷 法国 (France) 23 - homeip
-  - 🇫🇷 法国 (France) 24 - homeip
-  - 🇫🇷 法国 (France) 25 - homeip
-  - 🇫🇷 法国 (France) 26 - homeip
-  - 🇫🇷 法国 (France) 27 - homeip
-  - 🇫🇷 法国 (France) 28 - homeip
 rules:
 - MATCH,PROXIES
