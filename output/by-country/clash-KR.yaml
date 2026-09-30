@@ -5,182 +5,58 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - homeip
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: www.zsu.gov.ua
+  port: 8880
+  uuid: 565326ee-c588-4843-9472-a051578ab1ae
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: lucky-cell-e8c5.490-f12.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 02 - homeip
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.21.55.229
+  port: 8880
+  uuid: 31f345f3-b8eb-4ca6-8b14-bb555ae2c1f9
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: tiny-feather-4c41.227.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 03 - homeip
   type: vless
-  server: 123.111.169.70
-  port: 2083
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  server: 172.66.140.62
+  port: 8880
+  uuid: f32b0ea8-5b9f-4ee2-b20c-0bdfd2057e1d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: /
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: shephe.dpdns.org
+      Host: throbbing-shape-b190.478-57a.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 04 - homeip
-  type: ss
-  server: 141.164.45.187
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  type: vless
+  server: 104.26.13.23
+  port: 8880
+  uuid: d33cc776-9c57-4ea3-8c5a-6d85043029d7
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shiny-flower-c72d.105-161.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 05 - homeip
-  type: vless
-  server: 158.247.253.111
-  port: 2087
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 06 - homeip
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - homeip
-  type: vless
-  server: 158.247.253.111
-  port: 2087
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 08 - homeip
-  type: vless
-  server: 158.247.253.111
-  port: 2087
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 09 - homeip
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 10 - homeip
-  type: vless
-  server: 158.247.253.111
-  port: 2087
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 11 - homeip
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 12 - homeip
-  type: vless
-  server: 158.247.253.111
-  port: 2087
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 13 - homeip
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 132.145.80.230
-- name: 🇰🇷 韩国 (South Korea) 14 - homeip
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 15 - homeip
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -195,7 +71,175 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 06 - homeip
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 132.145.80.230
+- name: 🇰🇷 韩国 (South Korea) 07 - homeip
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 - homeip
+  type: vless
+  server: yellow-hall-d482.260-d22.workers.dev
+  port: 8880
+  uuid: 0ed342c3-eb45-4d63-83a1-697252636ca9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: yellow-hall-d482.260-d22.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 09 - homeip
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 10 - homeip
+  type: vless
+  server: 172.67.198.254
+  port: 8880
+  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: super-sunset-010c.24-43d.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 11 - homeip
+  type: ss
+  server: ce1fc2d8.krkt.hkssip.com
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 12 - homeip
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 35e8826f-0873-492d-8b8a-d495c9947480
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: super-sunset-010c.24-43d.workers.dev
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: super-sunset-010c.24-43d.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 13 - homeip
+  type: vless
+  server: 104.17.64.70
+  port: 8880
+  uuid: f6e14309-5cff-4f5d-bce1-06a260159bbe
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: steep-bread-32f0.92-d12.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 14 - homeip
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 15 - homeip
+  type: ss
+  server: 141.164.45.187
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
 - name: 🇰🇷 韩国 (South Korea) 16 - homeip
+  type: vless
+  server: 123.111.169.70
+  port: 2083
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shephe.dpdns.org
+- name: 🇰🇷 韩国 (South Korea) 17 - homeip
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 18 - homeip
+  type: ss
+  server: ce1fc2d8.krkt.hkssip.com
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 19 - homeip
+  type: ss
+  server: 141.164.45.187
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 20 - homeip
+  type: vless
+  server: 104.21.12.116
+  port: 8880
+  uuid: c6c5ad2f-b4d5-450f-862f-341cebb7f9b5
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: empty-rain-1df4.332-633.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 21 - homeip
   type: vless
   server: 158.247.253.111
   port: 2087
@@ -206,10 +250,10 @@ proxies:
   servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: /+
+    path: /fp=chrome
     headers:
       Host: shephe.dpdns.org
-- name: 🇰🇷 韩国 (South Korea) 17 - homeip
+- name: 🇰🇷 韩国 (South Korea) 22 - homeip
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -221,7 +265,43 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 18 - homeip
+- name: 🇰🇷 韩国 (South Korea) 23 - homeip
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 24 - homeip
+  type: vless
+  server: solitary-mountain-996f.223-38e.workers.dev
+  port: 8880
+  uuid: 58c1b245-2ea0-40b9-b512-bd2bbe3cbe3f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: solitary-mountain-996f.223-38e.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 25 - homeip
+  type: vless
+  server: 104.18.36.122
+  port: 8880
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: mute-sunset-0849.40-aeb.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 26 - homeip
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -233,6 +313,33 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 27 - homeip
+  type: vless
+  server: 104.21.89.181
+  port: 8880
+  uuid: f32b0ea8-5b9f-4ee2-b20c-0bdfd2057e1d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: throbbing-shape-b190.478-57a.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 28 - homeip
+  type: vless
+  server: 158.247.253.111
+  port: 2087
+  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shephe.dpdns.org
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shephe.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -256,6 +363,16 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 16 - homeip
   - 🇰🇷 韩国 (South Korea) 17 - homeip
   - 🇰🇷 韩国 (South Korea) 18 - homeip
+  - 🇰🇷 韩国 (South Korea) 19 - homeip
+  - 🇰🇷 韩国 (South Korea) 20 - homeip
+  - 🇰🇷 韩国 (South Korea) 21 - homeip
+  - 🇰🇷 韩国 (South Korea) 22 - homeip
+  - 🇰🇷 韩国 (South Korea) 23 - homeip
+  - 🇰🇷 韩国 (South Korea) 24 - homeip
+  - 🇰🇷 韩国 (South Korea) 25 - homeip
+  - 🇰🇷 韩国 (South Korea) 26 - homeip
+  - 🇰🇷 韩国 (South Korea) 27 - homeip
+  - 🇰🇷 韩国 (South Korea) 28 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -279,5 +396,15 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 16 - homeip
   - 🇰🇷 韩国 (South Korea) 17 - homeip
   - 🇰🇷 韩国 (South Korea) 18 - homeip
+  - 🇰🇷 韩国 (South Korea) 19 - homeip
+  - 🇰🇷 韩国 (South Korea) 20 - homeip
+  - 🇰🇷 韩国 (South Korea) 21 - homeip
+  - 🇰🇷 韩国 (South Korea) 22 - homeip
+  - 🇰🇷 韩国 (South Korea) 23 - homeip
+  - 🇰🇷 韩国 (South Korea) 24 - homeip
+  - 🇰🇷 韩国 (South Korea) 25 - homeip
+  - 🇰🇷 韩国 (South Korea) 26 - homeip
+  - 🇰🇷 韩国 (South Korea) 27 - homeip
+  - 🇰🇷 韩国 (South Korea) 28 - homeip
 rules:
 - MATCH,PROXIES

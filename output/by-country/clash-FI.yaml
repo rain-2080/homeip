@@ -6,16 +6,17 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 146.75.119.82
+  port: 80
+  uuid: 765d977f-0d47-4d4b-af1c-6eb69d798e0f
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
+    headers:
+      Host: rb24.ir
 - name: 🇫🇮 FI 02 - homeip
   type: vless
   server: 95.216.27.15
@@ -29,30 +30,79 @@ proxies:
   servername: www.google.com
   client-fingerprint: firefox
 - name: 🇫🇮 FI 03 - homeip
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  type: ss
+  server: 2.29.53.116
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: i8yt-VVArkvgqH1zq6UcolE0N6fizmsw
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
 - name: 🇫🇮 FI 04 - homeip
   type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  server: 2.27.13.61
+  port: 2096
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  servername: st6dbbc.rumedia-cdn.com
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st6dbbc.rumedia-cdn.com
 - name: 🇫🇮 FI 05 - homeip
+  type: vless
+  server: 104.16.72.101
+  port: 80
+  uuid: d5598622-46b8-b017-3af3-232500000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇫🇮 FI 06 - homeip
+  type: vless
+  server: 65.109.251.9
+  port: 80
+  uuid: 002d2e68-8995-4d4d-8b02-224cf73c18f5
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 65.109.251.9
+- name: 🇫🇮 FI 07 - homeip
+  type: vless
+  server: 146.75.119.82
+  port: 80
+  uuid: 765d977f-0d47-4d4b-af1c-6eb69d798e0f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
+    headers:
+      Host: rb24.ir
+- name: 🇫🇮 FI 08 - homeip
+  type: vless
+  server: 104.16.72.101
+  port: 80
+  uuid: d5598622-46b8-b017-3af3-232500000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇫🇮 FI 09 - homeip
   type: vless
   server: 185.79.138.71
   port: 448
@@ -74,6 +124,10 @@ proxy-groups:
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
   - 🇫🇮 FI 05 - homeip
+  - 🇫🇮 FI 06 - homeip
+  - 🇫🇮 FI 07 - homeip
+  - 🇫🇮 FI 08 - homeip
+  - 🇫🇮 FI 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,5 +138,9 @@ proxy-groups:
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
   - 🇫🇮 FI 05 - homeip
+  - 🇫🇮 FI 06 - homeip
+  - 🇫🇮 FI 07 - homeip
+  - 🇫🇮 FI 08 - homeip
+  - 🇫🇮 FI 09 - homeip
 rules:
 - MATCH,PROXIES
