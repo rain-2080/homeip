@@ -4,31 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 LT 01 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 01 (家宽) - homeip
   type: vless
-  server: 213.183.55.153
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  server: 109.230.196.66
+  port: 208
+  uuid: 8d89622f-3150-424e-8446-06866a3d6b66
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shephe.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 LT 01 - homeip
+  - 🇹🇷 土耳其 (Turkey) 01 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 LT 01 - homeip
+  - 🇹🇷 土耳其 (Turkey) 01 (家宽) - homeip
 rules:
 - MATCH,PROXIES

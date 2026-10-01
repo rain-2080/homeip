@@ -21,19 +21,53 @@ proxies:
     headers:
       Host: aksai.org
 - name: 🇧🇷 BR 02 - homeip
-  type: vless
-  server: 43.174.192.1
+  type: vmess
+  server: 89.39.161.157
   port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
+  servername: aksai.org
   network: ws
   ws-opts:
-    path: /
+    path: /linkvws
     headers:
-      Host: edgetunnel-4uw.pages.dev
+      Host: aksai.org
+- name: 🇧🇷 BR 03 - homeip
+  type: vmess
+  server: aksai.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇧🇷 BR 04 - homeip
+  type: vmess
+  server: aksai.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +75,8 @@ proxy-groups:
   - AUTO
   - 🇧🇷 BR 01 - homeip
   - 🇧🇷 BR 02 - homeip
+  - 🇧🇷 BR 03 - homeip
+  - 🇧🇷 BR 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +84,7 @@ proxy-groups:
   proxies:
   - 🇧🇷 BR 01 - homeip
   - 🇧🇷 BR 02 - homeip
+  - 🇧🇷 BR 03 - homeip
+  - 🇧🇷 BR 04 - homeip
 rules:
 - MATCH,PROXIES

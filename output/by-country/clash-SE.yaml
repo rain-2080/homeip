@@ -6,20 +6,80 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - homeip
   type: vless
-  server: 144.31.243.120
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  server: 34.51.240.236
+  port: 443
+  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
+  reality-opts:
+    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 - name: 🇸🇪 SE 02 - homeip
   type: vless
+  server: 34.51.240.236
+  port: 443
+  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇸🇪 SE 03 - homeip
+  type: vless
+  server: 34.51.187.118
+  port: 443
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 04 - homeip
+  type: vless
+  server: 34.51.187.118
+  port: 443
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇸🇪 SE 05 - homeip
+  type: vless
+  server: 34.51.187.118
+  port: 443
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇸🇪 SE 06 - homeip
+  type: vless
+  server: 144.31.243.120
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇸🇪 SE 07 - homeip
+  type: vless
   server: 144.31.243.120
   port: 8443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
@@ -32,34 +92,42 @@ proxies:
     path: /fp=chrome
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇪 SE 03 - homeip
+- name: 🇸🇪 SE 08 - homeip
   type: vless
-  server: 103.71.22.234
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  server: 34.51.240.236
+  port: 443
+  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇪 SE 04 - homeip
+  reality-opts:
+    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 09 - homeip
   type: vless
-  server: 103.71.22.234
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  server: 34.51.240.236
+  port: 443
+  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shephe.dpdns.org
+  reality-opts:
+    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇪 SE 10 - homeip
+  type: vless
+  server: 34.51.240.236
+  port: 443
+  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +137,12 @@ proxy-groups:
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
   - 🇸🇪 SE 04 - homeip
+  - 🇸🇪 SE 05 - homeip
+  - 🇸🇪 SE 06 - homeip
+  - 🇸🇪 SE 07 - homeip
+  - 🇸🇪 SE 08 - homeip
+  - 🇸🇪 SE 09 - homeip
+  - 🇸🇪 SE 10 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +152,11 @@ proxy-groups:
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
   - 🇸🇪 SE 04 - homeip
+  - 🇸🇪 SE 05 - homeip
+  - 🇸🇪 SE 06 - homeip
+  - 🇸🇪 SE 07 - homeip
+  - 🇸🇪 SE 08 - homeip
+  - 🇸🇪 SE 09 - homeip
+  - 🇸🇪 SE 10 - homeip
 rules:
 - MATCH,PROXIES

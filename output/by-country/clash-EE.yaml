@@ -6,52 +6,6 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - homeip
   type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 02 - homeip
-  type: vless
-  server: 141.0.187.16
-  port: 2083
-  uuid: fba73f98-777a-42a6-83c0-7d1f6f070e8d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: crt.dodopanel.biz
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 141.0.187.16
-- name: 🇪🇪 EE 03 - homeip
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 04 - homeip
-  type: vless
-  server: 141.0.187.52
-  port: 2083
-  uuid: 8dd437e1-5f3f-446e-98fe-aa29b80057fb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: crt.dodopanel.biz
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 141.0.187.52
-- name: 🇪🇪 EE 05 - homeip
-  type: vless
   server: ee10.zazazuza.ru
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
@@ -64,7 +18,29 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 06 - homeip
+- name: 🇪🇪 EE 02 - homeip
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 03 - homeip
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 04 - homeip
   type: vless
   server: 194.26.141.148
   port: 8443
@@ -78,33 +54,33 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 07 - homeip
+- name: 🇪🇪 EE 05 - homeip
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 08 - homeip
-  type: vless
-  server: 141.0.187.53
-  port: 2083
-  uuid: 8dd437e1-5f3f-446e-98fe-aa29b80057fb
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: crt.dodopanel.biz
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 141.0.187.53
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 06 - homeip
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 07 - homeip
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -117,7 +93,6 @@ proxy-groups:
   - 🇪🇪 EE 05 - homeip
   - 🇪🇪 EE 06 - homeip
   - 🇪🇪 EE 07 - homeip
-  - 🇪🇪 EE 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -130,6 +105,5 @@ proxy-groups:
   - 🇪🇪 EE 05 - homeip
   - 🇪🇪 EE 06 - homeip
   - 🇪🇪 EE 07 - homeip
-  - 🇪🇪 EE 08 - homeip
 rules:
 - MATCH,PROXIES

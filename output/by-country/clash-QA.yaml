@@ -6,26 +6,38 @@ log-level: info
 proxies:
 - name: 🇶🇦 QA 01 - homeip
   type: vless
-  server: 34.18.222.19
+  server: 34.18.161.225
   port: 443
-  uuid: bd82d5e7-4395-40e1-b34e-2974eb0c8555
+  uuid: b6f775c2-70fd-4247-8d12-82cac46fdd50
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4
+    public-key: tT6wEOh8ASizQYNRb51QdDlxAksSJbEaBnbQBajc6SQ
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇶🇦 QA 02 - homeip
   type: vless
-  server: 34.18.222.19
+  server: 34.18.161.225
   port: 443
-  uuid: bd82d5e7-4395-40e1-b34e-2974eb0c8555
+  uuid: b6f775c2-70fd-4247-8d12-82cac46fdd50
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4
+    public-key: tT6wEOh8ASizQYNRb51QdDlxAksSJbEaBnbQBajc6SQ
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇶🇦 QA 03 - homeip
+  type: vless
+  server: 34.18.161.225
+  port: 443
+  uuid: b6f775c2-70fd-4247-8d12-82cac46fdd50
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: tT6wEOh8ASizQYNRb51QdDlxAksSJbEaBnbQBajc6SQ
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -35,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇶🇦 QA 01 - homeip
   - 🇶🇦 QA 02 - homeip
+  - 🇶🇦 QA 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇶🇦 QA 01 - homeip
   - 🇶🇦 QA 02 - homeip
+  - 🇶🇦 QA 03 - homeip
 rules:
 - MATCH,PROXIES
