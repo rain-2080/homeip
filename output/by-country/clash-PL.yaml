@@ -6,6 +6,32 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - homeip
   type: vless
+  server: 144.31.4.193
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: ios
+- name: 🇵🇱 PL 02 - homeip
+  type: vless
+  server: 104.17.247.68
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 03 - homeip
+  type: vless
   server: pl.srv.vbuste-bot.com
   port: 444
   uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
@@ -16,14 +42,59 @@ proxies:
     public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
   servername: pl.srv.vbuste-bot.com
   client-fingerprint: firefox
-- name: 🇵🇱 PL 02 - homeip
+- name: 🇵🇱 PL 04 - homeip
   type: vless
-  server: pl-irancell7.xelfona.ir
-  port: 2095
-  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
+  server: 188.114.97.6
+  port: 8080
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 05 - homeip
+  type: vless
+  server: 104.25.22.24
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 06 - homeip
+  type: vless
+  server: 104.25.146.77
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 07 - homeip
+  type: vless
+  server: pl.srv.vbuste-bot.com
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +102,11 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - homeip
   - 🇵🇱 PL 02 - homeip
+  - 🇵🇱 PL 03 - homeip
+  - 🇵🇱 PL 04 - homeip
+  - 🇵🇱 PL 05 - homeip
+  - 🇵🇱 PL 06 - homeip
+  - 🇵🇱 PL 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -38,5 +114,10 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - homeip
   - 🇵🇱 PL 02 - homeip
+  - 🇵🇱 PL 03 - homeip
+  - 🇵🇱 PL 04 - homeip
+  - 🇵🇱 PL 05 - homeip
+  - 🇵🇱 PL 06 - homeip
+  - 🇵🇱 PL 07 - homeip
 rules:
 - MATCH,PROXIES

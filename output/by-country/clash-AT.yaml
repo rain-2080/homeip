@@ -13,6 +13,18 @@ proxies:
   udp: true
 - name: 🇦🇹 AT 02 - homeip
   type: vless
+  server: g4.haxat.bestvbest.ir
+  port: 56126
+  uuid: ce4b2104-f1fe-4216-ad67-8c21869b9118
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: oNv1vk-DHPrbFy__k2B7Am2lTtKfW4dXM7shzi7VFyk
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇦🇹 AT 03 - homeip
+  type: vless
   server: 152.53.1.40
   port: 443
   uuid: edde565e-41f5-400e-84ea-7b87a3e84488
@@ -23,20 +35,6 @@ proxies:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
   servername: at.quattro-tech.ru
   client-fingerprint: qq
-- name: 🇦🇹 AT 03 - homeip
-  type: vless
-  server: 173.242.63.235
-  port: 8443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select

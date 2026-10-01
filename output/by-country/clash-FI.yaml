@@ -6,51 +6,18 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
-  server: 77.42.20.51
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  server: 146.75.119.82
+  port: 80
+  uuid: 70a7fefc-6b71-4ab9-8cf5-eb12bb48cf1d
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 02 - homeip
-  type: vless
-  server: ff.ketabkhan24.ir
-  port: 2053
-  uuid: d02fcca7-e77f-42f1-94bf-5545eec68f0a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fY4zG7EPbiRzlabmT4p_LFuHj6vfMAEdxNoCt-bCPz8
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 03 - homeip
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 04 - homeip
-  type: vless
-  server: porn.tyr-agentstvo.tech
-  port: 443
-  uuid: 223460d4-8f96-4652-9057-295bdedc3216
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: porn.tyr-agentstvo.tech
   network: ws
   ws-opts:
-    path: /websocket?ed=2560
+    path: /ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
     headers:
-      Host: porn.tyr-agentstvo.tech
-- name: 🇫🇮 FI 05 - homeip
+      Host: rb24.ir
+- name: 🇫🇮 FI 02 - homeip
   type: vless
   server: 37.143.129.161
   port: 8443
@@ -62,6 +29,38 @@ proxies:
     public-key: B5-zPBBAI-UATY7rSvoggM1T65h9CfVw7yBluBNd-yI
   servername: fi.aksay.pro
   client-fingerprint: chrome
+- name: 🇫🇮 FI 03 - homeip
+  type: vless
+  server: 77.42.20.51
+  port: 1085
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 04 - homeip
+  type: vless
+  server: 142.228.52.79
+  port: 8443
+  uuid: e3e9805a-6c8b-4edd-8ee8-621df79806eb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: B5-zPBBAI-UATY7rSvoggM1T65h9CfVw7yBluBNd-yI
+  servername: fi.aksay.pro
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 05 - homeip
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

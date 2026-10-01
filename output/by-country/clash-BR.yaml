@@ -21,21 +21,19 @@ proxies:
     headers:
       Host: aksai.org
 - name: 🇧🇷 BR 02 - homeip
-  type: vmess
-  server: aksai.org
+  type: vless
+  server: 43.174.192.1
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /
     headers:
-      Host: aksai.org
+      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
