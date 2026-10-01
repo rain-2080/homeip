@@ -7,11 +7,49 @@ proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - homeip
   type: ss
   server: 141.164.45.187
+  port: 9101
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 02 - homeip
+  type: ss
+  server: 141.164.45.187
+  port: 8000
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 03 - homeip
+  type: ss
+  server: 141.164.45.187
   port: 7002
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 02 - homeip
+- name: 🇰🇷 韩国 (South Korea) 04 - homeip
+  type: ss
+  server: 211.174.113.172
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 05 - homeip
+  type: ss
+  server: 141.164.45.187
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 06 - homeip
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 07 - homeip
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -22,28 +60,8 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 03 - homeip
-  type: vless
-  server: www.baipiao.eu.org
-  port: 8880
-  uuid: 83744063-3ddc-4ed9-b6e5-d207ce6ed48e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: still-pine-d15e.368-b2a.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 04 - homeip
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 05 - homeip
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 08 - homeip
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -53,40 +71,21 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - homeip
-  type: ss
-  server: 141.164.45.187
-  port: 9101
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 07 - homeip
-  type: ss
-  server: 141.164.45.187
-  port: 2376
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 08 - homeip
-  type: ss
-  server: 141.164.45.187
-  port: 8888
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
 - name: 🇰🇷 韩国 (South Korea) 09 - homeip
-  type: vless
-  server: 104.17.181.19
-  port: 8880
-  uuid: b8cd08fd-a19a-4ad0-b8ae-b664b89791da
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /cctv13.m3u8
     headers:
-      Host: sweet-scene-bffd.312-860.workers.dev
+      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 10 - homeip
   type: vless
   server: 151.245.106.49
@@ -98,8 +97,35 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 11 - homeip
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 12 - homeip
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 13 - homeip
+  type: ss
+  server: 141.164.45.187
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 14 - homeip
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -111,27 +137,16 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 12 - homeip
-  type: ss
-  server: 141.164.45.187
-  port: 8000
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
+- name: 🇰🇷 韩国 (South Korea) 15 - homeip
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 13 - homeip
-  type: vless
-  server: 158.247.253.111
-  port: 2087
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: shephe.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -150,6 +165,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 11 - homeip
   - 🇰🇷 韩国 (South Korea) 12 - homeip
   - 🇰🇷 韩国 (South Korea) 13 - homeip
+  - 🇰🇷 韩国 (South Korea) 14 - homeip
+  - 🇰🇷 韩国 (South Korea) 15 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -168,5 +185,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 11 - homeip
   - 🇰🇷 韩国 (South Korea) 12 - homeip
   - 🇰🇷 韩国 (South Korea) 13 - homeip
+  - 🇰🇷 韩国 (South Korea) 14 - homeip
+  - 🇰🇷 韩国 (South Korea) 15 - homeip
 rules:
 - MATCH,PROXIES
