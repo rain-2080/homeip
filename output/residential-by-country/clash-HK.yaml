@@ -6,16 +6,6 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - homeip
   type: vmess
-  server: dog-hk.kunlun01dns.com
-  port: 21021
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - homeip
-  type: vmess
   server: zfd-hkv2.kunlun01dns.com
   port: 16115
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
@@ -24,19 +14,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - homeip
-  type: vless
-  server: 218.250.216.236
-  port: 443
-  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - homeip
+  type: vmess
+  server: dog-hk.kunlun01dns.com
+  port: 21021
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - homeip
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - homeip
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -58,7 +46,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - homeip
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - homeip
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - homeip
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,6 +54,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - homeip
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - homeip
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - homeip
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - homeip
 rules:
 - MATCH,PROXIES
