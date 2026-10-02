@@ -6,18 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
-  server: 35.228.61.63
-  port: 443
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 02 - homeip
-  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -28,14 +16,46 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
+- name: 🇫🇮 FI 02 - homeip
+  type: vless
+  server: 146.185.143.174
+  port: 443
+  uuid: 22fa3629-21b7-4904-b800-db850decb620
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fin.vip98.cfd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fin.vip98.cfd
 - name: 🇫🇮 FI 03 - homeip
   type: vless
-  server: 77.42.20.51
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
+  server: 34.88.172.173
+  port: 443
+  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 04 - homeip
+  type: vless
+  server: 146.185.143.174
+  port: 443
+  uuid: 22fa3629-21b7-4904-b800-db850decb620
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fin.vip98.cfd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fin.vip98.cfd
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +64,7 @@ proxy-groups:
   - 🇫🇮 FI 01 - homeip
   - 🇫🇮 FI 02 - homeip
   - 🇫🇮 FI 03 - homeip
+  - 🇫🇮 FI 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,5 +73,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - homeip
   - 🇫🇮 FI 02 - homeip
   - 🇫🇮 FI 03 - homeip
+  - 🇫🇮 FI 04 - homeip
 rules:
 - MATCH,PROXIES

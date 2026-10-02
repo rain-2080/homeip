@@ -15,8 +15,23 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 - homeip
+  type: vless
+  server: 178.83.46.216
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  type: ss
+  server: bale.xv98.ir
+  port: 5051
+  cipher: chacha20-ietf-poly1305
+  password: 68mL2QkZEBlxWa3hcslGDw
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -27,69 +42,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
-  type: vless
-  server: 178.83.46.216
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
-  type: vless
-  server: 178.83.46.216
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
-  type: vless
-  server: 145.239.30.17
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 07 - homeip
-  type: vless
-  server: 178.83.46.216
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 08 - homeip
-  type: vless
-  server: 155.103.70.53
-  port: 30303
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==fp=chrome
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇷 土耳其 (Turkey) 09 - homeip
-  type: vless
-  server: 169.40.32.73
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,11 +52,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
-  - 🇹🇷 土耳其 (Turkey) 05 - homeip
-  - 🇹🇷 土耳其 (Turkey) 06 - homeip
-  - 🇹🇷 土耳其 (Turkey) 07 - homeip
-  - 🇹🇷 土耳其 (Turkey) 08 - homeip
-  - 🇹🇷 土耳其 (Turkey) 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -113,10 +61,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
-  - 🇹🇷 土耳其 (Turkey) 05 - homeip
-  - 🇹🇷 土耳其 (Turkey) 06 - homeip
-  - 🇹🇷 土耳其 (Turkey) 07 - homeip
-  - 🇹🇷 土耳其 (Turkey) 08 - homeip
-  - 🇹🇷 土耳其 (Turkey) 09 - homeip
 rules:
 - MATCH,PROXIES

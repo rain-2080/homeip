@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 03 - homeip
   type: vless
   server: 194.61.31.126
@@ -41,17 +41,21 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 04 - homeip
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  type: vmess
+  server: 20.235.220.189
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
 - name: 🇮🇳 印度 (India) 05 - homeip
   type: vless
   server: 194.61.31.126
@@ -63,7 +67,7 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

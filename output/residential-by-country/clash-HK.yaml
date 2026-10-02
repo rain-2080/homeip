@@ -5,15 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - homeip
-  type: vmess
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16115
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 218.250.216.236
+  port: 443
+  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

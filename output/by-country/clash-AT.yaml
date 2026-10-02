@@ -17,6 +17,16 @@ proxies:
   servername: at.quattro-tech.ru
   client-fingerprint: qq
 - name: 🇦🇹 AT 02 - homeip
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16308
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇦🇹 AT 03 - homeip
   type: ss
   server: 82.110.60.9
   port: 19999
@@ -30,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇦🇹 AT 01 - homeip
   - 🇦🇹 AT 02 - homeip
+  - 🇦🇹 AT 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -37,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇦🇹 AT 01 - homeip
   - 🇦🇹 AT 02 - homeip
+  - 🇦🇹 AT 03 - homeip
 rules:
 - MATCH,PROXIES
