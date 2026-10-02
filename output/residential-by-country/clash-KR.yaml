@@ -5,23 +5,69 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - homeip
+  type: vless
+  server: 172.67.209.127
+  port: 8880
+  uuid: 30a88c40-581e-4952-aa4c-8af95686ede0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: rapid-lab-95ef.173-74c.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - homeip
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: a51d8a82-faec-44f4-8882-441a2e7f0ce4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: spring-math-5c8c.434.workers.dev
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: spring-math-5c8c.434.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - homeip
   type: ss
-  server: ce1fc2d8.krkt.hkssip.com
+  server: 211.174.113.172
   port: 49642
   cipher: aes-256-gcm
   password: ac9c0a7b
   udp: true
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - homeip
+  type: vless
+  server: 104.16.107.139
+  port: 8880
+  uuid: 74705348-bb9c-47c6-9e91-057c6407bb20
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: small-glitter-aa35.76-21d.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - homeip
 rules:
 - MATCH,PROXIES

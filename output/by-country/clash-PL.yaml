@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - homeip
-  type: vless
-  server: 34.118.43.106
-  port: 443
-  uuid: 16e310b7-659e-45ee-a4b0-10e0289b8621
+  type: ss
+  server: 94.228.161.7
+  port: 4
+  cipher: chacha20-ietf-poly1305
+  password: MBiJEJ5VgZXVSj58CEEFZA
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: -bjPqNKxxGTKCmH6dwsdGRTUzuatAowBWxyOPW4BiVQ
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇵🇱 PL 02 - homeip
   type: vless
   server: 70.34.255.101
@@ -31,6 +26,42 @@ proxies:
       Host: 70.34.255.101
 - name: 🇵🇱 PL 03 - homeip
   type: vless
+  server: 144.31.4.193
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 04 - homeip
+  type: vless
+  server: 144.31.4.193
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: ios
+- name: 🇵🇱 PL 05 - homeip
+  type: vless
+  server: pl.srv.vbuste-bot.com
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 06 - homeip
+  type: vless
   server: pl.srv.vbuste-bot.com
   port: 444
   uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
@@ -41,7 +72,7 @@ proxies:
     public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
   servername: pl.srv.vbuste-bot.com
   client-fingerprint: firefox
-- name: 🇵🇱 PL 04 - homeip
+- name: 🇵🇱 PL 07 - homeip
   type: vless
   server: 70.34.255.101
   port: 80
@@ -54,42 +85,6 @@ proxies:
     path: /
     headers:
       Host: 70.34.255.101
-- name: 🇵🇱 PL 05 - homeip
-  type: vless
-  server: 144.31.4.193
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: ios
-- name: 🇵🇱 PL 06 - homeip
-  type: vless
-  server: 144.31.4.193
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 07 - homeip
-  type: vless
-  server: pl.srv.vbuste-bot.com
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

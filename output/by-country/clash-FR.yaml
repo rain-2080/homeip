@@ -5,17 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - homeip
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.21.72.47
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
 - name: 🇫🇷 法国 (France) 02 - homeip
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 03 - homeip
   type: vless
   server: www.large-files.info
   port: 8443
@@ -29,51 +44,7 @@ proxies:
     path: /var/www/html/video/preview/download/i8o0la
     headers:
       Host: www.large-files.info
-- name: 🇫🇷 法国 (France) 03 - homeip
-  type: vmess
-  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-  port: 80
-  uuid: 479526cd-5011-43cf-a788-504da95e07c2
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
 - name: 🇫🇷 法国 (France) 04 - homeip
-  type: ss
-  server: nl-irancell3.xelfona.ir
-  port: 49548
-  cipher: 2022-blake3-aes-256-gcm
-  password: zZ+k8UwdTQ9ZTnxEodTN2YI6KrFKEAcBWgCbLZIVUTE=:LbWEdFyjKcvZcv9agyGttSn0HNap+ecf50/UrlGMBCQ=
-  udp: true
-- name: 🇫🇷 法国 (France) 05 - homeip
-  type: vmess
-  server: 45.80.215.8
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 06 - homeip
-  type: vless
-  server: 54.37.136.194
-  port: 2053
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 07 - homeip
   type: vless
   server: fr.api-music-fa.com
   port: 2053
@@ -81,12 +52,46 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: fr.api-music-fa.com
   network: ws
   ws-opts:
     path: /api/voip/updates/static/fr2035
     headers:
-      Host: ''
+      Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 05 - homeip
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 06 - homeip
+  type: vless
+  server: 104.21.70.21
+  port: 8080
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 07 - homeip
+  type: vless
+  server: www.large-files.info
+  port: 8443
+  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.large-files.info
+  network: ws
+  ws-opts:
+    path: /var/www/html/video/preview/download/i8o0la
+    headers:
+      Host: www.large-files.info
 - name: 🇫🇷 法国 (France) 08 - homeip
   type: vless
   server: fr.api-music-fa.com
@@ -102,13 +107,38 @@ proxies:
     headers:
       Host: fr.api-music-fa.com
 - name: 🇫🇷 法国 (France) 09 - homeip
+  type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: XpnTeam-59
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: 🇫🇷 法国 (France) 10 - homeip
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 11 - homeip
   type: ss
   server: 51.255.13.232
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
   udp: true
-- name: 🇫🇷 法国 (France) 10 - homeip
+- name: 🇫🇷 法国 (France) 12 - homeip
   type: vmess
   server: 188.114.96.19
   port: 80
@@ -123,7 +153,41 @@ proxies:
     path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
     headers:
       Host: https.http.www.net.com.ramseyv2.ir.
-- name: 🇫🇷 法国 (France) 11 - homeip
+- name: 🇫🇷 法国 (France) 13 - homeip
+  type: vmess
+  server: 45.80.215.8
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 14 - homeip
+  type: vless
+  server: 104.21.84.30
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fr.api-music-fa.com
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 15 - homeip
+  type: vmess
+  server: 45.80.215.8
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 16 - homeip
   type: vmess
   server: 188.114.96.19
   port: 80
@@ -138,20 +202,48 @@ proxies:
     path: /d3d3LmlyYW5ob3N0LmNvbQ==
     headers:
       Host: https.http.www.net.com.ramseyv2.ir.
-- name: 🇫🇷 法国 (France) 12 - homeip
+- name: 🇫🇷 法国 (France) 17 - homeip
   type: vless
-  server: ov-france1.09vpn.com
+  server: fr.api-music-fa.com
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /api/voip/updates/static/fr2035
+    headers:
+      Host: ''
+- name: 🇫🇷 法国 (France) 18 - homeip
+  type: vmess
+  server: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
   port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  uuid: 479526cd-5011-43cf-a788-504da95e07c2
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless/
+    path: /
     headers:
-      Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 13 - homeip
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 19 - homeip
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 20 - homeip
   type: vless
   server: fr.api-music-fa.com
   port: 2053
@@ -165,7 +257,7 @@ proxies:
     path: /api/voip/updates/static/fr2035
     headers:
       Host: fr.api-music-fa.com
-- name: 🇫🇷 法国 (France) 14 - homeip
+- name: 🇫🇷 法国 (France) 21 - homeip
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -176,32 +268,20 @@ proxies:
   reality-opts:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 15 - homeip
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 22 - homeip
   type: vless
-  server: 152.228.162.19
-  port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 152.228.162.19
-- name: 🇫🇷 法国 (France) 16 - homeip
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  server: 162.19.230.250
+  port: 443
+  uuid: 7017a1ca-7a31-463d-832e-5a7261a3dd62
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 17 - homeip
+  reality-opts:
+    public-key: i1OqphFMJNL_xwV5zES4icJTPBHtSgieOt3FYns9zB0
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 23 - homeip
   type: vmess
   server: 188.114.96.19
   port: 80
@@ -238,6 +318,12 @@ proxy-groups:
   - 🇫🇷 法国 (France) 15 - homeip
   - 🇫🇷 法国 (France) 16 - homeip
   - 🇫🇷 法国 (France) 17 - homeip
+  - 🇫🇷 法国 (France) 18 - homeip
+  - 🇫🇷 法国 (France) 19 - homeip
+  - 🇫🇷 法国 (France) 20 - homeip
+  - 🇫🇷 法国 (France) 21 - homeip
+  - 🇫🇷 法国 (France) 22 - homeip
+  - 🇫🇷 法国 (France) 23 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -260,5 +346,11 @@ proxy-groups:
   - 🇫🇷 法国 (France) 15 - homeip
   - 🇫🇷 法国 (France) 16 - homeip
   - 🇫🇷 法国 (France) 17 - homeip
+  - 🇫🇷 法国 (France) 18 - homeip
+  - 🇫🇷 法国 (France) 19 - homeip
+  - 🇫🇷 法国 (France) 20 - homeip
+  - 🇫🇷 法国 (France) 21 - homeip
+  - 🇫🇷 法国 (France) 22 - homeip
+  - 🇫🇷 法国 (France) 23 - homeip
 rules:
 - MATCH,PROXIES

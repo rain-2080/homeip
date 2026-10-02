@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 BE 01 - homeip
+- name: 🇮🇩 ID 01 (家宽) - homeip
   type: vless
-  server: 34.156.242.126
-  port: 443
-  uuid: d4d1b597-2769-465b-b7fa-c2b84393d3ee
+  server: 188.114.97.6
+  port: 80
+  uuid: 33ebe52d-cd35-4d0f-a3e9-14adb7ff1ff4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: OQ0MKzP5TYtlJCteckb25tD6USBH__D1z28Y8BOcdG4
-  servername: www.cloudflare.com
-  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: www.genflix.co.id.r3xxe.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 BE 01 - homeip
+  - 🇮🇩 ID 01 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 BE 01 - homeip
+  - 🇮🇩 ID 01 (家宽) - homeip
 rules:
 - MATCH,PROXIES

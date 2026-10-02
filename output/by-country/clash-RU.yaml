@@ -6,81 +6,203 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
   type: vless
-  server: 217.19.122.200
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  server: 162.159.38.127
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /ws
+    path: /?ed=2560security=tls
     headers:
-      Host: fbsv6.guardora.pro
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
   type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  server: 172.64.52.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /ws
+    path: /?ed=2560security=tls
     headers:
-      Host: fbsv6.guardora.pro
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
   type: vless
-  server: 78.159.246.110
+  server: 172.64.52.6
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  type: vless
+  server: www.speedtest.net
+  port: 80
+  uuid: 7201b2cd-0675-4c1a-9c76-07ca14ffcf08
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiTlZxbGYyajQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    headers:
+      Host: 6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  type: vless
+  server: 188.114.97.6
   port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
+  servername: ez-98919a.motoricb.workers.dev
   network: ws
   ws-opts:
-    path: /ws
+    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
     headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+      Host: ez-98919a.motoricb.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
+  type: vless
+  server: 104.26.6.214
+  port: 8880
+  uuid: a9fb0f8c-89e9-44ee-9574-a310c5bd259c
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: autumn-leaf-eefd.119-38e.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  type: vless
+  server: 104.21.34.106
+  port: 443
+  uuid: d8c14c5c-a80a-4f6f-a5fb-52071849c443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cgxgqcheiamna-jks01fidlsnqojwf-s.aliama.workers.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZTFWRGJFS0NUd2F2NkRmIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+    headers:
+      Host: cgxgqcheiamna-jks01fidlsnqojwf-s.aliama.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  type: vless
+  server: 172.64.52.6
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  type: vless
+  server: 162.159.43.187
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 11 - homeip
+  type: vless
+  server: 104.18.46.234
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 12 - homeip
+  type: vless
+  server: 172.64.158.146
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 13 - homeip
+  type: vless
+  server: 104.18.39.218
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 14 - homeip
+  type: vless
+  server: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  port: 443
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇷🇺 俄罗斯 (Russia) 15 - homeip
+  type: vless
+  server: 162.159.39.218
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 16 - homeip
   type: ss
   server: 195.133.23.200
   port: 20998
   cipher: aes-256-gcm
   password: 81a20429165df87e
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
-  type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,6 +215,15 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - homeip
   - 🇷🇺 俄罗斯 (Russia) 06 - homeip
   - 🇷🇺 俄罗斯 (Russia) 07 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 12 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 13 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 14 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 15 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 16 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,5 +236,14 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05 - homeip
   - 🇷🇺 俄罗斯 (Russia) 06 - homeip
   - 🇷🇺 俄罗斯 (Russia) 07 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 12 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 13 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 14 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 15 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 16 - homeip
 rules:
 - MATCH,PROXIES
