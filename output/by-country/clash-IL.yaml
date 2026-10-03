@@ -28,6 +28,30 @@ proxies:
     public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇮🇱 IL 03 - homeip
+  type: vless
+  server: 34.165.56.30
+  port: 443
+  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇱 IL 04 - homeip
+  type: vless
+  server: 34.165.56.30
+  port: 443
+  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +59,8 @@ proxy-groups:
   - AUTO
   - 🇮🇱 IL 01 - homeip
   - 🇮🇱 IL 02 - homeip
+  - 🇮🇱 IL 03 - homeip
+  - 🇮🇱 IL 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +68,7 @@ proxy-groups:
   proxies:
   - 🇮🇱 IL 01 - homeip
   - 🇮🇱 IL 02 - homeip
+  - 🇮🇱 IL 03 - homeip
+  - 🇮🇱 IL 04 - homeip
 rules:
 - MATCH,PROXIES

@@ -18,39 +18,15 @@ proxies:
   client-fingerprint: firefox
 - name: 🇸🇪 SE 02 - homeip
   type: vless
-  server: se.monkora.org
+  server: 34.51.231.250
   port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 03 - homeip
-  type: vless
-  server: 199.68.198.13
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: firefox
-- name: 🇸🇪 SE 04 - homeip
-  type: vless
-  server: 199.68.198.13
-  port: 443
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
+    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -59,8 +35,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
-  - 🇸🇪 SE 03 - homeip
-  - 🇸🇪 SE 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,7 +42,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
-  - 🇸🇪 SE 03 - homeip
-  - 🇸🇪 SE 04 - homeip
 rules:
 - MATCH,PROXIES
