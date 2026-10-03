@@ -40,6 +40,18 @@ proxies:
     public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
   servername: example.org
   client-fingerprint: firefox
+- name: 🇸🇪 SE 04 - homeip
+  type: vless
+  server: 199.68.198.13
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +60,7 @@ proxy-groups:
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
+  - 🇸🇪 SE 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,5 +69,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
+  - 🇸🇪 SE 04 - homeip
 rules:
 - MATCH,PROXIES

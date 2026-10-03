@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - homeip
   type: vless
-  server: hinet1.2yly.com
+  server: 118.167.235.241
   port: 24215
   uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
   udp: true
@@ -15,8 +15,15 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - homeip
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - homeip
+  type: ss
+  server: ce1fc2d8.krkt.hkssip.com
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - homeip
   type: vmess
   server: zfd-hkv2.kunlun01dns.com
   port: 16115
@@ -26,17 +33,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - homeip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - homeip
   type: vmess
   server: dog-hk.kunlun01dns.com
-  port: 21021
+  port: 21022
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - homeip
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - homeip
   type: vless
   server: 103.180.20.108
   port: 8443
@@ -50,48 +57,56 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - homeip
-  type: ss
-  server: ce1fc2d8.krkt.hkssip.com
-  port: 49642
-  cipher: aes-256-gcm
-  password: ac9c0a7b
-  udp: true
-- name: 🇺🇸 美国 (United States) 06 (家宽) - homeip
+- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - homeip
   type: vless
-  server: 154.17.228.81
-  port: 59686
-  uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+  server: 104.18.11.118
+  port: 8880
+  uuid: 17b2ed22-5fd0-47ad-b5f0-658379379ced
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: black-wildflower-dd92.72-1e8.workers.dev
+- name: 🇩🇪 德国 (Germany) 07 (家宽) - homeip
+  type: vless
+  server: 209.38.238.229
+  port: 20202
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 123.714541.xyz
+  servername: wzs.echo.net.eu.org
   network: ws
   ws-opts:
-    path: /Ra-vl
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
     headers:
-      Host: 123.714541.xyz
+      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - homeip
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - homeip
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - homeip
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - homeip
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - homeip
-  - 🇺🇸 美国 (United States) 06 (家宽) - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - homeip
+  - 🇩🇪 德国 (Germany) 07 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - homeip
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - homeip
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - homeip
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - homeip
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - homeip
-  - 🇺🇸 美国 (United States) 06 (家宽) - homeip
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - homeip
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - homeip
+  - 🇩🇪 德国 (Germany) 07 (家宽) - homeip
 rules:
 - MATCH,PROXIES

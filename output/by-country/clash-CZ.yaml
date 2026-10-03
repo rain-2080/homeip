@@ -18,6 +18,30 @@ proxies:
   client-fingerprint: firefox
 - name: 🇨🇿 CZ 02 - homeip
   type: vless
+  server: 86.54.82.184
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇨🇿 CZ 03 - homeip
+  type: vless
+  server: cz.monkora.org
+  port: 443
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇨🇿 CZ 04 - homeip
+  type: vless
   server: cz.monkora.org
   port: 443
   uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
@@ -35,6 +59,8 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - homeip
   - 🇨🇿 CZ 02 - homeip
+  - 🇨🇿 CZ 03 - homeip
+  - 🇨🇿 CZ 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +68,7 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - homeip
   - 🇨🇿 CZ 02 - homeip
+  - 🇨🇿 CZ 03 - homeip
+  - 🇨🇿 CZ 04 - homeip
 rules:
 - MATCH,PROXIES

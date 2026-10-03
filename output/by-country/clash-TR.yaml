@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
   type: vless
-  server: test.keoplentuio.xyz
+  server: 178.83.46.216
   port: 2053
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
@@ -22,6 +22,27 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 03 - homeip
   type: vless
+  server: 155.103.70.53
+  port: 30303
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wzs.echo.net.eu.org
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==fp=chrome
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
+  type: ss
+  server: bale.xv98.ir
+  port: 5051
+  cipher: chacha20-ietf-poly1305
+  password: 68mL2QkZEBlxWa3hcslGDw
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
+  type: vless
   server: 151.241.226.201
   port: 2053
   uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
@@ -32,49 +53,15 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
   type: vless
-  server: 178.83.46.216
+  server: test.keoplentuio.xyz
   port: 2053
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
-  type: vmess
-  server: 206.1.99.160
-  port: 41310
-  uuid: Nitro_Skybot
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
-  type: ss
-  server: 206.1.103.221
-  port: 17721
-  cipher: 2022-blake3-aes-256-gcm
-  password: YdXo5FtbFp8lnDRbIvewaOaXbDtf5eR1Bk/O594+x40=:iZdLC0QQ5kSj7Y1QqwR/t23h1gp/jHyiWkf2MJFjq5s=
-  udp: true
 - name: 🇹🇷 土耳其 (Turkey) 07 - homeip
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 08 - homeip
   type: vless
   server: 176.96.131.251
   port: 1280
@@ -87,9 +74,17 @@ proxies:
     path: /
     headers:
       Host: 176.96.131.251
+- name: 🇹🇷 土耳其 (Turkey) 08 - homeip
+  type: vless
+  server: 178.83.46.216
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 09 - homeip
   type: vless
-  server: test.keoplentuio.xyz
+  server: 145.239.30.17
   port: 2053
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
@@ -103,18 +98,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 11 - homeip
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -130,7 +113,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 08 - homeip
   - 🇹🇷 土耳其 (Turkey) 09 - homeip
   - 🇹🇷 土耳其 (Turkey) 10 - homeip
-  - 🇹🇷 土耳其 (Turkey) 11 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -146,6 +128,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 08 - homeip
   - 🇹🇷 土耳其 (Turkey) 09 - homeip
   - 🇹🇷 土耳其 (Turkey) 10 - homeip
-  - 🇹🇷 土耳其 (Turkey) 11 - homeip
 rules:
 - MATCH,PROXIES
