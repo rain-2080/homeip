@@ -9,21 +9,14 @@ proxies:
   server: 20.238.125.195
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: jUg9wluj5iOiY9sI
+  password: ng0XTChgbJJ3Sv2d
   udp: true
 - name: 🇮🇪 IE 02 - homeip
   type: ss
   server: 20.238.125.195
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: Qr3RLHJLngbplPWd
-  udp: true
-- name: 🇮🇪 IE 03 - homeip
-  type: ss
-  server: 20.238.125.195
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: ng0XTChgbJJ3Sv2d
+  password: jUg9wluj5iOiY9sI
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -32,7 +25,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - homeip
   - 🇮🇪 IE 02 - homeip
-  - 🇮🇪 IE 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -40,6 +32,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - homeip
   - 🇮🇪 IE 02 - homeip
-  - 🇮🇪 IE 03 - homeip
 rules:
 - MATCH,PROXIES
