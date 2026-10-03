@@ -6,16 +6,17 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - homeip
   type: vless
-  server: 144.31.4.193
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  server: 70.34.255.101
+  port: 80
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.255.101
 - name: 🇵🇱 PL 02 - homeip
   type: vless
   server: 70.34.255.101
@@ -31,27 +32,6 @@ proxies:
       Host: 70.34.255.101
 - name: 🇵🇱 PL 03 - homeip
   type: vless
-  server: pl.srv.vbuste-bot.com
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-  servername: pl.srv.vbuste-bot.com
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 04 - homeip
-  type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 05 - homeip
-  type: vless
   server: 70.34.255.101
   port: 80
   uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
@@ -63,7 +43,7 @@ proxies:
     path: /
     headers:
       Host: 70.34.255.101
-- name: 🇵🇱 PL 06 - homeip
+- name: 🇵🇱 PL 04 - homeip
   type: vless
   server: pl.flen-vpn.xyz
   port: 8443
@@ -72,7 +52,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 07 - homeip
+- name: 🇵🇱 PL 05 - homeip
   type: vless
   server: pl.srv.vbuste-bot.com
   port: 444
@@ -83,7 +63,28 @@ proxies:
   reality-opts:
     public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
   servername: pl.srv.vbuste-bot.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 06 - homeip
+  type: vless
+  server: 144.31.4.193
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+  servername: pl.srv.vbuste-bot.com
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 07 - homeip
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
 proxy-groups:
 - name: PROXIES
   type: select
