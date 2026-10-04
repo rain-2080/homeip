@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - homeip
   type: vless
-  server: 70.34.252.154
-  port: 80
-  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 70.34.252.154
-- name: 🇵🇱 PL 02 - homeip
-  type: vless
   server: pl.flen-vpn.xyz
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
@@ -26,6 +13,19 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
+- name: 🇵🇱 PL 02 - homeip
+  type: vless
+  server: 70.34.255.101
+  port: 80
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.255.101
 - name: 🇵🇱 PL 03 - homeip
   type: vless
   server: 70.34.255.101
@@ -41,6 +41,32 @@ proxies:
       Host: 70.34.255.101
 - name: 🇵🇱 PL 04 - homeip
   type: vless
+  server: 70.34.252.154
+  port: 80
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.252.154
+- name: 🇵🇱 PL 05 - homeip
+  type: vless
+  server: 70.34.252.154
+  port: 80
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 70.34.252.154
+- name: 🇵🇱 PL 06 - homeip
+  type: vless
   server: 70.34.255.101
   port: 80
   uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
@@ -52,6 +78,15 @@ proxies:
     path: /
     headers:
       Host: 70.34.255.101
+- name: 🇵🇱 PL 07 - homeip
+  type: vless
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +96,9 @@ proxy-groups:
   - 🇵🇱 PL 02 - homeip
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
+  - 🇵🇱 PL 05 - homeip
+  - 🇵🇱 PL 06 - homeip
+  - 🇵🇱 PL 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,5 +108,8 @@ proxy-groups:
   - 🇵🇱 PL 02 - homeip
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
+  - 🇵🇱 PL 05 - homeip
+  - 🇵🇱 PL 06 - homeip
+  - 🇵🇱 PL 07 - homeip
 rules:
 - MATCH,PROXIES

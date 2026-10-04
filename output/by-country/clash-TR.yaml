@@ -5,67 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
-  type: ss
-  server: tutaim.azad0namah.ir
-  port: 5566
-  cipher: 2022-blake3-aes-128-gcm
-  password: 8NwabdWBXK1q1QaBhF69rw==:d8C1FciKoaFD6xRFbCYyFQ==
+  type: vless
+  server: 185.7.240.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speed.dulacloud.store
+  network: ws
+  ws-opts:
+    path: /dula?Telegram-WangCai2
+    headers:
+      Host: speed.dulacloud.store
 - name: 🇹🇷 土耳其 (Turkey) 02 - homeip
   type: vless
-  server: tutaim.azad0namah.ir
-  port: 8080
-  uuid: fdc1206a-9d2e-42b7-b615-9ccea8cf70ee
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 03 - homeip
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
-  type: vless
-  server: tutaim.azad0namah.ir
-  port: 8080
-  uuid: fdc1206a-9d2e-42b7-b615-9ccea8cf70ee
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 07 - homeip
-  type: vless
-  server: 155.103.70.53
-  port: 30303
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==fp=chrome
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇷 土耳其 (Turkey) 08 - homeip
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -76,12 +37,12 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 09 - homeip
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
   type: vless
-  server: tutaim.azad0namah.ir
-  port: 8080
-  uuid: fdc1206a-9d2e-42b7-b615-9ccea8cf70ee
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
@@ -94,11 +55,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
-  - 🇹🇷 土耳其 (Turkey) 05 - homeip
-  - 🇹🇷 土耳其 (Turkey) 06 - homeip
-  - 🇹🇷 土耳其 (Turkey) 07 - homeip
-  - 🇹🇷 土耳其 (Turkey) 08 - homeip
-  - 🇹🇷 土耳其 (Turkey) 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -108,10 +64,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
-  - 🇹🇷 土耳其 (Turkey) 05 - homeip
-  - 🇹🇷 土耳其 (Turkey) 06 - homeip
-  - 🇹🇷 土耳其 (Turkey) 07 - homeip
-  - 🇹🇷 土耳其 (Turkey) 08 - homeip
-  - 🇹🇷 土耳其 (Turkey) 09 - homeip
 rules:
 - MATCH,PROXIES
