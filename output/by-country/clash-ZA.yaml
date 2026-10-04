@@ -9,14 +9,14 @@ proxies:
   server: 20.87.209.138
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: D3QZyKA9jtLektTN
+  password: 513eeuJ8TQzOPGRt
   udp: true
 - name: 🇿🇦 ZA 02 - homeip
   type: ss
-  server: 102.37.156.224
-  port: 443
+  server: 139.84.247.164
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  password: tfAcRikawhNoZAhu
   udp: true
 - name: 🇿🇦 ZA 03 - homeip
   type: ss
@@ -26,36 +26,43 @@ proxies:
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 ZA 04 - homeip
-  type: vless
-  server: 34.35.174.85
-  port: 443
-  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇿🇦 ZA 05 - homeip
-  type: vless
-  server: 34.35.174.85
-  port: 443
-  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇿🇦 ZA 06 - homeip
   type: ss
   server: 20.87.209.138
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: 513eeuJ8TQzOPGRt
+  password: D3QZyKA9jtLektTN
   udp: true
+- name: 🇿🇦 ZA 05 - homeip
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
+- name: 🇿🇦 ZA 06 - homeip
+  type: vless
+  server: 34.35.174.85
+  port: 443
+  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇿🇦 ZA 07 - homeip
+  type: vless
+  server: 34.35.174.85
+  port: 443
+  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +74,7 @@ proxy-groups:
   - 🇿🇦 ZA 04 - homeip
   - 🇿🇦 ZA 05 - homeip
   - 🇿🇦 ZA 06 - homeip
+  - 🇿🇦 ZA 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +86,6 @@ proxy-groups:
   - 🇿🇦 ZA 04 - homeip
   - 🇿🇦 ZA 05 - homeip
   - 🇿🇦 ZA 06 - homeip
+  - 🇿🇦 ZA 07 - homeip
 rules:
 - MATCH,PROXIES

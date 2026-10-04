@@ -32,33 +32,7 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 03 - homeip
   type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 04 - homeip
-  type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 05 - homeip
-  type: vless
-  server: free.sahanwickramasinghe.me
+  server: 170.114.45.6
   port: 80
   uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
   udp: true
@@ -77,8 +51,6 @@ proxy-groups:
   - 🇱🇰 LK 01 - homeip
   - 🇱🇰 LK 02 - homeip
   - 🇱🇰 LK 03 - homeip
-  - 🇱🇰 LK 04 - homeip
-  - 🇱🇰 LK 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,7 +59,5 @@ proxy-groups:
   - 🇱🇰 LK 01 - homeip
   - 🇱🇰 LK 02 - homeip
   - 🇱🇰 LK 03 - homeip
-  - 🇱🇰 LK 04 - homeip
-  - 🇱🇰 LK 05 - homeip
 rules:
 - MATCH,PROXIES
