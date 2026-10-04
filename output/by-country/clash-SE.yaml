@@ -18,48 +18,17 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 02 - homeip
-  type: vless
-  server: psf-2.weedly.top
-  port: 80
-  uuid: 33016f3d-8509-493c-bd8b-d26447d48135
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stigmata.ir
-- name: 🇸🇪 SE 03 - homeip
-  type: vless
-  server: stsr.hospitaldt.ir
-  port: 8443
-  uuid: 9cdcec15-2c73-40d5-b50f-d00381fddd26
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stsr.hospitaldt.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stsr.hospitaldt.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - homeip
-  - 🇸🇪 SE 02 - homeip
-  - 🇸🇪 SE 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - homeip
-  - 🇸🇪 SE 02 - homeip
-  - 🇸🇪 SE 03 - homeip
 rules:
 - MATCH,PROXIES

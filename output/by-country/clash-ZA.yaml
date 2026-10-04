@@ -9,9 +9,23 @@ proxies:
   server: 20.87.209.138
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: 513eeuJ8TQzOPGRt
+  password: D3QZyKA9jtLektTN
   udp: true
 - name: 🇿🇦 ZA 02 - homeip
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
+- name: 🇿🇦 ZA 03 - homeip
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  udp: true
+- name: 🇿🇦 ZA 04 - homeip
   type: vless
   server: 34.35.174.85
   port: 443
@@ -23,20 +37,6 @@ proxies:
     public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇿🇦 ZA 03 - homeip
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: 🇿🇦 ZA 04 - homeip
-  type: ss
-  server: 20.87.209.138
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: D3QZyKA9jtLektTN
-  udp: true
 - name: 🇿🇦 ZA 05 - homeip
   type: vless
   server: 34.35.174.85
@@ -51,10 +51,10 @@ proxies:
   client-fingerprint: chrome
 - name: 🇿🇦 ZA 06 - homeip
   type: ss
-  server: 102.133.165.160
-  port: 16233
+  server: 20.87.209.138
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  password: 513eeuJ8TQzOPGRt
   udp: true
 proxy-groups:
 - name: PROXIES

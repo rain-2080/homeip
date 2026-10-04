@@ -46,20 +46,6 @@ proxies:
     path: /api-vless
     headers:
       Host: geo.shkola112.site
-- name: 🇬🇪 GE 04 - homeip
-  type: vless
-  server: geo.shkola112.site
-  port: 443
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: geo.shkola112.site
-  network: ws
-  ws-opts:
-    path: /api-vless
-    headers:
-      Host: geo.shkola112.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,7 +54,6 @@ proxy-groups:
   - 🇬🇪 GE 01 - homeip
   - 🇬🇪 GE 02 - homeip
   - 🇬🇪 GE 03 - homeip
-  - 🇬🇪 GE 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +62,5 @@ proxy-groups:
   - 🇬🇪 GE 01 - homeip
   - 🇬🇪 GE 02 - homeip
   - 🇬🇪 GE 03 - homeip
-  - 🇬🇪 GE 04 - homeip
 rules:
 - MATCH,PROXIES
