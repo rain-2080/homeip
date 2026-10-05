@@ -17,6 +17,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - homeip
+  type: ss
+  server: 172.105.39.124
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇮🇳 印度 (India) 03 - homeip
   type: vless
   server: 194.61.31.126
   port: 2053
@@ -28,6 +35,50 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 04 - homeip
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 05 - homeip
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 06 - homeip
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 07 - homeip
+  type: vless
+  server: 103.194.228.102
+  port: 4443
+  uuid: f247f7e4-04bb-48a5-828d-b8e75ec4c3af
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +86,11 @@ proxy-groups:
   - AUTO
   - 🇮🇳 印度 (India) 01 - homeip
   - 🇮🇳 印度 (India) 02 - homeip
+  - 🇮🇳 印度 (India) 03 - homeip
+  - 🇮🇳 印度 (India) 04 - homeip
+  - 🇮🇳 印度 (India) 05 - homeip
+  - 🇮🇳 印度 (India) 06 - homeip
+  - 🇮🇳 印度 (India) 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +98,10 @@ proxy-groups:
   proxies:
   - 🇮🇳 印度 (India) 01 - homeip
   - 🇮🇳 印度 (India) 02 - homeip
+  - 🇮🇳 印度 (India) 03 - homeip
+  - 🇮🇳 印度 (India) 04 - homeip
+  - 🇮🇳 印度 (India) 05 - homeip
+  - 🇮🇳 印度 (India) 06 - homeip
+  - 🇮🇳 印度 (India) 07 - homeip
 rules:
 - MATCH,PROXIES
