@@ -5,46 +5,136 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - homeip
-  type: ss
-  server: 158.173.24.73
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 02 - homeip
   type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  server: 57.129.132.223
+  port: 80
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 02 - homeip
+  type: vmess
+  server: pahobac.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: pahobac.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: pahobac.org
 - name: 🇬🇧 英国 (United Kingdom) 03 - homeip
   type: ss
   server: 149.102.149.207
-  port: 443
+  port: 80
   cipher: aes-256-gcm
   password: LXchLsIwtCeUAUgu
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 04 - homeip
   type: ss
   server: 149.102.132.184
-  port: 443
+  port: 80
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 05 - homeip
+  type: vmess
+  server: 186.190.211.147
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 06 - homeip
+  type: vmess
+  server: 186.190.211.67
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pahobac.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: pahobac.org
+- name: 🇬🇧 英国 (United Kingdom) 07 - homeip
   type: ss
   server: 51.77.225.200
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: zRZNBszYyWo5
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 06 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 08 - homeip
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 09 - homeip
+  type: ss
+  server: 149.102.132.184
+  port: 443
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 10 - homeip
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 11 - homeip
+  type: ss
+  server: 149.102.149.207
+  port: 443
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 12 - homeip
+  type: ss
+  server: 51.38.71.51
+  port: 2083
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 13 - homeip
+  type: vless
+  server: 46.250.240.80
+  port: 2053
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 14 - homeip
+  type: ss
+  server: 149.102.149.207
+  port: 80
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 15 - homeip
   type: vless
   server: 51.89.194.151
   port: 2053
@@ -56,156 +146,36 @@ proxies:
     public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 07 - homeip
-  type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+- name: 🇬🇧 英国 (United Kingdom) 16 - homeip
+  type: vless
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 08 - homeip
-  type: ss
-  server: 51.38.71.51
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 09 - homeip
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 17 - homeip
   type: ss
   server: 149.102.149.207
-  port: 80
+  port: 443
   cipher: aes-256-gcm
   password: LXchLsIwtCeUAUgu
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 10 - homeip
-  type: vmess
-  server: aksai.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aksai.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
-- name: 🇬🇧 英国 (United Kingdom) 11 - homeip
-  type: ss
-  server: 82.38.31.187
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 12 - homeip
-  type: vmess
-  server: 186.190.211.67
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pahobac.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: pahobac.org
-- name: 🇬🇧 英国 (United Kingdom) 13 - homeip
-  type: vmess
-  server: 186.190.211.67
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pahobac.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: pahobac.org
-- name: 🇬🇧 英国 (United Kingdom) 14 - homeip
-  type: vmess
-  server: pahobac.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pahobac.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: pahobac.org
-- name: 🇬🇧 英国 (United Kingdom) 15 - homeip
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 16 - homeip
-  type: vmess
-  server: aksai.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aksai.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
-- name: 🇬🇧 英国 (United Kingdom) 17 - homeip
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 18 - homeip
-  type: vmess
-  server: pahobac.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 51.38.71.147
+  port: 8443
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pahobac.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: pahobac.org
+  servername: node-uk.connectsuite.org
 - name: 🇬🇧 英国 (United Kingdom) 19 - homeip
   type: vmess
-  server: 186.190.211.147
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 20 - homeip
-  type: vmess
   server: pahobac.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -220,30 +190,40 @@ proxies:
     path: /linkvws
     headers:
       Host: pahobac.org
-- name: 🇬🇧 英国 (United Kingdom) 21 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 20 - homeip
   type: vmess
-  server: 186.190.211.147
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 66.163.117.58
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aksai.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇬🇧 英国 (United Kingdom) 21 - homeip
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇬🇧 英国 (United Kingdom) 22 - homeip
-  type: vless
-  server: 159.65.51.189
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  type: vmess
+  server: 186.190.211.147
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
 - name: 🇬🇧 英国 (United Kingdom) 23 - homeip
   type: vmess
   server: pahobac.org
@@ -261,12 +241,21 @@ proxies:
     headers:
       Host: pahobac.org
 - name: 🇬🇧 英国 (United Kingdom) 24 - homeip
-  type: ss
-  server: 158.173.24.73
+  type: vmess
+  server: 186.190.211.67
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pahobac.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: pahobac.org
 - name: 🇬🇧 英国 (United Kingdom) 25 - homeip
   type: vless
   server: 46.250.250.149
@@ -280,64 +269,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 26 - homeip
-  type: vless
-  server: 57.129.130.200
-  port: 52014
-  uuid: b1ecd06b-a931-47a2-8f48-d1d133d2b4f3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 27 - homeip
-  type: ss
-  server: 51.77.225.200
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 28 - homeip
-  type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 29 - homeip
-  type: vless
-  server: 46.250.240.80
-  port: 2053
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 30 - homeip
-  type: vmess
-  server: 66.163.117.58
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aksai.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
-- name: 🇬🇧 英国 (United Kingdom) 31 - homeip
   type: vmess
   server: pahobac.org
   port: 443
@@ -353,78 +284,23 @@ proxies:
     path: /linkvws
     headers:
       Host: pahobac.org
-- name: 🇬🇧 英国 (United Kingdom) 32 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 27 - homeip
   type: vless
-  server: 186.190.211.188
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: node-uk.connectsuite.org
+  port: 8443
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 33 - homeip
-  type: vmess
-  server: 186.190.211.147
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  servername: node-uk.connectsuite.org
+- name: 🇬🇧 英国 (United Kingdom) 28 - homeip
+  type: ss
+  server: 51.77.225.200
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
   udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 34 - homeip
-  type: vmess
-  server: 186.190.211.67
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pahobac.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: pahobac.org
-- name: 🇬🇧 英国 (United Kingdom) 35 - homeip
-  type: vmess
-  server: 186.190.211.67
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pahobac.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: pahobac.org
-- name: 🇬🇧 英国 (United Kingdom) 36 - homeip
-  type: vmess
-  server: 186.190.211.147
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 37 - homeip
-  type: vmess
-  server: 186.190.211.147
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 38 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 29 - homeip
   type: vless
   server: 46.250.250.149
   port: 2053
@@ -436,14 +312,7 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 39 - homeip
-  type: ss
-  server: 82.38.31.211
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 40 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 30 - homeip
   type: vless
   server: 186.190.211.188
   port: 443
@@ -452,37 +321,9 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 41 - homeip
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 6ead3f4c-023f-4322-b5c4-ac4e327d259d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pannn1.global.ssl.fastly.net
-- name: 🇬🇧 英国 (United Kingdom) 42 - homeip
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 8453bdb7-dd58-419d-b002-9456dd2e73d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pan2e.global.ssl.fastly.net
-- name: 🇬🇧 英国 (United Kingdom) 43 - homeip
+- name: 🇬🇧 英国 (United Kingdom) 31 - homeip
   type: vmess
-  server: aksai.org
+  server: 186.190.211.67
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
@@ -490,12 +331,28 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: pahobac.org
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: aksai.org
+      Host: pahobac.org
+- name: 🇬🇧 英国 (United Kingdom) 32 - homeip
+  type: ss
+  server: 149.102.132.184
+  port: 443
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 33 - homeip
+  type: vless
+  server: 186.190.211.188
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 186.190.211.188
 proxy-groups:
 - name: PROXIES
   type: select
@@ -534,16 +391,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 31 - homeip
   - 🇬🇧 英国 (United Kingdom) 32 - homeip
   - 🇬🇧 英国 (United Kingdom) 33 - homeip
-  - 🇬🇧 英国 (United Kingdom) 34 - homeip
-  - 🇬🇧 英国 (United Kingdom) 35 - homeip
-  - 🇬🇧 英国 (United Kingdom) 36 - homeip
-  - 🇬🇧 英国 (United Kingdom) 37 - homeip
-  - 🇬🇧 英国 (United Kingdom) 38 - homeip
-  - 🇬🇧 英国 (United Kingdom) 39 - homeip
-  - 🇬🇧 英国 (United Kingdom) 40 - homeip
-  - 🇬🇧 英国 (United Kingdom) 41 - homeip
-  - 🇬🇧 英国 (United Kingdom) 42 - homeip
-  - 🇬🇧 英国 (United Kingdom) 43 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -582,15 +429,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 31 - homeip
   - 🇬🇧 英国 (United Kingdom) 32 - homeip
   - 🇬🇧 英国 (United Kingdom) 33 - homeip
-  - 🇬🇧 英国 (United Kingdom) 34 - homeip
-  - 🇬🇧 英国 (United Kingdom) 35 - homeip
-  - 🇬🇧 英国 (United Kingdom) 36 - homeip
-  - 🇬🇧 英国 (United Kingdom) 37 - homeip
-  - 🇬🇧 英国 (United Kingdom) 38 - homeip
-  - 🇬🇧 英国 (United Kingdom) 39 - homeip
-  - 🇬🇧 英国 (United Kingdom) 40 - homeip
-  - 🇬🇧 英国 (United Kingdom) 41 - homeip
-  - 🇬🇧 英国 (United Kingdom) 42 - homeip
-  - 🇬🇧 英国 (United Kingdom) 43 - homeip
 rules:
 - MATCH,PROXIES

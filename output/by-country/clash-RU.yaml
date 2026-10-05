@@ -12,74 +12,24 @@ proxies:
   password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
-  type: vmess
-  server: renderer-stream-1-832.mirra.now
-  port: 443
-  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-1-832.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-832.mirra.now
-- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  type: vless
-  server: 84.38.183.237
-  port: 443
-  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ws.nightproducts.ru
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 84.38.183.237
-- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  type: vmess
-  server: renderer-stream-1-832.mirra.now
-  port: 443
-  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: renderer-stream-1-832.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-832.mirra.now
-- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
-  type: vmess
-  server: renderer-stream-1-832.mirra.now
-  port: 443
-  uuid: 8ffa41d4-e6b5-4af5-a8a9-69e26bec75f5
-  alterId: 0
-  cipher: auto
+- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
+  type: vless
+  server: ee.h1cloud.net
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: renderer-stream-1-832.mirra.now
-  network: ws
-  ws-opts:
-    path: /api/v1/gpu-stream/socket
-    headers:
-      Host: renderer-stream-1-832.mirra.now
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,9 +38,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - homeip
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -99,8 +46,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - homeip
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 06 - homeip
 rules:
 - MATCH,PROXIES
