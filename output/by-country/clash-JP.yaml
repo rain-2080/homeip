@@ -5,146 +5,107 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - homeip
-  type: vless
-  server: 57.129.130.200
-  port: 52014
-  uuid: b1ecd06b-a931-47a2-8f48-d1d133d2b4f3
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
 - name: 🇯🇵 日本 (Japan) 02 - homeip
-  type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: d6b5c6ad-481f-40fd-a068-8ab14a8d8c65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 03 - homeip
-  type: vmess
-  server: or.521166.xyz
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: or.521166.xyz
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or.521166.xyz
-- name: 🇯🇵 日本 (Japan) 04 - homeip
   type: ss
   server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
+- name: 🇯🇵 日本 (Japan) 03 - homeip
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 04 - homeip
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
 - name: 🇯🇵 日本 (Japan) 05 - homeip
   type: vless
-  server: www.baipiao.eu.org
-  port: 8880
-  uuid: afb13fa2-bba2-417f-b8c2-62565f92a78d
+  server: 104.16.10.2
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 06 - homeip
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: orange-block-5cd1.124-199.workers.dev
-- name: 🇯🇵 日本 (Japan) 06 - homeip
+- name: 🇯🇵 日本 (Japan) 07 - homeip
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 08 - homeip
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - homeip
   type: ss
   server: 84.247.155.196
   port: 80
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 07 - homeip
-  type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: 4c6609bf-8457-4260-b4fa-321379e57a4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 08 - homeip
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: 8cde6cd0-7903-4aef-8ce8-528fa9677d7b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: steep-glitter-7c3c.367-5c9.workers.dev
-- name: 🇯🇵 日本 (Japan) 09 - homeip
-  type: vless
-  server: 188.245.191.19
-  port: 2040
-  uuid: d89b1691-e1ad-47c4-8cdb-5bbfe1171a8c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
 - name: 🇯🇵 日本 (Japan) 10 - homeip
-  type: vless
-  server: 84.22.150.39
-  port: 7443
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
+  type: ss
+  server: 212.192.221.129
+  port: 10771
+  cipher: aes-256-gcm
+  password: 9cfaa78d51ac366f
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 - name: 🇯🇵 日本 (Japan) 11 - homeip
-  type: vless
-  server: 128.241.25.11
-  port: 30021
-  uuid: 40ca0d8c-0641-4e2d-a701-9fd8330daf6d
+  type: ss
+  server: 212.192.221.129
+  port: 10771
+  cipher: aes-256-gcm
+  password: 9cfaa78d51ac366f
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 - name: 🇯🇵 日本 (Japan) 12 - homeip
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 13 - homeip
+  type: ss
+  server: gw.lydwan.com
+  port: 35601
+  cipher: chacha20-ietf-poly1305
+  password: 4c8fced0-8987-4504-b8cf-15aca9cbb82e
+  udp: true
+- name: 🇯🇵 日本 (Japan) 14 - homeip
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -158,608 +119,37 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 13 - homeip
-  type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: a351220c-f8dc-4c52-8a2d-f4470f886a53
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 14 - homeip
-  type: vless
-  server: 104.19.164.155
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+      Host: ''
 - name: 🇯🇵 日本 (Japan) 15 - homeip
   type: vless
-  server: 54.178.110.17
-  port: 4443
-  uuid: d5fbd83b-7346-4ad9-94c0-76293724824d
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /tyxyws
     headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 16 - homeip
   type: vless
-  server: 104.16.10.63
+  server: 137.220.221.179
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 17 - homeip
-  type: vless
-  server: 104.16.111.202
+  type: ss
+  server: 149.22.87.204
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 18 - homeip
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 19 - homeip
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 20 - homeip
-  type: vmess
-  server: or.521166.xyz
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: or.521166.xyz
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or.521166.xyz
-- name: 🇯🇵 日本 (Japan) 21 - homeip
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 22 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: shrill-recipe-0c1d.404-a1d.workers.dev
-- name: 🇯🇵 日本 (Japan) 23 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 45b4cd4c-3bd3-4838-b61e-031f75551dd5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 24 - homeip
-  type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: db353feb-c115-4f29-9562-64c2e479bbfa
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 25 - homeip
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 26 - homeip
-  type: vless
-  server: 57.129.130.10
-  port: 52014
-  uuid: 395bab7e-302a-42b4-bac7-8acb7d36fdf3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 27 - homeip
-  type: vless
-  server: 116.204.164.27
-  port: 7443
-  uuid: 08db3580-ce2e-4e88-80c7-ffcc02de55e8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 28 - homeip
-  type: vless
-  server: 104.21.15.212
-  port: 8880
-  uuid: 902fd911-ca5d-49a6-99ad-47372a266804
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: young-wildflower-6b6c.100-52d.workers.dev
-- name: 🇯🇵 日本 (Japan) 29 - homeip
-  type: vmess
-  server: cdn.sfacg.uk
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: or3.sfacg.uk
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: 🇯🇵 日本 (Japan) 30 - homeip
-  type: vless
-  server: 104.21.88.129
-  port: 8880
-  uuid: 4212034d-c18b-4060-b218-4f8372e5473a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: summer-hill-7f65.275-521.workers.dev
-- name: 🇯🇵 日本 (Japan) 31 - homeip
-  type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: 6163155f-2a79-4c87-8b7f-874a89b577ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 32 - homeip
-  type: vless
-  server: 185.220.68.226
-  port: 20205
-  uuid: 6830c2dd-466e-4d4d-9dea-f9f79758c560
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 33 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 4212034d-c18b-4060-b218-4f8372e5473a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: summer-hill-7f65.275-521.workers.dev
-- name: 🇯🇵 日本 (Japan) 34 - homeip
-  type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: 201e0019-2e79-4147-8a09-e510d630abeb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 35 - homeip
-  type: vless
-  server: 104.17.169.13
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 36 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 79c351da-fdeb-4761-b514-46e1f4914d00
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 37 - homeip
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 38 - homeip
-  type: vless
-  server: 128.241.25.3
-  port: 30021
-  uuid: 48de1831-a4a2-4eba-8723-8e0bb7a9da0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 39 - homeip
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 40 - homeip
-  type: vless
-  server: 79.137.199.52
-  port: 21
-  uuid: e7b1256f-aba7-460e-8246-8d6a5156972a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 41 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: e113a561-c9bc-43c6-92da-fd9513f06a00
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 42 - homeip
-  type: vless
-  server: 172.64.88.168
-  port: 8880
-  uuid: 6f876b28-1b3e-4088-85c0-d299e56bfccd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: throbbing-haze-fbde.388-6c4.workers.dev
-- name: 🇯🇵 日本 (Japan) 43 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 48c20f0a-c2a4-453f-8a61-ec73ea7829c5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: morning-brook-d78e.347.workers.dev
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-brook-d78e.347.workers.dev
-- name: 🇯🇵 日本 (Japan) 44 - homeip
-  type: vless
-  server: 104.21.55.229
-  port: 8880
-  uuid: afb13fa2-bba2-417f-b8c2-62565f92a78d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: orange-block-5cd1.124-199.workers.dev
-- name: 🇯🇵 日本 (Japan) 45 - homeip
-  type: vless
-  server: 128.241.25.11
-  port: 30021
-  uuid: 72fbb611-628d-4afa-8198-bda3e38021f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 46 - homeip
-  type: vless
-  server: 104.26.13.40
-  port: 8880
-  uuid: 875d3876-ab9a-4dd6-8a8d-bf57f03403aa
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: square-sea-01d1.339-be3.workers.dev
-- name: 🇯🇵 日本 (Japan) 47 - homeip
-  type: vless
-  server: delicate-base-12ed.287-133.workers.dev
-  port: 8880
-  uuid: adda46c3-eab1-40bc-b88d-6b92c1e8c558
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: delicate-base-12ed.287-133.workers.dev
-- name: 🇯🇵 日本 (Japan) 48 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 9c7501fb-4e23-44d8-9a9e-973807ae4f35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 49 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 8e6709d7-5e17-4f9c-87db-afa184f513cf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 50 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 51 - homeip
-  type: vless
-  server: 188.245.191.19
-  port: 2040
-  uuid: 17253e9d-483f-46d1-b425-749b45fee6c6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 52 - homeip
-  type: vmess
-  server: or.521166.xyz
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: or.521166.xyz
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or.521166.xyz
-- name: 🇯🇵 日本 (Japan) 53 - homeip
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 54 - homeip
-  type: vless
-  server: skk.moe
-  port: 8880
-  uuid: 7242eccf-5261-4e31-813e-871bfbde90c2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: long-flower-ac0d.176-17e.workers.dev
-- name: 🇯🇵 日本 (Japan) 55 - homeip
-  type: vless
-  server: 104.16.10.48
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 56 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 9d81ab94-494c-4507-bc63-334db46e80d9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 57 - homeip
-  type: vless
-  server: themeforest.net
-  port: 8880
-  uuid: 530868e7-d788-4595-b2d6-6a40c098164d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: crimson-sea-a4bb.343-1a7.workers.dev
-- name: 🇯🇵 日本 (Japan) 58 - homeip
-  type: vless
-  server: 104.21.0.87
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 59 - homeip
   type: vless
   server: 104.16.111.195
   port: 443
@@ -773,79 +163,25 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 60 - homeip
+- name: 🇯🇵 日本 (Japan) 19 - homeip
   type: vless
-  server: 95.181.162.170
-  port: 444
-  uuid: 751b51bc-af59-4b04-93c0-3fed4965297e
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 61 - homeip
+- name: 🇯🇵 日本 (Japan) 20 - homeip
   type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: 75f440b2-2cf8-45e7-9565-af7fde5bacc2
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 62 - homeip
+- name: 🇯🇵 日本 (Japan) 21 - homeip
   type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: d9788c3a-a097-4182-be39-8b6b8a34264c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 63 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 12d65cdc-3391-4227-a2d5-52deb9948ae5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 64 - homeip
-  type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: 54f89a61-2837-48c7-95ea-24b7c24b4b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 65 - homeip
-  type: vless
-  server: 104.16.10.84
+  server: 104.24.31.89
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -857,65 +193,14 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 66 - homeip
-  type: vless
-  server: 175.41.179.37
-  port: 51262
-  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
+- name: 🇯🇵 日本 (Japan) 22 - homeip
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 67 - homeip
-  type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: 78c438e1-417d-49a9-a883-f89e06737887
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 68 - homeip
-  type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: 66b076d4-519d-4b05-872e-d0366d15bace
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 69 - homeip
-  type: vmess
-  server: cdn.sfacg.uk
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: or3.sfacg.uk
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: 🇯🇵 日本 (Japan) 70 - homeip
+- name: 🇯🇵 日本 (Japan) 23 - homeip
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -930,114 +215,9 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: none
-- name: 🇯🇵 日本 (Japan) 71 - homeip
+- name: 🇯🇵 日本 (Japan) 24 - homeip
   type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 7fdb95f9-c758-486c-865a-7c1219823670
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 72 - homeip
-  type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: 04d2aebd-246f-4348-805f-a8e6840365fc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 73 - homeip
-  type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: d6c21f6f-2e7e-479d-a4d9-4069995867ed
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 74 - homeip
-  type: ss
-  server: 212.192.221.129
-  port: 10771
-  cipher: aes-256-gcm
-  password: 9cfaa78d51ac366f
-  udp: true
-- name: 🇯🇵 日本 (Japan) 75 - homeip
-  type: vless
-  server: 128.241.25.11
-  port: 30021
-  uuid: fd9172bb-1a14-4052-8385-40de84e47495
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 76 - homeip
-  type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: f11eaecc-8e8e-4840-8d5a-cbc67cab4cef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 77 - homeip
-  type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: 2a731bb4-6c55-40ef-8c8d-80969db19e08
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 78 - homeip
-  type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: 202dcea4-fc7c-4ce0-8c0c-6f705b9c5379
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 79 - homeip
-  type: vless
-  server: 152.69.200.216
+  server: 104.19.33.237
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -1049,56 +229,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 80 - homeip
-  type: vless
-  server: 104.16.10.72
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 81 - homeip
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 82 - homeip
-  type: vless
-  server: 128.241.25.11
-  port: 30021
-  uuid: e09dd424-6706-43eb-8901-f8e07d3aec0c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 83 - homeip
-  type: vless
-  server: 84.22.150.39
-  port: 7443
-  uuid: 5cc814de-2bbb-4409-ad8c-ee841ca7bad1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 84 - homeip
+- name: 🇯🇵 日本 (Japan) 25 - homeip
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -1113,529 +244,6 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: ''
-- name: 🇯🇵 日本 (Japan) 85 - homeip
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 86 - homeip
-  type: vless
-  server: 128.241.25.3
-  port: 30021
-  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 87 - homeip
-  type: vless
-  server: 104.16.10.234
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 88 - homeip
-  type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: c7c508cf-68d6-4b12-88b7-ba2786851a36
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 89 - homeip
-  type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: 4738dcaa-80c4-4d8b-9006-832692887bbb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 90 - homeip
-  type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: 609b0d70-e2d0-4a48-95b1-02754e9b249a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 91 - homeip
-  type: vless
-  server: 172.67.207.26
-  port: 8880
-  uuid: 26beb784-a664-4c3e-becf-0f0c12568b62
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: twilight-poetry-2bfe.218-699.workers.dev
-- name: 🇯🇵 日本 (Japan) 92 - homeip
-  type: vless
-  server: 128.241.25.3
-  port: 30021
-  uuid: 09dfe01f-db37-4de2-82e3-bc6692192512
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 93 - homeip
-  type: vmess
-  server: cdn.sfacg.uk
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: or3.sfacg.uk
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: 🇯🇵 日本 (Japan) 94 - homeip
-  type: vless
-  server: 104.16.100.66
-  port: 8880
-  uuid: afb13fa2-bba2-417f-b8c2-62565f92a78d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: orange-block-5cd1.124-199.workers.dev
-- name: 🇯🇵 日本 (Japan) 95 - homeip
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 96 - homeip
-  type: vless
-  server: 152.69.200.216
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 97 - homeip
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 98 - homeip
-  type: vless
-  server: 128.241.25.215
-  port: 30036
-  uuid: 196b7228-58df-4bcf-af2a-2e96608d5add
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 99 - homeip
-  type: vless
-  server: 57.129.130.10
-  port: 52014
-  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 100 - homeip
-  type: vless
-  server: 128.241.25.72
-  port: 30021
-  uuid: 65f26a08-9a5e-4b28-9004-f98676cc1e49
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 101 - homeip
-  type: vless
-  server: 128.241.25.11
-  port: 30021
-  uuid: ed3619c2-7067-496a-88cd-12215dcd5650
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 102 - homeip
-  type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: 8a9dff00-0705-4c1b-9126-8c1bdc8b5d0a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 103 - homeip
-  type: vless
-  server: 128.241.25.3
-  port: 30021
-  uuid: 423d9455-09ce-471c-8cee-cec0366a2c7a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 104 - homeip
-  type: vless
-  server: 142.91.101.39
-  port: 627
-  uuid: 30b40928-f431-4c83-bfed-44f1243d16ff
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 105 - homeip
-  type: vless
-  server: 128.241.25.11
-  port: 30021
-  uuid: d279f394-301e-4cbf-ba56-65e8c061e451
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 106 - homeip
-  type: vless
-  server: 142.91.101.39
-  port: 627
-  uuid: 23b385cf-02c3-4df8-8402-11f1916418cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 107 - homeip
-  type: vless
-  server: 104.16.10.22
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 108 - homeip
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 109 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: b80ea549-156d-4cc1-8683-3f53d5b335cb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 110 - homeip
-  type: vless
-  server: 104.16.10.9
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 111 - homeip
-  type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: c65d2504-f68e-4948-841d-0a2dc5d66fbe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 112 - homeip
-  type: vmess
-  server: cdn.sfacg.uk
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: or3.sfacg.uk
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: 🇯🇵 日本 (Japan) 113 - homeip
-  type: vmess
-  server: or.521166.xyz
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: or.521166.xyz
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or.521166.xyz
-- name: 🇯🇵 日本 (Japan) 114 - homeip
-  type: vless
-  server: 104.21.89.181
-  port: 8880
-  uuid: adda46c3-eab1-40bc-b88d-6b92c1e8c558
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: delicate-base-12ed.287-133.workers.dev
-- name: 🇯🇵 日本 (Japan) 115 - homeip
-  type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: c6e09f95-bf02-4854-bcba-7a977a0f8ecd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 116 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 21b93e91-5bb1-4d6d-9093-1fd09ae06903
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: morning-silence-7b1b.222-46c.workers.dev
-- name: 🇯🇵 日本 (Japan) 117 - homeip
-  type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: fbdc2b46-7208-4499-abd1-5b5a148b2197
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 118 - homeip
-  type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: 98286408-b683-4c0f-96c5-7e00da649d90
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 119 - homeip
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 120 - homeip
-  type: vless
-  server: 128.241.25.3
-  port: 30021
-  uuid: ab11b88f-e582-4792-9b61-457de458bfb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 121 - homeip
-  type: vless
-  server: 185.220.68.226
-  port: 20205
-  uuid: c4c484d9-69e5-49ea-bf96-bdee8ece865b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 122 - homeip
-  type: vless
-  server: 210.152.85.154
-  port: 19364
-  uuid: ceeab8e5-554a-4a62-af84-a398c73fbfd2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇯🇵 日本 (Japan) 123 - homeip
-  type: vless
-  server: 179.61.251.244
-  port: 7443
-  uuid: 7dbb9d6e-acb4-403b-8229-c32ef2458c7d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1666,104 +274,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 23 - homeip
   - 🇯🇵 日本 (Japan) 24 - homeip
   - 🇯🇵 日本 (Japan) 25 - homeip
-  - 🇯🇵 日本 (Japan) 26 - homeip
-  - 🇯🇵 日本 (Japan) 27 - homeip
-  - 🇯🇵 日本 (Japan) 28 - homeip
-  - 🇯🇵 日本 (Japan) 29 - homeip
-  - 🇯🇵 日本 (Japan) 30 - homeip
-  - 🇯🇵 日本 (Japan) 31 - homeip
-  - 🇯🇵 日本 (Japan) 32 - homeip
-  - 🇯🇵 日本 (Japan) 33 - homeip
-  - 🇯🇵 日本 (Japan) 34 - homeip
-  - 🇯🇵 日本 (Japan) 35 - homeip
-  - 🇯🇵 日本 (Japan) 36 - homeip
-  - 🇯🇵 日本 (Japan) 37 - homeip
-  - 🇯🇵 日本 (Japan) 38 - homeip
-  - 🇯🇵 日本 (Japan) 39 - homeip
-  - 🇯🇵 日本 (Japan) 40 - homeip
-  - 🇯🇵 日本 (Japan) 41 - homeip
-  - 🇯🇵 日本 (Japan) 42 - homeip
-  - 🇯🇵 日本 (Japan) 43 - homeip
-  - 🇯🇵 日本 (Japan) 44 - homeip
-  - 🇯🇵 日本 (Japan) 45 - homeip
-  - 🇯🇵 日本 (Japan) 46 - homeip
-  - 🇯🇵 日本 (Japan) 47 - homeip
-  - 🇯🇵 日本 (Japan) 48 - homeip
-  - 🇯🇵 日本 (Japan) 49 - homeip
-  - 🇯🇵 日本 (Japan) 50 - homeip
-  - 🇯🇵 日本 (Japan) 51 - homeip
-  - 🇯🇵 日本 (Japan) 52 - homeip
-  - 🇯🇵 日本 (Japan) 53 - homeip
-  - 🇯🇵 日本 (Japan) 54 - homeip
-  - 🇯🇵 日本 (Japan) 55 - homeip
-  - 🇯🇵 日本 (Japan) 56 - homeip
-  - 🇯🇵 日本 (Japan) 57 - homeip
-  - 🇯🇵 日本 (Japan) 58 - homeip
-  - 🇯🇵 日本 (Japan) 59 - homeip
-  - 🇯🇵 日本 (Japan) 60 - homeip
-  - 🇯🇵 日本 (Japan) 61 - homeip
-  - 🇯🇵 日本 (Japan) 62 - homeip
-  - 🇯🇵 日本 (Japan) 63 - homeip
-  - 🇯🇵 日本 (Japan) 64 - homeip
-  - 🇯🇵 日本 (Japan) 65 - homeip
-  - 🇯🇵 日本 (Japan) 66 - homeip
-  - 🇯🇵 日本 (Japan) 67 - homeip
-  - 🇯🇵 日本 (Japan) 68 - homeip
-  - 🇯🇵 日本 (Japan) 69 - homeip
-  - 🇯🇵 日本 (Japan) 70 - homeip
-  - 🇯🇵 日本 (Japan) 71 - homeip
-  - 🇯🇵 日本 (Japan) 72 - homeip
-  - 🇯🇵 日本 (Japan) 73 - homeip
-  - 🇯🇵 日本 (Japan) 74 - homeip
-  - 🇯🇵 日本 (Japan) 75 - homeip
-  - 🇯🇵 日本 (Japan) 76 - homeip
-  - 🇯🇵 日本 (Japan) 77 - homeip
-  - 🇯🇵 日本 (Japan) 78 - homeip
-  - 🇯🇵 日本 (Japan) 79 - homeip
-  - 🇯🇵 日本 (Japan) 80 - homeip
-  - 🇯🇵 日本 (Japan) 81 - homeip
-  - 🇯🇵 日本 (Japan) 82 - homeip
-  - 🇯🇵 日本 (Japan) 83 - homeip
-  - 🇯🇵 日本 (Japan) 84 - homeip
-  - 🇯🇵 日本 (Japan) 85 - homeip
-  - 🇯🇵 日本 (Japan) 86 - homeip
-  - 🇯🇵 日本 (Japan) 87 - homeip
-  - 🇯🇵 日本 (Japan) 88 - homeip
-  - 🇯🇵 日本 (Japan) 89 - homeip
-  - 🇯🇵 日本 (Japan) 90 - homeip
-  - 🇯🇵 日本 (Japan) 91 - homeip
-  - 🇯🇵 日本 (Japan) 92 - homeip
-  - 🇯🇵 日本 (Japan) 93 - homeip
-  - 🇯🇵 日本 (Japan) 94 - homeip
-  - 🇯🇵 日本 (Japan) 95 - homeip
-  - 🇯🇵 日本 (Japan) 96 - homeip
-  - 🇯🇵 日本 (Japan) 97 - homeip
-  - 🇯🇵 日本 (Japan) 98 - homeip
-  - 🇯🇵 日本 (Japan) 99 - homeip
-  - 🇯🇵 日本 (Japan) 100 - homeip
-  - 🇯🇵 日本 (Japan) 101 - homeip
-  - 🇯🇵 日本 (Japan) 102 - homeip
-  - 🇯🇵 日本 (Japan) 103 - homeip
-  - 🇯🇵 日本 (Japan) 104 - homeip
-  - 🇯🇵 日本 (Japan) 105 - homeip
-  - 🇯🇵 日本 (Japan) 106 - homeip
-  - 🇯🇵 日本 (Japan) 107 - homeip
-  - 🇯🇵 日本 (Japan) 108 - homeip
-  - 🇯🇵 日本 (Japan) 109 - homeip
-  - 🇯🇵 日本 (Japan) 110 - homeip
-  - 🇯🇵 日本 (Japan) 111 - homeip
-  - 🇯🇵 日本 (Japan) 112 - homeip
-  - 🇯🇵 日本 (Japan) 113 - homeip
-  - 🇯🇵 日本 (Japan) 114 - homeip
-  - 🇯🇵 日本 (Japan) 115 - homeip
-  - 🇯🇵 日本 (Japan) 116 - homeip
-  - 🇯🇵 日本 (Japan) 117 - homeip
-  - 🇯🇵 日本 (Japan) 118 - homeip
-  - 🇯🇵 日本 (Japan) 119 - homeip
-  - 🇯🇵 日本 (Japan) 120 - homeip
-  - 🇯🇵 日本 (Japan) 121 - homeip
-  - 🇯🇵 日本 (Japan) 122 - homeip
-  - 🇯🇵 日本 (Japan) 123 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1794,103 +304,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 23 - homeip
   - 🇯🇵 日本 (Japan) 24 - homeip
   - 🇯🇵 日本 (Japan) 25 - homeip
-  - 🇯🇵 日本 (Japan) 26 - homeip
-  - 🇯🇵 日本 (Japan) 27 - homeip
-  - 🇯🇵 日本 (Japan) 28 - homeip
-  - 🇯🇵 日本 (Japan) 29 - homeip
-  - 🇯🇵 日本 (Japan) 30 - homeip
-  - 🇯🇵 日本 (Japan) 31 - homeip
-  - 🇯🇵 日本 (Japan) 32 - homeip
-  - 🇯🇵 日本 (Japan) 33 - homeip
-  - 🇯🇵 日本 (Japan) 34 - homeip
-  - 🇯🇵 日本 (Japan) 35 - homeip
-  - 🇯🇵 日本 (Japan) 36 - homeip
-  - 🇯🇵 日本 (Japan) 37 - homeip
-  - 🇯🇵 日本 (Japan) 38 - homeip
-  - 🇯🇵 日本 (Japan) 39 - homeip
-  - 🇯🇵 日本 (Japan) 40 - homeip
-  - 🇯🇵 日本 (Japan) 41 - homeip
-  - 🇯🇵 日本 (Japan) 42 - homeip
-  - 🇯🇵 日本 (Japan) 43 - homeip
-  - 🇯🇵 日本 (Japan) 44 - homeip
-  - 🇯🇵 日本 (Japan) 45 - homeip
-  - 🇯🇵 日本 (Japan) 46 - homeip
-  - 🇯🇵 日本 (Japan) 47 - homeip
-  - 🇯🇵 日本 (Japan) 48 - homeip
-  - 🇯🇵 日本 (Japan) 49 - homeip
-  - 🇯🇵 日本 (Japan) 50 - homeip
-  - 🇯🇵 日本 (Japan) 51 - homeip
-  - 🇯🇵 日本 (Japan) 52 - homeip
-  - 🇯🇵 日本 (Japan) 53 - homeip
-  - 🇯🇵 日本 (Japan) 54 - homeip
-  - 🇯🇵 日本 (Japan) 55 - homeip
-  - 🇯🇵 日本 (Japan) 56 - homeip
-  - 🇯🇵 日本 (Japan) 57 - homeip
-  - 🇯🇵 日本 (Japan) 58 - homeip
-  - 🇯🇵 日本 (Japan) 59 - homeip
-  - 🇯🇵 日本 (Japan) 60 - homeip
-  - 🇯🇵 日本 (Japan) 61 - homeip
-  - 🇯🇵 日本 (Japan) 62 - homeip
-  - 🇯🇵 日本 (Japan) 63 - homeip
-  - 🇯🇵 日本 (Japan) 64 - homeip
-  - 🇯🇵 日本 (Japan) 65 - homeip
-  - 🇯🇵 日本 (Japan) 66 - homeip
-  - 🇯🇵 日本 (Japan) 67 - homeip
-  - 🇯🇵 日本 (Japan) 68 - homeip
-  - 🇯🇵 日本 (Japan) 69 - homeip
-  - 🇯🇵 日本 (Japan) 70 - homeip
-  - 🇯🇵 日本 (Japan) 71 - homeip
-  - 🇯🇵 日本 (Japan) 72 - homeip
-  - 🇯🇵 日本 (Japan) 73 - homeip
-  - 🇯🇵 日本 (Japan) 74 - homeip
-  - 🇯🇵 日本 (Japan) 75 - homeip
-  - 🇯🇵 日本 (Japan) 76 - homeip
-  - 🇯🇵 日本 (Japan) 77 - homeip
-  - 🇯🇵 日本 (Japan) 78 - homeip
-  - 🇯🇵 日本 (Japan) 79 - homeip
-  - 🇯🇵 日本 (Japan) 80 - homeip
-  - 🇯🇵 日本 (Japan) 81 - homeip
-  - 🇯🇵 日本 (Japan) 82 - homeip
-  - 🇯🇵 日本 (Japan) 83 - homeip
-  - 🇯🇵 日本 (Japan) 84 - homeip
-  - 🇯🇵 日本 (Japan) 85 - homeip
-  - 🇯🇵 日本 (Japan) 86 - homeip
-  - 🇯🇵 日本 (Japan) 87 - homeip
-  - 🇯🇵 日本 (Japan) 88 - homeip
-  - 🇯🇵 日本 (Japan) 89 - homeip
-  - 🇯🇵 日本 (Japan) 90 - homeip
-  - 🇯🇵 日本 (Japan) 91 - homeip
-  - 🇯🇵 日本 (Japan) 92 - homeip
-  - 🇯🇵 日本 (Japan) 93 - homeip
-  - 🇯🇵 日本 (Japan) 94 - homeip
-  - 🇯🇵 日本 (Japan) 95 - homeip
-  - 🇯🇵 日本 (Japan) 96 - homeip
-  - 🇯🇵 日本 (Japan) 97 - homeip
-  - 🇯🇵 日本 (Japan) 98 - homeip
-  - 🇯🇵 日本 (Japan) 99 - homeip
-  - 🇯🇵 日本 (Japan) 100 - homeip
-  - 🇯🇵 日本 (Japan) 101 - homeip
-  - 🇯🇵 日本 (Japan) 102 - homeip
-  - 🇯🇵 日本 (Japan) 103 - homeip
-  - 🇯🇵 日本 (Japan) 104 - homeip
-  - 🇯🇵 日本 (Japan) 105 - homeip
-  - 🇯🇵 日本 (Japan) 106 - homeip
-  - 🇯🇵 日本 (Japan) 107 - homeip
-  - 🇯🇵 日本 (Japan) 108 - homeip
-  - 🇯🇵 日本 (Japan) 109 - homeip
-  - 🇯🇵 日本 (Japan) 110 - homeip
-  - 🇯🇵 日本 (Japan) 111 - homeip
-  - 🇯🇵 日本 (Japan) 112 - homeip
-  - 🇯🇵 日本 (Japan) 113 - homeip
-  - 🇯🇵 日本 (Japan) 114 - homeip
-  - 🇯🇵 日本 (Japan) 115 - homeip
-  - 🇯🇵 日本 (Japan) 116 - homeip
-  - 🇯🇵 日本 (Japan) 117 - homeip
-  - 🇯🇵 日本 (Japan) 118 - homeip
-  - 🇯🇵 日本 (Japan) 119 - homeip
-  - 🇯🇵 日本 (Japan) 120 - homeip
-  - 🇯🇵 日本 (Japan) 121 - homeip
-  - 🇯🇵 日本 (Japan) 122 - homeip
-  - 🇯🇵 日本 (Japan) 123 - homeip
 rules:
 - MATCH,PROXIES
