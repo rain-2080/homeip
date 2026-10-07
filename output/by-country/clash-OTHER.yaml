@@ -6,21 +6,20 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - homeip
   type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 162.159.81.104
+  port: 80
+  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
     headers:
-      Host: ccc.010304.xyz
+      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
 - name: 🌐 其他地区 (Other) 02 - homeip
   type: vless
-  server: 104.16.111.195
+  server: 104.21.70.228
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -34,7 +33,73 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 03 - homeip
   type: vless
-  server: 104.18.0.181
+  server: 188.114.96.0
+  port: 2086
+  uuid: 81d0dbc8-e69e-4cb1-b1a0-7d86af7f0db4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiTGNlS21Bb0pMQUZaNEtUNiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzJhMDI6ODk4OjE0Njo2NDo6XSJdfQ
+    headers:
+      Host: solitary-rain-0c9b.freecreat2.workers.dev
+- name: 🌐 其他地区 (Other) 04 - homeip
+  type: vless
+  server: 104.18.35.86
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 05 - homeip
+  type: vless
+  server: www.whoer.net
+  port: 8080
+  uuid: 9cc42ee7-1f5f-46f5-a8b0-2da76b6b6641
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pe2ev-frosty-poetry-3d08.s67y4jl8.workers.dev
+- name: 🌐 其他地区 (Other) 06 - homeip
+  type: vless
+  server: 104.16.111.193
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 07 - homeip
+  type: vless
+  server: 172.67.134.7
+  port: 2052
+  uuid: f1e5d738-2e83-4e2f-b6d6-a9013b3e7e48
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vl/u3oMYZoYUAozPFEA8UhR?ed=2560
+    headers:
+      Host: a6o58qfpwvgrwmz0crtha0r24uyiu2l.x7-f5jb95s0ocjt-0.workers.dev
+- name: 🌐 其他地区 (Other) 08 - homeip
+  type: vless
+  server: 172.64.150.28
   port: 2082
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
@@ -45,142 +110,80 @@ proxies:
     path: /
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 04 - homeip
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 05 - homeip
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 06 - homeip
-  type: vless
-  server: 104.18.46.46
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 07 - homeip
-  type: vless
-  server: 172.64.154.8
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 08 - homeip
-  type: vless
-  server: 104.18.46.46
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🌐 其他地区 (Other) 09 - homeip
   type: vless
-  server: 104.21.0.87
+  server: 172.67.138.253
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: d9f94532-c4d4-4f94-ba23-6eb6d35bfc7d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: small-scene-f215.amiralizarefast1.workers.dev
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /eyJqdW5rIjoiZW5GMjJSRmYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0
     headers:
-      Host: jp3.yohototo.top
+      Host: small-scene-f215.amiralizarefast1.workers.dev
 - name: 🌐 其他地区 (Other) 10 - homeip
-  type: vless
-  server: 162.159.48.32
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  type: vmess
+  server: cu.877774.xyz
+  port: 443
+  uuid: f3244e28-157b-49e9-9730-89832f89ebcc
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: balanced-minds-carrier-demanding.trycloudflare.com
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /vmess-argo
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: balanced-minds-carrier-demanding.trycloudflare.com
 - name: 🌐 其他地区 (Other) 11 - homeip
   type: vless
-  server: 162.159.43.187
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 12 - homeip
-  type: vless
-  server: 104.19.33.237
+  server: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 5934b979-e128-4c90-a600-744b97bffc8c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /vl/Fi3kP8cNjBoo8UPv?ed=2560
     headers:
-      Host: jp3.yohototo.top
+      Host: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
+- name: 🌐 其他地区 (Other) 12 - homeip
+  type: vless
+  server: 104.19.164.155
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
 - name: 🌐 其他地区 (Other) 13 - homeip
   type: vless
-  server: 172.64.32.103
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 188.114.97.1
+  port: 2052
+  uuid: 335035e6-65f1-4a51-a8a7-10fb0a89b8e7
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: ?ed=2560security=tls
+    path: /eyJqdW5rIjoiU1V4Ykp5S1h3aSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: shrill-lake-231c.jachhitachi69.workers.dev
 - name: 🌐 其他地区 (Other) 14 - homeip
   type: vless
-  server: 104.18.153.10
+  server: 104.16.10.104
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -194,72 +197,19 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 15 - homeip
   type: vless
-  server: 162.159.45.19
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /tyxyws
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 16 - homeip
-  type: vless
-  server: 104.18.32.87
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 17 - homeip
-  type: vless
-  server: 162.159.43.187
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 18 - homeip
-  type: vless
-  server: 162.159.0.53
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 19 - homeip
-  type: vless
-  server: 104.16.10.197
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 20 - homeip
   type: vless
   server: 104.18.35.86
   port: 8080
@@ -272,22 +222,101 @@ proxies:
     path: /sg-melbi
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 21 - homeip
+- name: 🌐 其他地区 (Other) 17 - homeip
   type: vless
-  server: 104.18.46.234
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 172.67.214.193
+  port: 2086
+  uuid: e5583623-53ef-4177-8070-8c553f70bcfa
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /vl/NnAT20AqcYOuOLe1r?ed=2560
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: fvfb8xac5j0nthxzqf.dr5945ov0z598kfft573isahdj3fmmv4.workers.dev
+- name: 🌐 其他地区 (Other) 18 - homeip
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 19 - homeip
+  type: vless
+  server: 104.21.64.198
+  port: 2095
+  uuid: 73796e63-0000-4000-8000-000000000008
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🌐 其他地区 (Other) 20 - homeip
+  type: vless
+  server: 104.16.107.139
+  port: 8880
+  uuid: 9b7d9618-29a6-45e9-9eca-dcc7ad42f974
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: shrill-frost-6da5.155-dec.workers.dev
+- name: 🌐 其他地区 (Other) 21 - homeip
+  type: vless
+  server: 172.67.203.138
+  port: 8080
+  uuid: 015fada5-2c95-4251-9c58-39fa3abf1e24
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidzY2QTdySkdOeiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzJhMDI6ODk4OjE0Njo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560
+    headers:
+      Host: server17.peekconfig1.workers.dev
 - name: 🌐 其他地区 (Other) 22 - homeip
   type: vless
-  server: 104.21.70.21
+  server: cf9.466688.xyz
+  port: 8880
+  uuid: 1a5e2e63-64e2-4737-95b6-c2ee60c979a1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net@https://t.me/QiangLieTuiJian
+    headers:
+      Host: wild-mode-4ca6.234-8f6.workers.dev
+- name: 🌐 其他地区 (Other) 23 - homeip
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fpfp=chrome
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 24 - homeip
+  type: vless
+  server: 104.16.10.21
   port: 443
   uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
@@ -299,71 +328,46 @@ proxies:
     path: /ws
     headers:
       Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 23 - homeip
-  type: vless
-  server: 172.64.229.170
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 24 - homeip
-  type: vless
-  server: 104.18.46.234
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🌐 其他地区 (Other) 25 - homeip
   type: vless
-  server: 172.64.32.103
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: cf5.466688.xyz
+  port: 8880
+  uuid: c6c5ad2f-b4d5-450f-862f-341cebb7f9b5
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: empty-rain-1df4.332-633.workers.dev
 - name: 🌐 其他地区 (Other) 26 - homeip
   type: vless
-  server: 104.18.39.218
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.17.169.13
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /tyxyws
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 27 - homeip
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 172.67.213.2
+  port: 8880
+  uuid: 335035e6-65f1-4a51-a8a7-10fb0a89b8e7
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /eyJqdW5rIjoiRTM3VE1ZeVFCbndDUElEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
     headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+      Host: shrill-lake-231c.jachhitachi69.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
