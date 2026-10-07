@@ -5,54 +5,46 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 02 - homeip
   type: ss
   server: 45.149.114.171
   port: 777
   cipher: chacha20-ietf-poly1305
   password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
   udp: true
-- name: 🇫🇮 FI 02 - homeip
-  type: vmess
-  server: finla2.povrak.ir
-  port: 58179
-  uuid: b85ba3bc-bac6-4cfc-b8be-fe16a7dac1b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇫🇮 FI 03 - homeip
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 04 - homeip
   type: ss
   server: 185.103.110.66
   port: 18280
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
-- name: 🇫🇮 FI 04 - homeip
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
 - name: 🇫🇮 FI 05 - homeip
-  type: vmess
-  server: fisgww.povrak.ir
-  port: 58179
-  uuid: b85ba3bc-bac6-4cfc-b8be-fe16a7dac1b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 06 - homeip
   type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
   udp: true
-- name: 🇫🇮 FI 07 - homeip
+- name: 🇫🇮 FI 06 - homeip
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -64,19 +56,13 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 FI 08 - homeip
-  type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: 72c52aa6-a442-4527-969f-6fdabf5e74c7
+- name: 🇫🇮 FI 07 - homeip
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
-    headers:
-      Host: rb24.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,7 +75,6 @@ proxy-groups:
   - 🇫🇮 FI 05 - homeip
   - 🇫🇮 FI 06 - homeip
   - 🇫🇮 FI 07 - homeip
-  - 🇫🇮 FI 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -102,6 +87,5 @@ proxy-groups:
   - 🇫🇮 FI 05 - homeip
   - 🇫🇮 FI 06 - homeip
   - 🇫🇮 FI 07 - homeip
-  - 🇫🇮 FI 08 - homeip
 rules:
 - MATCH,PROXIES
