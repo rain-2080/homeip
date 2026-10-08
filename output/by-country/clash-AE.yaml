@@ -19,9 +19,9 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - homeip
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 130.185.121.69
+  port: 443
+  uuid: d3c9d170-80fa-489a-8ba2-f4cc80d240e3
   udp: true
   tls: false
   skip-cert-verify: true
@@ -29,34 +29,31 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: uae.unixzone.us
+      Host: 130.185.121.69
 - name: 🇦🇪 阿联酋 (UAE) 03 - homeip
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - homeip
-  type: vless
-  server: novantunnel.tech
+  server: eu86.vaultberry.cloud
   port: 443
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  uuid: 73bec071-8d42-4294-a453-de168627649b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: novantunnel.tech
-  network: ws
-  ws-opts:
-    path: /Novan-AE9
-    headers:
-      Host: novantunnel.tech
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 04 - homeip
+  type: vless
+  server: eu86.vaultberry.cloud
+  port: 443
+  uuid: 327487f5-8665-48df-9e76-f1bee6d16557
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 05 - homeip
   type: vless
   server: uae.unixzone.us
@@ -98,9 +95,9 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 08 - homeip
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 130.185.121.69
+  port: 443
+  uuid: d3c9d170-80fa-489a-8ba2-f4cc80d240e3
   udp: true
   tls: false
   skip-cert-verify: true
@@ -108,59 +105,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - homeip
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10 - homeip
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 11 - homeip
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 12 - homeip
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+      Host: 130.185.121.69
 proxy-groups:
 - name: PROXIES
   type: select
@@ -174,10 +119,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - homeip
   - 🇦🇪 阿联酋 (UAE) 07 - homeip
   - 🇦🇪 阿联酋 (UAE) 08 - homeip
-  - 🇦🇪 阿联酋 (UAE) 09 - homeip
-  - 🇦🇪 阿联酋 (UAE) 10 - homeip
-  - 🇦🇪 阿联酋 (UAE) 11 - homeip
-  - 🇦🇪 阿联酋 (UAE) 12 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -191,9 +132,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - homeip
   - 🇦🇪 阿联酋 (UAE) 07 - homeip
   - 🇦🇪 阿联酋 (UAE) 08 - homeip
-  - 🇦🇪 阿联酋 (UAE) 09 - homeip
-  - 🇦🇪 阿联酋 (UAE) 10 - homeip
-  - 🇦🇪 阿联酋 (UAE) 11 - homeip
-  - 🇦🇪 阿联酋 (UAE) 12 - homeip
 rules:
 - MATCH,PROXIES

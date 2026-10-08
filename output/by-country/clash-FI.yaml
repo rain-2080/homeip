@@ -5,20 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 02 - homeip
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 03 - homeip
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 04 - homeip
   type: vless
-  server: 177.3.218.181
-  port: 8443
-  uuid: ae1612f8-6e01-48d6-b4f7-502f233dfb33
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 177.3.218.181
-  network: ws
-  ws-opts:
-    path: /ws-cdn1-vless
-    headers:
-      Host: fi.fastmirror-labs.xyz
-- name: 🇫🇮 FI 02 - homeip
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 05 - homeip
   type: vless
   server: psf-3.weedly.top
   port: 80
@@ -31,92 +50,7 @@ proxies:
     path: /
     headers:
       Host: machinemag.ir
-- name: 🇫🇮 FI 03 - homeip
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 04 - homeip
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 05 - homeip
-  type: vless
-  server: 177.3.218.181
-  port: 2083
-  uuid: ae1612f8-6e01-48d6-b4f7-502f233dfb33
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 177.3.218.181
 - name: 🇫🇮 FI 06 - homeip
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 07 - homeip
-  type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: 1af4d6fe-f1fa-4cbb-af8d-d8ab46de13ed
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
-    headers:
-      Host: rb24.ir
-- name: 🇫🇮 FI 08 - homeip
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 09 - homeip
-  type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-  udp: true
-- name: 🇫🇮 FI 10 - homeip
-  type: vmess
-  server: 65.109.186.55
-  port: 8080
-  uuid: 958df7fc-6861-4c91-8532-5695ff4bd69a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 11 - homeip
-  type: vless
-  server: 146.75.119.82
-  port: 80
-  uuid: 1af4d6fe-f1fa-4cbb-af8d-d8ab46de13ed
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
-    headers:
-      Host: rb24.ir
-- name: 🇫🇮 FI 12 - homeip
   type: vless
   server: psf-3.weedly.top
   port: 80
@@ -140,12 +74,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - homeip
   - 🇫🇮 FI 05 - homeip
   - 🇫🇮 FI 06 - homeip
-  - 🇫🇮 FI 07 - homeip
-  - 🇫🇮 FI 08 - homeip
-  - 🇫🇮 FI 09 - homeip
-  - 🇫🇮 FI 10 - homeip
-  - 🇫🇮 FI 11 - homeip
-  - 🇫🇮 FI 12 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -157,11 +85,5 @@ proxy-groups:
   - 🇫🇮 FI 04 - homeip
   - 🇫🇮 FI 05 - homeip
   - 🇫🇮 FI 06 - homeip
-  - 🇫🇮 FI 07 - homeip
-  - 🇫🇮 FI 08 - homeip
-  - 🇫🇮 FI 09 - homeip
-  - 🇫🇮 FI 10 - homeip
-  - 🇫🇮 FI 11 - homeip
-  - 🇫🇮 FI 12 - homeip
 rules:
 - MATCH,PROXIES

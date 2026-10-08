@@ -6,45 +6,28 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - homeip
   type: vless
-  server: 94.143.231.146
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: 70.34.199.238
+  port: 80
+  uuid: 98b76bb7-b2d1-47a8-8767-0d294c33e749
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /merky-connect/de6/
+    path: /
     headers:
-      Host: sub.merky.top
-- name: 🇸🇪 SE 02 - homeip
-  type: vless
-  server: sub.merky.top
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sub.merky.top
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
+      Host: 70.34.199.238
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇪 SE 01 - homeip
-  - 🇸🇪 SE 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇪 SE 01 - homeip
-  - 🇸🇪 SE 02 - homeip
 rules:
 - MATCH,PROXIES

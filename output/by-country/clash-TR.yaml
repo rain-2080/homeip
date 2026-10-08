@@ -6,6 +6,34 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
   type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
+  type: vless
   server: 155.103.71.142
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -18,54 +46,6 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
-  type: vmess
-  server: 87.120.106.133
-  port: 33445
-  uuid: d9fbf9a7-1f88-428b-bb3e-3074681e44c9
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
-  type: vless
-  server: 87.120.106.133
-  port: 443
-  uuid: d9fbf9a7-1f88-428b-bb3e-3074681e44c9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: es3siwxee705.dx4x.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,8 +55,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
-  - 🇹🇷 土耳其 (Turkey) 05 - homeip
-  - 🇹🇷 土耳其 (Turkey) 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -86,7 +64,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
-  - 🇹🇷 土耳其 (Turkey) 05 - homeip
-  - 🇹🇷 土耳其 (Turkey) 06 - homeip
 rules:
 - MATCH,PROXIES

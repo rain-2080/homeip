@@ -6,23 +6,19 @@ log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - homeip
   type: vless
-  server: 47.237.74.17
-  port: 16263
-  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  server: 203.9.150.220
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
 - name: 🇸🇬 新加坡 (Singapore) 02 - homeip
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 03 - homeip
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -34,9 +30,21 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 03 - homeip
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 04 - homeip
   type: vless
-  server: 103.25.202.102
+  server: 161.33.15.101
   port: 443
   uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
   udp: true
@@ -59,33 +67,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 06 - homeip
-  type: vless
-  server: proxyip.hk.cmliussss.net
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp10.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: vp10.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 07 - homeip
-  type: vless
-  server: 45.80.111.45
-  port: 8880
-  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cdn/assets/stream
-    headers:
-      Host: cnd.singapure.mygold.stream
-- name: 🇸🇬 新加坡 (Singapore) 08 - homeip
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -95,215 +76,87 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 07 - homeip
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 08 - homeip
+  type: vless
+  server: 161.33.29.51
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
 - name: 🇸🇬 新加坡 (Singapore) 09 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 139.162.28.80
+  port: 8443
+  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
 - name: 🇸🇬 新加坡 (Singapore) 10 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 11 - homeip
   type: vless
-  server: asia.csmaster.site
+  server: support.zoom.us
   port: 8443
-  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: asia.csmaster.site
+  servername: primelinelk.me
   network: ws
   ws-opts:
-    path: /
+    path: /xprolk-primeline
     headers:
-      Host: asia.csmaster.site
+      Host: primelinelk.me
 - name: 🇸🇬 新加坡 (Singapore) 12 - homeip
   type: vless
-  server: 173.234.14.85
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 13 - homeip
-  type: vless
-  server: free-server.techsonic.dev
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 14 - homeip
-  type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 15 - homeip
-  type: vless
-  server: 170.114.46.6
-  port: 80
-  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 16 - homeip
-  type: vless
-  server: 139.162.27.96
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 17 - homeip
-  type: vless
-  server: 173.234.14.85
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 18 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 8443
-  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 19 - homeip
-  type: vless
-  server: 45.77.241.190
-  port: 8441
-  uuid: 75f440b2-2cf8-45e7-9565-af7fde5bacc2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 20 - homeip
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: calm-haze-d105.21-7cd.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 21 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 22 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 8443
-  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 23 - homeip
-  type: vless
-  server: 162.159.156.214
-  port: 8880
-  uuid: 8991a496-1baa-486f-9948-ffe44e68c072
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: soft-band-8da6.426.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 24 - homeip
-  type: vless
-  server: soskeynets-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+  server: 178.239.117.24
   port: 443
-  uuid: 527451fe-ee1f-4e6f-94ca-808f055f7c9b
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+  servername: asia.csmaster.site
   network: ws
   ws-opts:
-    path: /vl/ERYN0G44hia16zhR
+    path: /
     headers:
-      Host: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 25 - homeip
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 13 - homeip
   type: vless
   server: asia.csmaster.site
   port: 443
@@ -317,22 +170,171 @@ proxies:
     path: /
     headers:
       Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 26 - homeip
+- name: 🇸🇬 新加坡 (Singapore) 14 - homeip
   type: vless
-  server: 172.64.148.60
-  port: 8880
-  uuid: 19f4ec52-5c17-495f-803f-7b2a085b9339
+  server: support.zoom.us
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 15 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 16 - homeip
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 17 - homeip
+  type: vless
+  server: 161.33.29.51
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: still-hill-0fb2.160-42e.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 27 - homeip
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 18 - homeip
+  type: vless
+  server: 178.239.117.24
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 19 - homeip
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 20 - homeip
+  type: vless
+  server: 47.237.74.17
+  port: 16263
+  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 21 - homeip
+  type: vless
+  server: support.zoom.us
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 22 - homeip
+  type: vless
+  server: 84.234.16.169
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 23 - homeip
+  type: vless
+  server: asia.csmaster.site
+  port: 8443
+  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 24 - homeip
+  type: vless
+  server: asia.csmaster.site
+  port: 8443
+  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 25 - homeip
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 26 - homeip
   type: vmess
   server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 27 - homeip
+  type: vmess
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -341,29 +343,31 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 28 - homeip
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 29 - homeip
   type: vless
-  server: 80.240.18.227
-  port: 10051
-  uuid: 711b6476-63fc-4f01-b4e0-d44e17d79383
+  server: asia.csmaster.site
+  port: 8443
+  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  servername: asia.csmaster.site
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 29 - homeip
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 30 - homeip
   type: vless
   server: support.zoom.us
@@ -380,19 +384,21 @@ proxies:
       Host: primelinelk.me
 - name: 🇸🇬 新加坡 (Singapore) 31 - homeip
   type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
 - name: 🇸🇬 新加坡 (Singapore) 32 - homeip
   type: vmess
-  server: 149.88.23.207
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -412,15 +418,88 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 34 - homeip
   type: vless
-  server: 47.237.74.17
-  port: 16263
-  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  server: asia.csmaster.site
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 35 - homeip
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 36 - homeip
+  type: vless
+  server: asia.csmaster.site
+  port: 8443
+  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 37 - homeip
+  type: vless
+  server: 104.18.0.181
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 35 - homeip
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 38 - homeip
+  type: vless
+  server: asia.csmaster.site
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 39 - homeip
+  type: vless
+  server: support.zoom.us
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 40 - homeip
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -428,21 +507,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 36 - homeip
-  type: vless
-  server: 77.221.154.152
-  port: 8444
-  uuid: 5daa7591-ffbb-4181-bd04-24b98feb8316
+- name: 🇸🇬 新加坡 (Singapore) 41 - homeip
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 37 - homeip
+- name: 🇸🇬 新加坡 (Singapore) 42 - homeip
   type: vless
   server: support.zoom.us
   port: 80
@@ -455,64 +530,6 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 38 - homeip
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 39 - homeip
-  type: ss
-  server: 45.128.12.20
-  port: 14249
-  cipher: chacha20-ietf-poly1305
-  password: 9epp3o9ng8ej59uv
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 40 - homeip
-  type: vless
-  server: 178.239.117.24
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 41 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 34ce8760-24ed-41e7-a1f5-aa6c2660a53c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: quiet-frost-ac61.333-07d.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 42 - homeip
-  type: vless
-  server: 45.147.199.13
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
 - name: 🇸🇬 新加坡 (Singapore) 43 - homeip
   type: vless
   server: asia.csmaster.site
@@ -528,8 +545,64 @@ proxies:
     headers:
       Host: asia.csmaster.site
 - name: 🇸🇬 新加坡 (Singapore) 44 - homeip
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 45 - homeip
+  type: vless
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.nadun.store
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 46 - homeip
+  type: vless
+  server: 144.24.140.37
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 47 - homeip
+  type: vless
+  server: 217.60.62.30
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 48 - homeip
   type: vmess
-  server: 149.88.23.202
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -537,33 +610,45 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 45 - homeip
+- name: 🇸🇬 新加坡 (Singapore) 49 - homeip
   type: vless
-  server: 172.67.187.219
-  port: 8880
-  uuid: 3adac494-0eb1-4d89-a187-b2181691444d
+  server: 47.251.95.178
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 50 - homeip
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: tiny-lake-bbf1.369-766.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 46 - homeip
+- name: 🇸🇬 新加坡 (Singapore) 51 - homeip
   type: vless
-  server: deepl.com
-  port: 8880
-  uuid: 6d73dc1e-1627-4b16-b471-53e63aa16c78
+  server: asia.csmaster.site
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: asia.csmaster.site
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /
     headers:
-      Host: sweet-truth-ccdb.134-7e9.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 47 - homeip
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 52 - homeip
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -573,7 +658,83 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 48 - homeip
+- name: 🇸🇬 新加坡 (Singapore) 53 - homeip
+  type: vless
+  server: support.zoom.us
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 54 - homeip
+  type: vless
+  server: asia.csmaster.site
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 55 - homeip
+  type: vless
+  server: 45.147.250.39
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 56 - homeip
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 57 - homeip
+  type: vless
+  server: 103.25.202.102
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 58 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 59 - homeip
   type: vless
   server: asia.csmaster.site
   port: 8443
@@ -587,168 +748,30 @@ proxies:
     path: /
     headers:
       Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 49 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 50 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 51 - homeip
-  type: vless
-  server: envato.com
-  port: 8880
-  uuid: baaa882d-ac50-4bba-bd8d-5486f7d34005
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: blue-water-924c.174-235.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 52 - homeip
-  type: vless
-  server: 104.26.7.214
-  port: 8880
-  uuid: 878dd962-027b-4bd3-a1f8-66be68a03c4d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: young-wind-3c58.240-2ce.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 53 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 54 - homeip
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 55 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 56 - homeip
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 57 - homeip
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 58 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 33918b20-9e02-4dc6-8b30-79b2d4b2e0e6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiUjJBU3JkVlRwSWtnciIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0
-    headers:
-      Host: aUto-scaLe-238B2B.inFra-coRE-1630dD.WorKerS.DeV
-- name: 🇸🇬 新加坡 (Singapore) 59 - homeip
-  type: vless
-  server: 128.241.25.11
-  port: 30021
-  uuid: 40ca0d8c-0641-4e2d-a701-9fd8330daf6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 60 - homeip
-  type: ss
-  server: 13.229.58.5
-  port: 8443
-  cipher: chacha20-ietf-poly1305
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 61 - homeip
   type: vless
-  server: asia.csmaster.site
+  server: free.nadun.store
   port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: asia.csmaster.site
+  servername: free.nadun.store
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: asia.csmaster.site
+      Host: free.nadun.store
 - name: 🇸🇬 新加坡 (Singapore) 62 - homeip
   type: vless
   server: asia.csmaster.site
@@ -775,43 +798,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 64 - homeip
   type: vless
-  server: 170.114.45.6
-  port: 80
-  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 65 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 66 - homeip
-  type: vless
-  server: 47.251.95.178
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 67 - homeip
-  type: vless
   server: 129.150.51.127
   port: 49289
   uuid: 0590ab38-cb22-41d3-8312-6f396a5cec58
@@ -819,9 +805,45 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: www.microsoft.com
+- name: 🇸🇬 新加坡 (Singapore) 65 - homeip
+  type: vless
+  server: 139.162.27.96
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 66 - homeip
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 67 - homeip
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 68 - homeip
   type: vless
-  server: 84.234.16.169
+  server: 152.67.190.105
   port: 443
   uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
   udp: true
@@ -834,53 +856,8 @@ proxies:
     headers:
       Host: asia.csmaster.site
 - name: 🇸🇬 新加坡 (Singapore) 69 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 70 - homeip
   type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 71 - homeip
-  type: vless
-  server: 104.17.21.32
-  port: 8880
-  uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: autumn-dawn-fa6b.337-272.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 72 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 73 - homeip
-  type: vless
-  server: 45.147.250.39
+  server: asia.csmaster.site
   port: 443
   uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
   udp: true
@@ -892,100 +869,7 @@ proxies:
     path: /
     headers:
       Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 74 - homeip
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 75 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 8443
-  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 76 - homeip
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 77 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 78 - homeip
-  type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 79 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 8443
-  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 80 - homeip
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 81 - homeip
-  type: ss
-  server: gw.lydwan.com
-  port: 35601
-  cipher: chacha20-ietf-poly1305
-  password: 4c8fced0-8987-4504-b8cf-15aca9cbb82e
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 82 - homeip
+- name: 🇸🇬 新加坡 (Singapore) 70 - homeip
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -995,7 +879,30 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 83 - homeip
+- name: 🇸🇬 新加坡 (Singapore) 71 - homeip
+  type: vless
+  server: 129.150.51.127
+  port: 49289
+  uuid: 0590ab38-cb22-41d3-8312-6f396a5cec58
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.microsoft.com
+- name: 🇸🇬 新加坡 (Singapore) 72 - homeip
+  type: vless
+  server: asia.csmaster.site
+  port: 8443
+  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 73 - homeip
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -1005,19 +912,144 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 84 - homeip
+- name: 🇸🇬 新加坡 (Singapore) 74 - homeip
   type: vless
-  server: 172.66.214.247
-  port: 8880
-  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /fp
     headers:
-      Host: sweet-sun-c70f.317-ba5.workers.dev
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇸🇬 新加坡 (Singapore) 75 - homeip
+  type: vless
+  server: 170.114.46.6
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 76 - homeip
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 77 - homeip
+  type: vless
+  server: 203.9.150.220
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 78 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 79 - homeip
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 80 - homeip
+  type: vless
+  server: asia.csmaster.site
+  port: 8443
+  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 81 - homeip
+  type: vless
+  server: 139.162.28.80
+  port: 8443
+  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 82 - homeip
+  type: ss
+  server: 45.128.12.20
+  port: 14249
+  cipher: chacha20-ietf-poly1305
+  password: 9epp3o9ng8ej59uv
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 83 - homeip
+  type: vless
+  server: asia.csmaster.site
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 84 - homeip
+  type: vless
+  server: 139.162.27.96
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
 - name: 🇸🇬 新加坡 (Singapore) 85 - homeip
   type: vmess
   server: 149.88.23.207
@@ -1039,219 +1071,16 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 87 - homeip
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 88 - homeip
-  type: vless
-  server: 104.18.34.245
-  port: 8880
-  uuid: 0b01d4d8-656d-4d55-8ad5-ed2a362788b5
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: square-tree-3dbf.285.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 89 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 8443
-  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 90 - homeip
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 91 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 92 - homeip
-  type: vless
-  server: 45.80.111.45
-  port: 8880
-  uuid: 5ffd914e-9594-4198-8327-145f096f8e4c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cdn/assets/stream
-    headers:
-      Host: cnd.singapure.mygold.stream
-- name: 🇸🇬 新加坡 (Singapore) 93 - homeip
-  type: vless
-  server: 43.154.131.189
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp10.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp10.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 94 - homeip
-  type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 95 - homeip
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 96 - homeip
-  type: vless
-  server: 172.66.200.130
-  port: 8880
-  uuid: 20d0a81f-da70-44dc-b9bf-5a5ddab644db
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: crimson-lab-6cab.402-311.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 97 - homeip
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 98 - homeip
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 99 - homeip
-  type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 100 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 101 - homeip
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 102 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 103 - homeip
-  type: vless
-  server: www.baipiao.eu.org
-  port: 8880
-  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: calm-haze-d105.21-7cd.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 104 - homeip
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 105 - homeip
   type: vless
   server: asia.csmaster.site
   port: 443
@@ -1265,23 +1094,223 @@ proxies:
     path: /
     headers:
       Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 106 - homeip
+- name: 🇸🇬 新加坡 (Singapore) 89 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 90 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 91 - homeip
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 92 - homeip
   type: vless
-  server: 80.240.18.227
-  port: 10051
-  uuid: d161dcf1-fde2-44cc-b08d-d8944895e842
+  server: free.nadun.store
+  port: 443
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  servername: free.nadun.store
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+      Host: free.nadun.store
+- name: 🇸🇬 新加坡 (Singapore) 93 - homeip
+  type: vless
+  server: asia.csmaster.site
+  port: 8443
+  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 94 - homeip
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 95 - homeip
+  type: vless
+  server: 132.243.21.182
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 96 - homeip
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 97 - homeip
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 98 - homeip
+  type: vless
+  server: 170.114.45.6
+  port: 8443
+  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: primelinelk.me
+  network: ws
+  ws-opts:
+    path: /xprolk-primeline
+    headers:
+      Host: primelinelk.me
+- name: 🇸🇬 新加坡 (Singapore) 99 - homeip
+  type: vless
+  server: 45.147.199.13
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 100 - homeip
+  type: vless
+  server: 2.7.113.69
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 101 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 102 - homeip
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 103 - homeip
+  type: vless
+  server: 47.237.74.17
+  port: 16263
+  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 104 - homeip
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 105 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 106 - homeip
+  type: vless
+  server: asia.csmaster.site
+  port: 443
+  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
 - name: 🇸🇬 新加坡 (Singapore) 107 - homeip
   type: vless
-  server: 45.136.12.21
+  server: 161.33.15.101
   port: 443
   uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
   udp: true
@@ -1310,46 +1339,6 @@ proxies:
 - name: 🇸🇬 新加坡 (Singapore) 109 - homeip
   type: vless
   server: asia.csmaster.site
-  port: 8443
-  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 110 - homeip
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 111 - homeip
-  type: vless
-  server: free.nadun.store
-  port: 443
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.nadun.store
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 112 - homeip
-  type: vless
-  server: 2.7.113.69
   port: 443
   uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
   udp: true
@@ -1361,9 +1350,47 @@ proxies:
     path: /
     headers:
       Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 110 - homeip
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 111 - homeip
+  type: vless
+  server: asia.csmaster.site
+  port: 8443
+  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
+- name: 🇸🇬 新加坡 (Singapore) 112 - homeip
+  type: vless
+  server: asia.csmaster.site
+  port: 8443
+  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: asia.csmaster.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asia.csmaster.site
 - name: 🇸🇬 新加坡 (Singapore) 113 - homeip
   type: vless
-  server: 103.25.202.102
+  server: 179.237.104.215
   port: 443
   uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
   udp: true
@@ -1376,44 +1403,6 @@ proxies:
     headers:
       Host: asia.csmaster.site
 - name: 🇸🇬 新加坡 (Singapore) 114 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 115 - homeip
-  type: vless
-  server: 91.90.193.106
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 116 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 117 - homeip
   type: vless
   server: 203.9.150.220
   port: 443
@@ -1427,28 +1416,7 @@ proxies:
     path: /
     headers:
       Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 118 - homeip
-  type: ss
-  server: gw.lydwan.com
-  port: 35601
-  cipher: chacha20-ietf-poly1305
-  password: 4c8fced0-8987-4504-b8cf-15aca9cbb82e
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 119 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 8443
-  uuid: 799b1006-3255-4e36-8ea0-64fe24d2bfa7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 120 - homeip
+- name: 🇸🇬 新加坡 (Singapore) 115 - homeip
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -1458,249 +1426,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 121 - homeip
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 122 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 123 - homeip
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 124 - homeip
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 125 - homeip
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 126 - homeip
-  type: vless
-  server: 103.192.179.132
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp10.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp10.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 127 - homeip
-  type: vless
-  server: 144.24.140.37
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 128 - homeip
-  type: vless
-  server: support.zoom.us
-  port: 8443
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: primelinelk.me
-  network: ws
-  ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
-- name: 🇸🇬 新加坡 (Singapore) 129 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 130 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 131 - homeip
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 132 - homeip
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 133 - homeip
-  type: vless
-  server: asia.csmaster.site
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 134 - homeip
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 135 - homeip
-  type: vless
-  server: 172.66.140.62
-  port: 8880
-  uuid: 160ca353-676d-4b7f-a041-0289e388b865
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proud-cloud-7bdd.208-a52.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 136 - homeip
-  type: vless
-  server: support.zoom.us
-  port: 8443
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: primelinelk.me
-  network: ws
-  ws-opts:
-    path: /xprolk-primeline
-    headers:
-      Host: primelinelk.me
-- name: 🇸🇬 新加坡 (Singapore) 137 - homeip
-  type: vless
-  server: 129.150.51.127
-  port: 49289
-  uuid: 0590ab38-cb22-41d3-8312-6f396a5cec58
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.microsoft.com
-- name: 🇸🇬 新加坡 (Singapore) 138 - homeip
-  type: vless
-  server: 185.186.244.116
-  port: 443
-  uuid: a853e120-3570-462b-aec1-e8f3d4f92d24
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: asia.csmaster.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asia.csmaster.site
-- name: 🇸🇬 新加坡 (Singapore) 139 - homeip
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 140 - homeip
-  type: vless
-  server: 142.91.101.39
-  port: 627
-  uuid: 30b40928-f431-4c83-bfed-44f1243d16ff
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1821,31 +1546,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 113 - homeip
   - 🇸🇬 新加坡 (Singapore) 114 - homeip
   - 🇸🇬 新加坡 (Singapore) 115 - homeip
-  - 🇸🇬 新加坡 (Singapore) 116 - homeip
-  - 🇸🇬 新加坡 (Singapore) 117 - homeip
-  - 🇸🇬 新加坡 (Singapore) 118 - homeip
-  - 🇸🇬 新加坡 (Singapore) 119 - homeip
-  - 🇸🇬 新加坡 (Singapore) 120 - homeip
-  - 🇸🇬 新加坡 (Singapore) 121 - homeip
-  - 🇸🇬 新加坡 (Singapore) 122 - homeip
-  - 🇸🇬 新加坡 (Singapore) 123 - homeip
-  - 🇸🇬 新加坡 (Singapore) 124 - homeip
-  - 🇸🇬 新加坡 (Singapore) 125 - homeip
-  - 🇸🇬 新加坡 (Singapore) 126 - homeip
-  - 🇸🇬 新加坡 (Singapore) 127 - homeip
-  - 🇸🇬 新加坡 (Singapore) 128 - homeip
-  - 🇸🇬 新加坡 (Singapore) 129 - homeip
-  - 🇸🇬 新加坡 (Singapore) 130 - homeip
-  - 🇸🇬 新加坡 (Singapore) 131 - homeip
-  - 🇸🇬 新加坡 (Singapore) 132 - homeip
-  - 🇸🇬 新加坡 (Singapore) 133 - homeip
-  - 🇸🇬 新加坡 (Singapore) 134 - homeip
-  - 🇸🇬 新加坡 (Singapore) 135 - homeip
-  - 🇸🇬 新加坡 (Singapore) 136 - homeip
-  - 🇸🇬 新加坡 (Singapore) 137 - homeip
-  - 🇸🇬 新加坡 (Singapore) 138 - homeip
-  - 🇸🇬 新加坡 (Singapore) 139 - homeip
-  - 🇸🇬 新加坡 (Singapore) 140 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1966,30 +1666,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 113 - homeip
   - 🇸🇬 新加坡 (Singapore) 114 - homeip
   - 🇸🇬 新加坡 (Singapore) 115 - homeip
-  - 🇸🇬 新加坡 (Singapore) 116 - homeip
-  - 🇸🇬 新加坡 (Singapore) 117 - homeip
-  - 🇸🇬 新加坡 (Singapore) 118 - homeip
-  - 🇸🇬 新加坡 (Singapore) 119 - homeip
-  - 🇸🇬 新加坡 (Singapore) 120 - homeip
-  - 🇸🇬 新加坡 (Singapore) 121 - homeip
-  - 🇸🇬 新加坡 (Singapore) 122 - homeip
-  - 🇸🇬 新加坡 (Singapore) 123 - homeip
-  - 🇸🇬 新加坡 (Singapore) 124 - homeip
-  - 🇸🇬 新加坡 (Singapore) 125 - homeip
-  - 🇸🇬 新加坡 (Singapore) 126 - homeip
-  - 🇸🇬 新加坡 (Singapore) 127 - homeip
-  - 🇸🇬 新加坡 (Singapore) 128 - homeip
-  - 🇸🇬 新加坡 (Singapore) 129 - homeip
-  - 🇸🇬 新加坡 (Singapore) 130 - homeip
-  - 🇸🇬 新加坡 (Singapore) 131 - homeip
-  - 🇸🇬 新加坡 (Singapore) 132 - homeip
-  - 🇸🇬 新加坡 (Singapore) 133 - homeip
-  - 🇸🇬 新加坡 (Singapore) 134 - homeip
-  - 🇸🇬 新加坡 (Singapore) 135 - homeip
-  - 🇸🇬 新加坡 (Singapore) 136 - homeip
-  - 🇸🇬 新加坡 (Singapore) 137 - homeip
-  - 🇸🇬 新加坡 (Singapore) 138 - homeip
-  - 🇸🇬 新加坡 (Singapore) 139 - homeip
-  - 🇸🇬 新加坡 (Singapore) 140 - homeip
 rules:
 - MATCH,PROXIES
