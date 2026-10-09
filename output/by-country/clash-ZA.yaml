@@ -12,18 +12,21 @@ proxies:
   password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 - name: 🇿🇦 ZA 02 - homeip
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16266
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇿🇦 ZA 03 - homeip
   type: ss
   server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: 🇿🇦 ZA 03 - homeip
-  type: ss
-  server: 20.164.212.146
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e6UqAb4130ycM7qM
   udp: true
 proxy-groups:
 - name: PROXIES
