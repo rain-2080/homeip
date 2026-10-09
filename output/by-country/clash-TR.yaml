@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
-  type: ss
-  server: clients.n9ne.com.tr
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: SqJYP4gDS1I6XGkioX3RCE3BimKj8dtj
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 02 - homeip
   type: vless
   server: 151.241.226.201
@@ -22,7 +23,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
