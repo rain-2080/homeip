@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - homeip
+  type: ss
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  udp: true
+- name: 🇹🇭 TH 02 - homeip
   type: vmess
   server: 119.46.51.45
   port: 37515
@@ -14,13 +21,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇭 TH 02 - homeip
-  type: ss
-  server: pphfree2.mvpnpvpn.de5.net
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
-  udp: true
 - name: 🇹🇭 TH 03 - homeip
   type: vmess
   server: 119.46.51.45
@@ -48,6 +48,13 @@ proxies:
   cipher: aes-256-gcm
   password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
   udp: true
+- name: 🇹🇭 TH 06 - homeip
+  type: ss
+  server: 103.107.52.106
+  port: 52351
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +65,7 @@ proxy-groups:
   - 🇹🇭 TH 03 - homeip
   - 🇹🇭 TH 04 - homeip
   - 🇹🇭 TH 05 - homeip
+  - 🇹🇭 TH 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +76,6 @@ proxy-groups:
   - 🇹🇭 TH 03 - homeip
   - 🇹🇭 TH 04 - homeip
   - 🇹🇭 TH 05 - homeip
+  - 🇹🇭 TH 06 - homeip
 rules:
 - MATCH,PROXIES
