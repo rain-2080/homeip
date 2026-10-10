@@ -6,52 +6,12 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 02 - homeip
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 03 - homeip
-  type: ss
   server: 45.149.114.171
   port: 777
   cipher: chacha20-ietf-poly1305
   password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
   udp: true
-- name: 🇫🇮 FI 04 - homeip
-  type: vless
-  server: cdone.subsvdragontoo.online
-  port: 8443
-  uuid: d1004cfe-c279-e865-d865-71964dbdf85d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdone.subsvdragontoo.online
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdone.subsvdragontoo.online
-- name: 🇫🇮 FI 05 - homeip
-  type: vless
-  server: finland02.azotvpn.xyz
-  port: 8443
-  uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
-  servername: finland02.azotvpn.xyz
-  client-fingerprint: random
-- name: 🇫🇮 FI 06 - homeip
+- name: 🇫🇮 FI 02 - homeip
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -63,10 +23,24 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 FI 07 - homeip
+- name: 🇫🇮 FI 03 - homeip
   type: ss
   server: 185.103.110.68
   port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 04 - homeip
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 05 - homeip
+  type: ss
+  server: 185.103.110.66
+  port: 18280
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
@@ -80,8 +54,6 @@ proxy-groups:
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
   - 🇫🇮 FI 05 - homeip
-  - 🇫🇮 FI 06 - homeip
-  - 🇫🇮 FI 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,7 +64,5 @@ proxy-groups:
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
   - 🇫🇮 FI 05 - homeip
-  - 🇫🇮 FI 06 - homeip
-  - 🇫🇮 FI 07 - homeip
 rules:
 - MATCH,PROXIES
