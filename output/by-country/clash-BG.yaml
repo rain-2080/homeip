@@ -1,0 +1,34 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇧🇬 BG 01 - homeip
+  type: vless
+  server: drive.korroh.com
+  port: 443
+  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: drive.korroh.com
+  network: ws
+  ws-opts:
+    path: /remote.php/dav/89f7661a0011ce46
+    headers:
+      Host: drive.korroh.com
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇧🇬 BG 01 - homeip
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇬 BG 01 - homeip
+rules:
+- MATCH,PROXIES

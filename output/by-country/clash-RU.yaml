@@ -23,13 +23,6 @@ proxies:
     public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
   servername: m.vk.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - homeip
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - homeip
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 03 - homeip
 rules:
 - MATCH,PROXIES
