@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  type: ss
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
 - name: 🇫🇮 FI 02 - homeip
   type: vless
   server: 95.216.27.15
@@ -29,34 +24,39 @@ proxies:
   servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 FI 03 - homeip
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vless
+  server: 146.75.119.82
+  port: 80
+  uuid: 83324aab-2981-4036-a7a4-1692d732d82b
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
+    headers:
+      Host: rb24.ir
 - name: 🇫🇮 FI 04 - homeip
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vless
+  server: 146.75.119.82
+  port: 80
+  uuid: 83324aab-2981-4036-a7a4-1692d732d82b
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
+    headers:
+      Host: rb24.ir
 - name: 🇫🇮 FI 05 - homeip
   type: ss
-  server: 45.149.114.171
-  port: 777
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-  udp: true
-- name: 🇫🇮 FI 06 - homeip
-  type: ss
   server: 185.103.110.68
   port: 18283
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
-- name: 🇫🇮 FI 07 - homeip
+- name: 🇫🇮 FI 06 - homeip
   type: vless
   server: marz.zovip2.ir
   port: 443
@@ -70,6 +70,19 @@ proxies:
     path: /gropcdn
     headers:
       Host: marz.zovip2.ir
+- name: 🇫🇮 FI 07 - homeip
+  type: vless
+  server: 146.75.119.82
+  port: 80
+  uuid: 83324aab-2981-4036-a7a4-1692d732d82b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
+    headers:
+      Host: rb24.ir
 - name: 🇫🇮 FI 08 - homeip
   type: vless
   server: 95.216.27.15
@@ -82,6 +95,27 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
+- name: 🇫🇮 FI 09 - homeip
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 10 - homeip
+  type: vless
+  server: 103.71.23.244
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shin-ra.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shin-ra.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,6 +129,8 @@ proxy-groups:
   - 🇫🇮 FI 06 - homeip
   - 🇫🇮 FI 07 - homeip
   - 🇫🇮 FI 08 - homeip
+  - 🇫🇮 FI 09 - homeip
+  - 🇫🇮 FI 10 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -108,5 +144,7 @@ proxy-groups:
   - 🇫🇮 FI 06 - homeip
   - 🇫🇮 FI 07 - homeip
   - 🇫🇮 FI 08 - homeip
+  - 🇫🇮 FI 09 - homeip
+  - 🇫🇮 FI 10 - homeip
 rules:
 - MATCH,PROXIES

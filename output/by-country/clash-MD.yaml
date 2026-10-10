@@ -1,0 +1,66 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇩 MD 01 - homeip
+  type: vless
+  server: 194.180.191.249
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shin-ra.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shin-ra.ccwu.cc
+- name: 🇲🇩 MD 02 - homeip
+  type: vless
+  server: ap2.directly.chat
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 03 - homeip
+  type: vless
+  server: ap2.directly.chat
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇩 MD 01 - homeip
+  - 🇲🇩 MD 02 - homeip
+  - 🇲🇩 MD 03 - homeip
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇩 MD 01 - homeip
+  - 🇲🇩 MD 02 - homeip
+  - 🇲🇩 MD 03 - homeip
+rules:
+- MATCH,PROXIES

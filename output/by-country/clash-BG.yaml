@@ -4,27 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇰 DK 01 - homeip
-  type: vmess
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16305
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+- name: 🇧🇬 BG 01 - homeip
+  type: vless
+  server: 13.140.29.170
+  port: 443
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: shin-ra.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shin-ra.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇰 DK 01 - homeip
+  - 🇧🇬 BG 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇰 DK 01 - homeip
+  - 🇧🇬 BG 01 - homeip
 rules:
 - MATCH,PROXIES
