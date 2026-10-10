@@ -6,21 +6,21 @@ log-level: info
 proxies:
 - name: 🇲🇩 MD 01 - homeip
   type: vless
-  server: 194.180.191.249
+  server: 87.228.71.197
   port: 443
-  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shin-ra.ccwu.cc
+  servername: ap2.directly.chat
   network: ws
   ws-opts:
-    path: /
+    path: /md/1
     headers:
-      Host: shin-ra.ccwu.cc
+      Host: ap2.directly.chat
 - name: 🇲🇩 MD 02 - homeip
   type: vless
-  server: ap2.directly.chat
+  server: 185.147.27.105
   port: 443
   uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
   udp: true
@@ -46,6 +46,76 @@ proxies:
     path: /md/1
     headers:
       Host: ap2.directly.chat
+- name: 🇲🇩 MD 04 - homeip
+  type: vless
+  server: 87.228.71.196
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 05 - homeip
+  type: vless
+  server: 185.147.27.216
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 06 - homeip
+  type: vless
+  server: 185.147.27.130
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 07 - homeip
+  type: vless
+  server: 185.147.27.116
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 MD 08 - homeip
+  type: vless
+  server: 185.147.27.68
+  port: 443
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ap2.directly.chat
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +124,11 @@ proxy-groups:
   - 🇲🇩 MD 01 - homeip
   - 🇲🇩 MD 02 - homeip
   - 🇲🇩 MD 03 - homeip
+  - 🇲🇩 MD 04 - homeip
+  - 🇲🇩 MD 05 - homeip
+  - 🇲🇩 MD 06 - homeip
+  - 🇲🇩 MD 07 - homeip
+  - 🇲🇩 MD 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +137,10 @@ proxy-groups:
   - 🇲🇩 MD 01 - homeip
   - 🇲🇩 MD 02 - homeip
   - 🇲🇩 MD 03 - homeip
+  - 🇲🇩 MD 04 - homeip
+  - 🇲🇩 MD 05 - homeip
+  - 🇲🇩 MD 06 - homeip
+  - 🇲🇩 MD 07 - homeip
+  - 🇲🇩 MD 08 - homeip
 rules:
 - MATCH,PROXIES
