@@ -6,96 +6,27 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - homeip
   type: vless
-  server: 89.22.224.146
-  port: 43788
-  uuid: 49a6eeaf-7dbf-4aa5-ba21-b36cd47e724e
+  server: lte.homyak.app
+  port: 41826
+  uuid: 2eb3f6a0-df6e-49b6-994c-177acdd50a97
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  servername: sweden.homyak.app
 - name: 🇨🇭 CH 02 - homeip
-  type: vless
-  server: 185.125.103.62
-  port: 8082
-  uuid: e431e7d1-2bbe-4907-8015-29f05d3558ac
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 - name: 🇨🇭 CH 03 - homeip
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 04 - homeip
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 7fdb95f9-c758-486c-865a-7c1219823670
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇨🇭 CH 05 - homeip
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 06 - homeip
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 07 - homeip
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 CH 08 - homeip
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -104,11 +35,6 @@ proxy-groups:
   - 🇨🇭 CH 01 - homeip
   - 🇨🇭 CH 02 - homeip
   - 🇨🇭 CH 03 - homeip
-  - 🇨🇭 CH 04 - homeip
-  - 🇨🇭 CH 05 - homeip
-  - 🇨🇭 CH 06 - homeip
-  - 🇨🇭 CH 07 - homeip
-  - 🇨🇭 CH 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -117,10 +43,5 @@ proxy-groups:
   - 🇨🇭 CH 01 - homeip
   - 🇨🇭 CH 02 - homeip
   - 🇨🇭 CH 03 - homeip
-  - 🇨🇭 CH 04 - homeip
-  - 🇨🇭 CH 05 - homeip
-  - 🇨🇭 CH 06 - homeip
-  - 🇨🇭 CH 07 - homeip
-  - 🇨🇭 CH 08 - homeip
 rules:
 - MATCH,PROXIES
