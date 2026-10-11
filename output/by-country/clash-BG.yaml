@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - homeip
   type: vless
-  server: drive.korroh.com
+  server: 13.140.29.170
   port: 443
-  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: drive.korroh.com
+  servername: shin-ra.ccwu.cc
   network: ws
   ws-opts:
-    path: /remote.php/dav/89f7661a0011ce46
+    path: /
     headers:
-      Host: drive.korroh.com
+      Host: shin-ra.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
