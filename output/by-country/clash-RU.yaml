@@ -6,19 +6,26 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
+  server: 46.29.166.27
+  port: 20221
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
+  server: 176.32.35.102
+  port: 20111
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
+  type: ss
+  server: 46.29.166.27
+  port: 20221
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
   type: vless
   server: ru-1-1.unturned-rust-dead.lol
   port: 443
@@ -29,21 +36,7 @@ proxies:
   reality-opts:
     public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
   servername: ru-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  type: ss
-  server: 46.29.166.27
-  port: 20221
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  type: ss
-  server: 46.29.166.27
-  port: 20221
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-  udp: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +46,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
   - 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,6 +55,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
   - 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 05 - homeip
 rules:
 - MATCH,PROXIES

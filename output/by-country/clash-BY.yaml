@@ -6,61 +6,19 @@ log-level: info
 proxies:
 - name: 🇧🇾 BY 01 - homeip
   type: vless
-  server: 89.125.96.75
+  server: 89.125.96.74
   port: 2053
   uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wss.zazazuza.ru.
+  servername: wss.zazazuza.ru
   network: ws
   ws-opts:
-    path: /vpn-wss/fluxor/59011/?ed=2088fp=chrome
+    path: /vpn-wss/fluxor/59011/
     headers:
-      Host: wss.zazazuza.ru.
+      Host: wss.zazazuza.ru
 - name: 🇧🇾 BY 02 - homeip
-  type: vless
-  server: 89.125.96.88
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 03 - homeip
-  type: vless
-  server: 89.125.96.89
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 04 - homeip
-  type: vless
-  server: 89.125.96.79
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 05 - homeip
   type: vless
   server: 89.125.96.80
   port: 2053
@@ -74,9 +32,9 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 06 - homeip
+- name: 🇧🇾 BY 03 - homeip
   type: vless
-  server: 89.125.96.81
+  server: 89.125.96.88
   port: 2053
   uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
   udp: true
@@ -88,7 +46,7 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 07 - homeip
+- name: 🇧🇾 BY 04 - homeip
   type: vless
   server: 89.125.96.92
   port: 2053
@@ -102,7 +60,35 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 08 - homeip
+- name: 🇧🇾 BY 05 - homeip
+  type: vless
+  server: 89.125.96.90
+  port: 2053
+  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wss.zazazuza.ru
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: wss.zazazuza.ru
+- name: 🇧🇾 BY 06 - homeip
+  type: vless
+  server: 89.125.96.89
+  port: 2053
+  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wss.zazazuza.ru
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: wss.zazazuza.ru
+- name: 🇧🇾 BY 07 - homeip
   type: vless
   server: ddnl0.zazazuza.ru
   port: 2053
@@ -116,6 +102,62 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: wss.zazazuza.ru
+- name: 🇧🇾 BY 08 - homeip
+  type: vless
+  server: 89.125.96.79
+  port: 2053
+  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wss.zazazuza.ru
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: wss.zazazuza.ru
+- name: 🇧🇾 BY 09 - homeip
+  type: vless
+  server: 89.125.96.81
+  port: 2053
+  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wss.zazazuza.ru
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: wss.zazazuza.ru
+- name: 🇧🇾 BY 10 - homeip
+  type: vless
+  server: 89.125.96.93
+  port: 2053
+  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wss.zazazuza.ru
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: wss.zazazuza.ru
+- name: 🇧🇾 BY 11 - homeip
+  type: vless
+  server: 89.125.96.75
+  port: 2053
+  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wss.zazazuza.ru.
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/?ed=2088fp=chrome
+    headers:
+      Host: wss.zazazuza.ru.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -129,6 +171,9 @@ proxy-groups:
   - 🇧🇾 BY 06 - homeip
   - 🇧🇾 BY 07 - homeip
   - 🇧🇾 BY 08 - homeip
+  - 🇧🇾 BY 09 - homeip
+  - 🇧🇾 BY 10 - homeip
+  - 🇧🇾 BY 11 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,5 +187,8 @@ proxy-groups:
   - 🇧🇾 BY 06 - homeip
   - 🇧🇾 BY 07 - homeip
   - 🇧🇾 BY 08 - homeip
+  - 🇧🇾 BY 09 - homeip
+  - 🇧🇾 BY 10 - homeip
+  - 🇧🇾 BY 11 - homeip
 rules:
 - MATCH,PROXIES
