@@ -22,17 +22,33 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 03 - homeip
   type: vless
-  server: best.valaiqm.ir
-  port: 3035
-  uuid: a1fb63f7-a942-4010-a830-bc395703a9a4
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: Pi3B8-R1-lj8ScFPOTRRER709y9hJ0varDPpMzWhtAo
-  servername: telewebion.ir
-  client-fingerprint: chrome
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 04 - homeip
+  type: vless
+  server: 155.103.70.53
+  port: 30303
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wzs.echo.net.eu.org
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==fp=chrome
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -43,7 +59,14 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
+  type: ss
+  server: tumspr.azad0namah.ir
+  port: 5566
+  cipher: 2022-blake3-aes-128-gcm
+  password: 8NwabdWBXK1q1QaBhF69rw==:Lzvg7nuGDOIqso68553eNQ==
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +76,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
+  - 🇹🇷 土耳其 (Turkey) 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +87,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
+  - 🇹🇷 土耳其 (Turkey) 06 - homeip
 rules:
 - MATCH,PROXIES

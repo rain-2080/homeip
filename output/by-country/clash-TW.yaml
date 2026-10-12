@@ -21,19 +21,21 @@ proxies:
     headers:
       Host: 654168416355441.d6f54hd1j.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - homeip
-  type: vless
-  server: 60.248.219.53
+  type: vmess
+  server: 654168416355441.d6f54hd1j.cc
   port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
+  servername: 654168416355441.d6f54hd1j.cc
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /
     headers:
-      Host: 60.248.219.53
+      Host: 654168416355441.d6f54hd1j.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - homeip
   type: vmess
   server: 654168416355441.d6f54hd1j.cc
@@ -51,6 +53,18 @@ proxies:
     headers:
       Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - homeip
+  type: vless
+  server: 118.167.248.243
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - homeip
   type: vmess
   server: 654168416355441.d6f54hd1j.cc
   port: 443
@@ -60,26 +74,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: 654168416355441.d6f54hd1j.cc
   network: ws
   ws-opts:
-    path: ''
+    path: /
     headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - homeip
-  type: vless
-  server: 60.248.219.78
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.78
+      Host: 654168416355441.d6f54hd1j.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 06 - homeip
   type: vmess
   server: 654168416355441.d6f54hd1j.cc
@@ -122,33 +122,17 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 09 - homeip
-  type: vmess
-  server: 24864168545164.d6f54hd1j.cc
-  port: 443
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 24864168545164.d6f54hd1j.cc
+  servername: 654168416355441.d6f54hd1j.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 24864168545164.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 10 - homeip
+      Host: 654168416355441.d6f54hd1j.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 09 - homeip
   type: vless
-  server: 59.125.69.24
+  server: 60.248.219.78
   port: 443
-  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   udp: true
   tls: true
   skip-cert-verify: true
@@ -157,68 +141,8 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 59.125.69.24
-- name: 🇹🇼 中国台湾 (Taiwan) 11 - homeip
-  type: vmess
-  server: 24864168545164.d6f54hd1j.cc
-  port: 443
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 12 - homeip
-  type: vless
-  server: hinet1.2yly.com
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 13 - homeip
-  type: vmess
-  server: 24864168545164.d6f54hd1j.cc
-  port: 443
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 24864168545164.d6f54hd1j.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 24864168545164.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 14 - homeip
-  type: vmess
-  server: 654168416355441.d6f54hd1j.cc
-  port: 443
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 15 - homeip
+      Host: 60.248.219.78
+- name: 🇹🇼 中国台湾 (Taiwan) 10 - homeip
   type: vmess
   server: 654168416355441.d6f54hd1j.cc
   port: 443
@@ -234,9 +158,67 @@ proxies:
     path: /
     headers:
       Host: 654168416355441.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 16 - homeip
+- name: 🇹🇼 中国台湾 (Taiwan) 11 - homeip
   type: vmess
   server: 24864168545164.d6f54hd1j.cc
+  port: 443
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 24864168545164.d6f54hd1j.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 24864168545164.d6f54hd1j.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 12 - homeip
+  type: vless
+  server: 118.167.248.243
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 13 - homeip
+  type: vless
+  server: 60.248.219.54
+  port: 443
+  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: 60.248.219.54
+- name: 🇹🇼 中国台湾 (Taiwan) 14 - homeip
+  type: vmess
+  server: 654168416355441.d6f54hd1j.cc
+  port: 443
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 654168416355441.d6f54hd1j.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 654168416355441.d6f54hd1j.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 15 - homeip
+  type: vmess
+  server: 654168416355441.d6f54hd1j.cc
   port: 443
   uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
   alterId: 0
@@ -247,9 +229,25 @@ proxies:
   servername: ''
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
       Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 16 - homeip
+  type: vmess
+  server: 654168416355441.d6f54hd1j.cc
+  port: 443
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 654168416355441.d6f54hd1j.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 654168416355441.d6f54hd1j.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 17 - homeip
   type: vmess
   server: 654168416355441.d6f54hd1j.cc
@@ -267,19 +265,37 @@ proxies:
     headers:
       Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 18 - homeip
-  type: vless
-  server: 59.125.69.23
+  type: vmess
+  server: 654168416355441.d6f54hd1j.cc
   port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
+  servername: ''
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: ''
     headers:
-      Host: 59.125.69.23
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 19 - homeip
+  type: vmess
+  server: 24864168545164.d6f54hd1j.cc
+  port: 443
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -303,6 +319,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 16 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 17 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 18 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 19 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -326,5 +343,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 16 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 17 - homeip
   - 🇹🇼 中国台湾 (Taiwan) 18 - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 19 - homeip
 rules:
 - MATCH,PROXIES

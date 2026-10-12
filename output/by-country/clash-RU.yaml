@@ -6,37 +6,44 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
   type: ss
-  server: 46.29.166.27
-  port: 20221
+  server: 89.125.103.208
+  port: 20111
   cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
+  password: 994ccabf6f0950d6
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
   type: ss
-  server: 176.32.35.102
-  port: 20111
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  type: ss
-  server: 46.29.166.27
-  port: 20221
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
+  type: vless
+  server: 89.117.112.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime11.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
   type: vless
-  server: ru-1-1.unturned-rust-dead.lol
-  port: 443
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  server: 104.17.147.22
+  port: 80
+  uuid: 63f1ef69-92fd-427a-b3e4-98ffddf81ac6
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  servername: ru-1-1.unturned-rust-dead.lol
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /nPKoVRUdyuRZ6jpY/YnBiLnlvdXNlZi5pc2VnYXJvLmNvbSxwcm94eWlwLmNtbGl1c3Nzcy5uZXQsbmltYS5uc2NsLmlyLHR1cmsucmFkaWNhbGl6YXRpb24uaXI=
+    headers:
+      Host: young-rice-749e.heliy78750.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
