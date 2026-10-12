@@ -4,31 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - homeip
-  type: vless
-  server: 104.21.81.162
+- name: 🇦🇺 澳大利亚 (Australia) 01 - homeip
+  type: vmess
+  server: 212.135.211.242
   port: 443
-  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
+  uuid: 235e318a-8bcb-4480-b256-7b65cc5d0b0a
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: netra-85a0ca.shoameni19.workers.dev
+  servername: aus.lovehk.xyz
   network: ws
   ws-opts:
-    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui
+    path: /Sydney3
     headers:
-      Host: netra-85a0ca.shoameni19.workers.dev
+      Host: aus.lovehk.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - homeip
+  - 🇦🇺 澳大利亚 (Australia) 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - homeip
+  - 🇦🇺 澳大利亚 (Australia) 01 - homeip
 rules:
 - MATCH,PROXIES
