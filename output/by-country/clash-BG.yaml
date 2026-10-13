@@ -4,33 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01 - homeip
-  type: vmess
-  server: 212.135.211.242
+- name: 🇧🇬 BG 01 - homeip
+  type: vless
+  server: 203.202.232.110
   port: 443
-  uuid: 235e318a-8bcb-4480-b256-7b65cc5d0b0a
-  alterId: 0
-  cipher: auto
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aus.lovehk.xyz
+  servername: vlso5.1d.mom
   network: ws
   ws-opts:
-    path: /Sydney3
+    path: /
     headers:
-      Host: aus.lovehk.xyz
+      Host: vlso5.1d.mom
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01 - homeip
+  - 🇧🇬 BG 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01 - homeip
+  - 🇧🇬 BG 01 - homeip
 rules:
 - MATCH,PROXIES

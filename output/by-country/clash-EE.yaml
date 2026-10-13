@@ -5,37 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - homeip
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 02 - homeip
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 03 - homeip
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 04 - homeip
   type: vmess
   server: eu3.998998.best
   port: 443
@@ -51,6 +20,51 @@ proxies:
     path: /aiaiai
     headers:
       Host: server40.9966338.xyz
+- name: 🇪🇪 EE 02 - homeip
+  type: vmess
+  server: eu3.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server40.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /aiaiai
+    headers:
+      Host: server40.9966338.xyz
+- name: 🇪🇪 EE 03 - homeip
+  type: vmess
+  server: eu3.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server40.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /aiaiai
+    headers:
+      Host: server40.9966338.xyz
+- name: 🇪🇪 EE 04 - homeip
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 05 - homeip
   type: vless
   server: 94.183.170.135
@@ -62,6 +76,20 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 06 - homeip
   type: vless
+  server: 5.189.254.168
+  port: 2053
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf3.schzyc.cc.cd
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.netfp=chrome
+    headers:
+      Host: cf3.schzyc.cc.cd
+- name: 🇪🇪 EE 07 - homeip
+  type: vless
   server: 94.183.170.135
   port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
@@ -69,7 +97,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 07 - homeip
+- name: 🇪🇪 EE 08 - homeip
   type: vless
   server: ee.h1cloud.net
   port: 25895
@@ -93,6 +121,7 @@ proxy-groups:
   - 🇪🇪 EE 05 - homeip
   - 🇪🇪 EE 06 - homeip
   - 🇪🇪 EE 07 - homeip
+  - 🇪🇪 EE 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,5 +134,6 @@ proxy-groups:
   - 🇪🇪 EE 05 - homeip
   - 🇪🇪 EE 06 - homeip
   - 🇪🇪 EE 07 - homeip
+  - 🇪🇪 EE 08 - homeip
 rules:
 - MATCH,PROXIES
