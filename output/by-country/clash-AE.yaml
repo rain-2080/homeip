@@ -6,19 +6,46 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - homeip
   type: vless
-  server: 31.57.190.15
+  server: 172.67.221.230
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
+  servername: novantunnel.tech
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /Novan-AE9
     headers:
-      Host: lucasjow.us.ci
+      Host: novantunnel.tech
 - name: 🇦🇪 阿联酋 (UAE) 02 - homeip
+  type: vless
+  server: 31.57.190.17
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🇦🇪 阿联酋 (UAE) 03 - homeip
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - homeip
   type: vless
   server: 188.114.97.6
   port: 443
@@ -32,21 +59,7 @@ proxies:
     path: /Novan-AE9
     headers:
       Host: novantunnel.tech
-- name: 🇦🇪 阿联酋 (UAE) 03 - homeip
-  type: vless
-  server: 31.57.190.49
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 04 - homeip
+- name: 🇦🇪 阿联酋 (UAE) 05 - homeip
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -59,23 +72,9 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - homeip
-  type: vless
-  server: 192.241.229.131
-  port: 74
-  uuid: 8fd85405-c28b-42ce-87a8-646cbe38ced4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 06 - homeip
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -88,7 +87,7 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 07 - homeip
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -101,61 +100,61 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 08 - homeip
   type: vless
-  server: 128.241.25.11
-  port: 30021
-  uuid: 69f3be1f-e54d-4f40-a5f8-5d77eaa3d8f9
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 09 - homeip
   type: vless
-  server: 188.245.191.19
-  port: 2040
-  uuid: d89b1691-e1ad-47c4-8cdb-5bbfe1171a8c
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - homeip
+  type: vless
+  server: 104.21.67.122
+  port: 443
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
+  servername: novantunnel.tech
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /Novan-AE9
     headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 10 - homeip
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+      Host: novantunnel.tech
 - name: 🇦🇪 阿联酋 (UAE) 11 - homeip
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 31.57.190.49
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: uae.unixzone.us
+      Host: lucasjow.us.ci
 - name: 🇦🇪 阿联酋 (UAE) 12 - homeip
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -168,35 +167,34 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 13 - homeip
   type: vless
-  server: 172.67.221.230
+  server: 31.57.190.50
   port: 443
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: novantunnel.tech
+  servername: a.cwvps.eu.org
   network: ws
   ws-opts:
-    path: /Novan-AE9
+    path: /ws
     headers:
-      Host: novantunnel.tech
+      Host: a.cwvps.eu.org
 - name: 🇦🇪 阿联酋 (UAE) 14 - homeip
   type: vless
-  server: 77.221.154.152
-  port: 8444
-  uuid: 04bb598f-3376-4ec0-b057-b5109d1a5320
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 15 - homeip
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -210,58 +208,6 @@ proxies:
 - name: 🇦🇪 阿联酋 (UAE) 16 - homeip
   type: vless
   server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 17 - homeip
-  type: vless
-  server: 172.65.90.52
-  port: 8880
-  uuid: 812b1aeb-c6f7-43cb-8d8b-981711fea21a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: dark-cake-4743.198-46c.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 18 - homeip
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 19 - homeip
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 20 - homeip
-  type: vless
-  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -293,10 +239,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 14 - homeip
   - 🇦🇪 阿联酋 (UAE) 15 - homeip
   - 🇦🇪 阿联酋 (UAE) 16 - homeip
-  - 🇦🇪 阿联酋 (UAE) 17 - homeip
-  - 🇦🇪 阿联酋 (UAE) 18 - homeip
-  - 🇦🇪 阿联酋 (UAE) 19 - homeip
-  - 🇦🇪 阿联酋 (UAE) 20 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -318,9 +260,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 14 - homeip
   - 🇦🇪 阿联酋 (UAE) 15 - homeip
   - 🇦🇪 阿联酋 (UAE) 16 - homeip
-  - 🇦🇪 阿联酋 (UAE) 17 - homeip
-  - 🇦🇪 阿联酋 (UAE) 18 - homeip
-  - 🇦🇪 阿联酋 (UAE) 19 - homeip
-  - 🇦🇪 阿联酋 (UAE) 20 - homeip
 rules:
 - MATCH,PROXIES

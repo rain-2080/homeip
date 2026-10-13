@@ -6,30 +6,32 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - homeip
   type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 104.16.10.48
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /tyxyws
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 02 - homeip
   type: vless
-  server: 104.17.44.17
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 104.17.189.78
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: a.cwvps.eu.org
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /ws
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: a.cwvps.eu.org
 - name: 🌐 其他地区 (Other) 03 - homeip
   type: vless
   server: 172.64.150.43
@@ -45,20 +47,7 @@ proxies:
       Host: hhlfy.twiladaphne.ndjp.net
 - name: 🌐 其他地区 (Other) 04 - homeip
   type: vless
-  server: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev
-  port: 80
-  uuid: c8f3f81a-5276-48e9-af6b-c537fb4c7856
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vl/2INL39K32mKsOBKt?ed=2560
-    headers:
-      Host: r7yhmg1zxnt120wmkag.mf1h0myptv4lougs7341bmttcz8.workers.dev
-- name: 🌐 其他地区 (Other) 05 - homeip
-  type: vless
-  server: 104.24.156.153
+  server: 104.16.111.193
   port: 443
   uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
@@ -70,33 +59,52 @@ proxies:
     path: /ws
     headers:
       Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 06 - homeip
-  type: vless
-  server: 172.67.171.191
-  port: 8080
-  uuid: 0b2ea024-3ffd-46a7-87ce-86cbb79d7a48
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiT3FNeW1sMVdGVHlvNTIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OmIwOjY0OjpdIiwiWzI2MDI6ZmM1OToxMTo2NDo6XSJdfQ==
-    headers:
-      Host: server18.peekconfig2.workers.dev
-- name: 🌐 其他地区 (Other) 07 - homeip
-  type: vless
-  server: 104.21.70.21
+- name: 🌐 其他地区 (Other) 05 - homeip
+  type: vmess
+  server: cf.877771.xyz
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: vmess.lbw666.dpdns.org
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /ws?ed=2048
     headers:
-      Host: jp3.yohototo.top
+      Host: vmess.lbw666.dpdns.org
+- name: 🌐 其他地区 (Other) 06 - homeip
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 07 - homeip
+  type: vmess
+  server: uk2-2.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server3.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /waetasiuofguiwer?ed=2560
+    headers:
+      Host: server3.9966338.xyz
 - name: 🌐 其他地区 (Other) 08 - homeip
   type: vless
   server: 104.16.111.202
@@ -113,73 +121,67 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 09 - homeip
   type: vless
-  server: 104.18.35.86
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: vl.cocopon.top
+  port: 443
+  uuid: 44f06ad1-982c-4e03-849f-899c1c8dc14f
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: vl.cocopon.top
   network: ws
   ws-opts:
-    path: /fp
+    path: /
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: vl.cocopon.top
 - name: 🌐 其他地区 (Other) 10 - homeip
-  type: vless
-  server: 188.114.97.6
+  type: vmess
+  server: uk2-2.998998.best
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
+  servername: server3.9966338.xyz
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed
+    path: /waetasiuofguiwer?ed=2560
     headers:
-      Host: lucasjow.us.ci
+      Host: server3.9966338.xyz
 - name: 🌐 其他地区 (Other) 11 - homeip
-  type: vless
-  server: 172.64.144.82
+  type: vmess
+  server: uk2-2.998998.best
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
+  servername: server3.9966338.xyz
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /waetasiuofguiwer?ed=2560
     headers:
-      Host: lucasjow.us.ci
+      Host: server3.9966338.xyz
 - name: 🌐 其他地区 (Other) 12 - homeip
-  type: vless
-  server: www.speedtest.net
-  port: 2086
-  uuid: bba14c1d-f08c-4c9a-ac87-cf85d38d8aff
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiRGtvTEVIeGU4cXFaTVVZIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19
-    headers:
-      Host: tight-thunder-ce8e.hamid-r-aliakbari1379-0f0.workers.dev
-- name: 🌐 其他地区 (Other) 13 - homeip
-  type: vless
-  server: 104.16.10.2
+  type: vmess
+  server: jp4.998998.best
   port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
+  servername: nat12.9966338.xyz
   network: ws
   ws-opts:
-    path: /ws#TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: /vvvvvvvvv
     headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 14 - homeip
+      Host: nat12.9966338.xyz
+- name: 🌐 其他地区 (Other) 13 - homeip
   type: vmess
   server: uk3-2.998998.best
   port: 443
@@ -195,33 +197,76 @@ proxies:
     path: /serhrdftshg
     headers:
       Host: server22.9966338.xyz
-- name: 🌐 其他地区 (Other) 15 - homeip
+- name: 🌐 其他地区 (Other) 14 - homeip
   type: vless
-  server: 188.114.96.1
-  port: 8080
-  uuid: 0fbe0c5e-b479-4d91-8b42-f194f781b6bb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vl/BzwF7raXrOtxHuyMFleIwRW4wCWBg35?ed
-    headers:
-      Host: z0ndd1onnp04unxjemim9lf8.abaravi51.workers.dev
-- name: 🌐 其他地区 (Other) 16 - homeip
-  type: vless
-  server: tg.juntham.cn
+  server: 104.16.10.135
   port: 443
-  uuid: da8aa4cc-4f76-4248-a289-41f25713b6e2
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tg.juntham.cn
+  servername: a.cwvps.eu.org
   network: ws
   ws-opts:
-    path: /
+    path: /ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
     headers:
-      Host: tg.juntham.cn
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 15 - homeip
+  type: vless
+  server: 104.16.10.72
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 16 - homeip
+  type: vless
+  server: 104.16.10.197
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 17 - homeip
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 18 - homeip
+  type: vless
+  server: 104.17.169.13
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -243,6 +288,8 @@ proxy-groups:
   - 🌐 其他地区 (Other) 14 - homeip
   - 🌐 其他地区 (Other) 15 - homeip
   - 🌐 其他地区 (Other) 16 - homeip
+  - 🌐 其他地区 (Other) 17 - homeip
+  - 🌐 其他地区 (Other) 18 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -264,5 +311,7 @@ proxy-groups:
   - 🌐 其他地区 (Other) 14 - homeip
   - 🌐 其他地区 (Other) 15 - homeip
   - 🌐 其他地区 (Other) 16 - homeip
+  - 🌐 其他地区 (Other) 17 - homeip
+  - 🌐 其他地区 (Other) 18 - homeip
 rules:
 - MATCH,PROXIES

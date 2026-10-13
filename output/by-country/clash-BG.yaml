@@ -6,29 +6,61 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - homeip
   type: vless
-  server: 203.202.232.110
+  server: 85.217.170.89
   port: 443
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vlso5.1d.mom
+  servername: rnxq-1lpi3m.linmeisoft.com
   network: ws
   ws-opts:
-    path: /
+    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
     headers:
-      Host: vlso5.1d.mom
+      Host: rnxq-1lpi3m.linmeisoft.com
+- name: 🇧🇬 BG 02 - homeip
+  type: vless
+  server: 85.217.170.89
+  port: 443
+  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rnxq-1lpi3m.linmeisoft.com
+  network: ws
+  ws-opts:
+    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
+    headers:
+      Host: rnxq-1lpi3m.linmeisoft.com
+- name: 🇧🇬 BG 03 - homeip
+  type: vless
+  server: 85.217.170.89
+  port: 443
+  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rnxq-1lpi3m.linmeisoft.com
+  network: ws
+  ws-opts:
+    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
+    headers:
+      Host: rnxq-1lpi3m.linmeisoft.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇬 BG 01 - homeip
+  - 🇧🇬 BG 02 - homeip
+  - 🇧🇬 BG 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 BG 01 - homeip
+  - 🇧🇬 BG 02 - homeip
+  - 🇧🇬 BG 03 - homeip
 rules:
 - MATCH,PROXIES
