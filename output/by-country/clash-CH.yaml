@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - homeip
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: vless
+  server: ch.srv.vbuste.ru
+  port: 444
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+  servername: ch.srv.vbuste.ru
+  client-fingerprint: firefox
 - name: 🇨🇭 CH 02 - homeip
   type: ss
   server: 132.243.175.144
@@ -29,7 +34,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇭 CH 04 - homeip
   type: vless
   server: ch.srv.vbuste.ru
@@ -43,17 +48,24 @@ proxies:
   servername: ch.srv.vbuste.ru
   client-fingerprint: chrome
 - name: 🇨🇭 CH 05 - homeip
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 06 - homeip
   type: vless
-  server: ch.srv.vbuste.ru
-  port: 444
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  server: 87.228.92.113
+  port: 25576
+  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-  servername: ch.srv.vbuste.ru
-  client-fingerprint: firefox
+    public-key: ErmbQFm-toukc_-s7geF1w7pJggmrIq9XiT55sjRNHc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +76,7 @@ proxy-groups:
   - 🇨🇭 CH 03 - homeip
   - 🇨🇭 CH 04 - homeip
   - 🇨🇭 CH 05 - homeip
+  - 🇨🇭 CH 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +87,6 @@ proxy-groups:
   - 🇨🇭 CH 03 - homeip
   - 🇨🇭 CH 04 - homeip
   - 🇨🇭 CH 05 - homeip
+  - 🇨🇭 CH 06 - homeip
 rules:
 - MATCH,PROXIES

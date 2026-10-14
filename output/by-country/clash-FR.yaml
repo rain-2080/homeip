@@ -17,9 +17,20 @@ proxies:
   servername: ''
 - name: 🇫🇷 法国 (France) 02 - homeip
   type: vmess
-  server: 54.37.131.126
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 03 - homeip
+  type: vmess
+  server: 57.128.164.21
   port: 80
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  uuid: bda82bcd-f6e2-46ae-9552-673f0b87ac30
   alterId: 0
   cipher: auto
   udp: true
@@ -27,24 +38,49 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 03 - homeip
-  type: ss
-  server: pl140.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-  udp: true
+      Host: https.http.www.net.com.ramseyv2.ir.
 - name: 🇫🇷 法国 (France) 04 - homeip
-  type: ss
-  server: pl134.vpnbook.com
+  type: vless
+  server: eu5.998998.best
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nat3.outsidemyheart.space
+  network: ws
+  ws-opts:
+    path: /ew4p98tu34wtghe39?ed=2560
+    headers:
+      Host: nat3.outsidemyheart.space
 - name: 🇫🇷 法国 (France) 05 - homeip
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 06 - homeip
+  type: vless
+  server: OV-France1.09vpn.com
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-France1.09vpn.com
+- name: 🇫🇷 法国 (France) 07 - homeip
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -56,46 +92,40 @@ proxies:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 06 - homeip
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 07 - homeip
-  type: vless
-  server: cf1.w3bschool.ir
-  port: 2083
-  uuid: 7684d613-0ae9-41d2-9a38-66752ae680b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ch.topdigit.ir
-  network: ws
-  ws-opts:
-    path: /path
-    headers:
-      Host: ch.topdigit.ir
 - name: 🇫🇷 法国 (France) 08 - homeip
   type: ss
-  server: 54.36.174.134
+  server: pl140.vpnbook.com
   port: 443
   cipher: chacha20-ietf-poly1305
   password: e5c65ph
   udp: true
 - name: 🇫🇷 法国 (France) 09 - homeip
   type: ss
-  server: 51.195.248.89
-  port: 14117
-  cipher: aes-128-gcm
-  password: 3391e35fc7a532f6a9b86adb077b2b34
+  server: 54.36.174.140
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
   udp: true
 - name: 🇫🇷 法国 (France) 10 - homeip
+  type: ss
+  server: 54.36.174.134
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
+  udp: true
+- name: 🇫🇷 法国 (France) 11 - homeip
+  type: vless
+  server: 54.37.136.194
+  port: 2053
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 12 - homeip
   type: vmess
   server: 145.239.55.210
   port: 80
@@ -110,60 +140,34 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 11 - homeip
-  type: vless
-  server: OV-France1.09vpn.com
+- name: 🇫🇷 法国 (France) 13 - homeip
+  type: ss
+  server: pl134.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
+  udp: true
+- name: 🇫🇷 法国 (France) 14 - homeip
+  type: vmess
+  server: 54.37.131.126
   port: 80
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-France1.09vpn.com
-- name: 🇫🇷 法国 (France) 12 - homeip
-  type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: XpnTeam-3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: Speedtest.net
-  network: ws
-  ws-opts:
     path: /
     headers:
-      Host: Appxdn.global.ssl.fastly.net
-- name: 🇫🇷 法国 (France) 13 - homeip
-  type: vless
-  server: 199.232.78.170
-  port: 443
-  uuid: XpnTeam-4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: Speedtest.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-- name: 🇫🇷 法国 (France) 14 - homeip
-  type: ss
-  server: 54.36.174.134
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-  udp: true
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 15 - homeip
   type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
+  server: 95.38.68.148
+  port: 2089
+  cipher: 2022-blake3-aes-128-gcm
+  password: 1JvlmtT4v8y1yGczDtT6Ww==:kYkeZRNo/UrxMGxkJXth0g==
   udp: true
 proxy-groups:
 - name: PROXIES
