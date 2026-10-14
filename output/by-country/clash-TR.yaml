@@ -6,29 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
   type: vless
-  server: googol.wookshop.ir
-  port: 17915
-  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: googol.wookshop.ir
-- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
-  type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
-  type: vless
   server: 151.241.226.201
   port: 2053
   uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
@@ -45,15 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
-  - 🇹🇷 土耳其 (Turkey) 02 - homeip
-  - 🇹🇷 土耳其 (Turkey) 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
-  - 🇹🇷 土耳其 (Turkey) 02 - homeip
-  - 🇹🇷 土耳其 (Turkey) 03 - homeip
 rules:
 - MATCH,PROXIES
