@@ -15,27 +15,44 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 02 - homeip
-  type: vless
-  server: fi-p1.h1cloud.net
-  port: 25633
-  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YLIRYJ8UkT0nSSgxJr7YckNuXnokVyEs2G6thNyx1GE
-  servername: www.icloud.com
-  client-fingerprint: random
-- name: 🇫🇮 FI 03 - homeip
   type: ss
   server: 185.103.110.68
   port: 18283
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
+- name: 🇫🇮 FI 03 - homeip
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
 - name: 🇫🇮 FI 04 - homeip
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 0617eade-fb92-422f-9b59-c9a4b65b2906
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtest.net
+  network: ws
+  ws-opts:
+    path: /?
+    headers:
+      Host: mr_anonoijji.global.ssl.fastly.net
+- name: 🇫🇮 FI 05 - homeip
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 06 - homeip
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -47,35 +64,19 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 05 - homeip
+- name: 🇫🇮 FI 07 - homeip
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: 146.75.119.82
+  port: 80
+  uuid: b434e547-645f-4060-92c0-6b9d0a905590
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇮 FI 06 - homeip
-  type: ss
-  server: 185.103.110.66
-  port: 18280
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 07 - homeip
-  type: vless
-  server: 135.136.176.183
-  port: 443
-  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rnxq-1lpi3m.linmeisoft.com
   network: ws
   ws-opts:
-    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
+    path: ws/?ed=2048/@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1@VPNine1/?2048
     headers:
-      Host: rnxq-1lpi3m.linmeisoft.com
+      Host: rb24.ir
 proxy-groups:
 - name: PROXIES
   type: select

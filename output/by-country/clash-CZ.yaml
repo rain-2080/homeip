@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - homeip
   type: vless
-  server: 141.133.174.59
-  port: 443
-  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
+  server: 172.67.208.235
+  port: 2096
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rnxq-1lpi3m.linmeisoft.com
+  servername: courses.mftplus.qzz.io
   network: ws
   ws-opts:
-    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: rnxq-1lpi3m.linmeisoft.com
+      Host: courses.mftplus.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select

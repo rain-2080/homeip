@@ -5,12 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
+  type: vless
+  server: 79.174.92.222
+  port: 443
+  uuid: 03ca8c3f-e777-45b5-a1b1-592094ca99ee
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
+  servername: m.vk.com
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
   type: vmess
   server: renderer-stream-2-114.mirra.now
@@ -34,6 +39,27 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
   udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  type: vless
+  server: 172.67.141.75
+  port: 443
+  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: FroSTy-PonD-7436.SHHabbYAt914.woRkErS.dEv
+  network: ws
+  ws-opts:
+    path: /NmrU9ImDG7jA7oFEem
+    headers:
+      Host: frosty-pond-7436.shhabbyat914.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +68,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - homeip
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +78,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - homeip
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 05 - homeip
 rules:
 - MATCH,PROXIES
