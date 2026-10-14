@@ -24,80 +24,13 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 03 - homeip
   type: vless
-  server: 2.26.225.89
+  server: pl.flen-vpn.xyz
   port: 8443
   uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
   tls: true
   skip-cert-verify: true
   servername: pl.flen-vpn.xyz
-- name: 🇵🇱 PL 04 - homeip
-  type: ss
-  server: ruot.ayucloudservices.nl
-  port: 35031
-  cipher: aes-128-gcm
-  password: 85590bd2-807b-49b9-af20-1101c18b9eda
-  udp: true
-- name: 🇵🇱 PL 05 - homeip
-  type: vless
-  server: 201.10.91.196
-  port: 25080
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
-  servername: www.ceneo.pl
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 06 - homeip
-  type: vless
-  server: pl4.h1cloud.net
-  port: 25080
-  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
-  servername: www.ceneo.pl
-  client-fingerprint: random
-- name: 🇵🇱 PL 07 - homeip
-  type: vless
-  server: pl4.h1cloud.net
-  port: 25080
-  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
-  servername: www.ceneo.pl
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 08 - homeip
-  type: vless
-  server: 201.10.91.196
-  port: 25080
-  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
-  servername: www.ceneo.pl
-  client-fingerprint: chrome
-- name: 🇵🇱 PL 09 - homeip
-  type: vless
-  server: pl4.h1cloud.net
-  port: 25080
-  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
-  servername: www.ceneo.pl
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -106,12 +39,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - homeip
   - 🇵🇱 PL 02 - homeip
   - 🇵🇱 PL 03 - homeip
-  - 🇵🇱 PL 04 - homeip
-  - 🇵🇱 PL 05 - homeip
-  - 🇵🇱 PL 06 - homeip
-  - 🇵🇱 PL 07 - homeip
-  - 🇵🇱 PL 08 - homeip
-  - 🇵🇱 PL 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -120,11 +47,5 @@ proxy-groups:
   - 🇵🇱 PL 01 - homeip
   - 🇵🇱 PL 02 - homeip
   - 🇵🇱 PL 03 - homeip
-  - 🇵🇱 PL 04 - homeip
-  - 🇵🇱 PL 05 - homeip
-  - 🇵🇱 PL 06 - homeip
-  - 🇵🇱 PL 07 - homeip
-  - 🇵🇱 PL 08 - homeip
-  - 🇵🇱 PL 09 - homeip
 rules:
 - MATCH,PROXIES
