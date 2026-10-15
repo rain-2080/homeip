@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - homeip
   type: vless
-  server: platform117.golnamakcert.top
+  server: platform118.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -14,9 +14,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform117
+    path: /platform118
     headers:
-      Host: platform117.halalkhor.info
+      Host: platform118.halalkhor.info
 - name: 🇲🇾 MY 02 - homeip
   type: vless
   server: platform118.golnamakcert.top
@@ -32,34 +32,19 @@ proxies:
       Host: platform118.halalkhor.info
 - name: 🇲🇾 MY 03 - homeip
   type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 04 - homeip
-  type: vmess
-  server: 172.67.205.213
+  server: 216.173.67.59
   port: 443
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: my.lovehk.xyz
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /KualaLumpur1
+    path: /fp=chrome
     headers:
-      Host: my.lovehk.xyz
-- name: 🇲🇾 MY 05 - homeip
+      Host: ccc.010304.xyz
+- name: 🇲🇾 MY 04 - homeip
   type: vless
   server: platform118.golnamakcert.top
   port: 80
@@ -72,6 +57,19 @@ proxies:
     path: /platform118
     headers:
       Host: platform118.halalkhor.info
+- name: 🇲🇾 MY 05 - homeip
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
 - name: 🇲🇾 MY 06 - homeip
   type: vless
   server: platform117.golnamakcert.top
@@ -87,7 +85,7 @@ proxies:
       Host: platform117.halalkhor.info
 - name: 🇲🇾 MY 07 - homeip
   type: vless
-  server: platform118.golnamakcert.top
+  server: platform117.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -95,9 +93,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform118
+    path: /platform117
     headers:
-      Host: platform118.halalkhor.info
+      Host: platform117.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select

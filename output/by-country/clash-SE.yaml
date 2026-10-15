@@ -6,6 +6,26 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - homeip
   type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 02 - homeip
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
+- name: 🇸🇪 SE 03 - homeip
+  type: vless
   server: 77.110.97.245
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -18,7 +38,21 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇸🇪 SE 02 - homeip
+- name: 🇸🇪 SE 04 - homeip
+  type: vless
+  server: sub.merky.top
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 SE 05 - homeip
   type: vless
   server: 94.143.231.146
   port: 443
@@ -32,14 +66,20 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇸🇪 SE 03 - homeip
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+- name: 🇸🇪 SE 06 - homeip
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-- name: 🇸🇪 SE 04 - homeip
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 07 - homeip
   type: vless
   server: 732051t.se1.h1clayd.click
   port: 443
@@ -51,6 +91,59 @@ proxies:
     public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
   servername: 732051t.se1.h1clayd.click
   client-fingerprint: chrome
+- name: 🇸🇪 SE 08 - homeip
+  type: vless
+  server: sub.merky.top
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 SE 09 - homeip
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 10 - homeip
+  type: vless
+  server: 732051t.se1.h1clayd.click
+  port: 443
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: NqyAfxsF9xeJZi_5itA5VCxaja1ioXjw7xPM_QonKVk
+  servername: 732051t.se1.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇸🇪 SE 11 - homeip
+  type: vless
+  server: 94.143.231.146
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sub.merky.top
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +153,13 @@ proxy-groups:
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
   - 🇸🇪 SE 04 - homeip
+  - 🇸🇪 SE 05 - homeip
+  - 🇸🇪 SE 06 - homeip
+  - 🇸🇪 SE 07 - homeip
+  - 🇸🇪 SE 08 - homeip
+  - 🇸🇪 SE 09 - homeip
+  - 🇸🇪 SE 10 - homeip
+  - 🇸🇪 SE 11 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,5 +169,12 @@ proxy-groups:
   - 🇸🇪 SE 02 - homeip
   - 🇸🇪 SE 03 - homeip
   - 🇸🇪 SE 04 - homeip
+  - 🇸🇪 SE 05 - homeip
+  - 🇸🇪 SE 06 - homeip
+  - 🇸🇪 SE 07 - homeip
+  - 🇸🇪 SE 08 - homeip
+  - 🇸🇪 SE 09 - homeip
+  - 🇸🇪 SE 10 - homeip
+  - 🇸🇪 SE 11 - homeip
 rules:
 - MATCH,PROXIES
