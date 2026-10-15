@@ -5,27 +5,119 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - homeip
+  type: vless
+  server: 104.18.26.90
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 02 - homeip
+  type: vless
+  server: support.zoom.us.v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: support.zoom.us.v2ray.simspeedup.com
+- name: 🇹🇭 TH 03 - homeip
+  type: vless
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇹🇭 TH 04 - homeip
   type: ss
   server: pphfree2.mvpnpvpn.de5.net
   port: 52351
   cipher: aes-256-gcm
   password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
   udp: true
-- name: 🇹🇭 TH 02 - homeip
+- name: 🇹🇭 TH 05 - homeip
   type: ss
   server: 103.107.52.106
   port: 52351
   cipher: aes-256-gcm
   password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
   udp: true
-- name: 🇹🇭 TH 03 - homeip
+- name: 🇹🇭 TH 06 - homeip
   type: ss
   server: pphfree2.mvpnpvpn.de5.net
   port: 52351
   cipher: aes-256-gcm
   password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
   udp: true
-- name: 🇹🇭 TH 04 - homeip
+- name: 🇹🇭 TH 07 - homeip
+  type: vless
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇹🇭 TH 08 - homeip
+  type: vless
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇹🇭 TH 09 - homeip
+  type: vless
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 10 - homeip
+  type: vless
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇹🇭 TH 11 - homeip
   type: ss
   server: 103.107.52.106
   port: 52351
@@ -41,6 +133,13 @@ proxy-groups:
   - 🇹🇭 TH 02 - homeip
   - 🇹🇭 TH 03 - homeip
   - 🇹🇭 TH 04 - homeip
+  - 🇹🇭 TH 05 - homeip
+  - 🇹🇭 TH 06 - homeip
+  - 🇹🇭 TH 07 - homeip
+  - 🇹🇭 TH 08 - homeip
+  - 🇹🇭 TH 09 - homeip
+  - 🇹🇭 TH 10 - homeip
+  - 🇹🇭 TH 11 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +149,12 @@ proxy-groups:
   - 🇹🇭 TH 02 - homeip
   - 🇹🇭 TH 03 - homeip
   - 🇹🇭 TH 04 - homeip
+  - 🇹🇭 TH 05 - homeip
+  - 🇹🇭 TH 06 - homeip
+  - 🇹🇭 TH 07 - homeip
+  - 🇹🇭 TH 08 - homeip
+  - 🇹🇭 TH 09 - homeip
+  - 🇹🇭 TH 10 - homeip
+  - 🇹🇭 TH 11 - homeip
 rules:
 - MATCH,PROXIES

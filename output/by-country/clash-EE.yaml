@@ -21,33 +21,37 @@ proxies:
     headers:
       Host: server40.9966338.xyz
 - name: 🇪🇪 EE 02 - homeip
-  type: vless
-  server: 5.189.254.168
-  port: 2053
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf3.schzyc.cc.cd
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.netfp=chrome
-    headers:
-      Host: cf3.schzyc.cc.cd
-- name: 🇪🇪 EE 03 - homeip
-  type: vless
-  server: 38.180.163.250
+  type: vmess
+  server: eu3.998998.best
   port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
+  servername: server40.9966338.xyz
   network: ws
   ws-opts:
-    path: /ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: /aiaiai
     headers:
-      Host: a.cwvps.eu.org
+      Host: server40.9966338.xyz
+- name: 🇪🇪 EE 03 - homeip
+  type: vmess
+  server: eu3.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server40.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /aiaiai
+    headers:
+      Host: server40.9966338.xyz
 - name: 🇪🇪 EE 04 - homeip
   type: vmess
   server: eu3.998998.best
@@ -80,86 +84,6 @@ proxies:
     path: /aiaiai
     headers:
       Host: server40.9966338.xyz
-- name: 🇪🇪 EE 06 - homeip
-  type: vmess
-  server: eu3.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: server40.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /aiaiai
-    headers:
-      Host: server40.9966338.xyz
-- name: 🇪🇪 EE 07 - homeip
-  type: vmess
-  server: eu3.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: server40.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /aiaiai
-    headers:
-      Host: server40.9966338.xyz
-- name: 🇪🇪 EE 08 - homeip
-  type: vmess
-  server: eu3.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: server40.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /aiaiai
-    headers:
-      Host: server40.9966338.xyz
-- name: 🇪🇪 EE 09 - homeip
-  type: vmess
-  server: eu3.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: server40.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /aiaiai
-    headers:
-      Host: server40.9966338.xyz
-- name: 🇪🇪 EE 10 - homeip
-  type: vmess
-  server: eu3.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: server40.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /aiaiai
-    headers:
-      Host: server40.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -170,11 +94,6 @@ proxy-groups:
   - 🇪🇪 EE 03 - homeip
   - 🇪🇪 EE 04 - homeip
   - 🇪🇪 EE 05 - homeip
-  - 🇪🇪 EE 06 - homeip
-  - 🇪🇪 EE 07 - homeip
-  - 🇪🇪 EE 08 - homeip
-  - 🇪🇪 EE 09 - homeip
-  - 🇪🇪 EE 10 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -185,10 +104,5 @@ proxy-groups:
   - 🇪🇪 EE 03 - homeip
   - 🇪🇪 EE 04 - homeip
   - 🇪🇪 EE 05 - homeip
-  - 🇪🇪 EE 06 - homeip
-  - 🇪🇪 EE 07 - homeip
-  - 🇪🇪 EE 08 - homeip
-  - 🇪🇪 EE 09 - homeip
-  - 🇪🇪 EE 10 - homeip
 rules:
 - MATCH,PROXIES
