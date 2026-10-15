@@ -18,30 +18,28 @@ proxies:
   client-fingerprint: chrome
 - name: 🇧🇷 BR 02 - homeip
   type: vless
-  server: platform101.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  server: 35.199.90.53
+  port: 443
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
+  reality-opts:
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇧🇷 BR 03 - homeip
   type: vless
-  server: platform101.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  server: 35.199.90.53
+  port: 443
+  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
+  reality-opts:
+    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇧🇷 BR 04 - homeip
   type: vless
   server: platform101.golnamakcert.top
@@ -68,6 +66,32 @@ proxies:
     path: /platform101
     headers:
       Host: platform101.halalkhor.info
+- name: 🇧🇷 BR 06 - homeip
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇧🇷 BR 07 - homeip
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,6 +102,8 @@ proxy-groups:
   - 🇧🇷 BR 03 - homeip
   - 🇧🇷 BR 04 - homeip
   - 🇧🇷 BR 05 - homeip
+  - 🇧🇷 BR 06 - homeip
+  - 🇧🇷 BR 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,5 +114,7 @@ proxy-groups:
   - 🇧🇷 BR 03 - homeip
   - 🇧🇷 BR 04 - homeip
   - 🇧🇷 BR 05 - homeip
+  - 🇧🇷 BR 06 - homeip
+  - 🇧🇷 BR 07 - homeip
 rules:
 - MATCH,PROXIES
