@@ -46,19 +46,6 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇲🇾 MY 04 - homeip
   type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 05 - homeip
-  type: vless
   server: platform117.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -70,32 +57,6 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 06 - homeip
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 07 - homeip
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -105,9 +66,6 @@ proxy-groups:
   - 🇲🇾 MY 02 - homeip
   - 🇲🇾 MY 03 - homeip
   - 🇲🇾 MY 04 - homeip
-  - 🇲🇾 MY 05 - homeip
-  - 🇲🇾 MY 06 - homeip
-  - 🇲🇾 MY 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -117,8 +75,5 @@ proxy-groups:
   - 🇲🇾 MY 02 - homeip
   - 🇲🇾 MY 03 - homeip
   - 🇲🇾 MY 04 - homeip
-  - 🇲🇾 MY 05 - homeip
-  - 🇲🇾 MY 06 - homeip
-  - 🇲🇾 MY 07 - homeip
 rules:
 - MATCH,PROXIES
