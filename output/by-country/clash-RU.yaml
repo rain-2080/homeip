@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: j3PKOCj7wHl5Pk6thI9HyXtCa6JU180IlBpWANgFjkY=
+  server: 194.87.196.107
+  port: 18443
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
   type: ss
@@ -19,6 +19,13 @@ proxies:
   password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: j3PKOCj7wHl5Pk6thI9HyXtCa6JU180IlBpWANgFjkY=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
   type: ss
   server: 176.32.32.108
   port: 18443
@@ -33,6 +40,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - homeip
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +49,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - homeip
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 04 - homeip
 rules:
 - MATCH,PROXIES
