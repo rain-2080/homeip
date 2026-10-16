@@ -1,0 +1,77 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
+  type: ss
+  server: 194.87.196.107
+  port: 18443
+  cipher: aes-256-gcm
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
+  type: ss
+  server: 176.32.32.108
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
+  type: vless
+  server: 172.66.47.45
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wk1.f1w.de5.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wk1.f1w.de5.net
+- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: 5b374761-e26c-4117-8af8-5c637992fcbf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vls.baiyi.cloudns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vls.baiyi.cloudns.org
+- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  type: ss
+  server: 89.104.69.39
+  port: 21831
+  cipher: aes-256-gcm
+  password: SlFhcUQ3aG1ldnQyWmRXWmY2QlpWdk9ITE5ONHp2VWl5VVQ3SVJwZ1pUT3VKVERydGxYM2NoZkJwN1l2Y0d2aA==
+  udp: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇷🇺 俄罗斯 (Russia) 01 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 02 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 03 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 05 - homeip
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇷🇺 俄罗斯 (Russia) 01 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 02 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 03 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 05 - homeip
+rules:
+- MATCH,PROXIES
