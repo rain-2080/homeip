@@ -4,22 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - homeip
-  type: vmess
-  server: 183.109.131.75
-  port: 20086
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - homeip
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - homeip
   type: vless
   server: hinet1.2yly.com
   port: 24215
@@ -36,14 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - homeip
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - homeip
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - homeip
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - homeip
 rules:
 - MATCH,PROXIES
