@@ -5,68 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - homeip
-  type: vless
-  server: 139.84.242.103
-  port: 443
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080
-    headers:
-      Host: vlso5.1d.mom
-- name: 🇿🇦 ZA 02 - homeip
-  type: vless
-  server: 156.38.157.171
-  port: 8443
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888@hkip.1d.mom:1080
-    headers:
-      Host: vlso5.1d.mom
-- name: 🇿🇦 ZA 03 - homeip
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
-- name: 🇿🇦 ZA 04 - homeip
-  type: ss
-  server: 20.164.216.208
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: tM0sV3CrjAU0nokd
-  udp: true
-- name: 🇿🇦 ZA 05 - homeip
   type: ss
   server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
-- name: 🇿🇦 ZA 06 - homeip
-  type: vless
-  server: 139.84.242.103
-  port: 443
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+- name: 🇿🇦 ZA 02 - homeip
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vlso5.1d.mom
+- name: 🇿🇦 ZA 03 - homeip
+  type: ss
+  server: 20.164.216.208
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: tM0sV3CrjAU0nokd
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,9 +33,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - homeip
   - 🇿🇦 ZA 02 - homeip
   - 🇿🇦 ZA 03 - homeip
-  - 🇿🇦 ZA 04 - homeip
-  - 🇿🇦 ZA 05 - homeip
-  - 🇿🇦 ZA 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -86,8 +41,5 @@ proxy-groups:
   - 🇿🇦 ZA 01 - homeip
   - 🇿🇦 ZA 02 - homeip
   - 🇿🇦 ZA 03 - homeip
-  - 🇿🇦 ZA 04 - homeip
-  - 🇿🇦 ZA 05 - homeip
-  - 🇿🇦 ZA 06 - homeip
 rules:
 - MATCH,PROXIES
