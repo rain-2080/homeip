@@ -19,6 +19,19 @@ proxies:
       Host: 95.128.71.79
 - name: 🇧🇾 BY 02 - homeip
   type: vless
+  server: 178.172.227.124
+  port: 14430
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
+- name: 🇧🇾 BY 03 - homeip
+  type: vless
   server: 95.128.71.79
   port: 14430
   uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
@@ -30,19 +43,6 @@ proxies:
     path: /vless
     headers:
       Host: 95.128.71.79
-- name: 🇧🇾 BY 03 - homeip
-  type: vless
-  server: 178.172.227.228
-  port: 14430
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.228
 - name: 🇧🇾 BY 04 - homeip
   type: vless
   server: 178.172.227.124
@@ -71,45 +71,6 @@ proxies:
       Host: 178.172.227.228
 - name: 🇧🇾 BY 06 - homeip
   type: vless
-  server: 178.172.227.124
-  port: 14430
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.124
-- name: 🇧🇾 BY 07 - homeip
-  type: vless
-  server: 178.172.227.124
-  port: 14430
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.124
-- name: 🇧🇾 BY 08 - homeip
-  type: vless
-  server: 178.172.227.228
-  port: 14430
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.228
-- name: 🇧🇾 BY 09 - homeip
-  type: vless
   server: 95.128.71.79
   port: 14430
   uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
@@ -132,9 +93,6 @@ proxy-groups:
   - 🇧🇾 BY 04 - homeip
   - 🇧🇾 BY 05 - homeip
   - 🇧🇾 BY 06 - homeip
-  - 🇧🇾 BY 07 - homeip
-  - 🇧🇾 BY 08 - homeip
-  - 🇧🇾 BY 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -146,8 +104,5 @@ proxy-groups:
   - 🇧🇾 BY 04 - homeip
   - 🇧🇾 BY 05 - homeip
   - 🇧🇾 BY 06 - homeip
-  - 🇧🇾 BY 07 - homeip
-  - 🇧🇾 BY 08 - homeip
-  - 🇧🇾 BY 09 - homeip
 rules:
 - MATCH,PROXIES

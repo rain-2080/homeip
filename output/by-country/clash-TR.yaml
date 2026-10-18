@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 - homeip
   type: vless
   server: test.keoplentuio.xyz
@@ -26,13 +26,12 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 03 - homeip
   type: vless
-  server: 87.120.106.130
-  port: 443
-  uuid: 6fab89df-d5c3-4d73-8df5-897ca352bfe8
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: pqro5mlb4c88.dopwiz.com
 - name: 🇹🇷 土耳其 (Turkey) 04 - homeip
   type: vless
   server: 151.241.226.201
@@ -44,8 +43,17 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 05 - homeip
+  type: vless
+  server: 206.1.100.148
+  port: 8443
+  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: game.jafarghasemivip.ir
+- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
   type: vless
   server: test.keoplentuio.xyz
   port: 2053
@@ -53,22 +61,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
-  type: ss
-  server: tutua.azad0namah.ir
-  port: 5566
-  cipher: 2022-blake3-aes-128-gcm
-  password: 8NwabdWBXK1q1QaBhF69rw==:yPBUkgz9Y6Ad20RTktufkQ==
-  udp: true
 - name: 🇹🇷 土耳其 (Turkey) 07 - homeip
-  type: vless
-  server: tutua.azad0namah.ir
-  port: 8080
-  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 08 - homeip
   type: vless
   server: 155.103.71.142
   port: 443
@@ -82,18 +75,29 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 09 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 08 - homeip
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  server: 203.202.232.110
+  port: 443
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: vlso5.1d.mom
+  network: ws
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlso5.1d.mom
+- name: 🇹🇷 土耳其 (Turkey) 09 - homeip
+  type: vless
+  server: 206.1.100.148
+  port: 8443
+  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: game.jafarghasemivip.ir
 proxy-groups:
 - name: PROXIES
   type: select
