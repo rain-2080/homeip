@@ -5,43 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - homeip
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.16.10.2
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 02 - homeip
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.18.26.90
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 TH 03 - homeip
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇭 TH 04 - homeip
-  type: ss
-  server: pphfree2.mvpnpvpn.de5.net
-  port: 52351
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
-  udp: true
-- name: 🇹🇭 TH 05 - homeip
   type: vless
   server: v2ray.simspeedup.com
   port: 80
@@ -54,7 +45,20 @@ proxies:
     path: /ws
     headers:
       Host: ais.speedtest.net
-- name: 🇹🇭 TH 06 - homeip
+- name: 🇹🇭 TH 04 - homeip
+  type: vless
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 05 - homeip
   type: vless
   server: 188.114.98.0
   port: 443
@@ -68,6 +72,164 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 06 - homeip
+  type: ss
+  server: 103.107.52.106
+  port: 52351
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  udp: true
+- name: 🇹🇭 TH 07 - homeip
+  type: vless
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 TH 08 - homeip
+  type: vless
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 09 - homeip
+  type: vless
+  server: v2ray.simspeedup.com
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇹🇭 TH 10 - homeip
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 11 - homeip
+  type: vless
+  server: V2rAy.SiMsPeEdUp.CoM
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 TH 12 - homeip
+  type: ss
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  udp: true
+- name: 🇹🇭 TH 13 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 14 - homeip
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 15 - homeip
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 16 - homeip
+  type: vless
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇹🇭 TH 17 - homeip
+  type: ss
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  udp: true
+- name: 🇹🇭 TH 18 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 19 - homeip
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,6 +241,19 @@ proxy-groups:
   - 🇹🇭 TH 04 - homeip
   - 🇹🇭 TH 05 - homeip
   - 🇹🇭 TH 06 - homeip
+  - 🇹🇭 TH 07 - homeip
+  - 🇹🇭 TH 08 - homeip
+  - 🇹🇭 TH 09 - homeip
+  - 🇹🇭 TH 10 - homeip
+  - 🇹🇭 TH 11 - homeip
+  - 🇹🇭 TH 12 - homeip
+  - 🇹🇭 TH 13 - homeip
+  - 🇹🇭 TH 14 - homeip
+  - 🇹🇭 TH 15 - homeip
+  - 🇹🇭 TH 16 - homeip
+  - 🇹🇭 TH 17 - homeip
+  - 🇹🇭 TH 18 - homeip
+  - 🇹🇭 TH 19 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,5 +265,18 @@ proxy-groups:
   - 🇹🇭 TH 04 - homeip
   - 🇹🇭 TH 05 - homeip
   - 🇹🇭 TH 06 - homeip
+  - 🇹🇭 TH 07 - homeip
+  - 🇹🇭 TH 08 - homeip
+  - 🇹🇭 TH 09 - homeip
+  - 🇹🇭 TH 10 - homeip
+  - 🇹🇭 TH 11 - homeip
+  - 🇹🇭 TH 12 - homeip
+  - 🇹🇭 TH 13 - homeip
+  - 🇹🇭 TH 14 - homeip
+  - 🇹🇭 TH 15 - homeip
+  - 🇹🇭 TH 16 - homeip
+  - 🇹🇭 TH 17 - homeip
+  - 🇹🇭 TH 18 - homeip
+  - 🇹🇭 TH 19 - homeip
 rules:
 - MATCH,PROXIES
