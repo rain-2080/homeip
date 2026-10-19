@@ -6,33 +6,61 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - homeip
   type: vless
-  server: 104.18.37.247
+  server: cf.090227.xyz
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: ccc.010304.xyz
+      Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 02 - homeip
   type: vless
-  server: 188.114.97.6
+  server: 104.21.91.244
   port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /ws
+    path: /cart/docs/www/proxyip=108.160.132.132?ed
     headers:
-      Host: a.cwvps.eu.org
+      Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 03 - homeip
+  type: vless
+  server: 104.16.111.102
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 04 - homeip
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 05 - homeip
   type: vless
   server: cf.130519.xyz
   port: 443
@@ -43,42 +71,12 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132+
+    path: /cart/docs/www/proxyip=108.160.132.132fp=qq
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 04 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=chrome
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 05 - homeip
-  type: vmess
-  server: node8.liudonghoe.com
-  port: 443
-  uuid: 47050e4e-965d-41ca-976d-73c1f11e6905
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: node8.liudonghoe.com
-  network: ws
-  ws-opts:
-    path: /hoe8
-    headers:
-      Host: node8.liudonghoe.com
 - name: 🌐 其他地区 (Other) 06 - homeip
   type: vless
-  server: 104.18.35.15
+  server: 104.21.91.244
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -87,7 +85,7 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---mehrosaboran
     headers:
       Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 07 - homeip
@@ -101,38 +99,26 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---TOOTFFARANGI
     headers:
       Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 08 - homeip
   type: vless
-  server: 104.18.35.86
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 172.64.152.241
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /fp
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 09 - homeip
   type: vless
-  server: www.whoer.net
-  port: 8080
-  uuid: 9cc42ee7-1f5f-46f5-a8b0-2da76b6b6641
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pe2ev-frosty-poetry-3d08.s67y4jl8.workers.dev
-- name: 🌐 其他地区 (Other) 10 - homeip
-  type: vless
-  server: 104.16.10.104
+  server: 104.24.31.89
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -144,23 +130,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 11 - homeip
+- name: 🌐 其他地区 (Other) 10 - homeip
   type: vless
-  server: 104.16.10.197
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 12 - homeip
-  type: vless
-  server: cf.130519.xyz
+  server: 104.21.91.244
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -169,51 +141,10 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=qq
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---pirozi_ArGaP---pirozi_ArGaP---pirozi_ArGaP---pirozi_ArGaP
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 13 - homeip
-  type: vless
-  server: vl.cocopon.top
-  port: 2053
-  uuid: 44f06ad1-982c-4e03-849f-899c1c8dc14f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vl.cocopon.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vl.cocopon.top
-- name: 🌐 其他地区 (Other) 14 - homeip
-  type: vless
-  server: vl.cocopon.top
-  port: 443
-  uuid: 44f06ad1-982c-4e03-849f-899c1c8dc14f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vl.cocopon.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vl.cocopon.top
-- name: 🌐 其他地区 (Other) 15 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xiron
-    headers:
-      Host: xstack.mahanfixe.workers.dev
-- name: 🌐 其他地区 (Other) 16 - homeip
+- name: 🌐 其他地区 (Other) 11 - homeip
   type: vless
   server: cf.877774.xyz
   port: 443
@@ -224,12 +155,82 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=qq
+    path: /cart/docs/www/proxyip=108.160.132.132+
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 12 - homeip
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?edfp=chrome
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 13 - homeip
+  type: vless
+  server: 104.19.12.94
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 14 - homeip
+  type: vless
+  server: 172.64.144.82
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 15 - homeip
+  type: vless
+  server: 104.17.73.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🌐 其他地区 (Other) 16 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed
     headers:
       Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 17 - homeip
   type: vless
-  server: 188.114.97.6
+  server: 104.18.43.174
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -243,33 +244,370 @@ proxies:
       Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 18 - homeip
   type: vless
-  server: 104.21.73.135
-  port: 80
-  uuid: 50414e45-4c5f-5a45-5553-7bac159e3b40
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /api/ws
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---bored_vpn
     headers:
-      Host: web-app-ji3j1z.app-wuuhuw.workers.dev
+      Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 19 - homeip
   type: vless
+  server: 104.18.37.247
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 20 - homeip
+  type: vless
+  server: 104.19.33.25
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 21 - homeip
+  type: vless
   server: 104.18.35.86
-  port: 8080
+  port: 2082
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 20 - homeip
+- name: 🌐 其他地区 (Other) 22 - homeip
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 23 - homeip
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132+
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 24 - homeip
+  type: vless
+  server: 104.16.10.22
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 25 - homeip
+  type: vless
+  server: 104.17.71.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🌐 其他地区 (Other) 26 - homeip
+  type: vless
+  server: 104.21.70.228
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 27 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132fp=chrome
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 28 - homeip
+  type: vless
+  server: 104.17.210.74
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 29 - homeip
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132fp=qq
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 30 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 31 - homeip
+  type: vless
+  server: 104.21.34.106
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 32 - homeip
   type: vless
   server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 33 - homeip
+  type: vless
+  server: 104.18.43.174
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 34 - homeip
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---MTMVPN---MTMVPN---MTMVPN---MTMVPN
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 35 - homeip
+  type: vless
+  server: 172.67.155.65
+  port: 8443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 36 - homeip
+  type: vless
+  server: 104.17.50.227
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 37 - homeip
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 38 - homeip
+  type: vless
+  server: 172.64.144.82
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 39 - homeip
+  type: vless
+  server: 104.21.93.182
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 40 - homeip
+  type: vless
+  server: 104.16.10.48
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 41 - homeip
+  type: vless
+  server: 104.21.91.244
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 42 - homeip
+  type: vless
+  server: 162.159.250.29
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---bored_vpn
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 43 - homeip
+  type: vless
+  server: 104.16.111.202
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 44 - homeip
+  type: vless
+  server: 188.114.97.6
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
@@ -281,46 +619,6 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 21 - homeip
-  type: vless
-  server: 104.18.109.147
-  port: 80
-  uuid: c29d39bd-92a4-45db-bb61-56013998617c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /Telegram-XV2ry2?ed=2048
-    headers:
-      Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
-- name: 🌐 其他地区 (Other) 22 - homeip
-  type: vless
-  server: 172.67.75.172
-  port: 8080
-  uuid: 3e06b1db-2efb-446e-ba2d-68850dfd2f9d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bdfba-cool-tree-b580.v8fz4kbv.workers.dev
-- name: 🌐 其他地区 (Other) 23 - homeip
-  type: vless
-  server: 104.19.102.174
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
-    headers:
-      Host: a.cwvps.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -349,6 +647,27 @@ proxy-groups:
   - 🌐 其他地区 (Other) 21 - homeip
   - 🌐 其他地区 (Other) 22 - homeip
   - 🌐 其他地区 (Other) 23 - homeip
+  - 🌐 其他地区 (Other) 24 - homeip
+  - 🌐 其他地区 (Other) 25 - homeip
+  - 🌐 其他地区 (Other) 26 - homeip
+  - 🌐 其他地区 (Other) 27 - homeip
+  - 🌐 其他地区 (Other) 28 - homeip
+  - 🌐 其他地区 (Other) 29 - homeip
+  - 🌐 其他地区 (Other) 30 - homeip
+  - 🌐 其他地区 (Other) 31 - homeip
+  - 🌐 其他地区 (Other) 32 - homeip
+  - 🌐 其他地区 (Other) 33 - homeip
+  - 🌐 其他地区 (Other) 34 - homeip
+  - 🌐 其他地区 (Other) 35 - homeip
+  - 🌐 其他地区 (Other) 36 - homeip
+  - 🌐 其他地区 (Other) 37 - homeip
+  - 🌐 其他地区 (Other) 38 - homeip
+  - 🌐 其他地区 (Other) 39 - homeip
+  - 🌐 其他地区 (Other) 40 - homeip
+  - 🌐 其他地区 (Other) 41 - homeip
+  - 🌐 其他地区 (Other) 42 - homeip
+  - 🌐 其他地区 (Other) 43 - homeip
+  - 🌐 其他地区 (Other) 44 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -377,5 +696,26 @@ proxy-groups:
   - 🌐 其他地区 (Other) 21 - homeip
   - 🌐 其他地区 (Other) 22 - homeip
   - 🌐 其他地区 (Other) 23 - homeip
+  - 🌐 其他地区 (Other) 24 - homeip
+  - 🌐 其他地区 (Other) 25 - homeip
+  - 🌐 其他地区 (Other) 26 - homeip
+  - 🌐 其他地区 (Other) 27 - homeip
+  - 🌐 其他地区 (Other) 28 - homeip
+  - 🌐 其他地区 (Other) 29 - homeip
+  - 🌐 其他地区 (Other) 30 - homeip
+  - 🌐 其他地区 (Other) 31 - homeip
+  - 🌐 其他地区 (Other) 32 - homeip
+  - 🌐 其他地区 (Other) 33 - homeip
+  - 🌐 其他地区 (Other) 34 - homeip
+  - 🌐 其他地区 (Other) 35 - homeip
+  - 🌐 其他地区 (Other) 36 - homeip
+  - 🌐 其他地区 (Other) 37 - homeip
+  - 🌐 其他地区 (Other) 38 - homeip
+  - 🌐 其他地区 (Other) 39 - homeip
+  - 🌐 其他地区 (Other) 40 - homeip
+  - 🌐 其他地区 (Other) 41 - homeip
+  - 🌐 其他地区 (Other) 42 - homeip
+  - 🌐 其他地区 (Other) 43 - homeip
+  - 🌐 其他地区 (Other) 44 - homeip
 rules:
 - MATCH,PROXIES
