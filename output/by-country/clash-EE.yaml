@@ -21,19 +21,33 @@ proxies:
     headers:
       Host: server40.9966338.xyz
 - name: 🇪🇪 EE 02 - homeip
-  type: vless
-  server: 38.180.163.250
+  type: vmess
+  server: eu3.998998.best
   port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
+  servername: server40.9966338.xyz
   network: ws
   ws-opts:
-    path: /ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: /aiaiai
     headers:
-      Host: a.cwvps.eu.org
+      Host: server40.9966338.xyz
+- name: 🇪🇪 EE 03 - homeip
+  type: vless
+  server: ee.h1cloud.net
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +55,7 @@ proxy-groups:
   - AUTO
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
+  - 🇪🇪 EE 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +63,6 @@ proxy-groups:
   proxies:
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
+  - 🇪🇪 EE 03 - homeip
 rules:
 - MATCH,PROXIES
