@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - homeip
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.8.205
-- name: 🇮🇳 印度 (India) 02 - homeip
   type: vless
   server: 13.140.56.100
   port: 14430
@@ -32,6 +17,21 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 02 - homeip
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: in-152.67.8.205-0202
 - name: 🇮🇳 印度 (India) 03 - homeip
   type: vless
   server: 13.140.56.100
@@ -71,18 +71,20 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 06 - homeip
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 13.140.56.100
+      Host: ''
 - name: 🇮🇳 印度 (India) 07 - homeip
   type: vless
   server: 194.61.31.126
@@ -134,18 +136,20 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 11 - homeip
-  type: vless
-  server: 13.140.56.100
-  port: 14430
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 13.140.56.100
+      Host: ''
 - name: 🇮🇳 印度 (India) 12 - homeip
   type: vless
   server: 13.140.56.100
@@ -160,6 +164,129 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 13 - homeip
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.67.8.205
+- name: 🇮🇳 印度 (India) 14 - homeip
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0250
+- name: 🇮🇳 印度 (India) 15 - homeip
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: in-152.67.8.205-0184
+- name: 🇮🇳 印度 (India) 16 - homeip
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: in-152.67.8.205-0250
+- name: 🇮🇳 印度 (India) 17 - homeip
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: in-152.67.8.205-0204
+- name: 🇮🇳 印度 (India) 18 - homeip
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0200
+- name: 🇮🇳 印度 (India) 19 - homeip
+  type: ss
+  server: 172.105.39.124
+  port: 7002
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇮🇳 印度 (India) 20 - homeip
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 21 - homeip
+  type: vless
+  server: 13.140.56.100
+  port: 14430
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 22 - homeip
   type: vless
   server: 13.140.56.100
   port: 14430
@@ -190,6 +317,15 @@ proxy-groups:
   - 🇮🇳 印度 (India) 11 - homeip
   - 🇮🇳 印度 (India) 12 - homeip
   - 🇮🇳 印度 (India) 13 - homeip
+  - 🇮🇳 印度 (India) 14 - homeip
+  - 🇮🇳 印度 (India) 15 - homeip
+  - 🇮🇳 印度 (India) 16 - homeip
+  - 🇮🇳 印度 (India) 17 - homeip
+  - 🇮🇳 印度 (India) 18 - homeip
+  - 🇮🇳 印度 (India) 19 - homeip
+  - 🇮🇳 印度 (India) 20 - homeip
+  - 🇮🇳 印度 (India) 21 - homeip
+  - 🇮🇳 印度 (India) 22 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -208,5 +344,14 @@ proxy-groups:
   - 🇮🇳 印度 (India) 11 - homeip
   - 🇮🇳 印度 (India) 12 - homeip
   - 🇮🇳 印度 (India) 13 - homeip
+  - 🇮🇳 印度 (India) 14 - homeip
+  - 🇮🇳 印度 (India) 15 - homeip
+  - 🇮🇳 印度 (India) 16 - homeip
+  - 🇮🇳 印度 (India) 17 - homeip
+  - 🇮🇳 印度 (India) 18 - homeip
+  - 🇮🇳 印度 (India) 19 - homeip
+  - 🇮🇳 印度 (India) 20 - homeip
+  - 🇮🇳 印度 (India) 21 - homeip
+  - 🇮🇳 印度 (India) 22 - homeip
 rules:
 - MATCH,PROXIES

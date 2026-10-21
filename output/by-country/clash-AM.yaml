@@ -28,6 +28,19 @@ proxies:
     public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇦🇲 AM 03 - homeip
+  type: vless
+  server: 194.36.37.59
+  port: 10004
+  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: 194.36.37.59
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🇦🇲 AM 01 - homeip
   - 🇦🇲 AM 02 - homeip
+  - 🇦🇲 AM 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +56,6 @@ proxy-groups:
   proxies:
   - 🇦🇲 AM 01 - homeip
   - 🇦🇲 AM 02 - homeip
+  - 🇦🇲 AM 03 - homeip
 rules:
 - MATCH,PROXIES
