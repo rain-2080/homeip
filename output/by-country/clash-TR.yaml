@@ -19,6 +19,27 @@ proxies:
     headers:
       Host: 177.3.208.65
 - name: 🇹🇷 土耳其 (Turkey) 02 - homeip
+  type: ss
+  server: Tak.zqpm.ir
+  port: 8989
+  cipher: aes-256-gcm
+  password: BzG4OidkLBijT04YGIyVMXBd9eS-caVi
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  type: vless
+  server: 203.202.232.110
+  port: 443
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vlso5.1d.mom
+  network: ws
+  ws-opts:
+    path: /socks5=888:888@hkip.1d.mom:1080
+    headers:
+      Host: vlso5.1d.mom
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -29,20 +50,8 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
-  type: vless
-  server: sable56.fars-remen.ir
-  port: 8445
-  uuid: 9b0ae636-a50b-4667-bbe0-22a0600610a5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7OwcalQiQ5RaMsYRjvtwTxZWS3sCpjOefcr3WYKFh04
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
   type: vless
   server: 155.103.71.142
   port: 443
@@ -65,6 +74,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +84,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
 rules:
 - MATCH,PROXIES
