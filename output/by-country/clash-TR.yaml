@@ -32,20 +32,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
-  type: vless
-  server: kebabyumyum.net
-  port: 8443
-  uuid: 8c0dd77e-bfc2-4818-88d4-d9a72ec8c1ee
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kebabyumyum.net
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: kebabyumyum.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
-  - 🇹🇷 土耳其 (Turkey) 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
-  - 🇹🇷 土耳其 (Turkey) 03 - homeip
 rules:
 - MATCH,PROXIES
