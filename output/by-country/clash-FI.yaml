@@ -5,15 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
-  type: vmess
-  server: 65.109.209.239
-  port: 16911
-  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 144.31.34.146
+  port: 2096
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fi1.merky.one
+  network: ws
+  ws-opts:
+    path: /mky-ws-4f19c8a7
+    headers:
+      Host: fi1.merky.one
 - name: 🇫🇮 FI 02 - homeip
   type: vless
   server: 144.31.34.146
@@ -30,20 +34,6 @@ proxies:
       Host: fi1.merky.one
 - name: 🇫🇮 FI 03 - homeip
   type: vless
-  server: 8.6.112.0
-  port: 443
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fi1.merky.one
-  network: ws
-  ws-opts:
-    path: /mky-ws-4f19c8a7
-    headers:
-      Host: fi1.merky.one
-- name: 🇫🇮 FI 04 - homeip
-  type: vless
   server: 144.31.34.146
   port: 2096
   uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
@@ -55,19 +45,30 @@ proxies:
   ws-opts:
     path: /mky-ws-4f19c8a7
     headers:
-      Host: fi1.merky.one
+      Host: 144.31.34.146
+- name: 🇫🇮 FI 04 - homeip
+  type: vmess
+  server: 65.109.209.239
+  port: 16911
+  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇫🇮 FI 05 - homeip
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 06 - homeip
   type: vless
   server: 144.31.34.146
@@ -84,18 +85,16 @@ proxies:
       Host: fi1.merky.one
 - name: 🇫🇮 FI 07 - homeip
   type: vless
-  server: 144.31.34.146
-  port: 2096
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fi1.merky.one
-  network: ws
-  ws-opts:
-    path: /mky-ws-4f19c8a7
-    headers:
-      Host: fi1.merky.one
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 08 - homeip
   type: vless
   server: 144.31.34.146
@@ -112,31 +111,42 @@ proxies:
       Host: 144.31.34.146
 - name: 🇫🇮 FI 09 - homeip
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: finland02.azotvpn.xyz
+  port: 8443
+  uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
+    public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
+  servername: finland02.azotvpn.xyz
+  client-fingerprint: random
 - name: 🇫🇮 FI 10 - homeip
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: vmess
+  server: 65.109.209.239
+  port: 16911
+  uuid: c5f59d68-5a26-40b8-a086-2f531e06737c
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 11 - homeip
   type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fi1.merky.one
+  network: ws
+  ws-opts:
+    path: /mky-ws-4f19c8a7
+    headers:
+      Host: fi1.merky.one
+- name: 🇫🇮 FI 12 - homeip
+  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -148,6 +158,32 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 13 - homeip
+  type: vless
+  server: 2.26.106.232
+  port: 8443
+  uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
+  servername: finland02.azotvpn.xyz
+  client-fingerprint: random
+- name: 🇫🇮 FI 14 - homeip
+  type: vless
+  server: 144.31.34.146
+  port: 2096
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fi1.merky.one
+  network: ws
+  ws-opts:
+    path: /mky-ws-4f19c8a7
+    headers:
+      Host: fi1.merky.one
 proxy-groups:
 - name: PROXIES
   type: select
@@ -164,6 +200,9 @@ proxy-groups:
   - 🇫🇮 FI 09 - homeip
   - 🇫🇮 FI 10 - homeip
   - 🇫🇮 FI 11 - homeip
+  - 🇫🇮 FI 12 - homeip
+  - 🇫🇮 FI 13 - homeip
+  - 🇫🇮 FI 14 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -180,5 +219,8 @@ proxy-groups:
   - 🇫🇮 FI 09 - homeip
   - 🇫🇮 FI 10 - homeip
   - 🇫🇮 FI 11 - homeip
+  - 🇫🇮 FI 12 - homeip
+  - 🇫🇮 FI 13 - homeip
+  - 🇫🇮 FI 14 - homeip
 rules:
 - MATCH,PROXIES

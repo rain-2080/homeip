@@ -20,6 +20,20 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - homeip
   type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  type: vless
   server: sable56.fars-remen.ir
   port: 8446
   uuid: 633c1bb0-60d5-41fb-a9c4-11f408b264ec
@@ -30,7 +44,17 @@ proxies:
     public-key: 7OwcalQiQ5RaMsYRjvtwTxZWS3sCpjOefcr3WYKFh04
   servername: storage-p2.googleapis.com
   client-fingerprint: edge
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
+  type: vmess
+  server: 206.1.99.36
+  port: 58202
+  uuid: e2adaa66-0a40-4e48-a53d-e349e7ac3b80
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
   type: vless
   server: 177.3.208.65
   port: 443
@@ -44,6 +68,16 @@ proxies:
     path: /vless-tr
     headers:
       Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
+  type: vmess
+  server: free.ertebatgoostar.ir
+  port: 443
+  uuid: c9eab439-53bf-46e4-ba58-fc368ae1ee8c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +86,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
+  - 🇹🇷 土耳其 (Turkey) 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -60,5 +97,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
+  - 🇹🇷 土耳其 (Turkey) 06 - homeip
 rules:
 - MATCH,PROXIES
