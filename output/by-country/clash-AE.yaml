@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - homeip
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -19,32 +19,30 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - homeip
   type: vless
-  server: 128.241.25.3
-  port: 30021
-  uuid: 48de1831-a4a2-4eba-8723-8e0bb7a9da0d
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - homeip
   type: vless
-  server: 129.151.64.169
-  port: 31867
-  uuid: 0ff1bcdb-8dcc-4b05-93df-09f028330184
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - homeip
   type: vless
   server: uae.unixzone.us
@@ -60,7 +58,20 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - homeip
   type: vless
-  server: 84.235.244.108
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 06 - homeip
+  type: vless
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -71,23 +82,9 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - homeip
-  type: vless
-  server: 31.57.190.89
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
 - name: 🇦🇪 阿联酋 (UAE) 07 - homeip
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -100,62 +97,6 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 08 - homeip
   type: vless
-  server: 31.57.190.89
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 09 - homeip
-  type: vless
-  server: 116.204.164.17
-  port: 7443
-  uuid: 57c830ca-19a2-441c-811d-db5d81b86b47
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 10 - homeip
-  type: vless
-  server: 84.22.150.39
-  port: 7443
-  uuid: 5cc814de-2bbb-4409-ad8c-ee841ca7bad1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 11 - homeip
-  type: vless
-  server: 79.137.197.212
-  port: 2105
-  uuid: 260ea848-b5a2-4bdc-8ee7-af0fbfb198cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 12 - homeip
-  type: vless
   server: 45.59.120.217
   port: 443
   uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
@@ -166,20 +107,20 @@ proxies:
     public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
   servername: strm.yandex.net
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 13 - homeip
+- name: 🇦🇪 阿联酋 (UAE) 09 - homeip
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 185.253.116.33
+  port: 14430
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 14 - homeip
+      Host: 185.253.116.33
+- name: 🇦🇪 阿联酋 (UAE) 10 - homeip
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -192,59 +133,20 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 15 - homeip
+- name: 🇦🇪 阿联酋 (UAE) 11 - homeip
   type: vless
-  server: 185.125.103.62
-  port: 8082
-  uuid: 72af1965-ec91-4376-82b1-75be51885506
+  server: 129.151.64.169
+  port: 31867
+  uuid: 112c9db0-af6f-48b0-a59f-7677bed8e2d7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 16 - homeip
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 17 - homeip
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 18 - homeip
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -261,13 +163,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - homeip
   - 🇦🇪 阿联酋 (UAE) 10 - homeip
   - 🇦🇪 阿联酋 (UAE) 11 - homeip
-  - 🇦🇪 阿联酋 (UAE) 12 - homeip
-  - 🇦🇪 阿联酋 (UAE) 13 - homeip
-  - 🇦🇪 阿联酋 (UAE) 14 - homeip
-  - 🇦🇪 阿联酋 (UAE) 15 - homeip
-  - 🇦🇪 阿联酋 (UAE) 16 - homeip
-  - 🇦🇪 阿联酋 (UAE) 17 - homeip
-  - 🇦🇪 阿联酋 (UAE) 18 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -284,12 +179,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - homeip
   - 🇦🇪 阿联酋 (UAE) 10 - homeip
   - 🇦🇪 阿联酋 (UAE) 11 - homeip
-  - 🇦🇪 阿联酋 (UAE) 12 - homeip
-  - 🇦🇪 阿联酋 (UAE) 13 - homeip
-  - 🇦🇪 阿联酋 (UAE) 14 - homeip
-  - 🇦🇪 阿联酋 (UAE) 15 - homeip
-  - 🇦🇪 阿联酋 (UAE) 16 - homeip
-  - 🇦🇪 阿联酋 (UAE) 17 - homeip
-  - 🇦🇪 阿联酋 (UAE) 18 - homeip
 rules:
 - MATCH,PROXIES
