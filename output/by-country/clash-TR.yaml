@@ -6,6 +6,32 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
   type: vless
+  server: sable56.fars-remen.ir
+  port: 8446
+  uuid: 633c1bb0-60d5-41fb-a9c4-11f408b264ec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 7OwcalQiQ5RaMsYRjvtwTxZWS3sCpjOefcr3WYKFh04
+  servername: storage-p2.googleapis.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
+  type: vless
+  server: 155.103.71.142
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  type: vless
   server: 177.3.208.65
   port: 443
   uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
@@ -18,7 +44,7 @@ proxies:
     path: /vless-tr
     headers:
       Host: 177.3.208.65
-- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -30,18 +56,6 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
-  type: vless
-  server: sable56.fars-remen.ir
-  port: 8446
-  uuid: 633c1bb0-60d5-41fb-a9c4-11f408b264ec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7OwcalQiQ5RaMsYRjvtwTxZWS3sCpjOefcr3WYKFh04
-  servername: storage-p2.googleapis.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +64,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +73,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
 rules:
 - MATCH,PROXIES

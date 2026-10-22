@@ -33,6 +33,22 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇾 CY 04 - homeip
+  type: vless
+  server: 5.253.29.254
+  port: 10443
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇾 CY 05 - homeip
+  type: vless
+  server: 5.253.29.254
+  port: 10443
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +57,8 @@ proxy-groups:
   - 🇨🇾 CY 01 - homeip
   - 🇨🇾 CY 02 - homeip
   - 🇨🇾 CY 03 - homeip
+  - 🇨🇾 CY 04 - homeip
+  - 🇨🇾 CY 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,5 +67,7 @@ proxy-groups:
   - 🇨🇾 CY 01 - homeip
   - 🇨🇾 CY 02 - homeip
   - 🇨🇾 CY 03 - homeip
+  - 🇨🇾 CY 04 - homeip
+  - 🇨🇾 CY 05 - homeip
 rules:
 - MATCH,PROXIES

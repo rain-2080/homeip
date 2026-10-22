@@ -6,16 +6,17 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - homeip
   type: vless
   server: 45.144.234.157
@@ -31,6 +32,40 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - homeip
   type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 04 - homeip
+  type: vless
+  server: 144.31.34.146
+  port: 2096
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fi1.merky.one
+  network: ws
+  ws-opts:
+    path: /mky-ws-4f19c8a7
+    headers:
+      Host: 144.31.34.146
+- name: 🇫🇮 FI 05 - homeip
+  type: ss
+  server: fn1s.sublinkplas.ir
+  port: 53731
+  cipher: chacha20-ietf-poly1305
+  password: QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7
+  udp: true
+- name: 🇫🇮 FI 06 - homeip
+  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -41,14 +76,14 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - homeip
+- name: 🇫🇮 FI 07 - homeip
   type: ss
   server: fn1s.sublinkplas.ir
   port: 53731
   cipher: chacha20-ietf-poly1305
   password: QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7
   udp: true
-- name: 🇫🇮 FI 05 - homeip
+- name: 🇫🇮 FI 08 - homeip
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -61,6 +96,18 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 09 - homeip
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +118,10 @@ proxy-groups:
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
   - 🇫🇮 FI 05 - homeip
+  - 🇫🇮 FI 06 - homeip
+  - 🇫🇮 FI 07 - homeip
+  - 🇫🇮 FI 08 - homeip
+  - 🇫🇮 FI 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,5 +132,9 @@ proxy-groups:
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
   - 🇫🇮 FI 05 - homeip
+  - 🇫🇮 FI 06 - homeip
+  - 🇫🇮 FI 07 - homeip
+  - 🇫🇮 FI 08 - homeip
+  - 🇫🇮 FI 09 - homeip
 rules:
 - MATCH,PROXIES

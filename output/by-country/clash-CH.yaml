@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - homeip
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 37.120.222.70
+  port: 8082
+  uuid: 59c3c1c7-62d0-4707-9d67-5ff9c008591c
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
 - name: 🇨🇭 CH 02 - homeip
   type: vless
   server: 208.69.78.217
@@ -29,12 +31,66 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇨🇭 CH 03 - homeip
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 04 - homeip
+  type: vless
+  server: 57.129.130.10
+  port: 52014
+  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇨🇭 CH 05 - homeip
+  type: vless
+  server: 80.240.18.227
+  port: 10051
+  uuid: f4d859eb-abc6-4c57-9eee-8fe9e2ef0f94
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: 🇨🇭 CH 06 - homeip
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
+- name: 🇨🇭 CH 07 - homeip
+  type: vless
+  server: 57.129.130.57
+  port: 52014
+  uuid: b30c54d5-315f-428c-80d0-83b4f423abb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +99,10 @@ proxy-groups:
   - 🇨🇭 CH 01 - homeip
   - 🇨🇭 CH 02 - homeip
   - 🇨🇭 CH 03 - homeip
+  - 🇨🇭 CH 04 - homeip
+  - 🇨🇭 CH 05 - homeip
+  - 🇨🇭 CH 06 - homeip
+  - 🇨🇭 CH 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,5 +111,9 @@ proxy-groups:
   - 🇨🇭 CH 01 - homeip
   - 🇨🇭 CH 02 - homeip
   - 🇨🇭 CH 03 - homeip
+  - 🇨🇭 CH 04 - homeip
+  - 🇨🇭 CH 05 - homeip
+  - 🇨🇭 CH 06 - homeip
+  - 🇨🇭 CH 07 - homeip
 rules:
 - MATCH,PROXIES
