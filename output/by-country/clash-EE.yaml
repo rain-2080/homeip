@@ -36,36 +36,6 @@ proxies:
     path: /aiaiai
     headers:
       Host: server40.9966338.xyz
-- name: 🇪🇪 EE 03 - homeip
-  type: vmess
-  server: eu3.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: server40.9966338.xyz
-  network: ws
-  ws-opts:
-    path: /aiaiai
-    headers:
-      Host: server40.9966338.xyz
-- name: 🇪🇪 EE 04 - homeip
-  type: vless
-  server: 38.180.163.250
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,8 +43,6 @@ proxy-groups:
   - AUTO
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
-  - 🇪🇪 EE 03 - homeip
-  - 🇪🇪 EE 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -82,7 +50,5 @@ proxy-groups:
   proxies:
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
-  - 🇪🇪 EE 03 - homeip
-  - 🇪🇪 EE 04 - homeip
 rules:
 - MATCH,PROXIES
