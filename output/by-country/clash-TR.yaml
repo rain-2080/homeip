@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
+  type: ss
+  server: 87.107.114.105
+  port: 900
+  cipher: aes-128-gcm
+  password: db2cf3e21c83483c9084b9db1bd469fb
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
   type: vless
   server: 155.103.71.142
   port: 443
@@ -18,21 +25,29 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
-  type: vless
-  server: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  type: vmess
+  server: free.ertebatgoostar.ir
   port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  uuid: c9eab439-53bf-46e4-ba58-fc368ae1ee8c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-tr
-    headers:
-      Host: 177.3.208.65
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
   type: vless
   server: sable56.fars-remen.ir
   port: 8446
@@ -44,40 +59,6 @@ proxies:
     public-key: 7OwcalQiQ5RaMsYRjvtwTxZWS3sCpjOefcr3WYKFh04
   servername: storage-p2.googleapis.com
   client-fingerprint: edge
-- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
-  type: vmess
-  server: 206.1.99.36
-  port: 58202
-  uuid: e2adaa66-0a40-4e48-a53d-e349e7ac3b80
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-tr
-    headers:
-      Host: 177.3.208.65
-- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
-  type: vmess
-  server: free.ertebatgoostar.ir
-  port: 443
-  uuid: c9eab439-53bf-46e4-ba58-fc368ae1ee8c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,7 +69,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
   - 🇹🇷 土耳其 (Turkey) 05 - homeip
-  - 🇹🇷 土耳其 (Turkey) 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -99,6 +79,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
   - 🇹🇷 土耳其 (Turkey) 05 - homeip
-  - 🇹🇷 土耳其 (Turkey) 06 - homeip
 rules:
 - MATCH,PROXIES
