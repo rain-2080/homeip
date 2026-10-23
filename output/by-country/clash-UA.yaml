@@ -23,13 +23,6 @@ proxies:
     public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇦 UA 03 - homeip
-  type: ss
-  server: 130.0.235.254
-  port: 17781
-  cipher: aes-128-gcm
-  password: 955df40f8ffc4713b709ffe36ca4bb7a
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇺🇦 UA 01 - homeip
   - 🇺🇦 UA 02 - homeip
-  - 🇺🇦 UA 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇺🇦 UA 01 - homeip
   - 🇺🇦 UA 02 - homeip
-  - 🇺🇦 UA 03 - homeip
 rules:
 - MATCH,PROXIES
