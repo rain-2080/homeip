@@ -21,6 +21,36 @@ proxies:
     headers:
       Host: server40.9966338.xyz
 - name: 🇪🇪 EE 02 - homeip
+  type: vless
+  server: est.luxes.network
+  port: 8443
+  uuid: 78559873-84ef-4cab-a0b2-46d4cd20de4a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: est.luxes.network
+  network: ws
+  ws-opts:
+    path: /assets
+    headers:
+      Host: est.luxes.network
+- name: 🇪🇪 EE 03 - homeip
+  type: vmess
+  server: eu3.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: server40.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /aiaiai
+    headers:
+      Host: server40.9966338.xyz
+- name: 🇪🇪 EE 04 - homeip
   type: vmess
   server: eu3.998998.best
   port: 443
@@ -43,6 +73,8 @@ proxy-groups:
   - AUTO
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
+  - 🇪🇪 EE 03 - homeip
+  - 🇪🇪 EE 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +82,7 @@ proxy-groups:
   proxies:
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
+  - 🇪🇪 EE 03 - homeip
+  - 🇪🇪 EE 04 - homeip
 rules:
 - MATCH,PROXIES
