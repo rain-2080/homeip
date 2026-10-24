@@ -44,16 +44,6 @@ proxies:
     path: /vless-tr
     headers:
       Host: 177.3.208.65
-- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
-  type: vmess
-  server: 206.1.99.36
-  port: 58202
-  uuid: 482e7f58-e8e8-418d-accd-0a94bdf090ae
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +52,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
-  - 🇹🇷 土耳其 (Turkey) 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,6 +60,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
-  - 🇹🇷 土耳其 (Turkey) 04 - homeip
 rules:
 - MATCH,PROXIES
