@@ -5,19 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - homeip
-  type: vless
-  server: est.luxes.network
-  port: 8443
-  uuid: 78559873-84ef-4cab-a0b2-46d4cd20de4a
+  type: vmess
+  server: eu3.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: est.luxes.network
+  servername: server40.9966338.xyz
   network: ws
   ws-opts:
-    path: /assets
+    path: /aiaiai
     headers:
-      Host: est.luxes.network
+      Host: server40.9966338.xyz
 - name: 🇪🇪 EE 02 - homeip
   type: vmess
   server: eu3.998998.best

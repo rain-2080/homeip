@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - homeip
-  type: ss
-  server: 49.12.249.167
-  port: 147
-  cipher: chacha20-ietf-poly1305
-  password: 5uDrCF_iLoxCiRkKku6f7A
-  udp: true
-- name: 🇵🇱 PL 02 - homeip
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -19,7 +12,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 03 - homeip
+- name: 🇵🇱 PL 02 - homeip
   type: vless
   server: 5.22.221.127
   port: 443
@@ -27,7 +20,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 04 - homeip
+- name: 🇵🇱 PL 03 - homeip
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -35,7 +28,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 05 - homeip
+- name: 🇵🇱 PL 04 - homeip
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -43,7 +36,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 06 - homeip
+- name: 🇵🇱 PL 05 - homeip
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -61,7 +54,6 @@ proxy-groups:
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
   - 🇵🇱 PL 05 - homeip
-  - 🇵🇱 PL 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,6 +64,5 @@ proxy-groups:
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
   - 🇵🇱 PL 05 - homeip
-  - 🇵🇱 PL 06 - homeip
 rules:
 - MATCH,PROXIES
