@@ -18,33 +18,17 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-tr
-    headers:
-      Host: 177.3.208.65
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
-  - 🇹🇷 土耳其 (Turkey) 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
-  - 🇹🇷 土耳其 (Turkey) 02 - homeip
 rules:
 - MATCH,PROXIES

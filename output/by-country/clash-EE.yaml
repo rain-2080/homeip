@@ -21,6 +21,20 @@ proxies:
     headers:
       Host: server40.9966338.xyz
 - name: 🇪🇪 EE 02 - homeip
+  type: vless
+  server: 38.180.163.250
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws#/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🇪🇪 EE 03 - homeip
   type: vmess
   server: eu3.998998.best
   port: 443
@@ -36,7 +50,7 @@ proxies:
     path: /aiaiai
     headers:
       Host: server40.9966338.xyz
-- name: 🇪🇪 EE 03 - homeip
+- name: 🇪🇪 EE 04 - homeip
   type: vmess
   server: eu3.998998.best
   port: 443
@@ -60,6 +74,7 @@ proxy-groups:
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
   - 🇪🇪 EE 03 - homeip
+  - 🇪🇪 EE 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,5 +83,6 @@ proxy-groups:
   - 🇪🇪 EE 01 - homeip
   - 🇪🇪 EE 02 - homeip
   - 🇪🇪 EE 03 - homeip
+  - 🇪🇪 EE 04 - homeip
 rules:
 - MATCH,PROXIES

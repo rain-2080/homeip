@@ -6,6 +6,34 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
+  server: hw3.divarkhaghazi.com
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 02 - homeip
+  type: vless
+  server: 199.232.239.239
+  port: 443
+  uuid: 8e6efaba-ba3d-49ec-98aa-c8f9baaf1d17
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: firefox.com
+  network: ws
+  ws-opts:
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056fp=chrome
+    headers:
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+- name: 🇫🇮 FI 03 - homeip
+  type: vless
   server: 95.216.27.15
   port: 2053
   uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
@@ -15,35 +43,7 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 02 - homeip
-  type: vless
-  server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 03 - homeip
-  type: vless
-  server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
+  client-fingerprint: random
 - name: 🇫🇮 FI 04 - homeip
   type: vless
   server: 45.144.234.157
@@ -100,7 +100,21 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 08 - homeip
   type: vless
-  server: hw3.divarkhaghazi.com.
+  server: ang-el.ir
+  port: 8081
+  uuid: 9db9a16c-0cce-4b67-a7cc-7bc2cbd5c7dd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ang-el.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ang-el.ir
+- name: 🇫🇮 FI 09 - homeip
+  type: vless
+  server: hw3.divarkhaghazi.com
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
@@ -112,9 +126,9 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 09 - homeip
+- name: 🇫🇮 FI 10 - homeip
   type: vless
-  server: hw3.divarkhaghazi.com
+  server: hw3.divarkhaghazi.com.
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
@@ -140,6 +154,7 @@ proxy-groups:
   - 🇫🇮 FI 07 - homeip
   - 🇫🇮 FI 08 - homeip
   - 🇫🇮 FI 09 - homeip
+  - 🇫🇮 FI 10 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -154,5 +169,6 @@ proxy-groups:
   - 🇫🇮 FI 07 - homeip
   - 🇫🇮 FI 08 - homeip
   - 🇫🇮 FI 09 - homeip
+  - 🇫🇮 FI 10 - homeip
 rules:
 - MATCH,PROXIES

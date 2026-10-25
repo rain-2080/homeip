@@ -37,6 +37,14 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 05 - homeip
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 06 - homeip
   type: ss
   server: 194.68.44.42
   port: 64546
@@ -53,6 +61,7 @@ proxy-groups:
   - 🇷🇴 RO 03 - homeip
   - 🇷🇴 RO 04 - homeip
   - 🇷🇴 RO 05 - homeip
+  - 🇷🇴 RO 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,5 +72,6 @@ proxy-groups:
   - 🇷🇴 RO 03 - homeip
   - 🇷🇴 RO 04 - homeip
   - 🇷🇴 RO 05 - homeip
+  - 🇷🇴 RO 06 - homeip
 rules:
 - MATCH,PROXIES
