@@ -6,30 +6,32 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - homeip
   type: vless
-  server: 45.130.125.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: fra.yandex-api.store
+  port: 8443
+  uuid: 69da3674-4941-468b-96f0-c17cf5b0a047
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fra.yandex-api.store
   network: ws
   ws-opts:
-    path: /
+    path: /assets
     headers:
-      Host: vms.lifetime58.workers.dev
+      Host: fra.yandex-api.store
 - name: 🇸🇨 SC 02 - homeip
   type: vless
-  server: 154.197.75.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 179.255.176.28
+  port: 8443
+  uuid: 69da3674-4941-468b-96f0-c17cf5b0a047
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fra.yandex-api.store
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /assets
     headers:
-      Host: vms.lifetime37.workers.dev
+      Host: 179.255.176.28
 proxy-groups:
 - name: PROXIES
   type: select
