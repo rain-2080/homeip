@@ -28,6 +28,30 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇻🇳 VN 04 - homeip
+  type: vless
+  server: 163.61.182.194
+  port: 34646
+  uuid: 608af979-75ff-4480-b1fd-9c4a36962835
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UuXUXzPnZM8IY-D5bQPy4iBIzEpK4PJFEOJzeObISRA
+  servername: api.receptivity.io
+  client-fingerprint: chrome
+- name: 🇻🇳 VN 05 - homeip
+  type: vless
+  server: 163.61.182.194
+  port: 34646
+  uuid: 608af979-75ff-4480-b1fd-9c4a36962835
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: UuXUXzPnZM8IY-D5bQPy4iBIzEpK4PJFEOJzeObISRA
+  servername: api.receptivity.io
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +60,8 @@ proxy-groups:
   - 🇻🇳 VN 01 - homeip
   - 🇻🇳 VN 02 - homeip
   - 🇻🇳 VN 03 - homeip
+  - 🇻🇳 VN 04 - homeip
+  - 🇻🇳 VN 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +70,7 @@ proxy-groups:
   - 🇻🇳 VN 01 - homeip
   - 🇻🇳 VN 02 - homeip
   - 🇻🇳 VN 03 - homeip
+  - 🇻🇳 VN 04 - homeip
+  - 🇻🇳 VN 05 - homeip
 rules:
 - MATCH,PROXIES
