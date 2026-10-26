@@ -1,0 +1,50 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇪🇪 EE 01 - homeip
+  type: vless
+  server: bgye0.guardora.pro
+  port: 443
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bgye0.guardora.pro
+  network: ws
+  ws-opts:
+    path: /api/ws
+    headers:
+      Host: bgye0.guardora.pro
+- name: 🇪🇪 EE 02 - homeip
+  type: vless
+  server: est.luxes.network
+  port: 8443
+  uuid: a9e5d7ed-ce1a-48eb-9767-4de54fcfaba7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: est.luxes.network
+  network: ws
+  ws-opts:
+    path: /assets
+    headers:
+      Host: est.luxes.network
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇪🇪 EE 01 - homeip
+  - 🇪🇪 EE 02 - homeip
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇪 EE 01 - homeip
+  - 🇪🇪 EE 02 - homeip
+rules:
+- MATCH,PROXIES

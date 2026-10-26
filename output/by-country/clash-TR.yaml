@@ -20,6 +20,34 @@ proxies:
       Host: tr.pad-service.com
 - name: 🇹🇷 土耳其 (Turkey) 02 - homeip
   type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-tr
+    headers:
+      Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  type: ss
+  server: location8.cpanel-host10.ir
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
+  type: ss
+  server: 87.236.166.88
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
+  type: vless
   server: 151.241.226.201
   port: 2053
   uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
@@ -29,8 +57,47 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
+  type: vless
+  server: helixgaming.ir
+  port: 80
+  uuid: fdaedc78-af7c-4b75-abf9-ba162321ddd9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
+- name: 🇹🇷 土耳其 (Turkey) 07 - homeip
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 08 - homeip
+  type: ss
+  server: 87.236.166.49
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 09 - homeip
+  type: ss
+  server: 87.236.166.217
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 10 - homeip
   type: vless
   server: 155.103.71.142
   port: 443
@@ -44,14 +111,7 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
-  type: ss
-  server: 87.236.166.215
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 11 - homeip
   type: vless
   server: 132.243.173.195
   port: 8443
@@ -65,42 +125,7 @@ proxies:
     path: /TR1
     headers:
       Host: tr.pad-service.com
-- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
-  type: vless
-  server: tr.pad-sservice.lat
-  port: 8443
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tr.pad-sservice.lat
-  network: ws
-  ws-opts:
-    path: /TR1
-    headers:
-      Host: tr.pad-service.com
-- name: 🇹🇷 土耳其 (Turkey) 07 - homeip
-  type: ss
-  server: 87.236.166.134
-  port: 56134
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 08 - homeip
-  type: vless
-  server: 177.3.208.65
-  port: 443
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tgmansion.site
-  network: ws
-  ws-opts:
-    path: /vless-tr
-    headers:
-      Host: 177.3.208.65
-- name: 🇹🇷 土耳其 (Turkey) 09 - homeip
+- name: 🇹🇷 土耳其 (Turkey) 12 - homeip
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -126,6 +151,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 07 - homeip
   - 🇹🇷 土耳其 (Turkey) 08 - homeip
   - 🇹🇷 土耳其 (Turkey) 09 - homeip
+  - 🇹🇷 土耳其 (Turkey) 10 - homeip
+  - 🇹🇷 土耳其 (Turkey) 11 - homeip
+  - 🇹🇷 土耳其 (Turkey) 12 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -140,5 +168,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 07 - homeip
   - 🇹🇷 土耳其 (Turkey) 08 - homeip
   - 🇹🇷 土耳其 (Turkey) 09 - homeip
+  - 🇹🇷 土耳其 (Turkey) 10 - homeip
+  - 🇹🇷 土耳其 (Turkey) 11 - homeip
+  - 🇹🇷 土耳其 (Turkey) 12 - homeip
 rules:
 - MATCH,PROXIES

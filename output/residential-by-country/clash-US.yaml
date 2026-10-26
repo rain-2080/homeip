@@ -4,31 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 LT 01 - homeip
+- name: 🇺🇸 美国 (United States) 01 (家宽) - homeip
   type: vless
-  server: 88.216.69.253
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  server: 169.128.83.4
+  port: 57259
+  uuid: a1962f23-f8f8-412d-f2ce-3361e7b72889
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 LT 01 - homeip
+  - 🇺🇸 美国 (United States) 01 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 LT 01 - homeip
+  - 🇺🇸 美国 (United States) 01 (家宽) - homeip
 rules:
 - MATCH,PROXIES
