@@ -5,18 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - homeip
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  type: vmess
+  server: 91.107.128.44
+  port: 36812
+  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 02 - homeip
   type: vless
   server: ov-germany1.09vpn.com
@@ -31,406 +28,18 @@ proxies:
     headers:
       Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 03 - homeip
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  type: vmess
+  server: 91.107.128.44
+  port: 24701
+  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 04 - homeip
   type: vless
-  server: free.sahanwickramasinghe.me
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 05 - homeip
-  type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 06 - homeip
-  type: vless
-  server: hikvision-plus.com
-  port: 2052
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 07 - homeip
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 08 - homeip
-  type: vmess
-  server: de.zhou-yufan.com
-  port: 443
-  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇩🇪 德国 (Germany) 09 - homeip
-  type: vless
-  server: 162.55.242.208
-  port: 2053
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 10 - homeip
-  type: ss
-  server: 91.107.128.44
-  port: 53185
-  cipher: 2022-blake3-aes-256-gcm
-  password: U/jVh1z5NQ0cFCiCeLLxNAFBjmLBo/ECQ0dICfRFLbQ=:cZkXr9v4dFpHUetNse9xo72JumvR4N2GLz3bxiEh6Rk=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 11 - homeip
-  type: vless
-  server: 116.203.7.223
-  port: 34257
-  uuid: 00ee2eeb-cb0e-453c-b151-c8cf28089d31
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5FkOfDtgsGr856IC5mE1c27qzl_HQ85onkcaIzd_qgk
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 12 - homeip
-  type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 13 - homeip
-  type: vless
-  server: mci1.amir12.ir
-  port: 1222
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 14 - homeip
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 15 - homeip
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 16 - homeip
-  type: vless
-  server: 155.117.5.208
-  port: 10000
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 17 - homeip
-  type: vless
-  server: connect.wecantos.site
-  port: 10000
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 18 - homeip
-  type: vless
-  server: connect.wecantos.site
-  port: 10000
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 19 - homeip
-  type: vless
-  server: 168.222.43.53
-  port: 10000
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 20 - homeip
-  type: vless
-  server: connect.wecantos.site
-  port: 10000
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 21 - homeip
-  type: vless
-  server: 194.24.161.220
-  port: 443
-  uuid: 4c5a54b3-774e-4391-b78e-f3e9fa928792
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: borsch2.spravedlivost.fun
-  network: ws
-  ws-opts:
-    path: /api/metric/ws
-    headers:
-      Host: 194.24.161.220
-- name: 🇩🇪 德国 (Germany) 22 - homeip
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 23 - homeip
-  type: vless
-  server: 91.107.188.129
-  port: 2083
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.188.129
-- name: 🇩🇪 德国 (Germany) 24 - homeip
-  type: vless
-  server: 5.175.205.190
-  port: 27774
-  uuid: 653137c6-474e-4a3d-9a20-5a5afb3d4a4f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 25 - homeip
-  type: vless
-  server: 51.75.67.209
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 26 - homeip
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇪 德国 (Germany) 27 - homeip
-  type: vless
-  server: 104.17.71.206
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 28 - homeip
-  type: vless
-  server: 159.200.230.170
-  port: 25172
-  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Xr55Hig_JTeUluiGfSnma6zMHG2Uv5Xu30ZODGF5xGA
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 29 - homeip
-  type: vless
-  server: ggggoods.brand-netprime.com
-  port: 2087
-  uuid: 16571fd5-5c8a-44ae-99fa-a354565e500b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: b5.dl-netprime.com
-  network: ws
-  ws-opts:
-    path: /ws-tls
-    headers:
-      Host: b5.dl-netprime.com
-- name: 🇩🇪 德国 (Germany) 30 - homeip
-  type: vless
-  server: 45.65.112.23
-  port: 2087
-  uuid: 16571fd5-5c8a-44ae-99fa-a354565e500b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: b5.dl-netprime.com
-  network: ws
-  ws-opts:
-    path: /ws-tls
-    headers:
-      Host: b5.dl-netprime.com
-- name: 🇩🇪 德国 (Germany) 31 - homeip
-  type: ss
-  server: 177.202.111.18
-  port: 56137
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-  udp: true
-- name: 🇩🇪 德国 (Germany) 32 - homeip
-  type: vless
-  server: 94.183.197.40
-  port: 443
-  uuid: f439e4fe-139b-4882-ad8b-a16176d09c88
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
-  servername: de2.cdn77.icu
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 33 - homeip
-  type: vmess
-  server: de.zhou-yufan.com
-  port: 443
-  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: de.zhou-yufan.com
-- name: 🇩🇪 德国 (Germany) 34 - homeip
-  type: vless
-  server: 31.77.148.89
-  port: 45021
-  uuid: ad263f1c-199e-4aaf-bf22-c3ad0407d377
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 35 - homeip
-  type: vless
-  server: 116.203.7.223
-  port: 34257
-  uuid: 00ee2eeb-cb0e-453c-b151-c8cf28089d31
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5FkOfDtgsGr856IC5mE1c27qzl_HQ85onkcaIzd_qgk
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 36 - homeip
-  type: vless
-  server: ggggoods.brand-netprime.com
-  port: 2087
-  uuid: 16571fd5-5c8a-44ae-99fa-a354565e500b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: b5.dl-netprime.com
-  network: ws
-  ws-opts:
-    path: /ws-tls
-    headers:
-      Host: b5.dl-netprime.com
-- name: 🇩🇪 德国 (Germany) 37 - homeip
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 38 - homeip
-  type: vless
-  server: OV-Germany1.09vpn.com
+  server: ov-germany1.09vpn.com
   port: 80
   uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
@@ -441,62 +50,37 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 39 - homeip
-  type: vless
-  server: centurylink.es
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+- name: 🇩🇪 德国 (Germany) 05 - homeip
+  type: vmess
+  server: 91.107.128.44
+  port: 36812
+  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 40 - homeip
+- name: 🇩🇪 德国 (Germany) 06 - homeip
   type: ss
-  server: 185.176.204.18
-  port: 19999
+  server: 185.226.172.8
+  port: 8008
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: XKFKl2rULjIp74
   udp: true
-- name: 🇩🇪 德国 (Germany) 41 - homeip
+- name: 🇩🇪 德国 (Germany) 07 - homeip
   type: vless
-  server: freesocks.work
-  port: 2052
-  uuid: fc6e7824-c94a-499a-a713-883030381ff5
+  server: free.sahanwickramasinghe.me
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 42 - homeip
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇩🇪 德国 (Germany) 43 - homeip
-  type: vless
-  server: 91.107.188.129
-  port: 2083
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: Site.check-looks.space
-  network: ws
-  ws-opts:
     path: /
     headers:
-      Host: 91.107.188.129
-- name: 🇩🇪 德国 (Germany) 44 - homeip
+      Host: free.sahanwickramasinghe.me
+- name: 🇩🇪 德国 (Germany) 08 - homeip
   type: vless
   server: 104.17.72.206
   port: 8443
@@ -510,9 +94,96 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 45 - homeip
+- name: 🇩🇪 德国 (Germany) 09 - homeip
+  type: vmess
+  server: 91.107.128.44
+  port: 24701
+  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 10 - homeip
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇩🇪 德国 (Germany) 11 - homeip
+  type: ss
+  server: 177.202.111.19
+  port: 56137
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇩🇪 德国 (Germany) 12 - homeip
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 13 - homeip
   type: vless
-  server: ov-germany1.09vpn.com
+  server: 104.17.74.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇩🇪 德国 (Germany) 14 - homeip
+  type: vless
+  server: 51.75.67.209
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇩🇪 德国 (Germany) 15 - homeip
+  type: vless
+  server: 104.17.73.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇩🇪 德国 (Germany) 16 - homeip
+  type: vless
+  server: 91.107.188.129
+  port: 2083
+  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: site.check-looks.space
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.188.129
+- name: 🇩🇪 德国 (Germany) 17 - homeip
+  type: vless
+  server: OV-Germany1.09vpn.com
   port: 80
   uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
@@ -523,64 +194,22 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 46 - homeip
+- name: 🇩🇪 德国 (Germany) 18 - homeip
   type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  server: 91.107.128.44
+  port: 46928
+  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 47 - homeip
+- name: 🇩🇪 德国 (Germany) 19 - homeip
   type: ss
-  server: 177.202.111.19
-  port: 56137
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
-- name: 🇩🇪 德国 (Germany) 48 - homeip
-  type: vless
-  server: 157.90.175.178
-  port: 2112
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-  servername: play.google.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 49 - homeip
-  type: vless
-  server: OV-Germany1.09vpn.com
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 50 - homeip
-  type: vless
-  server: 157.90.175.178
-  port: 1222
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-  servername: play.google.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 51 - homeip
+- name: 🇩🇪 德国 (Germany) 20 - homeip
   type: vmess
   server: www.gptcloudai.com
   port: 443
@@ -596,7 +225,95 @@ proxies:
     path: /truth
     headers:
       Host: www.gptcloudai.com
-- name: 🇩🇪 德国 (Germany) 52 - homeip
+- name: 🇩🇪 德国 (Germany) 21 - homeip
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 22 - homeip
+  type: vmess
+  server: 91.107.128.44
+  port: 36812
+  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 23 - homeip
+  type: vless
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 24 - homeip
+  type: vless
+  server: 168.222.43.53
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 25 - homeip
+  type: vless
+  server: 155.117.5.208
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 26 - homeip
+  type: vless
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 27 - homeip
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇩🇪 德国 (Germany) 28 - homeip
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 29 - homeip
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 30 - homeip
   type: vless
   server: free.sahanwickramasinghe.me
   port: 80
@@ -609,9 +326,9 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 53 - homeip
+- name: 🇩🇪 德国 (Germany) 31 - homeip
   type: vless
-  server: 104.17.73.206
+  server: 104.17.71.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -623,18 +340,34 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 54 - homeip
-  type: vmess
-  server: de.zhou-yufan.com
-  port: 443
-  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-  alterId: 0
-  cipher: auto
+- name: 🇩🇪 德国 (Germany) 32 - homeip
+  type: vless
+  server: 91.107.188.129
+  port: 2083
+  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: de.zhou-yufan.com
-- name: 🇩🇪 德国 (Germany) 55 - homeip
+  servername: Site.check-looks.space
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.188.129
+- name: 🇩🇪 德国 (Germany) 33 - homeip
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 34 - homeip
   type: vless
   server: 5.175.205.190
   port: 27774
@@ -642,9 +375,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 56 - homeip
+- name: 🇩🇪 德国 (Germany) 35 - homeip
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
+- name: 🇩🇪 德国 (Germany) 36 - homeip
   type: vless
-  server: borsch2.spravedlivost.fun
+  server: 194.24.161.220
   port: 443
   uuid: 4c5a54b3-774e-4391-b78e-f3e9fa928792
   udp: true
@@ -655,10 +395,48 @@ proxies:
   ws-opts:
     path: /api/metric/ws
     headers:
-      Host: borsch2.spravedlivost.fun
-- name: 🇩🇪 德国 (Germany) 57 - homeip
+      Host: 194.24.161.220
+- name: 🇩🇪 德国 (Germany) 37 - homeip
+  type: vmess
+  server: 91.107.128.44
+  port: 36812
+  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 38 - homeip
   type: vless
-  server: 104.17.74.206
+  server: OV-Germany1.09vpn.com
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 39 - homeip
+  type: vless
+  server: 31.77.148.89
+  port: 45021
+  uuid: ad263f1c-199e-4aaf-bf22-c3ad0407d377
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 40 - homeip
+  type: ss
+  server: 91.107.128.44
+  port: 53185
+  cipher: 2022-blake3-aes-256-gcm
+  password: U/jVh1z5NQ0cFCiCeLLxNAFBjmLBo/ECQ0dICfRFLbQ=:cZkXr9v4dFpHUetNse9xo72JumvR4N2GLz3bxiEh6Rk=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 41 - homeip
+  type: vless
+  server: free.sahanwickramasinghe.me
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -670,7 +448,84 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 58 - homeip
+- name: 🇩🇪 德国 (Germany) 42 - homeip
+  type: vless
+  server: snapp.ir
+  port: 80
+  uuid: 822e7c0b-6ce7-4274-841d-68fbb756bced
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /leewee
+    headers:
+      Host: la.flashmind.ir
+- name: 🇩🇪 德国 (Germany) 43 - homeip
+  type: vless
+  server: 5.175.205.190
+  port: 27774
+  uuid: 653137c6-474e-4a3d-9a20-5a5afb3d4a4f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 44 - homeip
+  type: vless
+  server: 5.175.205.190
+  port: 27774
+  uuid: 653137c6-474e-4a3d-9a20-5a5afb3d4a4f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 45 - homeip
+  type: vless
+  server: 5.175.205.190
+  port: 27774
+  uuid: 653137c6-474e-4a3d-9a20-5a5afb3d4a4f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 46 - homeip
+  type: vmess
+  server: www.gptcloudai.com
+  port: 443
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.gptcloudai.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.gptcloudai.com
+- name: 🇩🇪 德国 (Germany) 47 - homeip
+  type: vless
+  server: centurylink.es
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇩🇪 德国 (Germany) 48 - homeip
+  type: vmess
+  server: 91.107.128.44
+  port: 36812
+  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 49 - homeip
   type: vless
   server: 104.17.70.206
   port: 8443
@@ -684,41 +539,28 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 59 - homeip
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 60 - homeip
+- name: 🇩🇪 德国 (Germany) 50 - homeip
   type: vless
-  server: 91.107.247.173
-  port: 2083
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  server: 31.77.148.89
+  port: 45021
+  uuid: ad263f1c-199e-4aaf-bf22-c3ad0407d377
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 91.107.247.173
-- name: 🇩🇪 德国 (Germany) 61 - homeip
+- name: 🇩🇪 德国 (Germany) 51 - homeip
   type: vless
-  server: z1q3pv4g78.rucdncomp.pro
+  server: borsch2.spravedlivost.fun
   port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  uuid: 4c5a54b3-774e-4391-b78e-f3e9fa928792
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
+  servername: borsch2.spravedlivost.fun
   network: ws
   ws-opts:
-    path: /useraction/events/b892639b7195/
+    path: /api/metric/ws
     headers:
-      Host: z1q3pv4g78.rucdncomp.pro
+      Host: borsch2.spravedlivost.fun
 proxy-groups:
 - name: PROXIES
   type: select
@@ -775,16 +617,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 49 - homeip
   - 🇩🇪 德国 (Germany) 50 - homeip
   - 🇩🇪 德国 (Germany) 51 - homeip
-  - 🇩🇪 德国 (Germany) 52 - homeip
-  - 🇩🇪 德国 (Germany) 53 - homeip
-  - 🇩🇪 德国 (Germany) 54 - homeip
-  - 🇩🇪 德国 (Germany) 55 - homeip
-  - 🇩🇪 德国 (Germany) 56 - homeip
-  - 🇩🇪 德国 (Germany) 57 - homeip
-  - 🇩🇪 德国 (Germany) 58 - homeip
-  - 🇩🇪 德国 (Germany) 59 - homeip
-  - 🇩🇪 德国 (Germany) 60 - homeip
-  - 🇩🇪 德国 (Germany) 61 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -841,15 +673,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 49 - homeip
   - 🇩🇪 德国 (Germany) 50 - homeip
   - 🇩🇪 德国 (Germany) 51 - homeip
-  - 🇩🇪 德国 (Germany) 52 - homeip
-  - 🇩🇪 德国 (Germany) 53 - homeip
-  - 🇩🇪 德国 (Germany) 54 - homeip
-  - 🇩🇪 德国 (Germany) 55 - homeip
-  - 🇩🇪 德国 (Germany) 56 - homeip
-  - 🇩🇪 德国 (Germany) 57 - homeip
-  - 🇩🇪 德国 (Germany) 58 - homeip
-  - 🇩🇪 德国 (Germany) 59 - homeip
-  - 🇩🇪 德国 (Germany) 60 - homeip
-  - 🇩🇪 德国 (Germany) 61 - homeip
 rules:
 - MATCH,PROXIES
