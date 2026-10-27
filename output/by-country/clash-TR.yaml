@@ -6,54 +6,6 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
-  type: vless
   server: 155.103.71.142
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -66,13 +18,111 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  type: ss
+  server: 87.236.166.215
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
+  type: ss
+  server: 87.236.166.88
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
+  type: ss
+  server: 87.236.166.234
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
 - name: 🇹🇷 土耳其 (Turkey) 06 - homeip
   type: ss
-  server: 206.1.103.237
-  port: 19999
-  cipher: 2022-blake3-aes-256-gcm
-  password: 1/kU1gF9gGRGdF5JH2jf3GeeLsItfkkOhmMP5cnPMUI=:ojXUsKiyV41J4EsaiAZFaKCW+zhuD3Tl0Z7pWkKq6eM=
+  server: 87.236.166.52
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
   udp: true
+- name: 🇹🇷 土耳其 (Turkey) 07 - homeip
+  type: ss
+  server: 87.236.166.81
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 08 - homeip
+  type: ss
+  server: 87.236.166.49
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 09 - homeip
+  type: ss
+  server: 185.80.196.70
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 10 - homeip
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 11 - homeip
+  type: ss
+  server: 87.236.166.217
+  port: 56134
+  cipher: chacha20-ietf-poly1305
+  password: uvKNudV-N8AUCrykPiyznA
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 12 - homeip
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 13 - homeip
+  type: vless
+  server: helixgaming.ir
+  port: 80
+  uuid: fdaedc78-af7c-4b75-abf9-ba162321ddd9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +134,13 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
   - 🇹🇷 土耳其 (Turkey) 05 - homeip
   - 🇹🇷 土耳其 (Turkey) 06 - homeip
+  - 🇹🇷 土耳其 (Turkey) 07 - homeip
+  - 🇹🇷 土耳其 (Turkey) 08 - homeip
+  - 🇹🇷 土耳其 (Turkey) 09 - homeip
+  - 🇹🇷 土耳其 (Turkey) 10 - homeip
+  - 🇹🇷 土耳其 (Turkey) 11 - homeip
+  - 🇹🇷 土耳其 (Turkey) 12 - homeip
+  - 🇹🇷 土耳其 (Turkey) 13 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -95,5 +152,12 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - homeip
   - 🇹🇷 土耳其 (Turkey) 05 - homeip
   - 🇹🇷 土耳其 (Turkey) 06 - homeip
+  - 🇹🇷 土耳其 (Turkey) 07 - homeip
+  - 🇹🇷 土耳其 (Turkey) 08 - homeip
+  - 🇹🇷 土耳其 (Turkey) 09 - homeip
+  - 🇹🇷 土耳其 (Turkey) 10 - homeip
+  - 🇹🇷 土耳其 (Turkey) 11 - homeip
+  - 🇹🇷 土耳其 (Turkey) 12 - homeip
+  - 🇹🇷 土耳其 (Turkey) 13 - homeip
 rules:
 - MATCH,PROXIES
