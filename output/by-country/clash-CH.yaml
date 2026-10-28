@@ -15,32 +15,78 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇨🇭 CH 02 - homeip
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 128.241.25.3
+  port: 30021
+  uuid: e18901aa-2836-44ce-a1d7-af6b174ccae7
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
 - name: 🇨🇭 CH 03 - homeip
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 147.45.42.73
+  port: 20443
+  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
 - name: 🇨🇭 CH 04 - homeip
+  type: vless
+  server: 23.27.20.142
+  port: 48537
+  uuid: 4227f293-eb63-4b2a-892f-eec72f718cd0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇨🇭 CH 05 - homeip
+  type: vless
+  server: 57.129.130.57
+  port: 52014
+  uuid: 82fc8761-470b-4022-89da-ce5412e8bb0a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+- name: 🇨🇭 CH 06 - homeip
+  type: vless
+  server: 144.31.135.38
+  port: 9444
+  uuid: d623f979-df61-4b00-9f88-00a8b1ad861c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇨🇭 CH 07 - homeip
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -51,15 +97,26 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇨🇭 CH 05 - homeip
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 08 - homeip
+  type: vless
+  server: swz.proxyplankton.ru
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
   udp: true
-- name: 🇨🇭 CH 06 - homeip
+  tls: true
+  skip-cert-verify: true
+  servername: swz.proxyplankton.ru
+- name: 🇨🇭 CH 09 - homeip
+  type: vless
+  server: 149.33.15.213
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: swz.proxyplankton.ru
+- name: 🇨🇭 CH 10 - homeip
   type: ss
   server: 132.243.175.144
   port: 8388
@@ -77,6 +134,10 @@ proxy-groups:
   - 🇨🇭 CH 04 - homeip
   - 🇨🇭 CH 05 - homeip
   - 🇨🇭 CH 06 - homeip
+  - 🇨🇭 CH 07 - homeip
+  - 🇨🇭 CH 08 - homeip
+  - 🇨🇭 CH 09 - homeip
+  - 🇨🇭 CH 10 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,5 +149,9 @@ proxy-groups:
   - 🇨🇭 CH 04 - homeip
   - 🇨🇭 CH 05 - homeip
   - 🇨🇭 CH 06 - homeip
+  - 🇨🇭 CH 07 - homeip
+  - 🇨🇭 CH 08 - homeip
+  - 🇨🇭 CH 09 - homeip
+  - 🇨🇭 CH 10 - homeip
 rules:
 - MATCH,PROXIES

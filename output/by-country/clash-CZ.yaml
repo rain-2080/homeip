@@ -1,0 +1,49 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇨🇿 CZ 01 - homeip
+  type: vless
+  server: 185.22.154.131
+  port: 8080
+  uuid: FastKey_145297
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api
+    headers:
+      Host: google.com
+- name: 🇨🇿 CZ 02 - homeip
+  type: vless
+  server: sinavm.soft10.ir
+  port: 2087
+  uuid: 295009c6-5a47-4f77-b9ac-9be24a61da48
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sinavm.soft10.ir
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm.soft10.ir
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇨🇿 CZ 01 - homeip
+  - 🇨🇿 CZ 02 - homeip
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇨🇿 CZ 01 - homeip
+  - 🇨🇿 CZ 02 - homeip
+rules:
+- MATCH,PROXIES
