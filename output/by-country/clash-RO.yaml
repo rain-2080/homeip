@@ -22,7 +22,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 RO 03 - homeip
   type: vless
-  server: 178.83.45.226
+  server: edge10.cyrionflare.com
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
@@ -30,19 +30,36 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 RO 04 - homeip
   type: vless
-  server: edge10.cyrionflare.com
+  server: 178.83.45.226
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 05 - homeip
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 06 - homeip
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇷🇴 RO 07 - homeip
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +70,8 @@ proxy-groups:
   - 🇷🇴 RO 03 - homeip
   - 🇷🇴 RO 04 - homeip
   - 🇷🇴 RO 05 - homeip
+  - 🇷🇴 RO 06 - homeip
+  - 🇷🇴 RO 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -63,5 +82,7 @@ proxy-groups:
   - 🇷🇴 RO 03 - homeip
   - 🇷🇴 RO 04 - homeip
   - 🇷🇴 RO 05 - homeip
+  - 🇷🇴 RO 06 - homeip
+  - 🇷🇴 RO 07 - homeip
 rules:
 - MATCH,PROXIES

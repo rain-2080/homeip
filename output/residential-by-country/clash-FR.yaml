@@ -1,0 +1,36 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇫🇷 法国 (France) 01 (家宽) - homeip
+  type: vmess
+  server: 52.74.177.147
+  port: 52935
+  uuid: c685dd34-b84e-484d-b3f5-efd0a27ad2d5
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg-transit-1.nebulacloud.win
+  network: ws
+  ws-opts:
+    path: /getData/fr
+    headers:
+      Host: sg-transit-1.nebulacloud.win
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇫🇷 法国 (France) 01 (家宽) - homeip
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇷 法国 (France) 01 (家宽) - homeip
+rules:
+- MATCH,PROXIES
