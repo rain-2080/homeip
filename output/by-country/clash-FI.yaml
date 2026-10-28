@@ -6,62 +6,32 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
-  server: hw3.divarkhaghazi.com
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 02 - homeip
+  type: vless
+  server: hw6.divarkhaghazi.com
   port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
+  servername: hw6.divarkhaghazi.com.
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 02 - homeip
-  type: ss
-  server: dns22.m3hrzd.ir
-  port: 1346
-  cipher: chacha20-ietf-poly1305
-  password: U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N
-  udp: true
+      Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 FI 03 - homeip
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - homeip
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 05 - homeip
-  type: vless
-  server: 2.27.122.221
-  port: 443
-  uuid: dcec1f6d-0584-48ee-9e67-c2e16f23904a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YuFm9PUkI61urw2Uzk_bulQJdblxqxebBafwKHW-8TE
-  servername: www.nvidia.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 06 - homeip
   type: vless
   server: 263651t.fi3.h1clayd.click
   port: 443
@@ -73,7 +43,33 @@ proxies:
     public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
   servername: 263651t.fi3.h1clayd.click
   client-fingerprint: safari
-- name: 🇫🇮 FI 07 - homeip
+- name: 🇫🇮 FI 04 - homeip
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 05 - homeip
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 06 - homeip
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -85,43 +81,26 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: chrome
+- name: 🇫🇮 FI 07 - homeip
+  type: ss
+  server: dns22.m3hrzd.ir
+  port: 1346
+  cipher: chacha20-ietf-poly1305
+  password: U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N
+  udp: true
 - name: 🇫🇮 FI 08 - homeip
   type: vless
-  server: 263651t.fi3.h1clayd.click
+  server: 3f8efdt.fi1.h1clayd.click
   port: 443
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
-  servername: 263651t.fi3.h1clayd.click
-  client-fingerprint: edge
-- name: 🇫🇮 FI 09 - homeip
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 10 - homeip
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
+    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
+  servername: 3f8efdt.fi1.h1clayd.click
   client-fingerprint: firefox
-- name: 🇫🇮 FI 11 - homeip
+- name: 🇫🇮 FI 09 - homeip
   type: vless
   server: hw3.divarkhaghazi.com.
   port: 465
@@ -135,36 +114,57 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 12 - homeip
+- name: 🇫🇮 FI 10 - homeip
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 13 - homeip
-  type: vless
-  server: 65.109.212.193
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  server: p2real33.greewebservices.ir
+  port: 1330
+  uuid: a7e9fc98-25a2-4801-961c-7a6ed9d69328
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+  servername: play.googleapis.com
+  client-fingerprint: ios
+- name: 🇫🇮 FI 11 - homeip
+  type: vless
+  server: p2real22.greewebservices.ir
+  port: 1320
+  uuid: a7e9fc98-25a2-4801-961c-7a6ed9d69328
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+  servername: play.googleapis.com
+  client-fingerprint: ios
+- name: 🇫🇮 FI 12 - homeip
+  type: vless
+  server: areal1.greewebservices.ir
+  port: 2425
+  uuid: a7e9fc98-25a2-4801-961c-7a6ed9d69328
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
+  servername: play.googleapis.com
+  client-fingerprint: ios
+- name: 🇫🇮 FI 13 - homeip
+  type: vless
+  server: 263651t.fi3.h1clayd.click
+  port: 443
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
+  servername: 263651t.fi3.h1clayd.click
+  client-fingerprint: edge
 - name: 🇫🇮 FI 14 - homeip
   type: vless
-  server: 65.109.212.193
+  server: hw3.divarkhaghazi.com
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
@@ -178,45 +178,30 @@ proxies:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 15 - homeip
   type: vless
-  server: 3f8efdt.fi1.h1clayd.click
-  port: 443
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
-  servername: 3f8efdt.fi1.h1clayd.click
-  client-fingerprint: firefox
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 16 - homeip
   type: vless
-  server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  server: 263651t.fi3.h1clayd.click
+  port: 443
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: hw3.divarkhaghazi.com.
+  reality-opts:
+    public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
+  servername: 263651t.fi3.h1clayd.click
+  client-fingerprint: edge
 - name: 🇫🇮 FI 17 - homeip
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 18 - homeip
-  type: vless
   server: hw3.divarkhaghazi.com
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
@@ -224,6 +209,46 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 18 - homeip
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 19 - homeip
+  type: vless
+  server: hw6.divarkhaghazi.com
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw6.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 20 - homeip
+  type: vless
+  server: hw3.divarkhaghazi.com
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com
   network: ws
   ws-opts:
     path: /
@@ -252,6 +277,8 @@ proxy-groups:
   - 🇫🇮 FI 16 - homeip
   - 🇫🇮 FI 17 - homeip
   - 🇫🇮 FI 18 - homeip
+  - 🇫🇮 FI 19 - homeip
+  - 🇫🇮 FI 20 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -275,5 +302,7 @@ proxy-groups:
   - 🇫🇮 FI 16 - homeip
   - 🇫🇮 FI 17 - homeip
   - 🇫🇮 FI 18 - homeip
+  - 🇫🇮 FI 19 - homeip
+  - 🇫🇮 FI 20 - homeip
 rules:
 - MATCH,PROXIES
