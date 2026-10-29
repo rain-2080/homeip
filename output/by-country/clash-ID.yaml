@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇮🇩 ID 01 - homeip
   type: vless
-  server: 130.94.95.198
+  server: in001.zestapp778.com
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -14,42 +14,6 @@ proxies:
   skip-cert-verify: true
   servername: in001.zestapp778.com
 - name: 🇮🇩 ID 02 - homeip
-  type: vless
-  server: in001.zestapp778.com
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in001.zestapp778.com
-- name: 🇮🇩 ID 03 - homeip
-  type: vless
-  server: in001.zestapp778.com
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in001.zestapp778.com
-- name: 🇮🇩 ID 04 - homeip
-  type: vless
-  server: 130.94.95.198
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in001.zestapp778.com
-- name: 🇮🇩 ID 05 - homeip
-  type: vless
-  server: 130.94.95.198
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in001.zestapp778.com
-- name: 🇮🇩 ID 06 - homeip
   type: vless
   server: 130.94.95.198
   port: 57353
@@ -65,10 +29,6 @@ proxy-groups:
   - AUTO
   - 🇮🇩 ID 01 - homeip
   - 🇮🇩 ID 02 - homeip
-  - 🇮🇩 ID 03 - homeip
-  - 🇮🇩 ID 04 - homeip
-  - 🇮🇩 ID 05 - homeip
-  - 🇮🇩 ID 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,9 +36,5 @@ proxy-groups:
   proxies:
   - 🇮🇩 ID 01 - homeip
   - 🇮🇩 ID 02 - homeip
-  - 🇮🇩 ID 03 - homeip
-  - 🇮🇩 ID 04 - homeip
-  - 🇮🇩 ID 05 - homeip
-  - 🇮🇩 ID 06 - homeip
 rules:
 - MATCH,PROXIES

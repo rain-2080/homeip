@@ -5,44 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - homeip
-  type: vless
-  server: kz-central.v8x2b.lol
-  port: 443
-  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
-  servername: kz-central.v8x2b.lol
-  client-fingerprint: firefox
-- name: 🇰🇿 KZ 02 - homeip
-  type: vless
-  server: 46.8.43.125
-  port: 443
-  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
-  servername: kz-central.v8x2b.lol
-  client-fingerprint: firefox
-- name: 🇰🇿 KZ 03 - homeip
-  type: vless
-  server: 109.248.170.119
-  port: 13447
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 KZ 04 - homeip
   type: vmess
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
   port: 80
   uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
   alterId: 0
@@ -54,20 +18,8 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
-- name: 🇰🇿 KZ 05 - homeip
-  type: vless
-  server: kz-central.v8x2b.lol
-  port: 443
-  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
-  servername: kz-central.v8x2b.lol
-  client-fingerprint: firefox
-- name: 🇰🇿 KZ 06 - homeip
+      Host: viber.com
+- name: 🇰🇿 KZ 02 - homeip
   type: vmess
   server: 38.107.234.57
   port: 80
@@ -82,7 +34,34 @@ proxies:
     path: /vmess/
     headers:
       Host: 3h-kazakhstan1.09vpn.com
-- name: 🇰🇿 KZ 07 - homeip
+- name: 🇰🇿 KZ 03 - homeip
+  type: vless
+  server: 46.8.43.125
+  port: 443
+  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
+  servername: kz-central.v8x2b.lol
+  client-fingerprint: firefox
+- name: 🇰🇿 KZ 04 - homeip
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇰🇿 KZ 05 - homeip
   type: vmess
   server: 3h-kazakhstan1.09vpn.com
   port: 80
@@ -97,7 +76,19 @@ proxies:
     path: /vmess/
     headers:
       Host: ''
-- name: 🇰🇿 KZ 08 - homeip
+- name: 🇰🇿 KZ 06 - homeip
+  type: vless
+  server: kz-central.v8x2b.lol
+  port: 443
+  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
+  servername: kz-central.v8x2b.lol
+  client-fingerprint: firefox
+- name: 🇰🇿 KZ 07 - homeip
   type: vless
   server: 46.8.43.125
   port: 443
@@ -109,18 +100,33 @@ proxies:
     public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
   servername: kz-central.v8x2b.lol
   client-fingerprint: chrome
+- name: 🇰🇿 KZ 08 - homeip
+  type: vmess
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
 - name: 🇰🇿 KZ 09 - homeip
   type: vless
-  server: 46.8.43.125
-  port: 443
-  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
+  server: 178.236.16.98
+  port: 35728
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
-  servername: kz-central.v8x2b.lol
-  client-fingerprint: firefox
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+  servername: yahoo.com
+  client-fingerprint: chrome
 - name: 🇰🇿 KZ 10 - homeip
   type: vmess
   server: 3h-kazakhstan1.09vpn.com
@@ -135,7 +141,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: ''
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 KZ 11 - homeip
   type: vmess
   server: 38.107.234.57
@@ -152,21 +158,6 @@ proxies:
     headers:
       Host: ''
 - name: 🇰🇿 KZ 12 - homeip
-  type: vmess
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇰🇿 KZ 13 - homeip
   type: vless
   server: 46.8.43.125
   port: 443
@@ -178,7 +169,7 @@ proxies:
     public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
   servername: kz-central.v8x2b.lol
   client-fingerprint: chrome
-- name: 🇰🇿 KZ 14 - homeip
+- name: 🇰🇿 KZ 13 - homeip
   type: vless
   server: 46.8.43.125
   port: 443
@@ -189,6 +180,18 @@ proxies:
   reality-opts:
     public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
   servername: kz-central.v8x2b.lol
+  client-fingerprint: firefox
+- name: 🇰🇿 KZ 14 - homeip
+  type: vless
+  server: 109.248.170.119
+  port: 13447
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+  servername: yahoo.com
   client-fingerprint: chrome
 - name: 🇰🇿 KZ 15 - homeip
   type: vmess
@@ -206,20 +209,17 @@ proxies:
     headers:
       Host: 38.107.234.57
 - name: 🇰🇿 KZ 16 - homeip
-  type: vmess
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 46.8.43.125
+  port: 443
+  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: ''
+  reality-opts:
+    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
+  servername: kz-central.v8x2b.lol
+  client-fingerprint: chrome
 - name: 🇰🇿 KZ 17 - homeip
   type: vmess
   server: 38.107.234.57
@@ -234,7 +234,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: google.com
+      Host: 38.107.234.57
 - name: 🇰🇿 KZ 18 - homeip
   type: vmess
   server: 38.107.234.57
@@ -249,23 +249,8 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: viber.com
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 KZ 19 - homeip
-  type: vmess
-  server: 38.107.234.57
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 38.107.234.57
-- name: 🇰🇿 KZ 20 - homeip
   type: vmess
   server: 3h-kazakhstan1.09vpn.com
   port: 80
@@ -280,6 +265,18 @@ proxies:
     path: /vmess/
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: 🇰🇿 KZ 20 - homeip
+  type: vless
+  server: kz-central.v8x2b.lol
+  port: 443
+  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
+  servername: kz-central.v8x2b.lol
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
