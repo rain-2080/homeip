@@ -6,13 +6,21 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - homeip
   type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 02 - homeip
+  type: vless
   server: edge10.cyrionflare.com
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 02 - homeip
+- name: 🇵🇱 PL 03 - homeip
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -20,7 +28,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 03 - homeip
+- name: 🇵🇱 PL 04 - homeip
   type: vless
   server: 168.222.43.53
   port: 2052
@@ -28,23 +36,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 04 - homeip
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇵🇱 PL 05 - homeip
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 06 - homeip
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -53,7 +45,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 07 - homeip
+- name: 🇵🇱 PL 06 - homeip
   type: vless
   server: site.teslamotor.site
   port: 20001
@@ -61,11 +53,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 08 - homeip
+- name: 🇵🇱 PL 07 - homeip
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 08 - homeip
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
@@ -78,63 +78,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 10 - homeip
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 11 - homeip
   type: ss
   server: pol.rvpn.app
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: 8z2OB_gvFvpKgjFi8s9Cvw
   udp: true
-- name: 🇵🇱 PL 12 - homeip
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 13 - homeip
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 14 - homeip
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 15 - homeip
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 16 - homeip
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -150,12 +99,6 @@ proxy-groups:
   - 🇵🇱 PL 08 - homeip
   - 🇵🇱 PL 09 - homeip
   - 🇵🇱 PL 10 - homeip
-  - 🇵🇱 PL 11 - homeip
-  - 🇵🇱 PL 12 - homeip
-  - 🇵🇱 PL 13 - homeip
-  - 🇵🇱 PL 14 - homeip
-  - 🇵🇱 PL 15 - homeip
-  - 🇵🇱 PL 16 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -171,11 +114,5 @@ proxy-groups:
   - 🇵🇱 PL 08 - homeip
   - 🇵🇱 PL 09 - homeip
   - 🇵🇱 PL 10 - homeip
-  - 🇵🇱 PL 11 - homeip
-  - 🇵🇱 PL 12 - homeip
-  - 🇵🇱 PL 13 - homeip
-  - 🇵🇱 PL 14 - homeip
-  - 🇵🇱 PL 15 - homeip
-  - 🇵🇱 PL 16 - homeip
 rules:
 - MATCH,PROXIES
