@@ -84,18 +84,97 @@ proxies:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 07 - homeip
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 95.174.68.188
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 08 - homeip
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - homeip
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - homeip
+  type: vless
+  server: 140.225.208.50
+  port: 2083
+  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtestmark.com
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: 140.225.208.50
+- name: 🇦🇪 阿联酋 (UAE) 11 - homeip
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 12 - homeip
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 13 - homeip
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 14 - homeip
   type: vless
   server: 95.174.68.188
   port: 14430
@@ -108,7 +187,48 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 09 - homeip
+- name: 🇦🇪 阿联酋 (UAE) 15 - homeip
+  type: vmess
+  server: octpus1.gsmonline.ir
+  port: 8080
+  uuid: ea183122-9b4a-4dc3-afe2-adb114e2019d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: snapp.ir
+- name: 🇦🇪 阿联酋 (UAE) 16 - homeip
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 17 - homeip
+  type: vless
+  server: 185.253.116.33
+  port: 14430
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 185.253.116.33
+- name: 🇦🇪 阿联酋 (UAE) 18 - homeip
   type: vless
   server: 84.235.244.108
   port: 22573
@@ -135,6 +255,15 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - homeip
   - 🇦🇪 阿联酋 (UAE) 08 - homeip
   - 🇦🇪 阿联酋 (UAE) 09 - homeip
+  - 🇦🇪 阿联酋 (UAE) 10 - homeip
+  - 🇦🇪 阿联酋 (UAE) 11 - homeip
+  - 🇦🇪 阿联酋 (UAE) 12 - homeip
+  - 🇦🇪 阿联酋 (UAE) 13 - homeip
+  - 🇦🇪 阿联酋 (UAE) 14 - homeip
+  - 🇦🇪 阿联酋 (UAE) 15 - homeip
+  - 🇦🇪 阿联酋 (UAE) 16 - homeip
+  - 🇦🇪 阿联酋 (UAE) 17 - homeip
+  - 🇦🇪 阿联酋 (UAE) 18 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -149,5 +278,14 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - homeip
   - 🇦🇪 阿联酋 (UAE) 08 - homeip
   - 🇦🇪 阿联酋 (UAE) 09 - homeip
+  - 🇦🇪 阿联酋 (UAE) 10 - homeip
+  - 🇦🇪 阿联酋 (UAE) 11 - homeip
+  - 🇦🇪 阿联酋 (UAE) 12 - homeip
+  - 🇦🇪 阿联酋 (UAE) 13 - homeip
+  - 🇦🇪 阿联酋 (UAE) 14 - homeip
+  - 🇦🇪 阿联酋 (UAE) 15 - homeip
+  - 🇦🇪 阿联酋 (UAE) 16 - homeip
+  - 🇦🇪 阿联酋 (UAE) 17 - homeip
+  - 🇦🇪 阿联酋 (UAE) 18 - homeip
 rules:
 - MATCH,PROXIES
