@@ -6,16 +6,17 @@ log-level: info
 proxies:
 - name: 🇧🇬 BG 01 - homeip
   type: vless
-  server: p1real4.greewebservices.ir
-  port: 1260
-  uuid: f234330e-f9df-46e3-8f60-b2af5173c147
+  server: gb.privatevip.ir
+  port: 449
+  uuid: 7c730089-1791-4828-89b2-86e7e1663063
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-  servername: play.googleapis.com
-  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: gb.privatevip.ir
 proxy-groups:
 - name: PROXIES
   type: select
