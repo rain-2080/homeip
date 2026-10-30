@@ -5,25 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
-  type: ss
-  server: 159.194.251.76
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: MODziWLa9qMuW-4yPa0rfw
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
-  type: vless
-  server: ee.h1cloud.net
-  port: 25895
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-  servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
   type: vless
   server: 194.87.143.165
   port: 8443
@@ -31,20 +12,45 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wsru1.wba-pn.ru
+  servername: 194.87.143.165
   network: ws
   ws-opts:
     path: /
     headers:
       Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 158.160.180.165
+- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
   type: ss
   server: 130.49.189.54
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: hTTg7lwQMzpaF7KXpY3A8w
   udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  type: ss
+  server: 185.22.155.121
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  type: ss
+  server: msk2.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: MODziWLa9qMuW-4yPa0rfw
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
   type: vless
   server: 186.246.9.29
   port: 443
@@ -56,7 +62,25 @@ proxies:
     public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
   servername: wordpress.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: lsu1v/3iNERwDDVwxCu5033KCUqQOoElYQul63kmqJ8=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  type: vmess
+  server: 158.160.180.165
+  port: 24212
+  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
   type: vless
   server: 194.87.143.165
   port: 8443
@@ -70,24 +94,24 @@ proxies:
     path: /
     headers:
       Host: 194.87.143.165
-- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 10 - homeip
   type: ss
-  server: alb.rvpn.app
+  server: 159.194.251.76
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: hTTg7lwQMzpaF7KXpY3A8w
+  password: MODziWLa9qMuW-4yPa0rfw
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 11 - homeip
   type: vless
-  server: 45.133.151.170
+  server: 186.246.9.29
   port: 443
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
-  servername: a0688bt.us4.h1clayd.click
+    public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
+  servername: wordpress.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -102,6 +126,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - homeip
   - 🇷🇺 俄罗斯 (Russia) 07 - homeip
   - 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -115,5 +142,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - homeip
   - 🇷🇺 俄罗斯 (Russia) 07 - homeip
   - 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
 rules:
 - MATCH,PROXIES

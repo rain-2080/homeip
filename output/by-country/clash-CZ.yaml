@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - homeip
   type: vless
-  server: 188.114.98.0
+  server: 185.78.76.166
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 02 - homeip
   type: vless
-  server: 155.212.240.10
+  server: saas.sin.fan
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 03 - homeip
   type: vless
-  server: 155.212.240.10
+  server: 188.114.98.0
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -48,6 +48,62 @@ proxies:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 04 - homeip
   type: vless
+  server: 155.212.240.10
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n.bitpulse.me
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    headers:
+      Host: n.bitpulse.me
+- name: 🇨🇿 CZ 05 - homeip
+  type: vless
+  server: 155.212.240.10
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n.bitpulse.me
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    headers:
+      Host: n.bitpulse.me
+- name: 🇨🇿 CZ 06 - homeip
+  type: vless
+  server: 155.212.240.10
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n.bitpulse.me
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    headers:
+      Host: n.bitpulse.me
+- name: 🇨🇿 CZ 07 - homeip
+  type: vless
+  server: 152.42.175.196
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n.bitpulse.me
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    headers:
+      Host: n.bitpulse.me
+- name: 🇨🇿 CZ 08 - homeip
+  type: vless
   server: 188.114.98.0
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
@@ -60,6 +116,20 @@ proxies:
     path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
     headers:
       Host: n.bitpulse.me
+- name: 🇨🇿 CZ 09 - homeip
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n.bitpulse.me
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560fp=unsafe
+    headers:
+      Host: n.bitpulse.me
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +139,11 @@ proxy-groups:
   - 🇨🇿 CZ 02 - homeip
   - 🇨🇿 CZ 03 - homeip
   - 🇨🇿 CZ 04 - homeip
+  - 🇨🇿 CZ 05 - homeip
+  - 🇨🇿 CZ 06 - homeip
+  - 🇨🇿 CZ 07 - homeip
+  - 🇨🇿 CZ 08 - homeip
+  - 🇨🇿 CZ 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +153,10 @@ proxy-groups:
   - 🇨🇿 CZ 02 - homeip
   - 🇨🇿 CZ 03 - homeip
   - 🇨🇿 CZ 04 - homeip
+  - 🇨🇿 CZ 05 - homeip
+  - 🇨🇿 CZ 06 - homeip
+  - 🇨🇿 CZ 07 - homeip
+  - 🇨🇿 CZ 08 - homeip
+  - 🇨🇿 CZ 09 - homeip
 rules:
 - MATCH,PROXIES

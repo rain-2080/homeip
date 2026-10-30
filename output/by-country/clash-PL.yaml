@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - homeip
   type: vless
-  server: 155.117.5.208
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 168.222.43.53
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
@@ -22,21 +22,14 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 03 - homeip
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 04 - homeip
-  type: vless
-  server: 168.222.43.53
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 05 - homeip
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -45,9 +38,17 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 06 - homeip
+- name: 🇵🇱 PL 05 - homeip
   type: vless
   server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 06 - homeip
+  type: vless
+  server: 155.117.5.208
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
@@ -55,6 +56,14 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 07 - homeip
   type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 08 - homeip
+  type: vless
   server: 2.26.6.1
   port: 2087
   uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
@@ -62,29 +71,30 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 08 - homeip
-  type: ss
-  server: pol.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
-  udp: true
 - name: 🇵🇱 PL 09 - homeip
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 31.76.251.23
+  port: 443
+  uuid: eb8af077-a580-4f67-8042-9572a39e699d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: dlhoLMdfvgjSVzSuT0PPhomRdNcy8_qtnky0kKflqGI
+  servername: www.ya.ru
+  client-fingerprint: firefox
 - name: 🇵🇱 PL 10 - homeip
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: 79.182.39.37
+  port: 27591
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇵🇱 PL 11 - homeip
   type: vless
   server: site.teslamotor.site
@@ -95,21 +105,20 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 12 - homeip
   type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇵🇱 PL 13 - homeip
+  type: vless
   server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 13 - homeip
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 14 - homeip
   type: vless
   server: 2.26.6.1
@@ -121,12 +130,20 @@ proxies:
   servername: 2.26.6.1
 - name: 🇵🇱 PL 15 - homeip
   type: vless
-  server: 168.222.43.53
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 16 - homeip
+  type: ss
+  server: pol.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 8z2OB_gvFvpKgjFi8s9Cvw
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -147,6 +164,7 @@ proxy-groups:
   - 🇵🇱 PL 13 - homeip
   - 🇵🇱 PL 14 - homeip
   - 🇵🇱 PL 15 - homeip
+  - 🇵🇱 PL 16 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -167,5 +185,6 @@ proxy-groups:
   - 🇵🇱 PL 13 - homeip
   - 🇵🇱 PL 14 - homeip
   - 🇵🇱 PL 15 - homeip
+  - 🇵🇱 PL 16 - homeip
 rules:
 - MATCH,PROXIES

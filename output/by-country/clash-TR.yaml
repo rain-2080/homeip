@@ -6,29 +6,19 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
   type: vless
-  server: 155.103.71.142
+  server: 177.3.208.65
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: tgmansion.site
   network: ws
   ws-opts:
-    path: /fp=chromefp=chrome
+    path: /vless-tr
     headers:
-      Host: ccc.010304.xyz
+      Host: 177.3.208.65
 - name: 🇹🇷 土耳其 (Turkey) 02 - homeip
-  type: vmess
-  server: free.ertebatgoostar.ir
-  port: 443
-  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
   type: vless
   server: 177.3.208.65
   port: 443
@@ -42,6 +32,18 @@ proxies:
     path: /vless-tr
     headers:
       Host: 177.3.208.65
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 04 - homeip
   type: vless
   server: 151.241.226.201
@@ -53,30 +55,35 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 05 - homeip
-  type: vmess
-  server: free.ertebatgoostar.ir
-  port: 443
-  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
   type: vless
-  server: tr.privatevip.ir
-  port: 448
-  uuid: 7c730089-1791-4828-89b2-86e7e1663063
+  server: 206.1.101.85
+  port: 42654
+  uuid: 5a82be1c-ed6a-4f98-a767-05df0f7be3e7
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 206.1.101.85
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: tr.privatevip.ir
+      Host: 206.1.101.85
+- name: 🇹🇷 土耳其 (Turkey) 06 - homeip
+  type: vless
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chromefp=chrome
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
