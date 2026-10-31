@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 - homeip
+- name: 🇮🇷 IR 01 - homeip
   type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  server: 199.232.78.159
+  port: 80
+  uuid: 8cbb2201-e7e4-428f-b7b8-83fd4eb447b7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: vpn.cintaku.qzz.io
   network: ws
   ws-opts:
-    path: /vlessws
+    path: /ws/
     headers:
-      Host: vpn.cintaku.qzz.io
+      Host: rb24.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 - homeip
+  - 🇮🇷 IR 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 - homeip
+  - 🇮🇷 IR 01 - homeip
 rules:
 - MATCH,PROXIES

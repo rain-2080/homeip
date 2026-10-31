@@ -6,13 +6,16 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - homeip
   type: vless
-  server: 149.33.15.213
-  port: 443
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: swz.proxyplankton.ru
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 02 - homeip
   type: vless
   server: 208.69.78.217
@@ -27,6 +30,15 @@ proxies:
   client-fingerprint: random
 - name: 🇨🇭 CH 03 - homeip
   type: vless
+  server: 149.33.15.213
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: swz.proxyplankton.ru
+- name: 🇨🇭 CH 04 - homeip
+  type: vless
   server: 208.69.78.217
   port: 2053
   uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
@@ -37,15 +49,6 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇨🇭 CH 04 - homeip
-  type: vless
-  server: 149.33.15.213
-  port: 443
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: swz.proxyplankton.ru
 - name: 🇨🇭 CH 05 - homeip
   type: vless
   server: 208.69.78.217
@@ -57,7 +60,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 06 - homeip
   type: vless
   server: 208.69.78.217
@@ -69,8 +72,20 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇭 CH 07 - homeip
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 08 - homeip
   type: vless
   server: 149.33.15.213
   port: 443
@@ -79,44 +94,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: swz.proxyplankton.ru
-- name: 🇨🇭 CH 08 - homeip
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 09 - homeip
-  type: vless
-  server: 87.242.94.84
-  port: 443
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lingvaburo.cc
-  network: ws
-  ws-opts:
-    path: /checkout/step/gplirAP9szjx
-    headers:
-      Host: lingvaburo.cc
-- name: 🇨🇭 CH 10 - homeip
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -130,8 +107,6 @@ proxy-groups:
   - 🇨🇭 CH 06 - homeip
   - 🇨🇭 CH 07 - homeip
   - 🇨🇭 CH 08 - homeip
-  - 🇨🇭 CH 09 - homeip
-  - 🇨🇭 CH 10 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -145,7 +120,5 @@ proxy-groups:
   - 🇨🇭 CH 06 - homeip
   - 🇨🇭 CH 07 - homeip
   - 🇨🇭 CH 08 - homeip
-  - 🇨🇭 CH 09 - homeip
-  - 🇨🇭 CH 10 - homeip
 rules:
 - MATCH,PROXIES
