@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 GR 01 - homeip
+- name: 🇦🇺 澳大利亚 (Australia) 01 - homeip
   type: ss
-  server: 178.253.16.185
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: x2A6AsyZ-rAllz0wbKHzWA
+  server: 37.32.30.203
+  port: 9142
+  cipher: aes-256-gcm
+  password: M2E1OTY4ZjIyNWNhMDU4NzRlMzhjNGQzOGE4NDdm
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 GR 01 - homeip
+  - 🇦🇺 澳大利亚 (Australia) 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 GR 01 - homeip
+  - 🇦🇺 澳大利亚 (Australia) 01 - homeip
 rules:
 - MATCH,PROXIES
