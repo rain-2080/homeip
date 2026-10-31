@@ -6,22 +6,20 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - homeip
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: 179.253.179.109
+  port: 62083
+  uuid: ef988d56-9c18-408e-ae1f-a144a332ebce
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.6.1
+  servername: 177.3.220.159
 - name: 🇵🇱 PL 02 - homeip
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  type: ss
+  server: pol.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 8z2OB_gvFvpKgjFi8s9Cvw
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 03 - homeip
   type: vless
   server: 2.26.6.1
@@ -32,42 +30,12 @@ proxies:
   skip-cert-verify: true
   servername: 2.26.6.1
 - name: 🇵🇱 PL 04 - homeip
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 05 - homeip
   type: ss
-  server: pol.rvpn.app
+  server: 185.223.57.174
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: 8z2OB_gvFvpKgjFi8s9Cvw
   udp: true
-- name: 🇵🇱 PL 06 - homeip
-  type: vless
-  server: 79.182.39.37
-  port: 27591
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-  servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 07 - homeip
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,9 +45,6 @@ proxy-groups:
   - 🇵🇱 PL 02 - homeip
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
-  - 🇵🇱 PL 05 - homeip
-  - 🇵🇱 PL 06 - homeip
-  - 🇵🇱 PL 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,8 +54,5 @@ proxy-groups:
   - 🇵🇱 PL 02 - homeip
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
-  - 🇵🇱 PL 05 - homeip
-  - 🇵🇱 PL 06 - homeip
-  - 🇵🇱 PL 07 - homeip
 rules:
 - MATCH,PROXIES

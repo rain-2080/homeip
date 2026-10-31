@@ -6,7 +6,21 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - homeip
   type: vless
-  server: 104.16.188.34
+  server: 104.18.51.110
+  port: 443
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n.bitpulse.me
+  network: ws
+  ws-opts:
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128
+    headers:
+      Host: n.bitpulse.me
+- name: 🇨🇿 CZ 02 - homeip
+  type: vless
+  server: 172.64.91.69
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -18,7 +32,7 @@ proxies:
     path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
     headers:
       Host: n.bitpulse.me
-- name: 🇨🇿 CZ 02 - homeip
+- name: 🇨🇿 CZ 03 - homeip
   type: vless
   server: 155.212.240.10
   port: 443
@@ -29,21 +43,7 @@ proxies:
   servername: n.bitpulse.me
   network: ws
   ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
-    headers:
-      Host: n.bitpulse.me
-- name: 🇨🇿 CZ 03 - homeip
-  type: vless
-  server: 104.19.235.15
-  port: 443
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n.bitpulse.me
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
     headers:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 04 - homeip
@@ -62,7 +62,7 @@ proxies:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 05 - homeip
   type: vless
-  server: 104.18.51.110
+  server: 155.212.240.10
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -71,12 +71,12 @@ proxies:
   servername: n.bitpulse.me
   network: ws
   ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
     headers:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 06 - homeip
   type: vless
-  server: 172.64.91.69
+  server: 104.21.29.192
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -85,12 +85,12 @@ proxies:
   servername: n.bitpulse.me
   network: ws
   ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
     headers:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 07 - homeip
   type: vless
-  server: 185.78.76.166
+  server: 104.16.188.34
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -104,7 +104,7 @@ proxies:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 08 - homeip
   type: vless
-  server: 155.212.240.10
+  server: 104.19.235.15
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -113,7 +113,7 @@ proxies:
   servername: n.bitpulse.me
   network: ws
   ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128
     headers:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 09 - homeip
@@ -132,7 +132,7 @@ proxies:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 10 - homeip
   type: vless
-  server: 104.21.29.192
+  server: 155.212.240.10
   port: 443
   uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   udp: true
@@ -141,7 +141,7 @@ proxies:
   servername: n.bitpulse.me
   network: ws
   ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
     headers:
       Host: n.bitpulse.me
 - name: 🇨🇿 CZ 11 - homeip
@@ -156,20 +156,6 @@ proxies:
   network: ws
   ws-opts:
     path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
-    headers:
-      Host: n.bitpulse.me
-- name: 🇨🇿 CZ 12 - homeip
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n.bitpulse.me
-  network: ws
-  ws-opts:
-    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
     headers:
       Host: n.bitpulse.me
 proxy-groups:
@@ -188,7 +174,6 @@ proxy-groups:
   - 🇨🇿 CZ 09 - homeip
   - 🇨🇿 CZ 10 - homeip
   - 🇨🇿 CZ 11 - homeip
-  - 🇨🇿 CZ 12 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -205,6 +190,5 @@ proxy-groups:
   - 🇨🇿 CZ 09 - homeip
   - 🇨🇿 CZ 10 - homeip
   - 🇨🇿 CZ 11 - homeip
-  - 🇨🇿 CZ 12 - homeip
 rules:
 - MATCH,PROXIES

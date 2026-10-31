@@ -19,6 +19,15 @@ proxies:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - homeip
   type: vless
+  server: 179.253.179.109
+  port: 54083
+  uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 177.3.215.54
+- name: 🇸🇪 SE 03 - homeip
+  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -37,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
+  - 🇸🇪 SE 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - homeip
   - 🇸🇪 SE 02 - homeip
+  - 🇸🇪 SE 03 - homeip
 rules:
 - MATCH,PROXIES

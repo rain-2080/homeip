@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 ID 01 - homeip
+  type: vmess
+  server: az-1.linkaa.xyz
+  port: 55386
+  uuid: 6E571484-4166-4699-8F58-B34A1823691F
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /game/resources
+    headers:
+      Host: az-1.linkaa.xyz
+- name: 🇮🇩 ID 02 - homeip
   type: vless
   server: 104.17.3.81
   port: 443
@@ -24,11 +39,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇩 ID 01 - homeip
+  - 🇮🇩 ID 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇩 ID 01 - homeip
+  - 🇮🇩 ID 02 - homeip
 rules:
 - MATCH,PROXIES
