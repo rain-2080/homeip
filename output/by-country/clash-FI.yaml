@@ -6,15 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
-  server: 179.253.179.109
-  port: 62083
-  uuid: ef988d56-9c18-408e-ae1f-a144a332ebce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 177.3.220.159
-- name: 🇫🇮 FI 02 - homeip
-  type: vless
   server: hw3.divarkhaghazi.com.
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
@@ -25,79 +16,52 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 02 - homeip
+  type: vless
+  server: hw3.divarkhaghazi.com
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 03 - homeip
   type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 40694ced-9a8c-42fd-f5f8-3ac3c8b27fc2
+  server: hw6.divarkhaghazi.com
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: firefox.com
+  servername: hw6.divarkhaghazi.com.
   network: ws
   ws-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
+    path: /
     headers:
-      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+      Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 FI 04 - homeip
   type: vless
-  server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: hw3.divarkhaghazi.com.
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - homeip
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 06 - homeip
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 07 - homeip
-  type: vless
   server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 08 - homeip
-  type: vless
-  server: hw3.divarkhaghazi.com.
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
@@ -109,31 +73,7 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 09 - homeip
-  type: vless
-  server: 87.228.92.104
-  port: 443
-  uuid: 01a8c896-1abd-425d-bf75-b0b355754cc1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: TKmclms1Y4UZPdn_UJR2FMPLGRbMIw4mI7Vul2SevTw
-  servername: 81f270t.fi4.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 10 - homeip
-  type: vless
-  server: 87.228.92.104
-  port: 443
-  uuid: 01a8c896-1abd-425d-bf75-b0b355754cc1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: JpBC1XkdycLVlXlt2oe-pMVLYlI83WEurSPA8fPkPiE
-  servername: 9fd04ct.fi4.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 11 - homeip
+- name: 🇫🇮 FI 06 - homeip
   type: vless
   server: hw3.divarkhaghazi.com
   port: 465
@@ -147,7 +87,35 @@ proxies:
     path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 12 - homeip
+- name: 🇫🇮 FI 07 - homeip
+  type: vless
+  server: 65.109.211.81
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw6.divarkhaghazi.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 08 - homeip
+  type: vless
+  server: hw5.roghanmo.com
+  port: 465
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw5.roghanmo.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw5.roghanmo.com
+- name: 🇫🇮 FI 09 - homeip
   type: vless
   server: hw3.divarkhaghazi.com
   port: 465
@@ -161,7 +129,20 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 13 - homeip
+- name: 🇫🇮 FI 10 - homeip
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 11 - homeip
   type: vless
   server: 65.109.210.221
   port: 465
@@ -175,6 +156,97 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 12 - homeip
+  type: vless
+  server: 78.17.27.137
+  port: 8443
+  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
+  servername: www.aalto.fi
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 13 - homeip
+  type: vless
+  server: hw6.divarkhaghazi.com
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw6.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 14 - homeip
+  type: vless
+  server: hw3.divarkhaghazi.com.
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 15 - homeip
+  type: vless
+  server: hw6.divarkhaghazi.com
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw6.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 FI 16 - homeip
+  type: vless
+  server: 179.253.179.109
+  port: 62083
+  uuid: ef988d56-9c18-408e-ae1f-a144a332ebce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 177.3.220.159
+- name: 🇫🇮 FI 17 - homeip
+  type: vless
+  server: hw3.divarkhaghazi.com
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 18 - homeip
+  type: vless
+  server: hw5.roghanmo.com
+  port: 465
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw5.roghanmo.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw5.roghanmo.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -193,6 +265,11 @@ proxy-groups:
   - 🇫🇮 FI 11 - homeip
   - 🇫🇮 FI 12 - homeip
   - 🇫🇮 FI 13 - homeip
+  - 🇫🇮 FI 14 - homeip
+  - 🇫🇮 FI 15 - homeip
+  - 🇫🇮 FI 16 - homeip
+  - 🇫🇮 FI 17 - homeip
+  - 🇫🇮 FI 18 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -211,5 +288,10 @@ proxy-groups:
   - 🇫🇮 FI 11 - homeip
   - 🇫🇮 FI 12 - homeip
   - 🇫🇮 FI 13 - homeip
+  - 🇫🇮 FI 14 - homeip
+  - 🇫🇮 FI 15 - homeip
+  - 🇫🇮 FI 16 - homeip
+  - 🇫🇮 FI 17 - homeip
+  - 🇫🇮 FI 18 - homeip
 rules:
 - MATCH,PROXIES

@@ -5,24 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - homeip
-  type: vmess
-  server: cf.0sm.com
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vmess.lbw666.dpdns.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 02 - homeip
   type: vless
-  server: 104.21.70.21
+  server: 104.21.70.228
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -34,39 +18,52 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 03 - homeip
+- name: 🌐 其他地区 (Other) 02 - homeip
   type: vmess
-  server: 104.27.0.1
+  server: www.windowssearchtools.com
   port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: vmess.lbw666.dpdns.org
+  servername: www.windowssearchtools.com
   network: ws
   ws-opts:
-    path: /ws
+    path: /truth
     headers:
-      Host: vmess.lbw666.dpdns.org
+      Host: www.windowssearchtools.com
+- name: 🌐 其他地区 (Other) 03 - homeip
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: n04.jinggai.online
+  network: ws
+  ws-opts:
+    path: /nvl-n04-ws/e0577fe8fd7c8823
+    headers:
+      Host: n04.jinggai.online
 - name: 🌐 其他地区 (Other) 04 - homeip
   type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  server: 104.18.35.86
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /fp
     headers:
-      Host: jp3.yohototo.top
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: 🌐 其他地区 (Other) 05 - homeip
   type: vless
-  server: 104.16.10.84
+  server: 104.16.10.2
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -79,166 +76,8 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 06 - homeip
-  type: vless
-  server: 104.24.31.89
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 07 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 08 - homeip
   type: vmess
-  server: 104.17.0.1
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: or3.sfacg.uk
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: 🌐 其他地区 (Other) 09 - homeip
-  type: vless
-  server: 104.16.10.48
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 10 - homeip
-  type: vless
-  server: 104.16.10.72
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 11 - homeip
-  type: vless
-  server: 104.19.33.25
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 12 - homeip
-  type: vless
-  server: 104.17.50.53
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 13 - homeip
-  type: vless
-  server: 104.19.164.155
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 14 - homeip
-  type: vless
-  server: 104.20.61.103
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🌐 其他地区 (Other) 15 - homeip
-  type: vless
-  server: 104.21.34.106
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 16 - homeip
-  type: vmess
-  server: 104.21.0.1
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: or3.sfacg.uk
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: 🌐 其他地区 (Other) 17 - homeip
-  type: vmess
-  server: 104.17.77.77
+  server: chatgpt.com
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -252,7 +91,23 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 18 - homeip
+- name: 🌐 其他地区 (Other) 07 - homeip
+  type: vmess
+  server: www.windowssearchtools.com
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
+- name: 🌐 其他地区 (Other) 08 - homeip
   type: vmess
   server: 104.21.57.84
   port: 8443
@@ -268,9 +123,39 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 19 - homeip
+- name: 🌐 其他地区 (Other) 09 - homeip
   type: vmess
-  server: 188.114.96.3
+  server: 104.17.0.1
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: or3.sfacg.uk
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+- name: 🌐 其他地区 (Other) 10 - homeip
+  type: vless
+  server: 188.114.96.198
+  port: 443
+  uuid: b15f187e-9b34-437c-8243-8651a8ada76c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tepar-k4j9.jounet.workers.dev
+  network: ws
+  ws-opts:
+    path: /stream/DEVCOP/8651a8ada76c/loc-1
+    headers:
+      Host: tepar-k4j9.jounet.workers.dev
+- name: 🌐 其他地区 (Other) 11 - homeip
+  type: vmess
+  server: 172.64.155.209
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -284,48 +169,66 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 20 - homeip
+- name: 🌐 其他地区 (Other) 12 - homeip
   type: vless
-  server: 172.64.150.43
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: cf.090227.xyz
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🌐 其他地区 (Other) 21 - homeip
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 13 - homeip
   type: vmess
-  server: 172.64.80.1
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  server: or3.sfacg.uk
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: v2ray1.dozapp.xyz
+  servername: or3.sfacg.uk
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /or3
     headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 22 - homeip
+      Host: or3.sfacg.uk
+- name: 🌐 其他地区 (Other) 14 - homeip
   type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 104.16.10.185
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /tyxyws
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 15 - homeip
+  type: vmess
+  server: www.windowssearchtools.com
+  port: 443
+  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.windowssearchtools.com
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowssearchtools.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -346,13 +249,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 13 - homeip
   - 🌐 其他地区 (Other) 14 - homeip
   - 🌐 其他地区 (Other) 15 - homeip
-  - 🌐 其他地区 (Other) 16 - homeip
-  - 🌐 其他地区 (Other) 17 - homeip
-  - 🌐 其他地区 (Other) 18 - homeip
-  - 🌐 其他地区 (Other) 19 - homeip
-  - 🌐 其他地区 (Other) 20 - homeip
-  - 🌐 其他地区 (Other) 21 - homeip
-  - 🌐 其他地区 (Other) 22 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -373,12 +269,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 13 - homeip
   - 🌐 其他地区 (Other) 14 - homeip
   - 🌐 其他地区 (Other) 15 - homeip
-  - 🌐 其他地区 (Other) 16 - homeip
-  - 🌐 其他地区 (Other) 17 - homeip
-  - 🌐 其他地区 (Other) 18 - homeip
-  - 🌐 其他地区 (Other) 19 - homeip
-  - 🌐 其他地区 (Other) 20 - homeip
-  - 🌐 其他地区 (Other) 21 - homeip
-  - 🌐 其他地区 (Other) 22 - homeip
 rules:
 - MATCH,PROXIES
