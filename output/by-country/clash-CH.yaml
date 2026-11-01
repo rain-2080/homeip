@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇨🇭 CH 03 - homeip
   type: vless
   server: 208.69.78.217
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 04 - homeip
   type: vless
   server: 208.69.78.217
@@ -63,7 +63,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 06 - homeip
   type: vless
   server: 208.69.78.217
@@ -75,22 +75,8 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇨🇭 CH 07 - homeip
-  type: vless
-  server: 104.165.205.54
-  port: 2083
-  uuid: a0bce4ce-514e-4837-8753-0c458484b538
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speedtestmark.com
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 104.165.205.54
-- name: 🇨🇭 CH 08 - homeip
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -101,33 +87,21 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 09 - homeip
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 08 - homeip
   type: vless
-  server: 79.137.199.52
-  port: 21
-  uuid: f346f223-ebf6-4da3-955e-425de7e9c372
+  server: 142.91.101.39
+  port: 627
+  uuid: 2949e720-4588-4edc-8642-ff2b7b368c78
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇨🇭 CH 10 - homeip
-  type: vless
-  server: ch2.h1cloud.net
-  port: 25879
-  uuid: 241306b3-9f27-4ed3-9524-6c0792c55856
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: XuI492LMe1OPIwQH5TQlIo33JRqMM3kfnto62tbx5FU
-  servername: www.bing.com
-  client-fingerprint: qq
+      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -141,8 +115,6 @@ proxy-groups:
   - 🇨🇭 CH 06 - homeip
   - 🇨🇭 CH 07 - homeip
   - 🇨🇭 CH 08 - homeip
-  - 🇨🇭 CH 09 - homeip
-  - 🇨🇭 CH 10 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -156,7 +128,5 @@ proxy-groups:
   - 🇨🇭 CH 06 - homeip
   - 🇨🇭 CH 07 - homeip
   - 🇨🇭 CH 08 - homeip
-  - 🇨🇭 CH 09 - homeip
-  - 🇨🇭 CH 10 - homeip
 rules:
 - MATCH,PROXIES
