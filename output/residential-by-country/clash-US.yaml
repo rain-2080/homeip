@@ -12,33 +12,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 02 (家宽) - homeip
-  type: vless
-  server: 190.93.247.200
-  port: 443
-  uuid: 1fc13329-ad0b-4848-85e7-29f9bb553556
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vidag-xqtz.mml007.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/DEVCOP/29f9bb553556/loc-3
-    headers:
-      Host: vidag-xqtz.mml007.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - homeip
-  - 🇺🇸 美国 (United States) 02 (家宽) - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - homeip
-  - 🇺🇸 美国 (United States) 02 (家宽) - homeip
 rules:
 - MATCH,PROXIES

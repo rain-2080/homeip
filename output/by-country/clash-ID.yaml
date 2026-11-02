@@ -6,34 +6,6 @@ log-level: info
 proxies:
 - name: 🇮🇩 ID 01 - homeip
   type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: dffb7646-1656-427a-8187-9c056a6a5fd5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vff67.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-dnva
-    headers:
-      Host: vff67.eu.cc
-- name: 🇮🇩 ID 02 - homeip
-  type: vless
-  server: 104.17.3.81
-  port: 443
-  uuid: dffb7646-1656-427a-8187-9c056a6a5fd5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vff67.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-dnva
-    headers:
-      Host: vff67.eu.cc
-- name: 🇮🇩 ID 03 - homeip
-  type: vless
   server: in001.zestapp778.com
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
@@ -41,7 +13,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: in001.zestapp778.com
-- name: 🇮🇩 ID 04 - homeip
+- name: 🇮🇩 ID 02 - homeip
   type: vless
   server: 130.94.95.198
   port: 57353
@@ -57,8 +29,6 @@ proxy-groups:
   - AUTO
   - 🇮🇩 ID 01 - homeip
   - 🇮🇩 ID 02 - homeip
-  - 🇮🇩 ID 03 - homeip
-  - 🇮🇩 ID 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -66,7 +36,5 @@ proxy-groups:
   proxies:
   - 🇮🇩 ID 01 - homeip
   - 🇮🇩 ID 02 - homeip
-  - 🇮🇩 ID 03 - homeip
-  - 🇮🇩 ID 04 - homeip
 rules:
 - MATCH,PROXIES

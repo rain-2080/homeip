@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 HU 01 - homeip
+- name: 🇱🇹 LT 01 - homeip
   type: vless
-  server: 172.67.131.125
-  port: 2083
-  uuid: f418674e-f518-4318-8ff9-e10000000046
+  server: 185.178.208.167
+  port: 443
+  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: smart-edge-424.arti98399-1905.workers.dev
+  servername: lorettmay.top
   network: ws
   ws-opts:
-    path: /sync
+    path: /blog/posts
     headers:
-      Host: smart-edge-424.arti98399-1905.workers.dev
+      Host: lorettmay.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 HU 01 - homeip
+  - 🇱🇹 LT 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 HU 01 - homeip
+  - 🇱🇹 LT 01 - homeip
 rules:
 - MATCH,PROXIES

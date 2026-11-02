@@ -28,13 +28,6 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
-  type: ss
-  server: h.novexora.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: Ymyji11eZzSzl5AYw9HyjAQd7djfKppb
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
-  - 🇹🇷 土耳其 (Turkey) 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
-  - 🇹🇷 土耳其 (Turkey) 03 - homeip
 rules:
 - MATCH,PROXIES
