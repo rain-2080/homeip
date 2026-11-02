@@ -6,30 +6,28 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - homeip
   type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  server: 104.16.154.175
+  port: 443
+  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: v.poker2025.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 152.69.226.63
+      Host: v.poker2025.dpdns.org
 - name: 🇰🇷 韩国 (South Korea) 02 - homeip
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 03 - homeip
   type: vless
   server: 151.245.106.49
@@ -41,8 +39,21 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 04 - homeip
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 05 - homeip
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -53,18 +64,6 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 05 - homeip
-  type: vless
-  server: 8.220.241.33
-  port: 443
-  uuid: 6dd58a09-430e-4ecf-81eb-95ca94f8b765
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jSvhKKNVMhMQOCERpOyPwfNkzMnHQExIua0oWRdbuB8
-  servername: cloudflare.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 06 - homeip
   type: vless
@@ -93,6 +92,16 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 08 - homeip
+  type: vmess
+  server: 129.154.61.196
+  port: 800
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 09 - homeip
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -104,7 +113,7 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 09 - homeip
+- name: 🇰🇷 韩国 (South Korea) 10 - homeip
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -117,16 +126,29 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 10 - homeip
+- name: 🇰🇷 韩国 (South Korea) 11 - homeip
   type: vmess
-  server: 129.154.61.196
-  port: 800
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  server: 146.56.112.110
+  port: 8888
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 12 - homeip
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 proxy-groups:
 - name: PROXIES
   type: select
@@ -142,6 +164,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - homeip
   - 🇰🇷 韩国 (South Korea) 09 - homeip
   - 🇰🇷 韩国 (South Korea) 10 - homeip
+  - 🇰🇷 韩国 (South Korea) 11 - homeip
+  - 🇰🇷 韩国 (South Korea) 12 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -157,5 +181,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - homeip
   - 🇰🇷 韩国 (South Korea) 09 - homeip
   - 🇰🇷 韩国 (South Korea) 10 - homeip
+  - 🇰🇷 韩国 (South Korea) 11 - homeip
+  - 🇰🇷 韩国 (South Korea) 12 - homeip
 rules:
 - MATCH,PROXIES
