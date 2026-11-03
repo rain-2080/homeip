@@ -18,6 +18,13 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - homeip
+  type: ss
+  server: dns22.m3hrzd.ir
+  port: 1346
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
+  udp: true
+- name: 🇫🇮 FI 03 - homeip
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -30,6 +37,18 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 04 - homeip
+  type: vless
+  server: areal1.greewebservices.ir
+  port: 2425
+  uuid: dfb070bf-0b53-43eb-be2b-4b34f7e1644d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
+  servername: play.googleapis.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +56,8 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - homeip
   - 🇫🇮 FI 02 - homeip
+  - 🇫🇮 FI 03 - homeip
+  - 🇫🇮 FI 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +65,7 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - homeip
   - 🇫🇮 FI 02 - homeip
+  - 🇫🇮 FI 03 - homeip
+  - 🇫🇮 FI 04 - homeip
 rules:
 - MATCH,PROXIES
