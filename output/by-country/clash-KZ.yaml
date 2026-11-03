@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - homeip
   type: vmess
-  server: 38.107.234.57
+  server: 3h-kazakhstan1.09vpn.com
   port: 80
   uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
   alterId: 0
@@ -18,7 +18,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 38.107.234.57
+      Host: ''
 - name: 🇰🇿 KZ 02 - homeip
   type: vmess
   server: 3h-kazakhstan1.09vpn.com
@@ -36,7 +36,7 @@ proxies:
       Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 KZ 03 - homeip
   type: vmess
-  server: 38.107.234.57
+  server: 3h-kazakhstan1.09vpn.com
   port: 80
   uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
   alterId: 0
@@ -51,19 +51,21 @@ proxies:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 KZ 04 - homeip
   type: vless
-  server: 109.248.170.119
-  port: 13447
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-  servername: yahoo.com
-  client-fingerprint: chrome
+  servername: 3h-kazakhstan1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 KZ 05 - homeip
   type: vmess
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
   port: 80
   uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
   alterId: 0
@@ -75,10 +77,10 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: ''
+      Host: 38.107.234.57
 - name: 🇰🇿 KZ 06 - homeip
   type: vmess
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
   port: 80
   uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
   alterId: 0
@@ -90,7 +92,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: 38.107.234.57
 - name: 🇰🇿 KZ 07 - homeip
   type: vmess
   server: 38.107.234.57
@@ -105,7 +107,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: viber.com
+      Host: google.com
 - name: 🇰🇿 KZ 08 - homeip
   type: vmess
   server: 38.107.234.57
@@ -120,8 +122,23 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: google.com
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 KZ 09 - homeip
+  type: vmess
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ''
+- name: 🇰🇿 KZ 10 - homeip
   type: vmess
   server: 38.107.234.57
   port: 80
@@ -136,6 +153,18 @@ proxies:
     path: /vmess/
     headers:
       Host: ''
+- name: 🇰🇿 KZ 11 - homeip
+  type: vless
+  server: 109.248.170.119
+  port: 13447
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -150,6 +179,8 @@ proxy-groups:
   - 🇰🇿 KZ 07 - homeip
   - 🇰🇿 KZ 08 - homeip
   - 🇰🇿 KZ 09 - homeip
+  - 🇰🇿 KZ 10 - homeip
+  - 🇰🇿 KZ 11 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -164,5 +195,7 @@ proxy-groups:
   - 🇰🇿 KZ 07 - homeip
   - 🇰🇿 KZ 08 - homeip
   - 🇰🇿 KZ 09 - homeip
+  - 🇰🇿 KZ 10 - homeip
+  - 🇰🇿 KZ 11 - homeip
 rules:
 - MATCH,PROXIES
