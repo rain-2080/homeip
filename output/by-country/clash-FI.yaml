@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: ss
+  server: dns22.m3hrzd.ir
+  port: 1346
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - homeip
   type: vless
   server: 45.144.234.157
@@ -32,19 +26,37 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - homeip
   type: vless
-  server: ams.zovip2.ir
-  port: 443
-  uuid: 51219f47-398b-48c1-afda-743513e77a4d
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 04 - homeip
+  type: vless
+  server: areal1.greewebservices.ir
+  port: 2425
+  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ams.zovip2.ir
-  network: ws
-  ws-opts:
-    path: /api/v3/pulse
-    headers:
-      Host: ams.zovip2.ir
-- name: 🇫🇮 FI 04 - homeip
+  reality-opts:
+    public-key: MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o
+  servername: play.googleapis.com
+  client-fingerprint: ios
+- name: 🇫🇮 FI 05 - homeip
+  type: ss
+  server: 185.4.115.149
+  port: 1346
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
+  udp: true
+- name: 🇫🇮 FI 06 - homeip
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -66,6 +78,8 @@ proxy-groups:
   - 🇫🇮 FI 02 - homeip
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
+  - 🇫🇮 FI 05 - homeip
+  - 🇫🇮 FI 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,5 +89,7 @@ proxy-groups:
   - 🇫🇮 FI 02 - homeip
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
+  - 🇫🇮 FI 05 - homeip
+  - 🇫🇮 FI 06 - homeip
 rules:
 - MATCH,PROXIES
