@@ -6,19 +6,33 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - homeip
   type: vless
-  server: 145.63.143.205
-  port: 8444
-  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
+  server: 84.23.52.120
+  port: 28449
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl1.meshbeat.online
+  servername: pl.sparxiecn.com
   network: ws
   ws-opts:
-    path: /api/v1/devices/10be32b380/telemetry
+    path: /lovelive
     headers:
-      Host: pl1.meshbeat.online
+      Host: 84.23.52.120
 - name: 🇵🇱 PL 02 - homeip
+  type: vless
+  server: 84.23.52.120
+  port: 28449
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.sparxiecn.com
+  network: ws
+  ws-opts:
+    path: /lovelive
+    headers:
+      Host: 84.23.52.120
+- name: 🇵🇱 PL 03 - homeip
   type: vless
   server: 145.63.143.205
   port: 8444
@@ -32,7 +46,21 @@ proxies:
     path: /api/v1/devices/10be32b380/telemetry
     headers:
       Host: pl1.meshbeat.online
-- name: 🇵🇱 PL 03 - homeip
+- name: 🇵🇱 PL 04 - homeip
+  type: vless
+  server: 145.63.143.205
+  port: 8444
+  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl1.meshbeat.online
+  network: ws
+  ws-opts:
+    path: /api/v1/devices/10be32b380/telemetry
+    headers:
+      Host: pl1.meshbeat.online
+- name: 🇵🇱 PL 05 - homeip
   type: vless
   server: 84.23.52.120
   port: 28450
@@ -46,10 +74,24 @@ proxies:
     path: /lovelive
     headers:
       Host: 84.23.52.120
-- name: 🇵🇱 PL 04 - homeip
+- name: 🇵🇱 PL 06 - homeip
   type: vless
   server: 84.23.52.120
-  port: 28449
+  port: 28450
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.sparxiecn.com
+  network: ws
+  ws-opts:
+    path: /lovelive
+    headers:
+      Host: 84.23.52.120
+- name: 🇵🇱 PL 07 - homeip
+  type: vless
+  server: 84.23.52.120
+  port: 28453
   uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   udp: true
   tls: true
@@ -69,6 +111,9 @@ proxy-groups:
   - 🇵🇱 PL 02 - homeip
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
+  - 🇵🇱 PL 05 - homeip
+  - 🇵🇱 PL 06 - homeip
+  - 🇵🇱 PL 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +123,8 @@ proxy-groups:
   - 🇵🇱 PL 02 - homeip
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
+  - 🇵🇱 PL 05 - homeip
+  - 🇵🇱 PL 06 - homeip
+  - 🇵🇱 PL 07 - homeip
 rules:
 - MATCH,PROXIES

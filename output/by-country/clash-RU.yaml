@@ -6,78 +6,17 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
-  type: vless
-  server: z1q3pv4g78.rucdncomp.pro
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  type: vless
-  server: z1q3pv4g78.rucdncomp.pro
-  port: 443
-  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  type: ss
   server: 46.17.46.27
   port: 18443
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  type: vless
-  server: 84.23.52.120
-  port: 28450
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.sparxiecn.com
-  network: ws
-  ws-opts:
-    path: /lovelive
-    headers:
-      Host: 84.23.52.120
-- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
-  type: vless
-  server: 186.246.9.29
-  port: 443
-  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
-  servername: wordpress.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
   type: ss
-  server: 185.22.153.192
-  port: 18443
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -86,11 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - homeip
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 06 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,10 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - homeip
   - 🇷🇺 俄罗斯 (Russia) 02 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 05 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 06 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 07 - homeip
 rules:
 - MATCH,PROXIES
