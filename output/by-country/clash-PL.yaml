@@ -7,7 +7,7 @@ proxies:
 - name: 🇵🇱 PL 01 - homeip
   type: vless
   server: 84.23.52.120
-  port: 28448
+  port: 28453
   uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   udp: true
   tls: true
@@ -20,8 +20,17 @@ proxies:
       Host: 84.23.52.120
 - name: 🇵🇱 PL 02 - homeip
   type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 03 - homeip
+  type: vless
   server: 84.23.52.120
-  port: 28453
+  port: 28449
   uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   udp: true
   tls: true
@@ -32,19 +41,10 @@ proxies:
     path: /lovelive
     headers:
       Host: 84.23.52.120
-- name: 🇵🇱 PL 03 - homeip
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 04 - homeip
   type: vless
   server: 84.23.52.120
-  port: 28449
+  port: 28450
   uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   udp: true
   tls: true

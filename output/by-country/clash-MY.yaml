@@ -18,53 +18,17 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 02 - homeip
-  type: ss
-  server: 58.152.58.193
-  port: 40006
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-  udp: true
-- name: 🇲🇾 MY 03 - homeip
-  type: ss
-  server: 130.94.69.15
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇲🇾 MY 04 - homeip
-  type: ss
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40006
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-  udp: true
-- name: 🇲🇾 MY 05 - homeip
-  type: ss
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40006
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇲🇾 MY 01 - homeip
-  - 🇲🇾 MY 02 - homeip
-  - 🇲🇾 MY 03 - homeip
-  - 🇲🇾 MY 04 - homeip
-  - 🇲🇾 MY 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 MY 01 - homeip
-  - 🇲🇾 MY 02 - homeip
-  - 🇲🇾 MY 03 - homeip
-  - 🇲🇾 MY 04 - homeip
-  - 🇲🇾 MY 05 - homeip
 rules:
 - MATCH,PROXIES
