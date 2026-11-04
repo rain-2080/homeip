@@ -5,32 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
-  type: vless
-  server: 87.242.119.253
-  port: 443
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hvtlr-ru-47sb.fade.mom
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
   type: vless
-  server: 87.242.119.253
+  server: z1q3pv4g78.rucdncomp.pro
   port: 443
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hvtlr-ru-47sb.fade.mom
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
 - name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
   type: vless
-  server: 87.242.119.253
+  server: z1q3pv4g78.rucdncomp.pro
   port: 443
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hvtlr-ru-47sb.fade.mom
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
 - name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
   type: ss
   server: 46.17.46.27
@@ -40,22 +48,30 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
   type: vless
-  server: 87.242.119.253
-  port: 443
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+  server: 84.23.52.120
+  port: 28450
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hvtlr-ru-47sb.fade.mom
+  servername: pl.sparxiecn.com
+  network: ws
+  ws-opts:
+    path: /lovelive
+    headers:
+      Host: 84.23.52.120
 - name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
   type: vless
-  server: 87.242.119.253
+  server: 186.246.9.29
   port: 443
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hvtlr-ru-47sb.fade.mom
+  reality-opts:
+    public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
+  servername: wordpress.com
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
   type: ss
   server: 185.22.153.192
