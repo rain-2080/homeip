@@ -7,7 +7,7 @@ proxies:
 - name: 🇵🇱 PL 01 - homeip
   type: vless
   server: 84.23.52.120
-  port: 28449
+  port: 28453
   uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   udp: true
   tls: true
@@ -19,20 +19,6 @@ proxies:
     headers:
       Host: 84.23.52.120
 - name: 🇵🇱 PL 02 - homeip
-  type: vless
-  server: 84.23.52.120
-  port: 28449
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pl.sparxiecn.com
-  network: ws
-  ws-opts:
-    path: /lovelive
-    headers:
-      Host: 84.23.52.120
-- name: 🇵🇱 PL 03 - homeip
   type: vless
   server: 145.63.143.205
   port: 8444
@@ -46,6 +32,20 @@ proxies:
     path: /api/v1/devices/10be32b380/telemetry
     headers:
       Host: pl1.meshbeat.online
+- name: 🇵🇱 PL 03 - homeip
+  type: vless
+  server: 84.23.52.120
+  port: 28450
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.sparxiecn.com
+  network: ws
+  ws-opts:
+    path: /lovelive
+    headers:
+      Host: 84.23.52.120
 - name: 🇵🇱 PL 04 - homeip
   type: vless
   server: 145.63.143.205
@@ -77,7 +77,7 @@ proxies:
 - name: 🇵🇱 PL 06 - homeip
   type: vless
   server: 84.23.52.120
-  port: 28450
+  port: 28449
   uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   udp: true
   tls: true
@@ -91,7 +91,7 @@ proxies:
 - name: 🇵🇱 PL 07 - homeip
   type: vless
   server: 84.23.52.120
-  port: 28453
+  port: 28449
   uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   udp: true
   tls: true
@@ -102,6 +102,29 @@ proxies:
     path: /lovelive
     headers:
       Host: 84.23.52.120
+- name: 🇵🇱 PL 08 - homeip
+  type: vless
+  server: 84.23.52.120
+  port: 28450
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: pl.sparxiecn.com
+  network: ws
+  ws-opts:
+    path: /lovelive
+    headers:
+      Host: 84.23.52.120
+- name: 🇵🇱 PL 09 - homeip
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,6 +137,8 @@ proxy-groups:
   - 🇵🇱 PL 05 - homeip
   - 🇵🇱 PL 06 - homeip
   - 🇵🇱 PL 07 - homeip
+  - 🇵🇱 PL 08 - homeip
+  - 🇵🇱 PL 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -126,5 +151,7 @@ proxy-groups:
   - 🇵🇱 PL 05 - homeip
   - 🇵🇱 PL 06 - homeip
   - 🇵🇱 PL 07 - homeip
+  - 🇵🇱 PL 08 - homeip
+  - 🇵🇱 PL 09 - homeip
 rules:
 - MATCH,PROXIES
