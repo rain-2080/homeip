@@ -4,24 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇬 EG 01 - homeip
-  type: ss
-  server: 38.54.59.78
-  port: 16676
-  cipher: aes-128-gcm
-  password: c58938bbf5410f996b13983264fb2229
+- name: 🇧🇷 BR 01 - homeip
+  type: vmess
+  server: 103.88.232.55
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 103.88.232.55
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇬 EG 01 - homeip
+  - 🇧🇷 BR 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇬 EG 01 - homeip
+  - 🇧🇷 BR 01 - homeip
 rules:
 - MATCH,PROXIES
