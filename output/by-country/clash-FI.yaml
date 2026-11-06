@@ -18,42 +18,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 02 - homeip
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 03 - homeip
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 45dc10c6-04c8-4c70-a06a-d396254a6c0b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 04 - homeip
-  type: vless
-  server: 146.103.118.189
+  server: 71b840t.de7.h1clayd.click
   port: 443
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nl2.574ck.xyz
-  network: ws
-  ws-opts:
-    path: /574ck-finland
-    headers:
-      Host: nl2.574ck.xyz
-- name: 🇫🇮 FI 05 - homeip
+  reality-opts:
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+  servername: 71b840t.de7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 03 - homeip
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -66,7 +41,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 06 - homeip
+- name: 🇫🇮 FI 04 - homeip
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 05 - homeip
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -89,7 +77,6 @@ proxy-groups:
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
   - 🇫🇮 FI 05 - homeip
-  - 🇫🇮 FI 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -100,6 +87,5 @@ proxy-groups:
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
   - 🇫🇮 FI 05 - homeip
-  - 🇫🇮 FI 06 - homeip
 rules:
 - MATCH,PROXIES

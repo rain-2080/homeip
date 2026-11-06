@@ -20,13 +20,18 @@ proxies:
       Host: pl1.meshbeat.online
 - name: 🇵🇱 PL 02 - homeip
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: 129.101.100.126
+  port: 8443
+  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.6.1
+  servername: lte-v2-ws.gacvpn.site
+  network: ws
+  ws-opts:
+    path: /static/js/runtime.9d03c7.js
+    headers:
+      Host: 129.101.100.126
 - name: 🇵🇱 PL 03 - homeip
   type: vless
   server: 145.63.143.205
@@ -43,7 +48,21 @@ proxies:
       Host: pl1.meshbeat.online
 - name: 🇵🇱 PL 04 - homeip
   type: vless
-  server: 72.56.233.10
+  server: 212.119.43.76
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇵🇱 PL 05 - homeip
+  type: vless
+  server: 129.101.100.126
   port: 8443
   uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
   udp: true
@@ -54,8 +73,8 @@ proxies:
   ws-opts:
     path: /static/js/runtime.9d03c7.js
     headers:
-      Host: 72.56.233.10
-- name: 🇵🇱 PL 05 - homeip
+      Host: 129.101.100.126
+- name: 🇵🇱 PL 06 - homeip
   type: vless
   server: lte-v2-ws.gacvpn.site
   port: 8443
@@ -69,6 +88,15 @@ proxies:
     path: /static/js/runtime.9d03c7.js
     headers:
       Host: lte-v2-ws.gacvpn.site
+- name: 🇵🇱 PL 07 - homeip
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,6 +107,8 @@ proxy-groups:
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
   - 🇵🇱 PL 05 - homeip
+  - 🇵🇱 PL 06 - homeip
+  - 🇵🇱 PL 07 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,5 +119,7 @@ proxy-groups:
   - 🇵🇱 PL 03 - homeip
   - 🇵🇱 PL 04 - homeip
   - 🇵🇱 PL 05 - homeip
+  - 🇵🇱 PL 06 - homeip
+  - 🇵🇱 PL 07 - homeip
 rules:
 - MATCH,PROXIES
