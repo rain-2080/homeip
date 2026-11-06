@@ -6,28 +6,30 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: b79d736d-0f10-4169-b626-362059d18204
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - homeip
   type: vless
-  server: 71b840t.de7.h1clayd.click
-  port: 443
-  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-  servername: 71b840t.de7.h1clayd.click
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - homeip
   type: vless
   server: 45.144.234.157
@@ -43,30 +45,23 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - homeip
   type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  server: 95.216.27.15
+  port: 2053
+  uuid: b79d736d-0f10-4169-b626-362059d18204
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 05 - homeip
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: ss
+  server: 6.bmi.ir.asopardaz.ir
+  port: 35176
+  cipher: 2022-blake3-aes-256-gcm
+  password: NjcyNmVjMTU1ZWU5NDA5ZDk0ODg1NWM1MzJjZTE3NDk=:ZmU0ZDJiM2U5NjVmNDM4OWE2ZTQwNTg4N2VmNWZkMmI=
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
