@@ -32,18 +32,6 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - homeip
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: b79d736d-0f10-4169-b626-362059d18204
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - homeip
-  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -63,7 +51,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - homeip
   - 🇫🇮 FI 02 - homeip
   - 🇫🇮 FI 03 - homeip
-  - 🇫🇮 FI 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,6 +59,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - homeip
   - 🇫🇮 FI 02 - homeip
   - 🇫🇮 FI 03 - homeip
-  - 🇫🇮 FI 04 - homeip
 rules:
 - MATCH,PROXIES
