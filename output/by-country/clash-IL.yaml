@@ -4,27 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 TH 01 - homeip
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
+- name: 🇮🇱 IL 01 - homeip
+  type: vless
+  server: avcd.banfuna.ir
+  port: 26691
+  uuid: 6ae10376-317e-4339-9c59-6b9c1313d6cf
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: tl3.tavqila.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tl3.tavqila.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 TH 01 - homeip
+  - 🇮🇱 IL 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 TH 01 - homeip
+  - 🇮🇱 IL 01 - homeip
 rules:
 - MATCH,PROXIES
