@@ -5,246 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - homeip
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: p11real2.greewebservices.ir
+  port: 1030
+  uuid: 1ca12389-0d86-4197-a79a-49d24539ce05
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+  servername: play.googleapis.com
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 02 - homeip
-  type: vmess
-  server: 185.177.229.95
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 193.108.117.84
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇩🇪 德国 (Germany) 03 - homeip
-  type: ss
-  server: 156.67.120.205
-  port: 51628
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
-  udp: true
-- name: 🇩🇪 德国 (Germany) 04 - homeip
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 05 - homeip
-  type: vless
-  server: 5.75.195.83
-  port: 56879
-  uuid: d38d200c-aad4-40f9-87b1-dac1c373d593
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇩🇪 德国 (Germany) 06 - homeip
-  type: vless
-  server: 141.193.213.20
-  port: 8443
-  uuid: 8f317272-36ed-4235-9c19-94c5a4dc9d21
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gem.hilaxjenu.cv
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: gem.hilaxjenu.cv
-- name: 🇩🇪 德国 (Germany) 07 - homeip
-  type: ss
-  server: 193.108.119.3
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 08 - homeip
-  type: ss
-  server: 23.157.88.43
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 09 - homeip
-  type: vless
-  server: OV-Germany1.09vpn.com
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 10 - homeip
-  type: vless
-  server: 146.103.118.189
-  port: 443
-  uuid: 82382a00-3784-41e3-85d6-37f626263944
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vpn.574ck.xyz
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vpn.574ck.xyz
-- name: 🇩🇪 德国 (Germany) 11 - homeip
-  type: ss
-  server: 193.108.117.111
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 12 - homeip
-  type: vless
-  server: sino.bestsellers1.site
-  port: 2083
-  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sino.bestsellers1.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 13 - homeip
-  type: vless
-  server: 71b840t.de7.h1clayd.click
-  port: 443
-  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-  servername: 71b840t.de7.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 14 - homeip
-  type: vless
-  server: 79.182.39.109
-  port: 443
-  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-  servername: 71b840t.de7.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 15 - homeip
-  type: vmess
-  server: 2.26.99.150
-  port: 8018
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /websocket/transfer/gayporn
-    headers:
-      Host: shit.67133767.xyz
-- name: 🇩🇪 德国 (Germany) 16 - homeip
-  type: vmess
-  server: d2.anonix.cloud
-  port: 8018
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /websocket/transfer/gayporn
-    headers:
-      Host: shit.67133767.xyz
-- name: 🇩🇪 德国 (Germany) 17 - homeip
-  type: vless
-  server: 188.130.154.204
-  port: 443
-  uuid: ed2e4dd1-d19f-48dd-b613-3f855b1d0765
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn2.zovip2.ir
-  network: ws
-  ws-opts:
-    path: /api/v3/pulse
-    headers:
-      Host: cdn2.zovip2.ir
-- name: 🇩🇪 德国 (Germany) 18 - homeip
-  type: ss
-  server: 57.129.76.233
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 19 - homeip
-  type: vless
-  server: 64.226.96.188
-  port: 443
-  uuid: affb10d4-3835-4b1f-b5a3-3481489911b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cat.ilovezhenjiu.top
-  network: ws
-  ws-opts:
-    path: /cgciws
-    headers:
-      Host: cat.ilovezhenjiu.top
-- name: 🇩🇪 德国 (Germany) 20 - homeip
-  type: ss
-  server: 193.108.119.83
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 21 - homeip
-  type: vless
-  server: 167.233.129.126
-  port: 2474
-  uuid: 287db857-de04-4212-bd69-5d14083e340e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 22 - homeip
-  type: vless
-  server: 172.237.91.206
-  port: 443
-  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-  network: ws
-  ws-opts:
-    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
-    headers:
-      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
-- name: 🇩🇪 德国 (Germany) 23 - homeip
   type: vmess
   server: de.zhou-yufan.com
   port: 443
@@ -255,7 +34,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇩🇪 德国 (Germany) 24 - homeip
+- name: 🇩🇪 德国 (Germany) 04 - homeip
   type: vmess
   server: de.zhou-yufan.com
   port: 443
@@ -266,14 +45,23 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: de.zhou-yufan.com
-- name: 🇩🇪 德国 (Germany) 25 - homeip
+- name: 🇩🇪 德国 (Germany) 05 - homeip
+  type: vless
+  server: base.hosamobenl.co.uk
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 06 - homeip
   type: ss
   server: 156.67.120.205
   port: 51628
   cipher: chacha20-ietf-poly1305
   password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
   udp: true
-- name: 🇩🇪 德国 (Germany) 26 - homeip
+- name: 🇩🇪 德国 (Germany) 07 - homeip
   type: vmess
   server: d2.anonix.cloud
   port: 8018
@@ -288,7 +76,120 @@ proxies:
     path: /websocket/transfer/gayporn
     headers:
       Host: None
-- name: 🇩🇪 德国 (Germany) 27 - homeip
+- name: 🇩🇪 德国 (Germany) 08 - homeip
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
+- name: 🇩🇪 德国 (Germany) 09 - homeip
+  type: ss
+  server: 156.67.120.205
+  port: 51628
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
+  udp: true
+- name: 🇩🇪 德国 (Germany) 10 - homeip
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 11 - homeip
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 12 - homeip
+  type: ss
+  server: 193.108.119.83
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 13 - homeip
+  type: ss
+  server: 193.108.119.2
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 14 - homeip
+  type: ss
+  server: 193.108.119.2
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 15 - homeip
+  type: vless
+  server: OV-Germany1.09vpn.com
+  port: 80
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 16 - homeip
+  type: vless
+  server: OV-Germany1.09vpn.com
+  port: 80
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 17 - homeip
+  type: vmess
+  server: de.zhou-yufan.com
+  port: 443
+  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: de.zhou-yufan.com
+- name: 🇩🇪 德国 (Germany) 18 - homeip
+  type: ss
+  server: 23.157.88.43
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 19 - homeip
+  type: ss
+  server: 57.129.83.85
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 20 - homeip
+  type: ss
+  server: 193.108.118.247
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 21 - homeip
   type: vless
   server: ov-germany1.09vpn.com
   port: 80
@@ -301,39 +202,11 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 28 - homeip
-  type: ss
-  server: 193.108.119.2
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 29 - homeip
+- name: 🇩🇪 德国 (Germany) 22 - homeip
   type: vless
-  server: 178.105.133.160
-  port: 4443
-  uuid: fb12f9ee-5e6c-4b38-8fad-41a478aab6b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇩🇪 德国 (Germany) 30 - homeip
-  type: ss
-  server: 57.129.83.85
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 31 - homeip
-  type: vless
-  server: 57.129.41.216
+  server: OV-Germany1.09vpn.com
   port: 80
-  uuid: 3cfa0d9b-6279-4b73-8533-09ad84e49c80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
   tls: false
   skip-cert-verify: true
@@ -341,8 +214,20 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: 57.129.41.216
-- name: 🇩🇪 德国 (Germany) 32 - homeip
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 23 - homeip
+  type: vless
+  server: p1real3.greewebservices.ir
+  port: 1250
+  uuid: 1ca12389-0d86-4197-a79a-49d24539ce05
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+  servername: play.googleapis.com
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 24 - homeip
   type: vless
   server: 104.17.70.206
   port: 8443
@@ -356,72 +241,56 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 33 - homeip
-  type: vless
-  server: 71b840t.de7.h1clayd.click
-  port: 443
-  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-  servername: 71b840t.de7.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 34 - homeip
+- name: 🇩🇪 德国 (Germany) 25 - homeip
   type: ss
-  server: mojtun.mlbaz.ir
-  port: 555
-  cipher: chacha20-ietf-poly1305
-  password: 60806a2e4c3945f4ba08beade8d71d4e
-  udp: true
-- name: 🇩🇪 德国 (Germany) 35 - homeip
-  type: ss
-  server: 193.108.117.84
+  server: 57.129.76.233
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 36 - homeip
-  type: vmess
-  server: de.zhou-yufan.com
-  port: 443
-  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: de.zhou-yufan.com
-- name: 🇩🇪 德国 (Germany) 37 - homeip
+- name: 🇩🇪 德国 (Germany) 26 - homeip
   type: vless
-  server: 188.130.154.204
+  server: base.hosamobenl.co.uk
   port: 443
-  uuid: ed2e4dd1-d19f-48dd-b613-3f855b1d0765
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn2.zovip2.ir
+  servername: base.hosamobenl.co.uk
+- name: 🇩🇪 德国 (Germany) 27 - homeip
+  type: ss
+  server: 193.108.119.3
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 28 - homeip
+  type: vless
+  server: sino.bestsellers1.site
+  port: 2083
+  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
   network: ws
   ws-opts:
-    path: /api/v3/pulse
+    path: /
     headers:
-      Host: cdn2.zovip2.ir
-- name: 🇩🇪 德国 (Germany) 38 - homeip
+      Host: sino.bestsellers1.site
+- name: 🇩🇪 德国 (Germany) 29 - homeip
   type: vless
-  server: 178.105.133.160
-  port: 4443
-  uuid: bd3ebd5f-a315-4e27-9271-3c80f49821c9
+  server: p11real1.greewebservices.ir
+  port: 1020
+  uuid: 1ca12389-0d86-4197-a79a-49d24539ce05
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇩🇪 德国 (Germany) 39 - homeip
+  reality-opts:
+    public-key: xwbp4EcOtus1W5Au4XCJJbCl9jCb4DwGgYQYEwUDqTY
+  servername: play.googleapis.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 30 - homeip
   type: vless
   server: ov-germany1.09vpn.com
   port: 80
@@ -434,37 +303,14 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 40 - homeip
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 41 - homeip
-  type: ss
-  server: 193.108.118.247
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 42 - homeip
-  type: vless
-  server: base.hosamobenl.co.uk
-  port: 443
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: base.hosamobenl.co.uk
-- name: 🇩🇪 德国 (Germany) 43 - homeip
+- name: 🇩🇪 德国 (Germany) 31 - homeip
   type: ss
   server: 193.108.116.98
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 44 - homeip
+- name: 🇩🇪 德国 (Germany) 32 - homeip
   type: vmess
   server: 193.108.119.87
   port: 1270
@@ -475,21 +321,33 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇩🇪 德国 (Germany) 45 - homeip
-  type: vless
-  server: 188.130.154.204
-  port: 443
-  uuid: ed2e4dd1-d19f-48dd-b613-3f855b1d0765
+- name: 🇩🇪 德国 (Germany) 33 - homeip
+  type: vmess
+  server: 185.177.229.95
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn2.zovip2.ir
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 34 - homeip
+  type: vmess
+  server: 2.26.99.150
+  port: 8018
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /api/v3/pulse
+    path: /websocket/transfer/gayporn
     headers:
-      Host: cdn2.zovip2.ir
-- name: 🇩🇪 德国 (Germany) 46 - homeip
+      Host: shit.67133767.xyz
+- name: 🇩🇪 德国 (Germany) 35 - homeip
   type: vmess
   server: 2.26.54.200
   port: 8018
@@ -504,37 +362,91 @@ proxies:
     path: /websocket/transfer/gayporn
     headers:
       Host: 'null'
-- name: 🇩🇪 德国 (Germany) 47 - homeip
+- name: 🇩🇪 德国 (Germany) 36 - homeip
   type: vless
-  server: n1.topingr.ir
+  server: 57.129.41.216
+  port: 80
+  uuid: 3cfa0d9b-6279-4b73-8533-09ad84e49c80
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 57.129.41.216
+- name: 🇩🇪 德国 (Germany) 37 - homeip
+  type: vmess
+  server: d2.anonix.cloud
+  port: 8018
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /websocket/transfer/gayporn
+    headers:
+      Host: shit.67133767.xyz
+- name: 🇩🇪 德国 (Germany) 38 - homeip
+  type: vless
+  server: p1real2.greewebservices.ir
+  port: 1240
+  uuid: 1ca12389-0d86-4197-a79a-49d24539ce05
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+  servername: play.googleapis.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 39 - homeip
+  type: vless
+  server: 146.103.118.189
   port: 443
-  uuid: ed2e4dd1-d19f-48dd-b613-3f855b1d0765
+  uuid: 82382a00-3784-41e3-85d6-37f626263944
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn2.zovip2.ir
+  servername: vpn.574ck.xyz
   network: ws
   ws-opts:
-    path: /api/v3/pulse
+    path: /ws
     headers:
-      Host: cdn2.zovip2.ir
-- name: 🇩🇪 德国 (Germany) 48 - homeip
+      Host: vpn.574ck.xyz
+- name: 🇩🇪 德国 (Germany) 40 - homeip
+  type: ss
+  server: 193.108.117.111
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 41 - homeip
   type: vless
-  server: cf.amirmcir.ir
-  port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  server: 91.107.247.173
+  port: 2083
+  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: moz.ar-marz.fun
+  servername: sino.bestsellers1.site
   network: ws
   ws-opts:
-    path: /man
+    path: /
     headers:
-      Host: moz.ar-marz.fun
-- name: 🇩🇪 德国 (Germany) 49 - homeip
+      Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 42 - homeip
+  type: ss
+  server: 213.202.208.199
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇩🇪 德国 (Germany) 43 - homeip
   type: vless
-  server: 196.245.217.41
+  server: 79.182.39.109
   port: 443
   uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
   udp: true
@@ -544,58 +456,6 @@ proxies:
     public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
   servername: 71b840t.de7.h1clayd.click
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 50 - homeip
-  type: vless
-  server: s1-api.denmexa.ir
-  port: 2789
-  uuid: d14392a5-8fd5-4c19-be8e-3503e3cee9cf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: o6UTWdONnTOvDOWmhfxXUoeOEtlw7VUkoAWkmOk_FWI
-  servername: tgju.org
-  client-fingerprint: edge
-- name: 🇩🇪 德国 (Germany) 51 - homeip
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇩🇪 德国 (Germany) 52 - homeip
-  type: ss
-  server: 213.202.208.199
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇩🇪 德国 (Germany) 53 - homeip
-  type: vless
-  server: OV-Germany1.09vpn.com
-  port: 80
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 54 - homeip
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -644,17 +504,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 41 - homeip
   - 🇩🇪 德国 (Germany) 42 - homeip
   - 🇩🇪 德国 (Germany) 43 - homeip
-  - 🇩🇪 德国 (Germany) 44 - homeip
-  - 🇩🇪 德国 (Germany) 45 - homeip
-  - 🇩🇪 德国 (Germany) 46 - homeip
-  - 🇩🇪 德国 (Germany) 47 - homeip
-  - 🇩🇪 德国 (Germany) 48 - homeip
-  - 🇩🇪 德国 (Germany) 49 - homeip
-  - 🇩🇪 德国 (Germany) 50 - homeip
-  - 🇩🇪 德国 (Germany) 51 - homeip
-  - 🇩🇪 德国 (Germany) 52 - homeip
-  - 🇩🇪 德国 (Germany) 53 - homeip
-  - 🇩🇪 德国 (Germany) 54 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -703,16 +552,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 41 - homeip
   - 🇩🇪 德国 (Germany) 42 - homeip
   - 🇩🇪 德国 (Germany) 43 - homeip
-  - 🇩🇪 德国 (Germany) 44 - homeip
-  - 🇩🇪 德国 (Germany) 45 - homeip
-  - 🇩🇪 德国 (Germany) 46 - homeip
-  - 🇩🇪 德国 (Germany) 47 - homeip
-  - 🇩🇪 德国 (Germany) 48 - homeip
-  - 🇩🇪 德国 (Germany) 49 - homeip
-  - 🇩🇪 德国 (Germany) 50 - homeip
-  - 🇩🇪 德国 (Germany) 51 - homeip
-  - 🇩🇪 德国 (Germany) 52 - homeip
-  - 🇩🇪 德国 (Germany) 53 - homeip
-  - 🇩🇪 德国 (Germany) 54 - homeip
 rules:
 - MATCH,PROXIES
