@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇮🇱 IL 01 - homeip
   type: vless
-  server: avcd.banfuna.ir
-  port: 26691
-  uuid: 6ae10376-317e-4339-9c59-6b9c1313d6cf
+  server: 64.177.66.9
+  port: 8443
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tl3.tavqila.ir
+  servername: vp7.1145678.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /events/classfp=chromefp=chrome
     headers:
-      Host: tl3.tavqila.ir
+      Host: vp7.1145678.xyz
 proxy-groups:
 - name: PROXIES
   type: select
