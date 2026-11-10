@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇸 IS 01 - homeip
+- name: 🇮🇱 IL 01 - homeip
   type: vless
-  server: 93.95.226.159
-  port: 28150
-  uuid: b4e69d67-9d41-417c-b465-ebf1591fb792
+  server: 64.177.66.9
+  port: 8443
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: KQW_o2BlCjMC8aH5lkNkO_rmMCAUykQIQCCIIehhsAo
-  servername: google.com
-  client-fingerprint: chrome
+  servername: vp7.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /events/classfp=chromefp=chrome
+    headers:
+      Host: vp7.1145678.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇸 IS 01 - homeip
+  - 🇮🇱 IL 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇸 IS 01 - homeip
+  - 🇮🇱 IL 01 - homeip
 rules:
 - MATCH,PROXIES
