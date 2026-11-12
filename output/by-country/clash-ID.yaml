@@ -22,15 +22,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: in001.zestapp778.com
-- name: 🇮🇩 ID 03 - homeip
-  type: vless
-  server: 130.94.95.198
-  port: 57353
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: in001.zestapp778.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,7 +29,6 @@ proxy-groups:
   - AUTO
   - 🇮🇩 ID 01 - homeip
   - 🇮🇩 ID 02 - homeip
-  - 🇮🇩 ID 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,6 +36,5 @@ proxy-groups:
   proxies:
   - 🇮🇩 ID 01 - homeip
   - 🇮🇩 ID 02 - homeip
-  - 🇮🇩 ID 03 - homeip
 rules:
 - MATCH,PROXIES
