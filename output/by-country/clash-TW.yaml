@@ -12,19 +12,12 @@ proxies:
   password: b7I6g7l7fJhBaMInJ+zkzw==
   udp: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - homeip
-  type: vless
-  server: 60.248.219.78
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  type: ss
+  server: 35.236.180.222
+  port: 14514
+  cipher: 2022-blake3-aes-128-gcm
+  password: b7I6g7l7fJhBaMInJ+zkzw==
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ty986gfazs.cainiaohub.xyz
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: 60.248.219.78
 proxy-groups:
 - name: PROXIES
   type: select
