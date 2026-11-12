@@ -6,29 +6,43 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - homeip
   type: vless
-  server: n3.topingr.ir
-  port: 443
-  uuid: e5be613e-0b23-4c08-88fb-6b4a82055365
+  server: 45.38.143.210
+  port: 30584
+  uuid: cebc5f19-18d9-48e6-9029-fb4b04caf393
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: oslo.zovip2.ir
+  reality-opts:
+    public-key: 2hV4TY2ygvQ7ISa5o4u_FUKXzlIhLgbsScE8M1h0m3Y
+  servername: m.vk.com
+  client-fingerprint: chrome
+- name: 🇱🇻 LV 02 - homeip
+  type: vless
+  server: n1.topingr.ir
+  port: 443
+  uuid: 84be02cf-c5c5-4b33-ba26-31b5f8320033
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn2.zovip2.ir
   network: ws
   ws-opts:
     path: /api/v3/pulse
     headers:
-      Host: oslo.zovip2.ir
+      Host: cdn2.zovip2.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇻 LV 01 - homeip
+  - 🇱🇻 LV 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 LV 01 - homeip
+  - 🇱🇻 LV 02 - homeip
 rules:
 - MATCH,PROXIES
