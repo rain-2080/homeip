@@ -11,26 +11,17 @@ proxies:
   cipher: 2022-blake3-aes-128-gcm
   password: b7I6g7l7fJhBaMInJ+zkzw==
   udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - homeip
-  type: ss
-  server: 35.236.180.222
-  port: 14514
-  cipher: 2022-blake3-aes-128-gcm
-  password: b7I6g7l7fJhBaMInJ+zkzw==
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - homeip
-  - 🇹🇼 中国台湾 (Taiwan) 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - homeip
-  - 🇹🇼 中国台湾 (Taiwan) 02 - homeip
 rules:
 - MATCH,PROXIES

@@ -22,18 +22,22 @@ proxies:
   udp: true
 - name: 🇨🇿 CZ 03 - homeip
   type: vless
-  server: 188.137.178.174
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  server: 194.87.109.106
+  port: 443
+  uuid: d9274255-edf4-4944-bc62-6ef35cd2de40
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
+  servername: currant.asynchronous.site
+- name: 🇨🇿 CZ 04 - homeip
+  type: vless
+  server: 194.87.109.106
+  port: 443
+  uuid: d9274255-edf4-4944-bc62-6ef35cd2de40
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: currant.asynchronous.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +46,7 @@ proxy-groups:
   - 🇨🇿 CZ 01 - homeip
   - 🇨🇿 CZ 02 - homeip
   - 🇨🇿 CZ 03 - homeip
+  - 🇨🇿 CZ 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +55,6 @@ proxy-groups:
   - 🇨🇿 CZ 01 - homeip
   - 🇨🇿 CZ 02 - homeip
   - 🇨🇿 CZ 03 - homeip
+  - 🇨🇿 CZ 04 - homeip
 rules:
 - MATCH,PROXIES
