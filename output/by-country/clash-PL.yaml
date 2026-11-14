@@ -6,18 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - homeip
   type: vless
-  server: 81.90.20.203
-  port: 443
-  uuid: f37d32d0-ca5a-464f-8c32-92dc33f71408
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: qVU44SZtoG7cKR3ZCg4Ipf5rPefL5cbrto2OpzZNoU8
-  servername: instance-103.nolimited.space
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 02 - homeip
-  type: vless
   server: 2.26.6.1
   port: 2087
   uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
@@ -31,13 +19,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - homeip
-  - 🇵🇱 PL 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - homeip
-  - 🇵🇱 PL 02 - homeip
 rules:
 - MATCH,PROXIES

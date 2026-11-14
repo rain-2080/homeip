@@ -30,6 +30,20 @@ proxies:
   client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 03 - homeip
   type: vless
+  server: 185.39.204.117
+  port: 10002
+  uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tr2.vpnjantit.com
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: 185.39.204.117
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
+  type: vless
   server: 146.75.59.186
   port: 443
   uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
@@ -50,6 +64,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +73,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
   - 🇹🇷 土耳其 (Turkey) 02 - homeip
   - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
 rules:
 - MATCH,PROXIES
