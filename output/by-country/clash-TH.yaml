@@ -5,15 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 TH 01 - homeip
-  type: vmess
-  server: 119.46.51.45
-  port: 37515
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 99.86.77.123
+  port: 80
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
 - name: 🇹🇭 TH 02 - homeip
   type: vless
   server: assets.opensignal.com
@@ -27,6 +30,42 @@ proxies:
     path: /logout
     headers:
       Host: d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com
+- name: 🇹🇭 TH 03 - homeip
+  type: vless
+  server: 99.86.77.43
+  port: 80
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
+- name: 🇹🇭 TH 04 - homeip
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 05 - homeip
+  type: vless
+  server: www.true.th
+  port: 80
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +73,9 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - homeip
   - 🇹🇭 TH 02 - homeip
+  - 🇹🇭 TH 03 - homeip
+  - 🇹🇭 TH 04 - homeip
+  - 🇹🇭 TH 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +83,8 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - homeip
   - 🇹🇭 TH 02 - homeip
+  - 🇹🇭 TH 03 - homeip
+  - 🇹🇭 TH 04 - homeip
+  - 🇹🇭 TH 05 - homeip
 rules:
 - MATCH,PROXIES
