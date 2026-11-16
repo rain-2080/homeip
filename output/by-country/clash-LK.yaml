@@ -15,21 +15,7 @@ proxies:
   servername: pcloud.z-tas.com
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: pcloud.z-tas.com
-- name: 🇱🇰 LK 02 - homeip
-  type: vless
-  server: 170.114.45.6
-  port: 2096
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pcloud.z-tas.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: pcloud.z-tas.com
 proxy-groups:
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇱🇰 LK 01 - homeip
-  - 🇱🇰 LK 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇰 LK 01 - homeip
-  - 🇱🇰 LK 02 - homeip
 rules:
 - MATCH,PROXIES

@@ -31,15 +31,17 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - homeip
-  type: vmess
-  server: 65.108.240.210
-  port: 39018
-  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: b79d736d-0f10-4169-b626-362059d18204
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 04 - homeip
   type: vless
   server: 45.144.234.157
