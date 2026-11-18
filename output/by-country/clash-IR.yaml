@@ -4,29 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 EE 01 - homeip
+- name: 🇮🇷 IR 01 - homeip
   type: vless
-  server: 04535dt.us8.h1clayd.click
+  server: 194.60.228.97
   port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-  servername: 04535dt.us8.h1clayd.click
-  client-fingerprint: firefox
+  servername: base.hosamobenl.co.uk
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 EE 01 - homeip
+  - 🇮🇷 IR 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 EE 01 - homeip
+  - 🇮🇷 IR 01 - homeip
 rules:
 - MATCH,PROXIES
