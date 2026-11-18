@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - homeip
   type: ss
-  server: 23.166.88.127
+  server: 79.127.184.104
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -20,14 +20,35 @@ proxies:
   udp: true
 - name: 🇨🇭 CH 03 - homeip
   type: ss
-  server: 23.166.88.189
+  server: 23.166.88.127
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇭 CH 04 - homeip
+  type: vless
+  server: 194.124.251.104
+  port: 443
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: clover.filnex.baby
+  network: ws
+  ws-opts:
+    path: /api/de6/stream
+    headers:
+      Host: clover.filnex.baby
+- name: 🇨🇭 CH 05 - homeip
   type: ss
   server: 79.127.184.104
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇨🇭 CH 06 - homeip
+  type: ss
+  server: 23.166.88.189
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -41,6 +62,8 @@ proxy-groups:
   - 🇨🇭 CH 02 - homeip
   - 🇨🇭 CH 03 - homeip
   - 🇨🇭 CH 04 - homeip
+  - 🇨🇭 CH 05 - homeip
+  - 🇨🇭 CH 06 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +73,7 @@ proxy-groups:
   - 🇨🇭 CH 02 - homeip
   - 🇨🇭 CH 03 - homeip
   - 🇨🇭 CH 04 - homeip
+  - 🇨🇭 CH 05 - homeip
+  - 🇨🇭 CH 06 - homeip
 rules:
 - MATCH,PROXIES

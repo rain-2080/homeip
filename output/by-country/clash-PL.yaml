@@ -6,7 +6,35 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - homeip
   type: vless
-  server: 195.3.223.125
+  server: 185.253.7.22
+  port: 443
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: clover.filnex.baby
+  network: ws
+  ws-opts:
+    path: /api/de6/stream
+    headers:
+      Host: clover.filnex.baby
+- name: 🇵🇱 PL 02 - homeip
+  type: vless
+  server: 185.237.219.224
+  port: 8443
+  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v5-4b5.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v5-4b5.pages.dev
+- name: 🇵🇱 PL 03 - homeip
+  type: vless
+  server: 80.47.10.106
   port: 443
   uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   udp: true
@@ -14,9 +42,9 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-  servername: api-net-ctl.galioncc.com
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 02 - homeip
+  servername: pl8.galioncc.com
+  client-fingerprint: chrome
+- name: 🇵🇱 PL 04 - homeip
   type: vless
   server: 80.47.10.106
   port: 443
@@ -35,6 +63,8 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - homeip
   - 🇵🇱 PL 02 - homeip
+  - 🇵🇱 PL 03 - homeip
+  - 🇵🇱 PL 04 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +72,7 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - homeip
   - 🇵🇱 PL 02 - homeip
+  - 🇵🇱 PL 03 - homeip
+  - 🇵🇱 PL 04 - homeip
 rules:
 - MATCH,PROXIES
