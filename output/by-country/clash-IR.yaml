@@ -6,6 +6,24 @@ log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - homeip
   type: vless
+  server: 87.248.149.50
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇮🇷 IR 02 - homeip
+  type: vless
+  server: 194.60.228.97
+  port: 443
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: base.hosamobenl.co.uk
+- name: 🇮🇷 IR 03 - homeip
+  type: vless
   server: 194.60.228.97
   port: 443
   uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
@@ -19,11 +37,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇷 IR 01 - homeip
+  - 🇮🇷 IR 02 - homeip
+  - 🇮🇷 IR 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇷 IR 01 - homeip
+  - 🇮🇷 IR 02 - homeip
+  - 🇮🇷 IR 03 - homeip
 rules:
 - MATCH,PROXIES
