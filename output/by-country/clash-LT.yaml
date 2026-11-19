@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇱🇹 LT 01 - homeip
   type: vless
+  server: 84.32.83.197
+  port: 443
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+  servername: api-dns-gw.galioncc.com
+  client-fingerprint: chrome
+- name: 🇱🇹 LT 02 - homeip
+  type: vless
   server: 84.32.51.135
   port: 443
   uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
@@ -22,11 +34,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇱🇹 LT 01 - homeip
+  - 🇱🇹 LT 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 LT 01 - homeip
+  - 🇱🇹 LT 02 - homeip
 rules:
 - MATCH,PROXIES
