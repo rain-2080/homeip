@@ -40,6 +40,18 @@ proxies:
     public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇺🇦 UA 05 - homeip
+  type: vless
+  server: 31.222.235.81
+  port: 443
+  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +61,7 @@ proxy-groups:
   - 🇺🇦 UA 02 - homeip
   - 🇺🇦 UA 03 - homeip
   - 🇺🇦 UA 04 - homeip
+  - 🇺🇦 UA 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,5 +71,6 @@ proxy-groups:
   - 🇺🇦 UA 02 - homeip
   - 🇺🇦 UA 03 - homeip
   - 🇺🇦 UA 04 - homeip
+  - 🇺🇦 UA 05 - homeip
 rules:
 - MATCH,PROXIES

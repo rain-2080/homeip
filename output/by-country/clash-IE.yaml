@@ -4,27 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 MY 01 (家宽) - homeip
-  type: vmess
-  server: 192.228.145.118
-  port: 10086
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
+- name: 🇮🇪 IE 01 - homeip
+  type: ss
+  server: 4.231.226.120
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: VBzys1cahfGVlOwR
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 MY 01 (家宽) - homeip
+  - 🇮🇪 IE 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 MY 01 (家宽) - homeip
+  - 🇮🇪 IE 01 - homeip
 rules:
 - MATCH,PROXIES

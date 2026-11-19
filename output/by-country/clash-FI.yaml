@@ -5,21 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: ss
+  server: fn1s.sublinkplas.ir
+  port: 53731
+  cipher: chacha20-ietf-poly1305
+  password: gDxit1g_RLr2gUB54x1DYbbhHrjBDXLD
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - homeip
   type: vless
-  server: 198.202.24.142
+  server: 104.17.145.145
   port: 2083
   uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   udp: true
@@ -46,6 +40,32 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - homeip
   type: vless
+  server: 198.202.24.142
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 05 - homeip
+  type: vless
+  server: 196.196.204.137
+  port: 443
+  uuid: 26843758-24de-4f76-b5d0-624038e353c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+  servername: 71b840t.de7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 06 - homeip
+  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -57,6 +77,40 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 07 - homeip
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 08 - homeip
+  type: ss
+  server: fn1s.sublinkplas.ir
+  port: 53731
+  cipher: chacha20-ietf-poly1305
+  password: 6VxfNRMfOHIXLlOz_l46Efr0zIZoH2-K
+  udp: true
+- name: 🇫🇮 FI 09 - homeip
+  type: vless
+  server: 172.64.79.163
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +120,11 @@ proxy-groups:
   - 🇫🇮 FI 02 - homeip
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
+  - 🇫🇮 FI 05 - homeip
+  - 🇫🇮 FI 06 - homeip
+  - 🇫🇮 FI 07 - homeip
+  - 🇫🇮 FI 08 - homeip
+  - 🇫🇮 FI 09 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,5 +134,10 @@ proxy-groups:
   - 🇫🇮 FI 02 - homeip
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
+  - 🇫🇮 FI 05 - homeip
+  - 🇫🇮 FI 06 - homeip
+  - 🇫🇮 FI 07 - homeip
+  - 🇫🇮 FI 08 - homeip
+  - 🇫🇮 FI 09 - homeip
 rules:
 - MATCH,PROXIES
