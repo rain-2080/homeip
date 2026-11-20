@@ -9,19 +9,26 @@ proxies:
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
   type: vless
+  server: 81.163.22.109
+  port: 443
+  uuid: aae24578-9f15-0001-a5b1-4f46630e5ef8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jissa-ru-wl-47sel.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  type: vless
   server: 136.148.83.69
   port: 443
   uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
@@ -29,7 +36,55 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  type: vless
+  server: 81.163.22.109
+  port: 443
+  uuid: f4f2c097-a7b2-0001-ba12-f0f89895c31a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jissa-ru-wl-47sel.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: JYevOrmujurJsNP1ata0kNfjsxwFLAhgD73mrZPJP1I=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  type: vless
+  server: 81.163.22.109
+  port: 443
+  uuid: cba0eece-21c4-0001-b770-ab54b4861dba
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jissa-ru-wl-47sel.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  type: vless
+  server: 81.163.22.109
+  port: 443
+  uuid: 943db1f8-1e68-0001-a58e-56a8a6a6a6fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jissa-ru-wl-47sel.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 11 - homeip
   type: vless
   server: 136.148.83.69
   port: 443
@@ -38,7 +93,23 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 12 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: 0SxLXFtomY9ypO4o8rrNWEpNSZEFzsMnfhBETUd3oOw=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 13 - homeip
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 14 - homeip
   type: vless
   server: 136.148.83.69
   port: 443
@@ -57,6 +128,15 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
   - 🇷🇺 俄罗斯 (Russia) 04 - homeip
   - 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 06 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 07 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 12 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 13 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 14 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,5 +147,14 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - homeip
   - 🇷🇺 俄罗斯 (Russia) 04 - homeip
   - 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 06 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 07 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 08 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 12 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 13 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 14 - homeip
 rules:
 - MATCH,PROXIES
