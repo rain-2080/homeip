@@ -31,6 +31,13 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - homeip
+  type: ss
+  server: fn1s.sublinkplas.ir
+  port: 53731
+  cipher: chacha20-ietf-poly1305
+  password: 6VxfNRMfOHIXLlOz_l46Efr0zIZoH2-K
+  udp: true
+- name: 🇫🇮 FI 04 - homeip
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -43,34 +50,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 04 - homeip
-  type: vless
-  server: 162.159.160.117
-  port: 2083
-  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vipfree.dr-ping.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vipfree.dr-ping.ir
-- name: 🇫🇮 FI 05 - homeip
-  type: vless
-  server: 162.159.237.118
-  port: 2083
-  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vipfree.dr-ping.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vipfree.dr-ping.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,7 +59,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - homeip
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
-  - 🇫🇮 FI 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,6 +68,5 @@ proxy-groups:
   - 🇫🇮 FI 02 - homeip
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
-  - 🇫🇮 FI 05 - homeip
 rules:
 - MATCH,PROXIES

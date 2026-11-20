@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - homeip
   type: ss
-  server: 79.127.184.104
+  server: 23.166.88.189
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -27,7 +27,14 @@ proxies:
   udp: true
 - name: 🇨🇭 CH 04 - homeip
   type: ss
-  server: 23.166.88.189
+  server: 186.190.215.251
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇨🇭 CH 05 - homeip
+  type: ss
+  server: 79.127.184.104
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -41,6 +48,7 @@ proxy-groups:
   - 🇨🇭 CH 02 - homeip
   - 🇨🇭 CH 03 - homeip
   - 🇨🇭 CH 04 - homeip
+  - 🇨🇭 CH 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +58,6 @@ proxy-groups:
   - 🇨🇭 CH 02 - homeip
   - 🇨🇭 CH 03 - homeip
   - 🇨🇭 CH 04 - homeip
+  - 🇨🇭 CH 05 - homeip
 rules:
 - MATCH,PROXIES
