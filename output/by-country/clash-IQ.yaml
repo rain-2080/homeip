@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - homeip
   type: vless
-  server: 5d0319t.nl7.h1clayd.click
+  server: 79.182.70.232
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
@@ -18,7 +18,7 @@ proxies:
   client-fingerprint: chrome
 - name: 🇮🇶 IQ 02 - homeip
   type: vless
-  server: 79.182.70.232
+  server: 195.206.235.232
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
   servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇶 IQ 03 - homeip
   type: vless
   server: 196.196.148.85
@@ -54,7 +54,7 @@ proxies:
   client-fingerprint: firefox
 - name: 🇮🇶 IQ 05 - homeip
   type: vless
-  server: 195.206.235.232
+  server: 5d0319t.nl7.h1clayd.click
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
@@ -63,7 +63,43 @@ proxies:
   reality-opts:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
   servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇮🇶 IQ 06 - homeip
+  type: vless
+  server: 196.196.148.85
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇮🇶 IQ 07 - homeip
+  type: vless
+  server: 79.182.70.232
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇮🇶 IQ 08 - homeip
+  type: vless
+  server: 201.8.64.254
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +110,9 @@ proxy-groups:
   - 🇮🇶 IQ 03 - homeip
   - 🇮🇶 IQ 04 - homeip
   - 🇮🇶 IQ 05 - homeip
+  - 🇮🇶 IQ 06 - homeip
+  - 🇮🇶 IQ 07 - homeip
+  - 🇮🇶 IQ 08 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,5 +123,8 @@ proxy-groups:
   - 🇮🇶 IQ 03 - homeip
   - 🇮🇶 IQ 04 - homeip
   - 🇮🇶 IQ 05 - homeip
+  - 🇮🇶 IQ 06 - homeip
+  - 🇮🇶 IQ 07 - homeip
+  - 🇮🇶 IQ 08 - homeip
 rules:
 - MATCH,PROXIES

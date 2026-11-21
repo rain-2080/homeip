@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇱 AL 01 - homeip
+- name: 🇮🇱 IL 01 - homeip
   type: ss
-  server: dns22.m3hrzd.ir
-  port: 1348
-  cipher: chacha20-ietf-poly1305
-  password: pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr
+  server: 206.245.128.123
+  port: 18443
+  cipher: aes-256-gcm
+  password: dmJDtsxs41dBer8X+7idvkvMQHqJuwRb
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇱 AL 01 - homeip
+  - 🇮🇱 IL 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL 01 - homeip
+  - 🇮🇱 IL 01 - homeip
 rules:
 - MATCH,PROXIES
