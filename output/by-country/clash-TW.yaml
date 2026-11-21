@@ -5,28 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - homeip
-  type: ss
-  server: xuefei666a1.aceurl.cc
-  port: 25438
-  cipher: 2022-blake3-aes-256-gcm
-  password: MWNlYzk2NmI5ODQ1N2QzNDgwNGM0MzE2ZjI4ODVhMWM=:OWZmYjUzMDUtM2JhYi00NGNiLWFhZmEtZTBlMzk5MWY=
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - homeip
-  type: vmess
-  server: dp8yk.xiaoyan.io
-  port: 16616
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - homeip
   type: vmess
   server: dp8yk.xiaoyan.io
   port: 16616
@@ -47,15 +25,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - homeip
-  - 🇹🇼 中国台湾 (Taiwan) 02 - homeip
-  - 🇹🇼 中国台湾 (Taiwan) 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - homeip
-  - 🇹🇼 中国台湾 (Taiwan) 02 - homeip
-  - 🇹🇼 中国台湾 (Taiwan) 03 - homeip
 rules:
 - MATCH,PROXIES

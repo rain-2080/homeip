@@ -14,7 +14,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇺🇦 UA 02 - homeip
   type: vless
-  server: netx.smrtai.top
+  server: 31.222.235.81
   port: 443
   uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
   udp: true
@@ -26,16 +26,12 @@ proxies:
   client-fingerprint: chrome
 - name: 🇺🇦 UA 03 - homeip
   type: vless
-  server: 31.222.235.81
-  port: 443
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
+  server: 87.76.154.28
+  port: 57231
+  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
