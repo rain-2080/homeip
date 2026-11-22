@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇱 AL 01 - homeip
-  type: ss
-  server: dns22.m3hrzd.ir
-  port: 1348
-  cipher: chacha20-ietf-poly1305
-  password: pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr
+- name: 🇮🇷 IR 01 - homeip
+  type: vless
+  server: 87.82.59.60
+  port: 837
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
   udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇱 AL 01 - homeip
+  - 🇮🇷 IR 01 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL 01 - homeip
+  - 🇮🇷 IR 01 - homeip
 rules:
 - MATCH,PROXIES
