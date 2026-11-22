@@ -5,15 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - homeip
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 02 - homeip
   type: vless
   server: 152.69.226.63
@@ -28,31 +31,30 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 03 - homeip
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /cctv13.m3u8
     headers:
-      Host: 152.69.226.63
+      Host: 132.145.80.230
 - name: 🇰🇷 韩国 (South Korea) 04 - homeip
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 05 - homeip
   type: vless
   server: 152.69.226.63
@@ -67,16 +69,6 @@ proxies:
     headers:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 06 - homeip
-  type: vmess
-  server: 129.154.61.196
-  port: 800
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - homeip
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -89,21 +81,29 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 08 - homeip
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 07 - homeip
+  type: vless
+  server: leviko-kr7255.shopingggg.ir
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /
     headers:
-      Host: ''
+      Host: leviko-kr7255.shopingggg.ir
+- name: 🇰🇷 韩国 (South Korea) 08 - homeip
+  type: vmess
+  server: 129.154.61.196
+  port: 800
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 09 - homeip
   type: vless
   server: 152.69.226.63
@@ -119,7 +119,7 @@ proxies:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 10 - homeip
   type: vless
-  server: leviko-kr7255.shopingggg.ir
+  server: 152.69.226.63
   port: 25555
   uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
@@ -129,17 +129,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: leviko-kr7255.shopingggg.ir
-- name: 🇰🇷 韩国 (South Korea) 11 - homeip
-  type: vmess
-  server: 129.154.61.196
-  port: 800
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: 152.69.226.63
 proxy-groups:
 - name: PROXIES
   type: select
@@ -155,7 +145,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - homeip
   - 🇰🇷 韩国 (South Korea) 09 - homeip
   - 🇰🇷 韩国 (South Korea) 10 - homeip
-  - 🇰🇷 韩国 (South Korea) 11 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -171,6 +160,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - homeip
   - 🇰🇷 韩国 (South Korea) 09 - homeip
   - 🇰🇷 韩国 (South Korea) 10 - homeip
-  - 🇰🇷 韩国 (South Korea) 11 - homeip
 rules:
 - MATCH,PROXIES
