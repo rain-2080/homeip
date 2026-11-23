@@ -5,55 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - homeip
-  type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇸🇪 SE 02 - homeip
-  type: vless
-  server: 193.188.21.253
-  port: 14430
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇸🇪 SE 03 - homeip
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 04 - homeip
-  type: vless
-  server: 77.232.143.142
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: volumestyle.komediyatorg.net
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: 77.232.143.142
-- name: 🇸🇪 SE 05 - homeip
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -66,7 +24,7 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 06 - homeip
+- name: 🇸🇪 SE 03 - homeip
   type: vmess
   server: 138.199.55.230
   port: 1270
@@ -77,6 +35,41 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: xmfhlpy.com
+- name: 🇸🇪 SE 04 - homeip
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 05 - homeip
+  type: vless
+  server: 193.188.21.253
+  port: 14430
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 SE 06 - homeip
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇸🇪 SE 07 - homeip
   type: vmess
   server: 138.199.55.230
@@ -102,12 +95,19 @@ proxies:
     headers:
       Host: sajed.kdns.fr
 - name: 🇸🇪 SE 09 - homeip
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: 77.232.143.142
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: volumestyle.komediyatorg.net
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 77.232.143.142
 - name: 🇸🇪 SE 10 - homeip
   type: vmess
   server: 62.93.166.184
@@ -120,8 +120,15 @@ proxies:
   skip-cert-verify: true
   servername: xmfhlpy.com
 - name: 🇸🇪 SE 11 - homeip
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 SE 12 - homeip
   type: vmess
-  server: 62.93.166.184
+  server: 138.199.55.230
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -129,21 +136,20 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇸🇪 SE 12 - homeip
+  servername: ''
+- name: 🇸🇪 SE 13 - homeip
   type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 16f63796-3e98-5a7b-b016-540ce6e79007
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: se1.v2less.site
   network: ws
   ws-opts:
     path: /vless
     headers:
-      Host: se1.v2less.site
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -161,6 +167,7 @@ proxy-groups:
   - 🇸🇪 SE 10 - homeip
   - 🇸🇪 SE 11 - homeip
   - 🇸🇪 SE 12 - homeip
+  - 🇸🇪 SE 13 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -178,5 +185,6 @@ proxy-groups:
   - 🇸🇪 SE 10 - homeip
   - 🇸🇪 SE 11 - homeip
   - 🇸🇪 SE 12 - homeip
+  - 🇸🇪 SE 13 - homeip
 rules:
 - MATCH,PROXIES
