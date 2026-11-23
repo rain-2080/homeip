@@ -5,57 +5,55 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 45dc10c6-04c8-4c70-a06a-d396254a6c0b
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless#Farah_VPN-178
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 02 - homeip
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 03 - homeip
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - homeip
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 96c987c9-c2d9-4993-b9bd-c9bc36255ee1
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+- name: 🇫🇮 FI 05 - homeip
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +63,7 @@ proxy-groups:
   - 🇫🇮 FI 02 - homeip
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
+  - 🇫🇮 FI 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +73,6 @@ proxy-groups:
   - 🇫🇮 FI 02 - homeip
   - 🇫🇮 FI 03 - homeip
   - 🇫🇮 FI 04 - homeip
+  - 🇫🇮 FI 05 - homeip
 rules:
 - MATCH,PROXIES
