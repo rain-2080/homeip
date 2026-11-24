@@ -31,18 +31,6 @@ proxies:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
   servername: 5d0319t.nl7.h1clayd.click
   client-fingerprint: firefox
-- name: 🇸🇨 SC 03 - homeip
-  type: vless
-  server: 196.196.148.85
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - homeip
   - 🇸🇨 SC 02 - homeip
-  - 🇸🇨 SC 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - homeip
   - 🇸🇨 SC 02 - homeip
-  - 🇸🇨 SC 03 - homeip
 rules:
 - MATCH,PROXIES
