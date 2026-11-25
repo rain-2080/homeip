@@ -6,29 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
   type: vless
-  server: parchment.merlano.monster
-  port: 443
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: parchment.merlano.monster
-  network: ws
-  ws-opts:
-    path: /api/de7/stream
-    headers:
-      Host: parchment.merlano.monster
-- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
-  type: vless
   server: 136.148.83.69
   port: 443
   uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
@@ -36,16 +13,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
   type: vless
   server: 136.148.83.70
   port: 443
@@ -54,6 +22,29 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: aszbk-ru-78dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 03 - homeip
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: JYevOrmujurJsNP1ata0kNfjsxwFLAhgD73mrZPJP1I=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
   type: vless
   server: 136.148.83.69
@@ -74,13 +65,18 @@ proxies:
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
   type: vless
-  server: 136.148.83.69
+  server: 147.45.221.225
   port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  servername: nl.lucheeebezlimitnoekino.stream
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 147.45.221.225
 - name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
   type: vless
   server: 136.148.83.69
@@ -94,11 +90,72 @@ proxies:
   type: vless
   server: 136.148.83.69
   port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 11 - homeip
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 12 - homeip
+  type: vless
+  server: 136.148.83.69
+  port: 443
   uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
   udp: true
   tls: true
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 13 - homeip
+  type: vless
+  server: 136.148.83.70
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aszbk-ru-78dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 14 - homeip
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 15 - homeip
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 16 - homeip
+  type: vless
+  server: 136.148.83.71
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wccfu-ru-79dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 17 - homeip
+  type: vless
+  server: 136.148.83.70
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aszbk-ru-78dc.my-fade.cloud
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,6 +171,13 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - homeip
   - 🇷🇺 俄罗斯 (Russia) 09 - homeip
   - 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 12 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 13 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 14 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 15 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 16 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 17 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -129,5 +193,12 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - homeip
   - 🇷🇺 俄罗斯 (Russia) 09 - homeip
   - 🇷🇺 俄罗斯 (Russia) 10 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 11 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 12 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 13 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 14 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 15 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 16 - homeip
+  - 🇷🇺 俄罗斯 (Russia) 17 - homeip
 rules:
 - MATCH,PROXIES
