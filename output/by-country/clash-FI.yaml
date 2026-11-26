@@ -6,18 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - homeip
   type: vless
-  server: a80b5386.fi2.h1clayd.click
-  port: 443
-  uuid: 2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PslSaSQWP4BZZmkL7irab4FMti8sW6BvoC7ytFjJFyc
-  servername: a80b5386.fi2.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 02 - homeip
-  type: vless
   server: 13.141.36.15
   port: 443
   uuid: 2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df
@@ -27,20 +15,18 @@ proxies:
   reality-opts:
     public-key: PslSaSQWP4BZZmkL7irab4FMti8sW6BvoC7ytFjJFyc
   servername: a80b5386.fi2.h1clayd.click
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 FI 01 - homeip
-  - 🇫🇮 FI 02 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 FI 01 - homeip
-  - 🇫🇮 FI 02 - homeip
 rules:
 - MATCH,PROXIES
