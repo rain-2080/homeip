@@ -19,28 +19,30 @@ proxies:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 02 - homeip
   type: vless
-  server: krd.80782636.xyz
-  port: 443
-  uuid: db906786-8c49-4b17-9182-cea680ef954d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: krd.80782636.xyz
-  network: ws
-  ws-opts:
-    path: /kw7x2mq9
-    headers:
-      Host: krd.80782636.xyz
-- name: 🇰🇷 韩国 (South Korea) 03 - homeip
-  type: vmess
-  server: 129.154.61.196
-  port: 800
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  alterId: 0
-  cipher: auto
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 03 - homeip
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 04 - homeip
   type: vless
   server: 152.69.226.63
@@ -69,19 +71,6 @@ proxies:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 06 - homeip
   type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 07 - homeip
-  type: vless
   server: krd.80782636.xyz
   port: 443
   uuid: db906786-8c49-4b17-9182-cea680ef954d
@@ -94,66 +83,51 @@ proxies:
     path: /kw7x2mq9
     headers:
       Host: krd.80782636.xyz
+- name: 🇰🇷 韩国 (South Korea) 07 - homeip
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 08 - homeip
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  type: vmess
+  server: 129.154.61.196
+  port: 800
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 09 - homeip
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  type: vmess
+  server: 146.56.112.110
+  port: 8888
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 10 - homeip
   type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 11 - homeip
-  type: vless
-  server: 104.25.128.15
+  server: 130.94.30.242
   port: 443
-  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: krc.80782636.xyz
-  network: ws
-  ws-opts:
-    path: /kw7x2mq9
-    headers:
-      Host: krc.80782636.xyz
-- name: 🇰🇷 韩国 (South Korea) 12 - homeip
-  type: ss
-  server: 211.233.33.228
-  port: 8388
-  cipher: aes-256-gcm
-  password: qpowi_vip_tunnel_2026_secure
-  udp: true
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+  servername: navi.bankrate.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -169,8 +143,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - homeip
   - 🇰🇷 韩国 (South Korea) 09 - homeip
   - 🇰🇷 韩国 (South Korea) 10 - homeip
-  - 🇰🇷 韩国 (South Korea) 11 - homeip
-  - 🇰🇷 韩国 (South Korea) 12 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -186,7 +158,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - homeip
   - 🇰🇷 韩国 (South Korea) 09 - homeip
   - 🇰🇷 韩国 (South Korea) 10 - homeip
-  - 🇰🇷 韩国 (South Korea) 11 - homeip
-  - 🇰🇷 韩国 (South Korea) 12 - homeip
 rules:
 - MATCH,PROXIES
