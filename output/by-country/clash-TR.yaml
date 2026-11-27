@@ -6,6 +6,15 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - homeip
   type: vless
+  server: leviko-tr3795.shopingggg.ir
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+- name: 🇹🇷 土耳其 (Turkey) 02 - homeip
+  type: vless
   server: turkey-ip1.mmdaqaorg.xyz
   port: 50738
   uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
@@ -13,17 +22,48 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: turkey-ip1.mmdaqaorg.xyz
+- name: 🇹🇷 土耳其 (Turkey) 03 - homeip
+  type: vless
+  server: turkey-ip1.mmdaqaorg.xyz
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+- name: 🇹🇷 土耳其 (Turkey) 04 - homeip
+  type: ss
+  server: tr.subscriptionservice.ir
+  port: 2089
+  cipher: chacha20-ietf-poly1305
+  password: T199MCnogZBKi0QJdcSgUnoL3U9wl7t1
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 05 - homeip
+  type: ss
+  server: tr.subscriptionservice.ir
+  port: 2089
+  cipher: chacha20-ietf-poly1305
+  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
+  - 🇹🇷 土耳其 (Turkey) 02 - homeip
+  - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - homeip
+  - 🇹🇷 土耳其 (Turkey) 02 - homeip
+  - 🇹🇷 土耳其 (Turkey) 03 - homeip
+  - 🇹🇷 土耳其 (Turkey) 04 - homeip
+  - 🇹🇷 土耳其 (Turkey) 05 - homeip
 rules:
 - MATCH,PROXIES

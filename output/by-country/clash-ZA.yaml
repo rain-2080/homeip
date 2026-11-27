@@ -6,17 +6,33 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - homeip
   type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
-- name: 🇿🇦 ZA 02 - homeip
-  type: ss
   server: 102.37.156.224
   port: 443
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
+  udp: true
+- name: 🇿🇦 ZA 02 - homeip
+  type: vmess
+  server: 16.28.28.15
+  port: 443
+  uuid: 8ce18eab-fcc0-4757-b552-dbda5047ea11
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 16.28.28.15
+  network: ws
+  ws-opts:
+    path: /7788/about
+    headers:
+      Host: 16.28.28.15
+- name: 🇿🇦 ZA 03 - homeip
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -25,6 +41,7 @@ proxy-groups:
   - AUTO
   - 🇿🇦 ZA 01 - homeip
   - 🇿🇦 ZA 02 - homeip
+  - 🇿🇦 ZA 03 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +49,6 @@ proxy-groups:
   proxies:
   - 🇿🇦 ZA 01 - homeip
   - 🇿🇦 ZA 02 - homeip
+  - 🇿🇦 ZA 03 - homeip
 rules:
 - MATCH,PROXIES
