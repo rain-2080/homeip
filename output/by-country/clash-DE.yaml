@@ -6,101 +6,29 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - homeip
   type: vless
-  server: 104.27.127.133
-  port: 2083
-  uuid: d21d1bf2-206a-41c6-a40c-49bdd1f6f3be
+  server: static1.berluno.ir
+  port: 1155
+  uuid: 8a18247c-be3c-4059-b1ea-eca16426f72d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: net-bridge-c9d0c4-gw.prod-relay-3c3937.workers.dev
-  network: ws
-  ws-opts:
-    path: /c216a10ece89acba?ed=2560
-    headers:
-      Host: net-bridge-c9d0c4-gw.prod-relay-3c3937.workers.dev
+  reality-opts:
+    public-key: Tqaj1t2O6IgtkpPSv864aEteMBYI8soPDCYsaJ93BRE
+  servername: tgju.org
+  client-fingerprint: edge
 - name: 🇩🇪 德国 (Germany) 02 - homeip
-  type: ss
-  server: 47.254.167.157
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  type: vless
+  server: 91.107.185.86
+  port: 16893
+  uuid: 80256d6f-7cd3-4a3a-8df6-2981e52551dc
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dpmXAfLC6-Sf6cPjkQKGx_NliRQRFZ_oUiiPA5ALW0I
+  servername: play.google.com
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 03 - homeip
-  type: vmess
-  server: 193.108.117.61
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇩🇪 德国 (Germany) 04 - homeip
-  type: vless
-  server: 188.114.96.9
-  port: 443
-  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: IdB8ONMVbntuYT5t7t6cEJfw8vLrb.paGEs.DeV
-  network: ws
-  ws-opts:
-    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
-    headers:
-      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
-- name: 🇩🇪 德国 (Germany) 05 - homeip
-  type: vmess
-  server: 185.177.229.95
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇩🇪 德国 (Germany) 06 - homeip
-  type: vless
-  server: 191.217.215.228
-  port: 2096
-  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: st3b6e5.rumedia-cdn.com
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st3b6e5.rumedia-cdn.com
-- name: 🇩🇪 德国 (Germany) 07 - homeip
-  type: vmess
-  server: 185.177.229.95
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇩🇪 德国 (Germany) 08 - homeip
-  type: vless
-  server: 104.21.3.133
-  port: 2083
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fans.liverpool.qzz.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: fans.liverpool.qzz.io
-- name: 🇩🇪 德国 (Germany) 09 - homeip
   type: vmess
   server: Ir.wbzo.ir
   port: 2080
@@ -110,42 +38,277 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 10 - homeip
+- name: 🇩🇪 德国 (Germany) 04 - homeip
   type: vless
-  server: 172.67.177.146
-  port: 8443
-  uuid: 50414e45-4c5f-5a45-5553-02f655f579ee
+  server: 153.56.229.218
+  port: 443
+  uuid: ba0dbd83-3569-46dc-bc3d-ef6e58ffc97b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: swzwi9e2ucjs.ofkqzf-g24wjgkhd31.workers.dev
+  reality-opts:
+    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
+  servername: 71b840t.de7.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 05 - homeip
+  type: ss
+  server: 47.91.74.232
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 06 - homeip
+  type: ss
+  server: 47.91.74.232
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 07 - homeip
+  type: ss
+  server: 47.245.170.82
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 08 - homeip
+  type: vmess
+  server: Ir.wbzo.ir
+  port: 2080
+  uuid: b7e3e8af-d1ca-45da-a95f-8b9ad77398b1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 09 - homeip
+  type: vless
+  server: bookend.filnex.baby
+  port: 443
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ferncrest.gerqix.online
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/02f655f579ee
+    path: /api/de1/stream
     headers:
-      Host: swzwi9e2ucjs.ofkqzf-g24wjgkhd31.workers.dev
-- name: 🇩🇪 德国 (Germany) 11 - homeip
-  type: ss
-  server: 156.67.120.205
-  port: 51628
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
+      Host: bookend.filnex.baby
+- name: 🇩🇪 德国 (Germany) 10 - homeip
+  type: vless
+  server: bookend.filnex.baby
+  port: 443
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ferncrest.gerqix.online
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: bookend.filnex.baby
+- name: 🇩🇪 德国 (Germany) 11 - homeip
+  type: vmess
+  server: 185.177.229.95
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇩🇪 德国 (Germany) 12 - homeip
+  type: vless
+  server: ci.cloudof1.ir
+  port: 2082
+  uuid: b1758b10-8da1-4791-a1b3-44a77deea1ed
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 13 - homeip
+  type: vless
+  server: 83.243.86.189
+  port: 443
+  uuid: cd78f948-69a7-43e6-b1b3-fa09eba50d5d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: jfPQXsfvAIZNCDFvW_W3n3Akt6HJv1GD6XaWSApmPGk
+  servername: www.tradingview.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 14 - homeip
   type: ss
-  server: 185.176.204.18
+  server: 8.209.119.13
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 15 - homeip
+  type: vless
+  server: ci.cloudof1.ir
+  port: 2082
+  uuid: b1758b10-8da1-4791-a1b3-44a77deea1ed
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 16 - homeip
+  type: ss
+  server: 57.129.76.233
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 (Germany) 13 - homeip
+- name: 🇩🇪 德国 (Germany) 17 - homeip
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - homeip
+  type: vless
+  server: ci.cloudof1.ir
+  port: 2082
+  uuid: b1758b10-8da1-4791-a1b3-44a77deea1ed
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 19 - homeip
+  type: vless
+  server: woodgrain.filnex.baby
+  port: 443
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: larchbank.elvano.website
+  network: ws
+  ws-opts:
+    path: /api/de2/stream
+    headers:
+      Host: woodgrain.filnex.baby
+- name: 🇩🇪 德国 (Germany) 20 - homeip
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇩🇪 德国 (Germany) 21 - homeip
+  type: ss
+  server: 8.211.56.98
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 22 - homeip
   type: ss
   server: 47.254.169.3
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪 德国 (Germany) 14 - homeip
+- name: 🇩🇪 德国 (Germany) 23 - homeip
+  type: ss
+  server: 156.67.120.205
+  port: 51628
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
+  udp: true
+- name: 🇩🇪 德国 (Germany) 24 - homeip
+  type: ss
+  server: 193.108.116.98
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 25 - homeip
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 26 - homeip
+  type: vless
+  server: ns2.irts.lol
+  port: 443
+  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ns2.irts.lol
+- name: 🇩🇪 德国 (Germany) 27 - homeip
+  type: vless
+  server: 188.245.55.193
+  port: 1155
+  uuid: 8a18247c-be3c-4059-b1ea-eca16426f72d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Tqaj1t2O6IgtkpPSv864aEteMBYI8soPDCYsaJ93BRE
+  servername: tgju.org
+  client-fingerprint: edge
+- name: 🇩🇪 德国 (Germany) 28 - homeip
+  type: vless
+  server: sienna.merlano.monster
+  port: 443
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sienna.merlano.monster
+  network: ws
+  ws-opts:
+    path: /api/de4/stream
+    headers:
+      Host: sienna.merlano.monster
+- name: 🇩🇪 德国 (Germany) 29 - homeip
+  type: vless
+  server: static1.berluno.ir
+  port: 1155
+  uuid: 8a18247c-be3c-4059-b1ea-eca16426f72d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Tqaj1t2O6IgtkpPSv864aEteMBYI8soPDCYsaJ93BRE
+  servername: tgju.org
+  client-fingerprint: edge
+- name: 🇩🇪 德国 (Germany) 30 - homeip
+  type: vless
+  server: bookend.filnex.baby
+  port: 443
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ferncrest.gerqix.online
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: bookend.filnex.baby
+- name: 🇩🇪 德国 (Germany) 31 - homeip
+  type: vless
+  server: woodgrain.filnex.baby
+  port: 443
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: larchbank.elvano.website
+  network: ws
+  ws-opts:
+    path: /api/de2/stream
+    headers:
+      Host: woodgrain.filnex.baby
+- name: 🇩🇪 德国 (Germany) 32 - homeip
   type: vless
   server: 104.17.70.206
   port: 8443
@@ -159,70 +322,114 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.com
-- name: 🇩🇪 德国 (Germany) 15 - homeip
+- name: 🇩🇪 德国 (Germany) 33 - homeip
   type: ss
-  server: 57.129.76.233
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  server: 8.209.106.54
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪 德国 (Germany) 16 - homeip
+- name: 🇩🇪 德国 (Germany) 34 - homeip
   type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
+  server: 47.245.173.25
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪 德国 (Germany) 17 - homeip
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇩🇪 德国 (Germany) 18 - homeip
+- name: 🇩🇪 德国 (Germany) 35 - homeip
   type: ss
   server: 47.245.174.67
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪 德国 (Germany) 19 - homeip
-  type: ss
-  server: 47.245.167.223
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 20 - homeip
-  type: vless
-  server: ifi1.modemjibi.com
-  port: 993
-  uuid: 17ead557-8407-42ae-b9a1-f11a869f99c6
+- name: 🇩🇪 德国 (Germany) 36 - homeip
+  type: vmess
+  server: 185.177.229.95
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ifi1.modemjibi.com.
+  servername: xmfhlpy.com
+- name: 🇩🇪 德国 (Germany) 37 - homeip
+  type: vless
+  server: 91.107.185.86
+  port: 16893
+  uuid: 80256d6f-7cd3-4a3a-8df6-2981e52551dc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dpmXAfLC6-Sf6cPjkQKGx_NliRQRFZ_oUiiPA5ALW0I
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 38 - homeip
+  type: vless
+  server: 172.64.229.129
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /rain1226
     headers:
-      Host: ifi1.modemjibi.com
-- name: 🇩🇪 德国 (Germany) 21 - homeip
+      Host: eu02.123450908.xyz
+- name: 🇩🇪 德国 (Germany) 39 - homeip
   type: ss
-  server: 47.254.175.2
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 40 - homeip
+  type: vless
+  server: bookend.filnex.baby
+  port: 443
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ferncrest.gerqix.online
+  network: ws
+  ws-opts:
+    path: /api/de1/stream
+    headers:
+      Host: bookend.filnex.baby
+- name: 🇩🇪 德国 (Germany) 41 - homeip
+  type: vless
+  server: sienna.merlano.monster
+  port: 443
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sienna.merlano.monster
+  network: ws
+  ws-opts:
+    path: /api/de4/stream
+    headers:
+      Host: sienna.merlano.monster
+- name: 🇩🇪 德国 (Germany) 42 - homeip
+  type: ss
+  server: 8.209.117.187
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪 德国 (Germany) 22 - homeip
-  type: ss
-  server: 193.108.116.98
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 43 - homeip
+  type: vless
+  server: ci.cloudof1.ir
+  port: 2082
+  uuid: b1758b10-8da1-4791-a1b3-44a77deea1ed
   udp: true
-- name: 🇩🇪 德国 (Germany) 23 - homeip
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 44 - homeip
   type: vless
   server: 57.129.41.216
   port: 80
@@ -234,8 +441,86 @@ proxies:
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 24 - homeip
+      Host: 57.129.41.216
+- name: 🇩🇪 德国 (Germany) 45 - homeip
+  type: vless
+  server: ns2.irts.lol
+  port: 443
+  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ns2.irts.lol
+- name: 🇩🇪 德国 (Germany) 46 - homeip
+  type: ss
+  server: 8.209.115.219
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 47 - homeip
+  type: ss
+  server: 8.209.72.224
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 48 - homeip
+  type: ss
+  server: 8.220.81.25
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 49 - homeip
+  type: ss
+  server: 8.220.81.25
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 50 - homeip
+  type: ss
+  server: 8.211.56.98
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 51 - homeip
+  type: vless
+  server: hw7.jirjirakirani.com
+  port: 993
+  uuid: 52406fc7-b008-4985-8de1-4bc43b2b873a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw7.jirjirakirani.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw7.jirjirakirani.com.
+- name: 🇩🇪 德国 (Germany) 52 - homeip
+  type: vless
+  server: 172.64.150.43
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
+- name: 🇩🇪 德国 (Germany) 53 - homeip
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 54 - homeip
   type: vmess
   server: 94.130.237.57
   port: 27154
@@ -250,14 +535,25 @@ proxies:
     path: /Telegram=@AmyraxVPN
     headers:
       Host: 94.130.237.57
-- name: 🇩🇪 德国 (Germany) 25 - homeip
+- name: 🇩🇪 德国 (Germany) 55 - homeip
+  type: vmess
+  server: 193.108.117.61
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 56 - homeip
   type: ss
   server: 8.209.117.187
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- name: 🇩🇪 德国 (Germany) 26 - homeip
+- name: 🇩🇪 德国 (Germany) 57 - homeip
   type: vmess
   server: 193.108.119.87
   port: 1270
@@ -268,242 +564,9 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇩🇪 德国 (Germany) 27 - homeip
-  type: vless
-  server: ns2.irts.lol
-  port: 443
-  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ns2.irts.lol
-- name: 🇩🇪 德国 (Germany) 28 - homeip
-  type: vless
-  server: 172.64.229.129
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 29 - homeip
-  type: ss
-  server: 156.67.120.205
-  port: 51628
-  cipher: chacha20-ietf-poly1305
-  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
-  udp: true
-- name: 🇩🇪 德国 (Germany) 30 - homeip
-  type: vless
-  server: ov-germany1.09vpn.com
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 31 - homeip
-  type: vless
-  server: 172.64.80.1
-  port: 2053
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: FaNs.livErpoOl.qZZ.io
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZXlpMnFWRURmWkp5ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: fans.liverpool.qzz.io
-- name: 🇩🇪 德国 (Germany) 32 - homeip
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 33 - homeip
-  type: ss
-  server: 47.254.128.109
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 34 - homeip
-  type: ss
-  server: 47.254.128.109
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 35 - homeip
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 36 - homeip
-  type: ss
-  server: 3.125.43.168
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 37 - homeip
-  type: ss
-  server: 47.254.167.157
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 38 - homeip
-  type: ss
-  server: 18.171.191.130
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 39 - homeip
-  type: ss
-  server: 8.211.57.86
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 40 - homeip
-  type: vless
-  server: 83.243.86.189
-  port: 443
-  uuid: cd78f948-69a7-43e6-b1b3-fa09eba50d5d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: jfPQXsfvAIZNCDFvW_W3n3Akt6HJv1GD6XaWSApmPGk
-  servername: www.tradingview.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 41 - homeip
-  type: ss
-  server: 8.209.106.54
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 42 - homeip
-  type: ss
-  server: 8.211.38.49
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 43 - homeip
+- name: 🇩🇪 德国 (Germany) 58 - homeip
   type: ss
   server: 8.209.73.203
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 44 - homeip
-  type: vless
-  server: 172.64.150.43
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 45 - homeip
-  type: vless
-  server: 91.107.185.86
-  port: 16893
-  uuid: 80256d6f-7cd3-4a3a-8df6-2981e52551dc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: dpmXAfLC6-Sf6cPjkQKGx_NliRQRFZ_oUiiPA5ALW0I
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 46 - homeip
-  type: ss
-  server: 8.209.72.224
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 47 - homeip
-  type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇩🇪 德国 (Germany) 48 - homeip
-  type: ss
-  server: 178.162.254.38
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇩🇪 德国 (Germany) 49 - homeip
-  type: ss
-  server: 47.254.174.203
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 50 - homeip
-  type: ss
-  server: 47.91.74.232
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 51 - homeip
-  type: ss
-  server: 8.211.56.98
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 52 - homeip
-  type: ss
-  server: 8.209.119.13
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 53 - homeip
-  type: ss
-  server: 47.254.143.251
-  port: 443
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 54 - homeip
-  type: ss
-  server: 47.245.170.82
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
@@ -567,6 +630,10 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 52 - homeip
   - 🇩🇪 德国 (Germany) 53 - homeip
   - 🇩🇪 德国 (Germany) 54 - homeip
+  - 🇩🇪 德国 (Germany) 55 - homeip
+  - 🇩🇪 德国 (Germany) 56 - homeip
+  - 🇩🇪 德国 (Germany) 57 - homeip
+  - 🇩🇪 德国 (Germany) 58 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -626,5 +693,9 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 52 - homeip
   - 🇩🇪 德国 (Germany) 53 - homeip
   - 🇩🇪 德国 (Germany) 54 - homeip
+  - 🇩🇪 德国 (Germany) 55 - homeip
+  - 🇩🇪 德国 (Germany) 56 - homeip
+  - 🇩🇪 德国 (Germany) 57 - homeip
+  - 🇩🇪 德国 (Germany) 58 - homeip
 rules:
 - MATCH,PROXIES

@@ -5,141 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - homeip
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: ss
+  server: 8.216.3.83
+  port: 5555
+  cipher: aes-256-gcm
+  password: '123456'
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 02 - homeip
   type: ss
-  server: 8.211.131.30
+  server: 8.216.18.167
   port: 5555
   cipher: aes-256-gcm
   password: '123456'
   udp: true
 - name: 🇯🇵 日本 (Japan) 03 - homeip
-  type: vless
-  server: 172.64.154.113
-  port: 8443
-  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  type: ss
+  server: 47.91.31.150
+  port: 5555
+  cipher: aes-256-gcm
+  password: '123456'
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: freeceshi6.frii.site
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: freeceshi6.frii.site
 - name: 🇯🇵 日本 (Japan) 04 - homeip
-  type: ss
-  server: 8.209.221.183
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 05 - homeip
-  type: vless
-  server: 104.16.10.72
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 06 - homeip
-  type: ss
-  server: 8.209.249.205
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 07 - homeip
-  type: ss
-  server: 8.216.9.151
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 08 - homeip
-  type: ss
-  server: 8.216.1.127
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 09 - homeip
-  type: vless
-  server: 50.7.159.242
-  port: 443
-  uuid: 8840fac2-5361-4cb6-b887-cd1b95092394
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp.reddotcorp.org
-- name: 🇯🇵 日本 (Japan) 10 - homeip
-  type: vless
-  server: 104.21.0.87
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 11 - homeip
-  type: vless
-  server: 142.91.101.39
-  port: 627
-  uuid: 8199228b-e84b-42a2-9268-e400391e483a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: 🇯🇵 日本 (Japan) 12 - homeip
-  type: ss
-  server: 8.216.18.173
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 13 - homeip
-  type: ss
-  server: 8.216.4.158
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 14 - homeip
-  type: ss
-  server: 47.91.15.111
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 15 - homeip
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -154,487 +40,28 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 16 - homeip
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 17 - homeip
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 18 - homeip
+- name: 🇯🇵 日本 (Japan) 05 - homeip
   type: ss
   server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 19 - homeip
+- name: 🇯🇵 日本 (Japan) 06 - homeip
   type: ss
-  server: 168.138.205.100
-  port: 53758
-  cipher: aes-128-gcm
-  password: Bwlqh7GcFB
-  udp: true
-- name: 🇯🇵 日本 (Japan) 20 - homeip
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 21 - homeip
-  type: vless
-  server: 104.21.34.106
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 22 - homeip
-  type: vmess
-  server: 161.33.20.255
-  port: 8880
-  uuid: e0856508-d693-450a-a099-455091dc4f25
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: e0856508-d693-450a-a099-455091dc4f25-vm
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 23 - homeip
-  type: ss
-  server: 8.216.19.169
+  server: 47.91.15.175
   port: 5555
   cipher: aes-256-gcm
   password: '123456'
   udp: true
-- name: 🇯🇵 日本 (Japan) 24 - homeip
-  type: vless
-  server: 43.170.8.95
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 25 - homeip
-  type: vless
-  server: 104.16.111.195
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 26 - homeip
-  type: vless
-  server: 154.31.114.162
-  port: 8443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 27 - homeip
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 28 - homeip
-  type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 29 - homeip
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 30 - homeip
+- name: 🇯🇵 日本 (Japan) 07 - homeip
   type: ss
-  server: 8.216.8.0
+  server: 8.216.8.176
   port: 5555
   cipher: aes-256-gcm
   password: '123456'
   udp: true
-- name: 🇯🇵 日本 (Japan) 31 - homeip
-  type: vless
-  server: 104.19.164.155
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 32 - homeip
-  type: ss
-  server: 8.216.11.25
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 33 - homeip
-  type: ss
-  server: 8.216.8.185
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 34 - homeip
-  type: ss
-  server: 47.91.29.60
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 35 - homeip
-  type: ss
-  server: 47.245.54.15
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 36 - homeip
-  type: vless
-  server: 104.16.0.1
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 37 - homeip
-  type: vless
-  server: 104.24.31.89
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 38 - homeip
-  type: ss
-  server: 8.216.3.83
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 39 - homeip
-  type: ss
-  server: 8.216.16.102
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 40 - homeip
-  type: ss
-  server: 8.216.4.146
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 41 - homeip
-  type: ss
-  server: 8.216.18.189
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 42 - homeip
-  type: ss
-  server: 8.216.9.190
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 43 - homeip
-  type: vless
-  server: 142.91.101.39
-  port: 627
-  uuid: aff1ffd0-594c-44c9-9f79-4096fde005ea
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: 🇯🇵 日本 (Japan) 44 - homeip
-  type: ss
-  server: 47.245.40.193
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 45 - homeip
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: none
-- name: 🇯🇵 日本 (Japan) 46 - homeip
-  type: vless
-  server: 104.16.0.1
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 47 - homeip
-  type: vless
-  server: 104.16.10.56
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 48 - homeip
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 49 - homeip
-  type: vless
-  server: 104.19.33.25
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 50 - homeip
-  type: vless
-  server: 104.16.244.34
-  port: 2053
-  uuid: 97514cec-cf70-42b1-9743-3f89122adc8e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cffq.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: cffq.pages.dev
-- name: 🇯🇵 日本 (Japan) 51 - homeip
-  type: vless
-  server: 104.19.12.94
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 52 - homeip
-  type: vless
-  server: 154.31.114.162
-  port: 8443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 53 - homeip
-  type: ss
-  server: 8.216.17.189
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 54 - homeip
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 55 - homeip
-  type: ss
-  server: 8.211.132.94
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 56 - homeip
-  type: vmess
-  server: 156.239.224.107
-  port: 57278
-  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 57 - homeip
-  type: ss
-  server: 8.216.18.139
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 58 - homeip
-  type: ss
-  server: jpa.123069.xyz
-  port: 53758
-  cipher: aes-128-gcm
-  password: Bwlqh7GcFB
-  udp: true
-- name: 🇯🇵 日本 (Japan) 59 - homeip
-  type: vmess
-  server: 168.138.43.75
-  port: 80
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
-- name: 🇯🇵 日本 (Japan) 60 - homeip
-  type: ss
-  server: 8.216.18.167
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 61 - homeip
+- name: 🇯🇵 日本 (Japan) 08 - homeip
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -649,65 +76,30 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 62 - homeip
+- name: 🇯🇵 日本 (Japan) 09 - homeip
   type: ss
-  server: 47.245.40.193
+  server: jp-telegram-khp25-viber-09773510813.premiumx.giize.com
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: 53dea5063dff45e4961fb9cba5d3f83a
+  udp: true
+- name: 🇯🇵 日本 (Japan) 10 - homeip
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 11 - homeip
+  type: ss
+  server: 47.74.9.21
   port: 5555
   cipher: aes-256-gcm
   password: '123456'
   udp: true
-- name: 🇯🇵 日本 (Japan) 63 - homeip
-  type: ss
-  server: 47.74.49.154
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 64 - homeip
-  type: ss
-  server: 47.91.16.50
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 65 - homeip
-  type: ss
-  server: 8.216.9.41
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 66 - homeip
-  type: ss
-  server: 47.91.2.13
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 67 - homeip
-  type: ss
-  server: 8.209.221.90
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 68 - homeip
-  type: ss
-  server: 8.209.249.190
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 69 - homeip
-  type: ss
-  server: 8.216.17.52
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 70 - homeip
+- name: 🇯🇵 日本 (Japan) 12 - homeip
   type: vless
-  server: 104.16.10.48
+  server: 104.16.10.72
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -719,9 +111,32 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 71 - homeip
+- name: 🇯🇵 日本 (Japan) 13 - homeip
   type: vless
-  server: 104.27.46.35
+  server: 50.7.159.242
+  port: 443
+  uuid: 8840fac2-5361-4cb6-b887-cd1b95092394
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp.reddotcorp.org
+- name: 🇯🇵 日本 (Japan) 14 - homeip
+  type: ss
+  server: 8.216.9.15
+  port: 5555
+  cipher: aes-256-gcm
+  password: '123456'
+  udp: true
+- name: 🇯🇵 日本 (Japan) 15 - homeip
+  type: ss
+  server: 8.216.9.151
+  port: 5555
+  cipher: aes-256-gcm
+  password: '123456'
+  udp: true
+- name: 🇯🇵 日本 (Japan) 16 - homeip
+  type: vless
+  server: 104.16.10.135
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -733,30 +148,23 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 72 - homeip
+- name: 🇯🇵 日本 (Japan) 17 - homeip
   type: ss
-  server: 47.91.15.175
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 73 - homeip
+- name: 🇯🇵 日本 (Japan) 18 - homeip
   type: ss
-  server: 47.245.42.226
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 74 - homeip
-  type: ss
-  server: 47.74.0.207
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 75 - homeip
+- name: 🇯🇵 日本 (Japan) 19 - homeip
   type: vless
-  server: 152.69.200.216
+  server: 172.67.217.240
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -768,16 +176,25 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 76 - homeip
-  type: ss
-  server: 47.74.40.243
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 77 - homeip
+- name: 🇯🇵 日本 (Japan) 20 - homeip
   type: vless
-  server: 104.16.10.104
+  server: 50.7.159.242
+  port: 443
+  uuid: 8840fac2-5361-4cb6-b887-cd1b95092394
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp.reddotcorp.org
+- name: 🇯🇵 日本 (Japan) 21 - homeip
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 22 - homeip
+  type: vless
+  server: 104.19.33.25
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -789,7 +206,70 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 78 - homeip
+- name: 🇯🇵 日本 (Japan) 23 - homeip
+  type: ss
+  server: 8.211.128.146
+  port: 5555
+  cipher: aes-256-gcm
+  password: '123456'
+  udp: true
+- name: 🇯🇵 日本 (Japan) 24 - homeip
+  type: ss
+  server: 8.211.174.191
+  port: 5555
+  cipher: aes-256-gcm
+  password: '123456'
+  udp: true
+- name: 🇯🇵 日本 (Japan) 25 - homeip
+  type: ss
+  server: 8.216.10.204
+  port: 5555
+  cipher: aes-256-gcm
+  password: '123456'
+  udp: true
+- name: 🇯🇵 日本 (Japan) 26 - homeip
+  type: vless
+  server: 172.64.154.113
+  port: 8443
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: freeceshi6.frii.site
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: freeceshi6.frii.site
+- name: 🇯🇵 日本 (Japan) 27 - homeip
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 28 - homeip
+  type: ss
+  server: 168.138.205.100
+  port: 53758
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
+  udp: true
+- name: 🇯🇵 日本 (Japan) 29 - homeip
+  type: ss
+  server: 8.216.18.189
+  port: 5555
+  cipher: aes-256-gcm
+  password: '123456'
+  udp: true
+- name: 🇯🇵 日本 (Japan) 30 - homeip
+  type: ss
+  server: 8.216.15.55
+  port: 5555
+  cipher: aes-256-gcm
+  password: '123456'
+  udp: true
+- name: 🇯🇵 日本 (Japan) 31 - homeip
   type: vless
   server: 104.18.42.98
   port: 443
@@ -803,7 +283,93 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 79 - homeip
+- name: 🇯🇵 日本 (Japan) 32 - homeip
+  type: vless
+  server: kuruish.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kuruish.org
+- name: 🇯🇵 日本 (Japan) 33 - homeip
+  type: vless
+  server: 104.16.10.234
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 34 - homeip
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: freeceshi6.frii.site
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: freeceshi6.frii.site
+- name: 🇯🇵 日本 (Japan) 35 - homeip
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 36 - homeip
+  type: ss
+  server: jpa.123069.xyz
+  port: 53758
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
+  udp: true
+- name: 🇯🇵 日本 (Japan) 37 - homeip
+  type: vless
+  server: 104.16.10.2
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 38 - homeip
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 39 - homeip
+  type: ss
+  server: 8.216.5.89
+  port: 5555
+  cipher: aes-256-gcm
+  password: '123456'
+  udp: true
+- name: 🇯🇵 日本 (Japan) 40 - homeip
   type: vless
   server: 172.67.217.240
   port: 443
@@ -817,7 +383,21 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 80 - homeip
+- name: 🇯🇵 日本 (Japan) 41 - homeip
+  type: ss
+  server: 8.216.7.10
+  port: 6666
+  cipher: aes-256-gcm
+  password: '123456'
+  udp: true
+- name: 🇯🇵 日本 (Japan) 42 - homeip
+  type: ss
+  server: 8.211.131.30
+  port: 5555
+  cipher: aes-256-gcm
+  password: '123456'
+  udp: true
+- name: 🇯🇵 日本 (Japan) 43 - homeip
   type: vless
   server: 188.114.98.0
   port: 443
@@ -831,7 +411,35 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 81 - homeip
+- name: 🇯🇵 日本 (Japan) 44 - homeip
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: freeceshi6.frii.site
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: freeceshi6.frii.site
+- name: 🇯🇵 日本 (Japan) 45 - homeip
+  type: vless
+  server: 154.31.114.162
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 46 - homeip
   type: vmess
   server: 168.138.43.75
   port: 80
@@ -845,68 +453,32 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
+      Host: none
+- name: 🇯🇵 日本 (Japan) 47 - homeip
+  type: vmess
+  server: 156.239.224.107
+  port: 57278
+  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
       Host: ''
-- name: 🇯🇵 日本 (Japan) 82 - homeip
-  type: vless
-  server: 50.7.159.242
-  port: 443
-  uuid: 8840fac2-5361-4cb6-b887-cd1b95092394
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp.reddotcorp.org
-- name: 🇯🇵 日本 (Japan) 83 - homeip
-  type: vless
-  server: 104.21.6.186
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 84 - homeip
+- name: 🇯🇵 日本 (Japan) 48 - homeip
   type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 85 - homeip
-  type: ss
-  server: 8.216.8.135
+  server: 8.209.249.205
   port: 5555
   cipher: aes-256-gcm
   password: '123456'
   udp: true
-- name: 🇯🇵 日本 (Japan) 86 - homeip
-  type: ss
-  server: 8.216.7.48
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 87 - homeip
-  type: ss
-  server: 47.91.18.202
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 88 - homeip
-  type: ss
-  server: 8.211.130.59
-  port: 5555
-  cipher: aes-256-gcm
-  password: '123456'
-  udp: true
-- name: 🇯🇵 日本 (Japan) 89 - homeip
+- name: 🇯🇵 日本 (Japan) 49 - homeip
   type: vless
-  server: 104.17.210.74
+  server: 104.21.33.59
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -918,69 +490,48 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 90 - homeip
-  type: vless
-  server: 104.16.111.102
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 91 - homeip
-  type: vless
-  server: 107.191.53.86
-  port: 4798
-  uuid: 16a5e4f6-246f-406d-9787-1b5686a97cbc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 🇯🇵 日本 (Japan) 92 - homeip
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 93 - homeip
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 94 - homeip
+- name: 🇯🇵 日本 (Japan) 50 - homeip
   type: ss
   server: 149.22.87.241
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
+- name: 🇯🇵 日本 (Japan) 51 - homeip
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 52 - homeip
+  type: vless
+  server: 152.69.200.216
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 53 - homeip
+  type: vless
+  server: 154.31.114.162
+  port: 8443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1039,47 +590,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 51 - homeip
   - 🇯🇵 日本 (Japan) 52 - homeip
   - 🇯🇵 日本 (Japan) 53 - homeip
-  - 🇯🇵 日本 (Japan) 54 - homeip
-  - 🇯🇵 日本 (Japan) 55 - homeip
-  - 🇯🇵 日本 (Japan) 56 - homeip
-  - 🇯🇵 日本 (Japan) 57 - homeip
-  - 🇯🇵 日本 (Japan) 58 - homeip
-  - 🇯🇵 日本 (Japan) 59 - homeip
-  - 🇯🇵 日本 (Japan) 60 - homeip
-  - 🇯🇵 日本 (Japan) 61 - homeip
-  - 🇯🇵 日本 (Japan) 62 - homeip
-  - 🇯🇵 日本 (Japan) 63 - homeip
-  - 🇯🇵 日本 (Japan) 64 - homeip
-  - 🇯🇵 日本 (Japan) 65 - homeip
-  - 🇯🇵 日本 (Japan) 66 - homeip
-  - 🇯🇵 日本 (Japan) 67 - homeip
-  - 🇯🇵 日本 (Japan) 68 - homeip
-  - 🇯🇵 日本 (Japan) 69 - homeip
-  - 🇯🇵 日本 (Japan) 70 - homeip
-  - 🇯🇵 日本 (Japan) 71 - homeip
-  - 🇯🇵 日本 (Japan) 72 - homeip
-  - 🇯🇵 日本 (Japan) 73 - homeip
-  - 🇯🇵 日本 (Japan) 74 - homeip
-  - 🇯🇵 日本 (Japan) 75 - homeip
-  - 🇯🇵 日本 (Japan) 76 - homeip
-  - 🇯🇵 日本 (Japan) 77 - homeip
-  - 🇯🇵 日本 (Japan) 78 - homeip
-  - 🇯🇵 日本 (Japan) 79 - homeip
-  - 🇯🇵 日本 (Japan) 80 - homeip
-  - 🇯🇵 日本 (Japan) 81 - homeip
-  - 🇯🇵 日本 (Japan) 82 - homeip
-  - 🇯🇵 日本 (Japan) 83 - homeip
-  - 🇯🇵 日本 (Japan) 84 - homeip
-  - 🇯🇵 日本 (Japan) 85 - homeip
-  - 🇯🇵 日本 (Japan) 86 - homeip
-  - 🇯🇵 日本 (Japan) 87 - homeip
-  - 🇯🇵 日本 (Japan) 88 - homeip
-  - 🇯🇵 日本 (Japan) 89 - homeip
-  - 🇯🇵 日本 (Japan) 90 - homeip
-  - 🇯🇵 日本 (Japan) 91 - homeip
-  - 🇯🇵 日本 (Japan) 92 - homeip
-  - 🇯🇵 日本 (Japan) 93 - homeip
-  - 🇯🇵 日本 (Japan) 94 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1138,46 +648,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 51 - homeip
   - 🇯🇵 日本 (Japan) 52 - homeip
   - 🇯🇵 日本 (Japan) 53 - homeip
-  - 🇯🇵 日本 (Japan) 54 - homeip
-  - 🇯🇵 日本 (Japan) 55 - homeip
-  - 🇯🇵 日本 (Japan) 56 - homeip
-  - 🇯🇵 日本 (Japan) 57 - homeip
-  - 🇯🇵 日本 (Japan) 58 - homeip
-  - 🇯🇵 日本 (Japan) 59 - homeip
-  - 🇯🇵 日本 (Japan) 60 - homeip
-  - 🇯🇵 日本 (Japan) 61 - homeip
-  - 🇯🇵 日本 (Japan) 62 - homeip
-  - 🇯🇵 日本 (Japan) 63 - homeip
-  - 🇯🇵 日本 (Japan) 64 - homeip
-  - 🇯🇵 日本 (Japan) 65 - homeip
-  - 🇯🇵 日本 (Japan) 66 - homeip
-  - 🇯🇵 日本 (Japan) 67 - homeip
-  - 🇯🇵 日本 (Japan) 68 - homeip
-  - 🇯🇵 日本 (Japan) 69 - homeip
-  - 🇯🇵 日本 (Japan) 70 - homeip
-  - 🇯🇵 日本 (Japan) 71 - homeip
-  - 🇯🇵 日本 (Japan) 72 - homeip
-  - 🇯🇵 日本 (Japan) 73 - homeip
-  - 🇯🇵 日本 (Japan) 74 - homeip
-  - 🇯🇵 日本 (Japan) 75 - homeip
-  - 🇯🇵 日本 (Japan) 76 - homeip
-  - 🇯🇵 日本 (Japan) 77 - homeip
-  - 🇯🇵 日本 (Japan) 78 - homeip
-  - 🇯🇵 日本 (Japan) 79 - homeip
-  - 🇯🇵 日本 (Japan) 80 - homeip
-  - 🇯🇵 日本 (Japan) 81 - homeip
-  - 🇯🇵 日本 (Japan) 82 - homeip
-  - 🇯🇵 日本 (Japan) 83 - homeip
-  - 🇯🇵 日本 (Japan) 84 - homeip
-  - 🇯🇵 日本 (Japan) 85 - homeip
-  - 🇯🇵 日本 (Japan) 86 - homeip
-  - 🇯🇵 日本 (Japan) 87 - homeip
-  - 🇯🇵 日本 (Japan) 88 - homeip
-  - 🇯🇵 日本 (Japan) 89 - homeip
-  - 🇯🇵 日本 (Japan) 90 - homeip
-  - 🇯🇵 日本 (Japan) 91 - homeip
-  - 🇯🇵 日本 (Japan) 92 - homeip
-  - 🇯🇵 日本 (Japan) 93 - homeip
-  - 🇯🇵 日本 (Japan) 94 - homeip
 rules:
 - MATCH,PROXIES

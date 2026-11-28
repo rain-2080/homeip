@@ -5,12 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - homeip
-  type: ss
-  server: 194.87.69.12
-  port: 18443
-  cipher: aes-256-gcm
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+  type: vless
+  server: 136.148.83.70
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aszbk-ru-78dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 02 - homeip
   type: vless
   server: 136.148.83.70
@@ -31,13 +33,13 @@ proxies:
   servername: aszbk-ru-78dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 04 - homeip
   type: vless
-  server: 136.148.83.71
+  server: 136.148.83.70
   port: 443
   uuid: 00000000-0000-0001-0000-000000000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wccfu-ru-79dc.my-fade.cloud
+  servername: aszbk-ru-78dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 05 - homeip
   type: vless
   server: 136.148.83.71
@@ -49,23 +51,21 @@ proxies:
   servername: wccfu-ru-79dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 06 - homeip
   type: vless
-  server: 136.148.83.71
-  port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
+  server: xinnusvpn.duckdns.org
+  port: 8443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wccfu-ru-79dc.my-fade.cloud
+  servername: xinnusvpn.duckdns.org
+  network: ws
+  ws-opts:
+    path: /wsnl
+    headers:
+      Host: xinnusvpn.duckdns.org
 - name: 🇷🇺 俄罗斯 (Russia) 07 - homeip
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
   type: vless
-  server: 196.196.148.85
+  server: 13.141.36.10
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
@@ -74,8 +74,8 @@ proxies:
   reality-opts:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
   servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 08 - homeip
   type: vless
   server: 136.148.83.70
   port: 443
@@ -84,6 +84,15 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: aszbk-ru-78dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 09 - homeip
+  type: vless
+  server: 136.148.83.71
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wccfu-ru-79dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 10 - homeip
   type: vless
   server: 136.148.83.69
@@ -104,46 +113,38 @@ proxies:
   servername: aszbk-ru-78dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 12 - homeip
   type: vless
-  server: 136.148.83.70
+  server: 195.206.235.232
   port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 13 - homeip
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  server: 194.87.69.12
+  port: 18443
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 14 - homeip
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: JYevOrmujurJsNP1ata0kNfjsxwFLAhgD73mrZPJP1I=
+  type: vless
+  server: xinnusvpn.duckdns.org
+  port: 8443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xinnusvpn.duckdns.org
+  network: ws
+  ws-opts:
+    path: /wsnl
+    headers:
+      Host: xinnusvpn.duckdns.org
 - name: 🇷🇺 俄罗斯 (Russia) 15 - homeip
-  type: vless
-  server: 136.148.83.70
-  port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 16 - homeip
-  type: vless
-  server: 136.148.83.71
-  port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wccfu-ru-79dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 17 - homeip
   type: vless
   server: 196.196.148.85
   port: 443
@@ -155,9 +156,18 @@ proxies:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
   servername: 5d0319t.nl7.h1clayd.click
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 18 - homeip
+- name: 🇷🇺 俄罗斯 (Russia) 16 - homeip
   type: vless
-  server: 196.196.148.85
+  server: 136.148.83.69
+  port: 443
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 17 - homeip
+  type: vless
+  server: 195.206.235.232
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
@@ -166,7 +176,16 @@ proxies:
   reality-opts:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
   servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 18 - homeip
+  type: vless
+  server: 136.148.83.70
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aszbk-ru-78dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 19 - homeip
   type: vless
   server: 136.148.83.71
@@ -176,24 +195,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: wccfu-ru-79dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 20 - homeip
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 21 - homeip
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
 proxy-groups:
 - name: PROXIES
   type: select
@@ -218,8 +219,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 17 - homeip
   - 🇷🇺 俄罗斯 (Russia) 18 - homeip
   - 🇷🇺 俄罗斯 (Russia) 19 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 20 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 21 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -244,7 +243,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 17 - homeip
   - 🇷🇺 俄罗斯 (Russia) 18 - homeip
   - 🇷🇺 俄罗斯 (Russia) 19 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 20 - homeip
-  - 🇷🇺 俄罗斯 (Russia) 21 - homeip
 rules:
 - MATCH,PROXIES

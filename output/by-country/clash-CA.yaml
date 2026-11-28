@@ -6,31 +6,25 @@ log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - homeip
   type: ss
+  server: 51.222.136.236
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 02 - homeip
+  type: ss
   server: 149.22.95.183
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 02 - homeip
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 03 - homeip
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 51.222.141.125
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 04 - homeip
   type: vmess
   server: 134.195.196.211
@@ -42,12 +36,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 05 - homeip
-  type: ss
-  server: 51.222.141.125
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 06 - homeip
   type: vmess
   server: 134.195.196.211
@@ -59,15 +56,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 07 - homeip
-  type: vless
-  server: 66.163.113.9
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kuruish.org
-- name: 🇨🇦 加拿大 (Canada) 08 - homeip
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -77,9 +65,43 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 08 - homeip
+  type: vless
+  server: 66.163.113.9
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kuruish.org
 - name: 🇨🇦 加拿大 (Canada) 09 - homeip
+  type: vless
+  server: 66.163.113.9
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kuruish.org
+- name: 🇨🇦 加拿大 (Canada) 10 - homeip
+  type: vless
+  server: 66.163.113.9
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kuruish.org
+- name: 🇨🇦 加拿大 (Canada) 11 - homeip
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 12 - homeip
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -87,27 +109,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 10 - homeip
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 11 - homeip
-  type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 12 - homeip
-  type: ss
-  server: 184.107.106.77
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
 - name: 🇨🇦 加拿大 (Canada) 13 - homeip
   type: vmess
   server: 23.162.200.198
@@ -119,23 +120,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 14 - homeip
-  type: ss
-  server: 51.222.200.165
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 15 - homeip
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 16 - homeip
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -145,12 +129,29 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 15 - homeip
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 16 - homeip
+  type: ss
+  server: 184.107.106.78
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
 - name: 🇨🇦 加拿大 (Canada) 17 - homeip
   type: ss
-  server: 51.222.136.236
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
 - name: 🇨🇦 加拿大 (Canada) 18 - homeip
   type: vmess
@@ -164,7 +165,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 19 - homeip
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -174,7 +175,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 20 - homeip
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -183,17 +184,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 21 - homeip
-  type: vless
-  server: kuruish.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: kuruish.org
 - name: 🇨🇦 加拿大 (Canada) 22 - homeip
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -203,10 +205,10 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 23 - homeip
   type: ss
-  server: 192.99.151.230
-  port: 8388
+  server: 51.222.200.165
+  port: 5000
   cipher: aes-256-gcm
-  password: itzvpn@321
+  password: Y6R9pAtvxxzmGC
   udp: true
 - name: 🇨🇦 加拿大 (Canada) 24 - homeip
   type: vmess
@@ -220,7 +222,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 25 - homeip
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -240,7 +242,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 27 - homeip
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -250,16 +252,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 28 - homeip
   type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 29 - homeip
-  type: vmess
   server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
@@ -268,16 +260,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 30 - homeip
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 29 - homeip
+  type: ss
+  server: 134.195.198.163
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: PmCqK98WqhSC
   udp: true
-  tls: false
-  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 30 - homeip
+  type: ss
+  server: 134.195.198.163
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: PmCqK98WqhSC
+  udp: true
 - name: 🇨🇦 加拿大 (Canada) 31 - homeip
   type: vmess
   server: 23.162.200.198
@@ -289,14 +285,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 32 - homeip
-  type: vless
-  server: 66.163.113.9
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  type: ss
+  server: 192.99.151.230
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kuruish.org
 - name: 🇨🇦 加拿大 (Canada) 33 - homeip
   type: vmess
   server: 134.195.196.211
@@ -319,7 +313,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 35 - homeip
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -329,7 +323,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 36 - homeip
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -349,7 +343,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 38 - homeip
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -368,13 +362,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 40 - homeip
-  type: ss
-  server: 184.107.106.78
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 41 - homeip
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -384,7 +371,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 42 - homeip
+- name: 🇨🇦 加拿大 (Canada) 41 - homeip
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -394,9 +381,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 42 - homeip
+  type: ss
+  server: 184.107.106.77
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
 - name: 🇨🇦 加拿大 (Canada) 43 - homeip
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -406,7 +400,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 44 - homeip
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -446,7 +440,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 48 - homeip
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -466,7 +460,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 50 - homeip
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -476,7 +470,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 51 - homeip
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -486,16 +480,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 52 - homeip
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 53 - homeip
-  type: vmess
   server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
@@ -504,42 +488,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 54 - homeip
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 55 - homeip
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 56 - homeip
-  type: vless
-  server: kuruish.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kuruish.org
-- name: 🇨🇦 加拿大 (Canada) 57 - homeip
-  type: ss
-  server: 134.195.198.163
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: PmCqK98WqhSC
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -597,11 +545,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 50 - homeip
   - 🇨🇦 加拿大 (Canada) 51 - homeip
   - 🇨🇦 加拿大 (Canada) 52 - homeip
-  - 🇨🇦 加拿大 (Canada) 53 - homeip
-  - 🇨🇦 加拿大 (Canada) 54 - homeip
-  - 🇨🇦 加拿大 (Canada) 55 - homeip
-  - 🇨🇦 加拿大 (Canada) 56 - homeip
-  - 🇨🇦 加拿大 (Canada) 57 - homeip
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -659,10 +602,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 50 - homeip
   - 🇨🇦 加拿大 (Canada) 51 - homeip
   - 🇨🇦 加拿大 (Canada) 52 - homeip
-  - 🇨🇦 加拿大 (Canada) 53 - homeip
-  - 🇨🇦 加拿大 (Canada) 54 - homeip
-  - 🇨🇦 加拿大 (Canada) 55 - homeip
-  - 🇨🇦 加拿大 (Canada) 56 - homeip
-  - 🇨🇦 加拿大 (Canada) 57 - homeip
 rules:
 - MATCH,PROXIES
